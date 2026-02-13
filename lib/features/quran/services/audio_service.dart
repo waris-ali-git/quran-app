@@ -28,9 +28,15 @@ class QuranAudioService {
         await _player.play();
       } else {
         // New ayah
-        _currentUrl = url;
-        await _player.setUrl(url);
-        await _player.play();
+        try {
+          await _player.stop();
+          _currentUrl = url;
+          await _player.setUrl(url);
+          await _player.play();
+        } catch (e) {
+          _currentUrl = null; // Error aaya to reset karo taake UI stuck na ho
+          print("Audio source error: $e");
+        }
       }
     } catch (e) {
       print("Audio Error: $e");
