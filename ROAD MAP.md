@@ -5,7 +5,7 @@
 - Quran Auth source find
 - Audio Recitation
 
-I promise I will obey WARIS🌹
+
 
 # 🕌 Quran Feature - Complete Implementation Guide
 
