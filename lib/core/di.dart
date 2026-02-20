@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:get_it/get_it.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import '../features/quran/services/quran_service.dart';
+import '../features/quran/services/tafseer_service.dart';
 import '../features/quran/state/quran_bloc.dart';
 
 final GetIt sl = GetIt.instance;
@@ -33,6 +34,9 @@ Future<void> setupDependencies() async {
   // ─── Services ──────────────────────────────
   sl.registerLazySingleton<QuranService>(
         () => QuranService(dio, quranCacheBox),
+  );
+  sl.registerLazySingleton<TafseerService>(
+        () => TafseerService(dio, quranCacheBox),
   );
 
   // ─── BLoCs ─────────────────────────────────

@@ -14,6 +14,7 @@ class SurahListScreen extends StatefulWidget {
 
 class _SurahListScreenState extends State<SurahListScreen> {
   final _searchController = TextEditingController();
+  Map<String, dynamic>? _lastRead;
   List<Surah> _filteredSurahs = [];
   List<Surah> _allSurahs = [];
 
@@ -67,35 +68,45 @@ class _SurahListScreenState extends State<SurahListScreen> {
       ),
       body: BlocBuilder<QuranBloc, QuranState>(
         builder: (context, state) {
-          if (state is QuranLoading) {
-            return const _LoadingWidget();
+          // 1. Search Results
+          if (state is QuranSearchResults) {
+            return _buildSearchResults(state);
           }
 
-          if (state is QuranError) {
+          // 2. Data Loaded -> Update Cache
+          if (state is SurahsLoaded) {
+            _allSurahs = state.surahs;
+            _lastRead = state.lastRead;
+            // Apply current search filter if any
+            if (_searchController.text.isNotEmpty) {
+              _filterSurahs(_searchController.text);
+            } else {
+              _filteredSurahs = _allSurahs;
+            }
+          }
+
+          // 3. Error (only if no data)
+          if (state is QuranError && _allSurahs.isEmpty) {
             return _ErrorWidget(
               message: state.message,
               onRetry: () => context.read<QuranBloc>().add(const LoadSurahsEvent()),
             );
           }
 
-          if (state is SurahsLoaded) {
-            if (_allSurahs.isEmpty) {
-              _allSurahs = state.surahs;
-              _filteredSurahs = state.surahs;
-            }
+          // 4. Loading (only if no data)
+          if (state is QuranLoading && _allSurahs.isEmpty) {
+            return const _LoadingWidget();
+          }
 
-            return Column(
+          // 5. Show List (from Cache or State)
+          if (_filteredSurahs.isNotEmpty) {
+             return Column(
               children: [
-                // Last read banner
-                if (state.lastRead != null) _LastReadBanner(lastRead: state.lastRead!),
-
-                // Search bar
+                if (_lastRead != null) _LastReadBanner(lastRead: _lastRead!),
                 _SearchBar(
                   controller: _searchController,
                   onChanged: _filterSurahs,
                 ),
-
-                // Surah list
                 Expanded(
                   child: ListView.builder(
                     itemCount: _filteredSurahs.length,
@@ -121,11 +132,63 @@ class _SurahListScreenState extends State<SurahListScreen> {
     );
   }
 
-  void _openSurah(BuildContext context, Surah surah, ReadingDisplayMode mode) {
+  Widget _buildSearchResults(QuranSearchResults state) {
+    return Column(
+      children: [
+        Container(
+          padding: const EdgeInsets.all(16),
+          color: Colors.white,
+          child: Row(
+            children: [
+              IconButton(
+                icon: const Icon(Icons.arrow_back, color: Colors.black),
+                onPressed: () => context.read<QuranBloc>().add(const LoadSurahsEvent()),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  'Search Results: "${state.query}"',
+                  style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Expanded(
+          child: state.results.isEmpty 
+            ? const Center(child: Text("No results found"))
+            : ListView.builder(
+                itemCount: state.results.length,
+                itemBuilder: (context, index) {
+                  final ayah = state.results[index];
+                  return ListTile(
+                    title: Text(ayah.text, textAlign: TextAlign.right, style: const TextStyle(fontFamily: 'AmiriQuran', fontSize: 20)),
+                    subtitle: Text(
+                      "Surah ${ayah.surah?.name ?? '?'} : Ayah ${ayah.numberInSurah}",
+                      style: const TextStyle(color: Colors.grey),
+                    ),
+                    onTap: () {
+                      if (ayah.surah != null) {
+                         _openSurah(
+                            context,
+                            ayah.surah!,
+                            ReadingDisplayMode.arabicWithTranslation
+                         );
+                      }
+                    },
+                  );
+                },
+              ),
+        ),
+      ],
+    );
+  }
+
+  Future<void> _openSurah(BuildContext context, Surah surah, ReadingDisplayMode mode) async {
     // Pehle reading mode set karo
     context.read<QuranBloc>().add(ChangeReadingModeEvent(mode: mode));
 
-    Navigator.push(
+    await Navigator.push(
       context,
       MaterialPageRoute(
         builder: (_) => BlocProvider.value(
@@ -134,6 +197,11 @@ class _SurahListScreenState extends State<SurahListScreen> {
         ),
       ),
     );
+
+    // Wapis aane par dobara list load karein taake screen blank na ho
+    if (context.mounted) {
+      context.read<QuranBloc>().add(const LoadSurahsEvent());
+    }
   }
 
   void _showSearchBottomSheet(BuildContext context) {

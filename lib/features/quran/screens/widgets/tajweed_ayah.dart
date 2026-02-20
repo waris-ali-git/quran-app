@@ -15,6 +15,7 @@ class TajweedAyahWidget extends StatelessWidget {
   final bool isBookmarked;
   final VoidCallback onBookmarkToggle;
   final VoidCallback? onVisible;
+  final VoidCallback onTafseerTap;
 
   const TajweedAyahWidget({
     super.key,
@@ -24,6 +25,7 @@ class TajweedAyahWidget extends StatelessWidget {
     required this.isBookmarked,
     required this.onBookmarkToggle,
     this.onVisible,
+    required this.onTafseerTap,
   });
 
   @override
@@ -93,6 +95,12 @@ class TajweedAyahWidget extends StatelessWidget {
                       },
                     );
                   },
+                ),
+                // Tafseer Button
+                IconButton(
+                  icon: const Icon(Icons.menu_book, color: Colors.blueGrey, size: 24),
+                  onPressed: onTafseerTap,
+                  tooltip: 'Tafseer',
                 ),
                 IconButton(
                   icon: Icon(

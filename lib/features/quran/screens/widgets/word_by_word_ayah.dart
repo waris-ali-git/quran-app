@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../../models/ayah.dart';
 import '../../models/reading_mode.dart';
 import '../../services/tajweed_service.dart';
+import '../../services/audio_service.dart';
+import 'package:just_audio/just_audio.dart';
 
 /// Word-by-Word Ayah Widget
 /// Bilkul waise jaisa image mein hai:
@@ -15,6 +17,7 @@ class WordByWordAyahWidget extends StatelessWidget {
   final ReadingPreferences preferences;
   final bool isBookmarked;
   final VoidCallback onBookmarkToggle;
+  final VoidCallback onTafseerTap;
 
   const WordByWordAyahWidget({
     super.key,
@@ -23,6 +26,7 @@ class WordByWordAyahWidget extends StatelessWidget {
     required this.preferences,
     required this.isBookmarked,
     required this.onBookmarkToggle,
+    required this.onTafseerTap,
   });
 
   // Har word ko ek rng — cycle karta rahe (image jaise)
@@ -62,6 +66,52 @@ class WordByWordAyahWidget extends StatelessWidget {
               children: [
                 _AyahBadge(number: ayah.numberInSurah),
                 const Spacer(),
+                // Audio Play Button
+                StreamBuilder<PlayerState>(
+                  stream: QuranAudioService().playerStateStream,
+                  builder: (context, snapshot) {
+                    final playerState = snapshot.data;
+                    final processingState = playerState?.processingState;
+                    final playing = playerState?.playing;
+                    
+                    final currentUrl = QuranAudioService().currentUrl;
+                    final isMyAyah = currentUrl == ayah.audioUrl;
+
+                    if (isMyAyah && (processingState == ProcessingState.loading || processingState == ProcessingState.buffering)) {
+                      return const Padding(
+                         padding: EdgeInsets.all(8.0),
+                         child: SizedBox(
+                           width: 20,
+                           height: 20,
+                           child: CircularProgressIndicator(strokeWidth: 2),
+                         ),
+                       );
+                    }
+
+                    return IconButton(
+                      icon: Icon(
+                        isMyAyah && playing == true ? Icons.pause_circle_filled : Icons.play_circle_filled,
+                        color: isMyAyah && playing == true ? Colors.amber[800] : Colors.blueGrey,
+                        size: 28,
+                      ),
+                      onPressed: () {
+                        if (ayah.audioUrl != null) {
+                          if (isMyAyah && playing == true) {
+                            QuranAudioService().pause();
+                          } else {
+                            QuranAudioService().playAyah(ayah.audioUrl!);
+                          }
+                        }
+                      },
+                    );
+                  },
+                ),
+                // Tafseer Button
+                IconButton(
+                  icon: const Icon(Icons.menu_book, color: Colors.blueGrey, size: 24),
+                  onPressed: onTafseerTap,
+                  tooltip: 'Tafseer',
+                ),
                 IconButton(
                   icon: Icon(
                     isBookmarked ? Icons.bookmark : Icons.bookmark_border,

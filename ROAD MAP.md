@@ -11,7 +11,7 @@
 
 ## 📋 Table of Contents
 1. [API Setup & Documentation](#api-setup)
-2. [Models (Data Structures)](#models)
+2. [Models (Data Structures)](#m987odels)
 3. [Services (Business Logic)](#services)
 4. [State Management (BLoC)](#bloc)
 5. [UI Screens](#screens)

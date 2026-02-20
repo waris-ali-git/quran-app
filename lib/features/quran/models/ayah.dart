@@ -1,5 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
+import 'surah.dart';
+
 
 // ───────────────────────────────────────────────
 // TAJWEED RULE ENUM (Complete — image jaise)
@@ -185,6 +187,10 @@ class AyahWord extends Equatable {
 // ───────────────────────────────────────────────
 // AYAH
 // ───────────────────────────────────────────────
+
+// ───────────────────────────────────────────────
+// AYAH
+// ───────────────────────────────────────────────
 class Ayah extends Equatable {
   final int number;
   final String text;
@@ -200,6 +206,8 @@ class Ayah extends Equatable {
   final List<AyahWord>? ayahWords; // Renamed from words
   final String? audioUrl;
   final String? tajweedText; // AlQuran.cloud tajweed text with codes
+  final String? tafseerText; // Tafseer explanation (e.g. Maududi)
+  final Surah? surah; // For search results
 
   const Ayah({
     required this.number,
@@ -216,6 +224,8 @@ class Ayah extends Equatable {
     this.ayahWords,
     this.audioUrl,
     this.tajweedText,
+    this.tafseerText,
+    this.surah,
   });
 
   /// AlQuran.cloud format
@@ -238,6 +248,8 @@ class Ayah extends Equatable {
           : null,
       audioUrl: 'https://cdn.islamic.network/quran/audio/128/ar.alafasy/${json['number']}.mp3',
       tajweedText: json['tajweedText'] as String?,
+      tafseerText: json['tafseerText'] as String?,
+      surah: json['surah'] != null ? Surah.fromJson(Map<String, dynamic>.from(json['surah'] as Map)) : null,
     );
   }
 
@@ -286,6 +298,8 @@ class Ayah extends Equatable {
     'words': ayahWords?.map((w) => w.toJson()).toList(),
     'audio': audioUrl,
     'tajweedText': tajweedText,
+    'tafseerText': tafseerText,
+    'surah': surah?.toJson(),
   };
 
   Ayah copyWith({
@@ -294,6 +308,8 @@ class Ayah extends Equatable {
     List<AyahWord>? words,
     String? audioUrl,
     String? tajweedText,
+    String? tafseerText,
+    Surah? surah,
   }) {
     return Ayah(
       number: number,
@@ -310,6 +326,8 @@ class Ayah extends Equatable {
       ayahWords: words ?? this.ayahWords,
       audioUrl: audioUrl ?? this.audioUrl,
       tajweedText: tajweedText ?? this.tajweedText,
+      tafseerText: tafseerText ?? this.tafseerText,
+      surah: surah ?? this.surah,
     );
   }
 
@@ -317,6 +335,6 @@ class Ayah extends Equatable {
   List<Object?> get props => [
     number, text, numberInSurah, juz, manzil, page,
     ruku, hizbQuarter, sajda, translation, transliteration, ayahWords,
-    tajweedText,
+    tajweedText, tafseerText, surah,
   ];
 }

@@ -4,14 +4,16 @@ void main() async {
   final dio = Dio();
   try {
     print('Fetching Surah 114 (Nas)...');
-    // Request multiple editions to mimic app behavior
-    final response = await dio.get('http://api.alquran.cloud/v1/surah/114/editions/quran-uthmani,quran-tajweed');
+    // Check Tafseer edition (e.g., ur.tafheem or ur.maududi)
+    final response = await dio.get('http://api.alquran.cloud/v1/surah/114/editions/ur.maududi');
     
     final data = response.data['data'] as List;
-    final arabicData = data[0]; // Uthmani data directly
+    final tafseerData = data[0]; 
     
-    print('Surah: ${arabicData['englishName']}');
-    final ayahs = arabicData['ayahs'] as List;
+    print('Edition: ${tafseerData['edition']['identifier']} - ${tafseerData['edition']['name']}');
+    
+    print('Surah: ${tafseerData['englishName']}');
+    final ayahs = tafseerData['ayahs'] as List;
     
     for (var ayahJson in ayahs) {
         final number = ayahJson['number']; // Global number

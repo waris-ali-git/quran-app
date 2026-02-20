@@ -60,43 +60,45 @@ class QuranService {
       int surahNumber,
       String translationEdition,
       ) async {
-    final cacheKey = 'surah_${surahNumber}_${translationEdition}_tj'; // Changed key
+    final cacheKey = 'surah_${surahNumber}_${translationEdition}_tj_tf'; // Changed key for Tafseer
     try {
       final cached = _cacheBox.get(cacheKey);
       if (cached != null) {
         return Surah.fromJson(Map<String, dynamic>.from(cached as Map));
       }
 
-      // Arabic (Uthmani) + Tajweed + Translation
+      // Arabic (Uthmani) + Tajweed + Translation + Tafseer (ur.maududi)
       // AlQuran.cloud allows multiple editions comma separated
-      final editions = 'quran-uthmani,quran-tajweed,$translationEdition';
+      final editions = 'quran-uthmani,quran-tajweed,$translationEdition,ur.maududi';
       final res = await _dio.get('$_alQuranBase/surah/$surahNumber/editions/$editions');
 
       if (res.statusCode == 200) {
         final data = res.data['data'] as List;
         
         // Data order depends on response, usually matches request order but better to check identifiers if possible.
-        // Usually: [0]=Uthmani, [1]=Tajweed, [2]=Translation
-        // Let's assume order for now or use flexible mapping if identifiers exist.
-        // API ensures order matches request usually.
+        // Usually: [0]=Uthmani, [1]=Tajweed, [2]=Translation, [3]=Tafseer
         
         final arabicData = Map<String, dynamic>.from(data[0] as Map);
         final tajweedData = Map<String, dynamic>.from(data[1] as Map);
         final translData = Map<String, dynamic>.from(data[2] as Map);
+        final tafseerData = Map<String, dynamic>.from(data[3] as Map); // New Tafseer data
 
         final surah = Surah.fromJson(arabicData);
         final tajweedAyahs = tajweedData['ayahs'] as List;
         final translAyahs = translData['ayahs'] as List;
+        final tafseerAyahs = tafseerData['ayahs'] as List;
 
         final mergedAyahs = <Ayah>[];
         for (int i = 0; i < surah.ayahs!.length; i++) {
           final ar = surah.ayahs![i];
           final tr = Map<String, dynamic>.from(translAyahs[i] as Map);
-          final tj = Map<String, dynamic>.from(tajweedAyahs[i] as Map); // Tajweed ayah
+          final tj = Map<String, dynamic>.from(tajweedAyahs[i] as Map);
+          final tf = Map<String, dynamic>.from(tafseerAyahs[i] as Map); // Tafseer ayah
           
           mergedAyahs.add(ar.copyWith(
             translation: tr['text'] as String?,
-            tajweedText: tj['text'] as String?, // Store Tajweed markup text
+            tajweedText: tj['text'] as String?,
+            tafseerText: tf['text'] as String?, // Store Tafseer text
           ));
         }
 
@@ -245,6 +247,7 @@ class QuranService {
 
   Future<List<Ayah>> searchQuran(String query, String edition) async {
     try {
+      // Try with selected edition first
       final res = await _dio.get(
         '$_alQuranBase/search/$query/$edition',
       );
@@ -253,6 +256,14 @@ class QuranService {
         return matches.map((e) => Ayah.fromJson(Map<String, dynamic>.from(e as Map))).toList();
       }
       return [];
+    } on DioException catch (e) {
+      // If 404/400, try fallback to en.sahih (standard search)
+      if (e.response?.statusCode == 404 || e.response?.statusCode == 400) {
+        if (edition != 'en.sahih') {
+          return searchQuran(query, 'en.sahih');
+        }
+      }
+      throw Exception('Search error: ${e.message}');
     } catch (e) {
       throw Exception('Search error: $e');
     }
