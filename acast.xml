@@ -1,0 +1,1606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/global/feed/rss.xslt" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podaccess="https://access.acast.com/schema/1.0/" xmlns:acast="https://schema.acast.com/1.0/">
+    <channel>
+		<ttl>60</ttl>
+		<generator>acast.com</generator>
+		<title>Dr. Israr Ahmed Podcast</title>
+		<link>https://shows.acast.com/dr-israr-ahmed-podcast</link>
+		<atom:link href="https://feeds.acast.com/public/shows/686ee2a0ea74e132fb4a79e5" rel="self" type="application/rss+xml"/>
+		<language>en</language>
+		<copyright>SOFI ㅤㅤㅤㅤㅤㅤㅤ</copyright>
+		<itunes:keywords>Dr Israr Ahmed,Dr Israr Ahmed Bayan,Dr Israr Ahmed lectures,Dr Israr Ahmed Clips,Dr Israr Ahmed Podcast,Tanzeem-e-Islami</itunes:keywords>
+		<itunes:author>Dr. Israr Ahmed ㅤㅤㅤㅤㅤㅤㅤ</itunes:author>
+		<itunes:subtitle>Dr Israr Ahmed</itunes:subtitle>
+		<itunes:summary><![CDATA[<p>The Dr. Israr Ahmed Podcast features a curated collection of Islamic bayans, lectures, and discussions by Dr. Israr Ahmed, including both short clips and full-length talks from his extensive archive.</p><p></p><p>The aim of this podcast is to bring together Dr. Israr Ahmed’s long-form lectures as well as selected shorter segments in one place</p><p></p><p>Where to Listen</p><p>You can listen to the Dr. Israr Ahmed Podcast on Spotify, Apple Podcasts, and other major podcast platforms.</p><p></p><p>For Inquiries or Copyright: contactsofion@gmail.com</p><p></p><p></p><p><br></p><hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		<description><![CDATA[<p>The Dr. Israr Ahmed Podcast features a curated collection of Islamic bayans, lectures, and discussions by Dr. Israr Ahmed, including both short clips and full-length talks from his extensive archive.</p><p></p><p>The aim of this podcast is to bring together Dr. Israr Ahmed’s long-form lectures as well as selected shorter segments in one place</p><p></p><p>Where to Listen</p><p>You can listen to the Dr. Israr Ahmed Podcast on Spotify, Apple Podcasts, and other major podcast platforms.</p><p></p><p>For Inquiries or Copyright: contactsofion@gmail.com</p><p></p><p></p><p><br></p><hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+		<itunes:explicit>false</itunes:explicit>
+		<itunes:owner>
+			<itunes:name>Dr. Israr Ahmed ㅤㅤㅤㅤㅤㅤㅤ</itunes:name>
+			<itunes:email>usaidfarhan2019@gmail.com</itunes:email>
+		</itunes:owner>
+		<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+		<acast:showUrl>dr-israr-ahmed-podcast</acast:showUrl>
+		<acast:signature key="EXAMPLE" algorithm="aes-256-cbc"><![CDATA[wbG1Z7+6h9QOi+CR1Dv0uQ==]]></acast:signature>
+		<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmU13c0otUap75NIyVufnZVBoBcFwz3Y0zGA/pFjpP70+3oZt3+5O3uX8mfQZWzV35Kby8OfdHfDJlQAYxij1gc0J63rxgoMm4loq58gBzd9i]]></acast:settings>
+        <acast:network id="65302751633a050012be6c7a" slug="sofinetwork"><![CDATA[SOFI NETWORK]]></acast:network>
+		<itunes:type>episodic</itunes:type>
+			<itunes:image href="https://assets.pippa.io/shows/cover/1752096992915-2100ee59-b8eb-415a-8b58-f534df7fa1e4.jpeg"/>
+			<image>
+				<url>https://assets.pippa.io/shows/cover/1752096992915-2100ee59-b8eb-415a-8b58-f534df7fa1e4.jpeg</url>
+				<link>https://shows.acast.com/dr-israr-ahmed-podcast</link>
+				<title>Dr. Israr Ahmed Podcast</title>
+			</image>
+		<item>
+			<title>Taraweeh 8 ya 20 – Kya Taraweeh Farz Hai | Dr Israr Ahmed</title>
+			<itunes:title>Taraweeh 8 ya 20 – Kya Taraweeh Farz Hai | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 18 Feb 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>10:38</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693c0620f817d7dbe85075a7/media.mp3" length="19863253" type="audio/mpeg"/>
+			<guid isPermaLink="false">693c0620f817d7dbe85075a7</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/taraweeh-8-ya-20-kya-taraweeh-farz-hai-dr-israr-ahmed</link>
+			<acast:episodeId>693c0620f817d7dbe85075a7</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>taraweeh-8-ya-20-kya-taraweeh-farz-hai-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCfHze7JWiX02OYjh0jpCjG7ujGqFS1QmotllhuAl+YbDuD7pGUan3SOJKpRoJw71dQn6b30WONZCo2KvXB5uZrxk1HmOxbK1JdSp85epcZoDPXXUcFvKO9ThzqBPX/ue8b4ea5F0YQlz+EXX79KV5rFCAltGmKVQPkXsdZh5cyEx8rt9NpAAUqdUJBa9/wmJkZBI0k9yg7px4wJiWdqGZTa]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765603532195-ea1e0542-c21d-4d11-9c7d-07d61e1c8a4c.jpeg"/>
+			<description><![CDATA[Taraweeh 8 ya 20 – Kya Taraweeh Farz Hai | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Taraweeh 8 ya 20 – Kya Taraweeh Farz Hai | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Farishton Par Iman - ملائکہ | Dr Israr Ahmed</title>
+			<itunes:title>Farishton Par Iman - ملائکہ | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 16 Feb 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>5:28</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693add544d362887b715a6b7/media.mp3" length="9599203" type="audio/mpeg"/>
+			<guid isPermaLink="false">693add544d362887b715a6b7</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/farishton-par-iman-dr-israr-ahmed</link>
+			<acast:episodeId>693add544d362887b715a6b7</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>farishton-par-iman-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCehZuLiv8IBu7B7/EoLTplrZFD+PUawwnRDLTbGnVxNRIWzcVnG2UbC0rhncdPtLM3wKhDxJcD8GhMnmOB43LsfPK2ykhVue8cBVVc2x/1gNWJT72Gem2VQACnWKp5TKed1iXJ7wfVPl8ZDnghZ1oVGQKt5wQ9h1AqsGaW5Z6OTdJph3UIPOBJskxiMkIgV6DWQawpyyG8rq/8Fmgb/0ME5]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765465408246-e4e96e00-316a-4920-a0d3-29c9af154add.jpeg"/>
+			<description><![CDATA[Farishton Par Iman - ملائکہ | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Farishton Par Iman - ملائکہ | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Allah Ki 6 Bari Sifaat | Dr Israr Ahmed</title>
+			<itunes:title>Allah Ki 6 Bari Sifaat | Dr Israr Ahmed</itunes:title>
+			<pubDate>Sat, 14 Feb 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>1:20</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693adc000375da4a9e1cf1ad/media.mp3" length="3382115" type="audio/mpeg"/>
+			<guid isPermaLink="false">693adc000375da4a9e1cf1ad</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/allah-ki-6-bari-sifaat-dr-israr-ahmed-dr-israr-ahmed</link>
+			<acast:episodeId>693adc000375da4a9e1cf1ad</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>allah-ki-6-bari-sifaat-dr-israr-ahmed-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCfLpax2b6Ub2LCCpu0H+ZOM0S9xO1lM15CI7y+eqHCDA9ttoQ6AmR6KyOuiQ+NuccsZ+DmHSf6e1Ht35dOYTt8wnq1jfLyo8YVXux4PqiVvibhgoqYQM/c+cSsigs6LipGlb6uPdAyCY1benHixge/HwuXUpYBlvJypr3jxJjqJR6QboAYvv+tKYyPkT4vOnZQG30au72eapVB/iHn+lOnN71LZ/HyKcloJLb3ebiH2/w==]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765465071958-08112a95-a625-4933-8383-2db5533561ad.jpeg"/>
+			<description><![CDATA[﻿Allah Ki 6 Bari Sifaat | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[﻿Allah Ki 6 Bari Sifaat | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Asal Kamyabi Kya Hai – What Is Real Success | Dr Israr Ahmed</title>
+			<itunes:title>Asal Kamyabi Kya Hai – What Is Real Success | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 11 Feb 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>2:55</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693adaf340eb0cbb2a119d4f/media.mp3" length="6317743" type="audio/mpeg"/>
+			<guid isPermaLink="false">693adaf340eb0cbb2a119d4f</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/asal-kamyabi-kya-hai-what-is-real-success-dr-israr-ahmed</link>
+			<acast:episodeId>693adaf340eb0cbb2a119d4f</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>asal-kamyabi-kya-hai-what-is-real-success-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCdRKXhN+NCKQ2TCjyJcI/g8iccXBExncAD7tm+46GPr47NbxshKZWfGbCcC4Bq/UlOF1cdxpX+LGBF1AfZjk10iFanH+p5zTnNRvO4dyckuf2mRnteGaDIVi/Kjr+bngHJip8gi2HcJJKjZZ8NuyR4KaxrXI2bgw30Ohdyym5NPvb4rRJ+GVd5CN48ptpsb/KPv7O1QEv5F95VeW4+1DnN+]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765464806659-86f4faad-bf44-463d-9953-587724b8fde5.jpeg"/>
+			<description><![CDATA[Asal Kamyabi Kya Hai – What Is Real Success | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Asal Kamyabi Kya Hai – What Is Real Success | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Islamic System – Asal Islam Kya Hai | Dr Israr Ahmed</title>
+			<itunes:title>Islamic System – Asal Islam Kya Hai | Dr Israr Ahmed</itunes:title>
+			<pubDate>Sat, 07 Feb 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>5:36</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693ad9c2e1890fb6cb6f99da/media.mp3" length="14089076" type="audio/mpeg"/>
+			<guid isPermaLink="false">693ad9c2e1890fb6cb6f99da</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/islamic-system-asal-islam-kya-hai-dr-israr-ahmed</link>
+			<acast:episodeId>693ad9c2e1890fb6cb6f99da</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>islamic-system-asal-islam-kya-hai-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCcwtiiYB/3mJOWkRTC8s0jACtyFT65EFs+3zUMUerwbpBrDOficz/+4iH8pDmIOwOORT/nOuWEYz/8/Ijht8JrgURdsgZ0PKHs79mXXunG1LDLXdVLxHaU/+kXnUWoymnC5YEsJosZQKyuMPyFP7M+rr/WtHvmZMMvp/pyexGGPVPn1VcP7Xk6tZFfiFtX0rJ0CkJGouPIdgVMINJ5rap+m]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765464490718-d00d7837-67f6-4997-85c2-66551ca6e981.jpeg"/>
+			<description><![CDATA[Islamic System – Asal Islam Kya Hai | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Islamic System – Asal Islam Kya Hai | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Munazra Kya Hota Hai | Dr Israr Ahmed</title>
+			<itunes:title>Munazra Kya Hota Hai | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 04 Feb 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>7:02</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693ad38fe1890fb6cb6cc818/media.mp3" length="16366802" type="audio/mpeg"/>
+			<guid isPermaLink="false">693ad38fe1890fb6cb6cc818</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/munazra-kya-hota-hai-dr-israr-ahmed</link>
+			<acast:episodeId>693ad38fe1890fb6cb6cc818</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>munazra-kya-hota-hai-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCcIxuKkgoHaqq8T7gFyXhV9MqhbHyhz7aoW9fLqzYgQAZbU/n7/61MONNKUG7YXgcM1MORGZgQfVnNTgITMct/uUIMC6MDqyS1935jgKWVIUNkDAtdivkCAlfx75I2CNsqdkpFkeS/nxosnIUUAEbUx8bM0fUjv8tfP2WiPVSA1q04kuZOX4DRfGnFNaTBPiiQwRl0fW/OMo8LmRnEy7rGr]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765462913955-8c8f61e7-5d98-4717-8e85-3bf8b0688a02.jpeg"/>
+			<description><![CDATA[Munazra Ka Asal Matlab – Munazra Kya Hota Hai | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Munazra Ka Asal Matlab – Munazra Kya Hota Hai | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Pakistani Muslims in Quranic Context | Dr Israr Ahmed</title>
+			<itunes:title>Pakistani Muslims in Quranic Context | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 02 Feb 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>14:52</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693aa55b40eb0cbb2a0203aa/media.mp3" length="33464092" type="audio/mpeg"/>
+			<guid isPermaLink="false">693aa55b40eb0cbb2a0203aa</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/pakistani-muslims-in-quranic-context-dr-israr-ahmed</link>
+			<acast:episodeId>693aa55b40eb0cbb2a0203aa</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>pakistani-muslims-in-quranic-context-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCcFAe0fnxBJy/1ju4Qxy1fh8gO4DvlGA40yms2g0/hOkcrfHIopjTygHFqGwwOPKFIai4SuTvs86Lx3UYCyl6ZsN5+RCLsbnUhsoXrvN+0o0jiYFqzWftPkn9ZAE50+Zly0v4/kmMDdl8Xgp5QfDZD7jmD6vYJRROpQYn8IGCAimwSvgTrTDkBb5ugEAKFBdecRj7O0SxjCxvBcXqvGVHkG]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765451080337-d3ec4325-d87a-4aa9-99b3-1e99fcf74f13.jpeg"/>
+			<description><![CDATA[Pakistani Muslims in Quranic Context | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Pakistani Muslims in Quranic Context | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Baraat Ka Zulm Khatam Karein | Dr Israr Ahmed</title>
+			<itunes:title>Baraat Ka Zulm Khatam Karein | Dr Israr Ahmed</itunes:title>
+			<pubDate>Sat, 31 Jan 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>8:47</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693aa26540eb0cbb2a01604c/media.mp3" length="18304371" type="audio/mpeg"/>
+			<guid isPermaLink="false">693aa26540eb0cbb2a01604c</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/baraat-ka-zulm-khatam-karein-dr-israr-ahmed</link>
+			<acast:episodeId>693aa26540eb0cbb2a01604c</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>baraat-ka-zulm-khatam-karein-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCcHIdGl+ti27QcISBSsb3Y2eYqXF1GyeDdsNWiklb648j3SGmyfgWSfthmi5GUNulBTRR5MAoeo9vbk5vGJVkIr1gdsUwchubIzAiguP+nGksoRFfaLNnlwCl/skdoEdvDKGQ8oAb3Gb1x2CFp/Oop6V3tQyLhppIHIyw0/2HbPRIM0CFWVIU4P+eyVZRfadw46D1QT6eMtz388yRyPABM9]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765450330747-3ad0110a-1046-4647-a6b2-57074a66923c.jpeg"/>
+			<description><![CDATA[Baraat Ka Zulm Khatam Karein – Dawat-e-Walima | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Baraat Ka Zulm Khatam Karein – Dawat-e-Walima | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Adam A.S Se Pehle Dunya Mein Kya Tha | Dr Israr Ahmed</title>
+			<itunes:title>Adam A.S Se Pehle Dunya Mein Kya Tha | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 28 Jan 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>9:45</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693aa42d4d362887b703cfcb/media.mp3" length="16606750" type="audio/mpeg"/>
+			<guid isPermaLink="false">693aa42d4d362887b703cfcb</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/adam-as-se-pehle-dunya-mein-kya-tha-dr-israr-ahmed</link>
+			<acast:episodeId>693aa42d4d362887b703cfcb</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>adam-as-se-pehle-dunya-mein-kya-tha-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCc5PTCXiyvFNRTpFoZYMrk7Lo6lDZWymX2ujYcBi738NsO5TFKTY6TO1bXuVQCJs2iDpU6MvwnD7X9hjD3QZtQDo6h79Vnyn7Dzycm3MsDXe/xzfsEa+dm3n76WMk5LSvQMshjijfcNZvDGIKLGZUNLRE/D30i4RnPtJ46AiybMP3m1itu7TOMVC3KQ6NzhAvbbkxEm3/KqkNW+0zGotpq0]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765450749306-9eb0767d-cfa6-481b-839d-c8b54fe31a64.jpeg"/>
+			<description><![CDATA[Adam A.S Se Pehle Dunya Mein Kya Tha – Jinnat Ki Haqeeqat – What Was Before Adam A.S | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Adam A.S Se Pehle Dunya Mein Kya Tha – Jinnat Ki Haqeeqat – What Was Before Adam A.S | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Fitna – How to Secure Yourself | Dr Israr Ahmed</title>
+			<itunes:title>Fitna – How to Secure Yourself | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 26 Jan 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>2:22</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693aa1420375da4a9e0aec59/media.mp3" length="3982321" type="audio/mpeg"/>
+			<guid isPermaLink="false">693aa1420375da4a9e0aec59</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/fitna-how-to-secure-yourself-dr-israr-ahmed</link>
+			<acast:episodeId>693aa1420375da4a9e0aec59</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>fitna-how-to-secure-yourself-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCfngxj+Lhg5BilNwo9U5mByc6J+rKGLQixcQZbXdM44XOliyLGi913Y24bBUe1r+ZlvruY4BTHfICFuQ1RkJnGK9HM+Xp12RFeiqlD8tyhX3Q2e9XlXIY7jRmfUED4OuyNpTaL19t9HAQ5/cv//zQ1wHndOvWKq1WtrFVtQz8u7zG4Plgg/hn/4TO4TI0eXg0FgGBZj5nyioDmCfOLCtHS7]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765450031440-dcfb60b0-9317-4a02-bc74-db8b3001ec73.jpeg"/>
+			<description><![CDATA[Fitna – How to Secure Yourself | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Fitna – How to Secure Yourself | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>How to Control Your Mind and Thoughts | Dr Israr Ahmed</title>
+			<itunes:title>How to Control Your Mind and Thoughts | Dr Israr Ahmed</itunes:title>
+			<pubDate>Sat, 24 Jan 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>5:56</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693aa018d527840ddbaeccfa/media.mp3" length="12827135" type="audio/mpeg"/>
+			<guid isPermaLink="false">693aa018d527840ddbaeccfa</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/how-to-control-your-mind-and-thoughts-dr-israr-ahmed</link>
+			<acast:episodeId>693aa018d527840ddbaeccfa</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>how-to-control-your-mind-and-thoughts-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCd98t+sE8uSz1WR7cZAzM+RS6Trg6sKKk0wRpDQDYphDsZiT1IfQAIDcqplM6GoaqfccDb2O2lSJzfE1s3tqIHdX6z3VILrmoa7pk11x4h10EU0TRMzB4pC50BGQ7pC3zlq1K6qkUhXRpvU1GomwIUBaYR8ELStNTPKz1Crs1Hn0K8EJ5e+fLP81BWhLSUNtOfM+lf8q1HBWdoLk26zSA9x]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765449744355-3f52d2d0-ab75-43da-a1d1-214b9d116edb.jpeg"/>
+			<description><![CDATA[How to Control Your Mind and Thoughts | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[How to Control Your Mind and Thoughts | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Parde ka Hukam - پردے کا حکم | Dr Israr Ahmed</title>
+			<itunes:title>Parde ka Hukam - پردے کا حکم | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 21 Jan 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>3:39</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693a9d9ad527840ddbae0bbd/media.mp3" length="8158482" type="audio/mpeg"/>
+			<guid isPermaLink="false">693a9d9ad527840ddbae0bbd</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/parde-ka-hukam-dr-israr-ahmed</link>
+			<acast:episodeId>693a9d9ad527840ddbae0bbd</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>parde-ka-hukam-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCe9E3Axvc1KuMZH6G4wc+TixitaLQwcfqNZK8Q182VV/XIsXUKESsdxGRw0yEWm2Od4JEmxpPE5kdSaPi1FWeAYxN8jPYV292caE7AF+9h8Hk8aO5vRYJkZmjbFXDeOmEUw2fOxJ0thLtbqSo22TdC0SsKBwY5nWt3D4ro9Ub0Bg7Yp9mFQUpXR3rjuZP1EuQMg9VOCfDo9JAlutKs8ZjnY]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765449103136-5e35576b-f6a1-4b0c-9352-f0e18766f149.jpeg"/>
+			<description><![CDATA[Parde ka Hukam - پردے کا حکم | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Parde ka Hukam - پردے کا حکم | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>How to Find True Faith | Dr Israr Ahmed</title>
+			<itunes:title>How to Find True Faith | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 19 Jan 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>9:39</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693a9c94e1890fb6cb5e1079/media.mp3" length="19822795" type="audio/mpeg"/>
+			<guid isPermaLink="false">693a9c94e1890fb6cb5e1079</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/how-to-find-true-faith-dr-israr-ahmed</link>
+			<acast:episodeId>693a9c94e1890fb6cb5e1079</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>how-to-find-true-faith-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCcFZ+zzcU5wUV/L+DPfRnwjoOnrK1xoEl0Uw817ugFGi44fI0QCZTLXxegIe8hsqMyShn0jhjrpL0TXtA70hHeVpU2F47AdmI9vmDNlQzH5h2LSuqQmwLTqy/3R4oGTLrMxVg7+8RnVK5llTzxzgHduoTdY+9OzuAd2MyRygxhh1EWD7Su/Ne97QDCMc63tPZjAURTIpe/y23tBYvDnciJz]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765448836319-b5acaa5f-ce7e-4945-9b7f-f7e46af4131d.jpeg"/>
+			<description><![CDATA[How to Find True Faith | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[How to Find True Faith | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Dua Sirf Allah Se Maango | Dr Israr Ahmed</title>
+			<itunes:title>Dua Sirf Allah Se Maango | Dr Israr Ahmed</itunes:title>
+			<pubDate>Sat, 17 Jan 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>4:22</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693a9b8ad527840ddbad5c55/media.mp3" length="10378183" type="audio/mpeg"/>
+			<guid isPermaLink="false">693a9b8ad527840ddbad5c55</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/dua-sirf-allah-se-maango-dr-israr-ahmed</link>
+			<acast:episodeId>693a9b8ad527840ddbad5c55</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>dua-sirf-allah-se-maango-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCeM0LYYAbJ+bfMAmGreK2iSjHAqwwTCpw4l7kyHL4yrsH8GNgDeqkJ+lVknILsvhmrAjU8h/eAt/C/FSb5w/FU8GP6SrSDBnS1n7eK7z+woQykasKM7XENV7ECbB0pIfIG+aT1IueirktNRAg02uN5XnJBy3lAlRSGH4fJwEbMmxvV4Gm6b0Wuc7EUG2mOAfwL6DCMqZ1nanpPlA8tJwrJf]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765448572398-abc18284-ea53-45ab-99b7-5fd701793a48.jpeg"/>
+			<description><![CDATA[Dua Sirf Allah Se Maango | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Dua Sirf Allah Se Maango | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Shahadat Ka Matlab Kya | Dr Israr Ahmed</title>
+			<itunes:title>Shahadat Ka Matlab Kya | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 14 Jan 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>14:41</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693a9a90593d8f20b6e1fd39/media.mp3" length="32777928" type="audio/mpeg"/>
+			<guid isPermaLink="false">693a9a90593d8f20b6e1fd39</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/shahadat-ka-matlab-kya-dr-israr-ahmed</link>
+			<acast:episodeId>693a9a90593d8f20b6e1fd39</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>shahadat-ka-matlab-kya-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCeDTaceAAjqIsfNu225riTVqpArFh/zg8VaTFH02+YootvsJwVjx5KWcyWdnkeFwQxvEGj5WUmw6dAqqhfk+kxoVkcNzhzZy3TRlDn2UZIcpvQrBJcRox5VhJEnrqz1mDNj7EfwG3UZWDpIPSaPilXd+wJMEP0UF7AzcVJ+9cr7eyqTJzyohORCG2Gnwb9E4Gj50PD0sW0VIoCiQMErhfzY]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765448279590-d1d4af73-7624-4fc9-a578-a31c61eb6c38.jpeg"/>
+			<description><![CDATA[Shahadat Ka Matlab Kya | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Shahadat Ka Matlab Kya | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Aik Ho Jao – Be United, We Are Muslims | Dr Israr Ahmed</title>
+			<itunes:title>Aik Ho Jao – Be United, We Are Muslims | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 12 Jan 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>6:49</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693a99280375da4a9e083099/media.mp3" length="15673919" type="audio/mpeg"/>
+			<guid isPermaLink="false">693a99280375da4a9e083099</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/aik-ho-jao-be-united-we-are-muslims-dr-israr-ahmed</link>
+			<acast:episodeId>693a99280375da4a9e083099</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>aik-ho-jao-be-united-we-are-muslims-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCe2oeaL0tu25OM1e5vciXNOaYtc2KE3t18U7ttNxK31KT+Dn4IKdcsMXOZ48p9j7auB2pcBnT+mYZkb1VEUyKrSD+mJN4an7dmMcO7f5XLAaFFNVdX5Q9Vr1S0i8G3JeMbPZwG5EJvMfg73BOX0y59nmTkqk/rZEm0VVTDezCachmIc+mOfQa7rbN5//cKpeCYs53H8Y2SDB1bLhefD3Q0T]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765447933189-febf5bc0-c908-4086-b938-f03e28805795.jpeg"/>
+			<description><![CDATA[Aik Ho Jao – Be United, We Are Muslims | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Aik Ho Jao – Be United, We Are Muslims | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Hazrat Maaz bin Jabal (R.A) Ka Waqia | Dr Israr Ahmed</title>
+			<itunes:title>Hazrat Maaz bin Jabal (R.A) Ka Waqia | Dr Israr Ahmed</itunes:title>
+			<pubDate>Sat, 10 Jan 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>4:49</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693a97590375da4a9e06bf6d/media.mp3" length="11944192" type="audio/mpeg"/>
+			<guid isPermaLink="false">693a97590375da4a9e06bf6d</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/hazrat-maaz-bin-jabal-ra-ka-waqia-dr-israr-ahmed</link>
+			<acast:episodeId>693a97590375da4a9e06bf6d</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>hazrat-maaz-bin-jabal-ra-ka-waqia-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCdiBdzUv6Y5X669o931eGHdbYsm0JZmXj8NVFdjWdGYcPbRCh7A9efS1zdjQ/bolqF+D0asYwxigPAlF1gAjM+mCKmB+XSaFkGtU96M4Fzq6wy6JxlMBdutlLxWP2vmzoEJds9Z+KFTwAC4Vjpfb4vbcllzarM8LZh4EHkqAhmfxHYCBmJvsstXj83oTekb6xhbm3gAhlc3TtzhxdvbLi8y]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765447506360-1052054d-5585-4e15-9437-69003f706d73.jpeg"/>
+			<description><![CDATA[Hazrat Maaz bin Jabal (R.A) Ka Waqia | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Hazrat Maaz bin Jabal (R.A) Ka Waqia | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Medieval Ages in Europe | Dr Israr Ahmed</title>
+			<itunes:title>Medieval Ages in Europe | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 07 Jan 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>2:08</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693a965040eb0cbb2afcdea4/media.mp3" length="3841178" type="audio/mpeg"/>
+			<guid isPermaLink="false">693a965040eb0cbb2afcdea4</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/medieval-ages-in-europe-dr-israr-ahmed</link>
+			<acast:episodeId>693a965040eb0cbb2afcdea4</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>medieval-ages-in-europe-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCcc+5FSGGpp3DCauBu1BKV5ZNzvYw3aa8pEzvXCzy0d4tN38cNkeb7ubMF1IExa9ehvEi0rmS+Ltyhru3VjnkWfZUhJF2dlXvfy8Xb6fX/v9fPyOOV5Vig+6OFzpDwYagTuTrrSrc6MujnG93nsapcAsDERSx59+SfmiOLxHpwGXHV1xD7xXs8lcmyUsKPjw7R+5SQn2kr3IyG7aB4uc79a]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765447230753-feaa49b8-fc72-4d8f-885a-9ba52d97ec93.jpeg"/>
+			<description><![CDATA[Medieval Ages in Europe | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Medieval Ages in Europe | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Insan Ki Haqeeqat | Dr Israr Ahmed</title>
+			<itunes:title>Insan Ki Haqeeqat | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 05 Jan 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>5:16</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693a948fd527840ddbaa6214/media.mp3" length="10305747" type="audio/mpeg"/>
+			<guid isPermaLink="false">693a948fd527840ddbaa6214</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/insan-ki-haqeeqat-dr-israr-ahmed</link>
+			<acast:episodeId>693a948fd527840ddbaa6214</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>insan-ki-haqeeqat-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCe2rqE+uituy4Fh652XLLs7jb3hS0UNXKtUbJaVKfUJTLIn+PJgpN9MDhZWnB3ZBBrp+zqd/fU2biVnmROMUTGhKy+GAbS1f/z/fguIQ02vdwMd4igwEOLGosDGu0fpIWeyAA8pHo1kDV+lIz3gjO2CvriggMmAnNIrmfUvKvzzoCBUPVeF7b6TPsJ/pOM/nK61/u4Evs01rpAb/AczqBki]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765446781679-de07b7ca-8b19-4b38-8b59-ecf26d6c3223.jpeg"/>
+			<description><![CDATA[<strong>Insan Ki Haqeeqat – Reality of Human in 5 Minutes | Dr Israr Ahmed</strong><hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[<strong>Insan Ki Haqeeqat – Reality of Human in 5 Minutes | Dr Israr Ahmed</strong><hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>The End of the Universe | Dr Israr Ahmed</title>
+			<itunes:title>The End of the Universe | Dr Israr Ahmed</itunes:title>
+			<pubDate>Sat, 03 Jan 2026 04:00:00 GMT</pubDate>
+			<itunes:duration>3:04</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693a931c0375da4a9e05a78e/media.mp3" length="5995750" type="audio/mpeg"/>
+			<guid isPermaLink="false">693a931c0375da4a9e05a78e</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/the-end-of-the-universe-dr-israr-ahmed</link>
+			<acast:episodeId>693a931c0375da4a9e05a78e</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>the-end-of-the-universe-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCeu8JUyKhMZjP09xzIvd2/S6EGGWtPYEdvSyGlepmuUECYoSUmTJ9Tl55qMVa+hHdLU2gwqE+Zo3OoiY2qCCF1JxF/tcbKaVQFBAtnY8AkW5z9YvHQF26+TrdHMEx+lmNTFrFOQZX1VqsvhjcV5kiq401hi47NVa37A1u3x6TNXGn0w3RN+9zIiFG4IBM0qXaz0QmPU7S6G2WA5CQsScsmg]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765446417459-d0612c11-301d-4076-b591-747accb52104.jpeg"/>
+			<description><![CDATA[The End of the Universe – Universe Size – The Last Thing to Happen | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[The End of the Universe – Universe Size – The Last Thing to Happen | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Depression Cycle | Dr Israr Ahmed</title>
+			<itunes:title>Depression Cycle | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 31 Dec 2025 04:00:00 GMT</pubDate>
+			<itunes:duration>3:44</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693a84524f84d8410f43f84c/media.mp3" length="7194875" type="audio/mpeg"/>
+			<guid isPermaLink="false">693a84524f84d8410f43f84c</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/depression-cycle-dr-israr-ahmed</link>
+			<acast:episodeId>693a84524f84d8410f43f84c</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>depression-cycle-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCcKBgoZSy4+A8+QRQadNF5s0wdGgnbVDe8RnKM7kPalLJs+k7NJcstdhEVupgSRNVbCVNWXAQEUfZ//gq2L/PZL9KxmLlSCQvCdBNLzQQhTy4dOPoYfZZhDlhiFKdupup4ZUzqeT73jq0+EytKzRYZk0wl8d0jQpsDypzGcye9VNAWGi0Fp+iPwxMVoNDz3oD+zGJgoJcN6fSGJB2kov0f5]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765442625350-19126f61-576c-4e0e-935d-309c712559d9.jpeg"/>
+			<description><![CDATA[<strong>Depression Cycle | Dr Israr Ahmed</strong><hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[<strong>Depression Cycle | Dr Israr Ahmed</strong><hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>3 Stages of the Prophet (ﷺ) Revolution | Dr Israr Ahmed</title>
+			<itunes:title>3 Stages of the Prophet (ﷺ) Revolution | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 29 Dec 2025 04:00:00 GMT</pubDate>
+			<itunes:duration>4:24</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693a83b4e521382d950f5640/media.mp3" length="10545819" type="audio/mpeg"/>
+			<guid isPermaLink="false">693a83b4e521382d950f5640</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/3-stages-of-the-prophet-revolution-dr-israr-ahmed</link>
+			<acast:episodeId>693a83b4e521382d950f5640</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>3-stages-of-the-prophet-revolution-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCeJKNENK3zjhv3ZBDfPN6GrMtyVmQNlRcdRW7JOVvqQLzepsiCZH7Ztna8R1y9bcMGuSg+770TThIqIVUNp6cAxl42ioUsCWnEVNtUMLWpRzSdCL3cQxdxhNfD54DZfZoGDRcKDJ2ZiZOgXIrBf42bocGGQ7BPm/Ik26+L6Jh+ErmCC7j16NLOGamumXcnJ6teNEOSWwVAFM3Z4SCfY0TxB]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765442474463-04b504b5-7778-4ee1-92c6-57c97595184c.jpeg"/>
+			<description><![CDATA[3 Stages of the Prophet (ﷺ) Revolution | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[3 Stages of the Prophet (ﷺ) Revolution | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title><![CDATA[Arabia Before & After Islam – Society aur Culture | Dr Israr Ahmed]]></title>
+			<itunes:title><![CDATA[Arabia Before & After Islam – Society aur Culture | Dr Israr Ahmed]]></itunes:title>
+			<pubDate>Sat, 27 Dec 2025 04:00:00 GMT</pubDate>
+			<itunes:duration>6:10</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/693a83090e4329eef065ec74/media.mp3" length="14153643" type="audio/mpeg"/>
+			<guid isPermaLink="false">693a83090e4329eef065ec74</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/arabia-before-after-islam-society-aur-culture-dr-israr-ahmed</link>
+			<acast:episodeId>693a83090e4329eef065ec74</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>arabia-before-after-islam-society-aur-culture-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCcnn643gzY1Armsa9tpuPzyo4z/50Bb/5DnbqlPGpUH4qMIGcCVyuH1YWb41iAeuJTzduDsFlpO/RB+eM/esHf92sivFzaO9HyL8VCpIBVPgkseQas3oCLnBYd8Tn/JONHiZdXE8jUY/XTsDz5Y9c1zwY2+gB+g0SyXpAfq+jiDp+Kprf8pSf6GQD09cT72cL3ohEPROGZFcYS+7Z5SzlDd]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765442290372-47b67877-46ba-4f44-b41b-6cc85d1db4e5.jpeg"/>
+			<description><![CDATA[Arabia Before &amp; After Islam – Society aur Culture | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Arabia Before &amp; After Islam – Society aur Culture | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Neki Ka Ghalat Tasawwur – Aurangzeb Alamgir Ka Waqia | Dr Israr Ahmed</title>
+			<itunes:title>Neki Ka Ghalat Tasawwur – Aurangzeb Alamgir Ka Waqia | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 24 Dec 2025 04:00:00 GMT</pubDate>
+			<itunes:duration>7:37</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/6939f87a0e4329eef0496bc1/media.mp3" length="14707501" type="audio/mpeg"/>
+			<guid isPermaLink="false">6939f87a0e4329eef0496bc1</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/neki-ka-ghalat-tasawwur-aurangzeb-alamgir-ka-waqia</link>
+			<acast:episodeId>6939f87a0e4329eef0496bc1</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>neki-ka-ghalat-tasawwur-aurangzeb-alamgir-ka-waqia</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCdR5x2aUU08WlgLD983qc//AmGsTV8DPTKUVDCv21PdqYBB50BPg4qN2IR4rPght1GSzXg40uLYMGxYS3y1BQ3EYGqLDj8noGBGi2o7+4JOJjOQ5iPrc0nn9q0CZJIcipPGFBr/NNeQZcHuhtdO2QSdvLfJmL2kOyGA5iPqRpAcK4uuRAnGwLnLzMbC0azihvS7qBK7y0hKCLggKtOqlXCE]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765406821834-36c7e616-06d0-40f0-b0ec-4c04fecf2ab5.jpeg"/>
+			<description><![CDATA[Neki Ka Ghalat Tasawwur – Aurangzeb Alamgir Ka Waqia | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Neki Ka Ghalat Tasawwur – Aurangzeb Alamgir Ka Waqia | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Ego – Takabbur | Dr Israr Ahmed</title>
+			<itunes:title>Ego – Takabbur | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 22 Dec 2025 04:00:00 GMT</pubDate>
+			<itunes:duration>2:23</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/6939f6d0e521382d95f1b4d1/media.mp3" length="5676316" type="audio/mpeg"/>
+			<guid isPermaLink="false">6939f6d0e521382d95f1b4d1</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/ego-takabbur-dr-israr-ahmed</link>
+			<acast:episodeId>6939f6d0e521382d95f1b4d1</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>ego-takabbur-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCcU/kBbo+gkUD13T07zQtt72lmyvW42N6Vet89obUK8sdz9tbH2l5Cc3dwINgXiBLjNauT4iYYUFtjzedvCZOX+ZNu1ds7oMrucERN41O3EZanmXZ0aBw3YJ5bPoOKbqkhdl3/iCXD2WMc8EdMoDkZpFEBWW5V1OvWBheiwobe83HwUZC3wrU96QYcVY+Jv5UPrSk8LcPFrWhpXC7HgFxwv]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765406404919-05bc4ee8-412c-4176-8ab2-7aafb8c33f57.jpeg"/>
+			<description><![CDATA[Ego – Takabbur | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Ego – Takabbur | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Spying – Jasoosi Na Karo | Dr Israr Ahmed</title>
+			<itunes:title>Spying – Jasoosi Na Karo | Dr Israr Ahmed</itunes:title>
+			<pubDate>Sat, 20 Dec 2025 04:00:00 GMT</pubDate>
+			<itunes:duration>5:18</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/6939f54aa9d003889c1474ee/media.mp3" length="12195804" type="audio/mpeg"/>
+			<guid isPermaLink="false">6939f54aa9d003889c1474ee</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/spying-jasoosi-na-karo-dr-israr-ahmed</link>
+			<acast:episodeId>6939f54aa9d003889c1474ee</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>spying-jasoosi-na-karo-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCfsaPbDQQ9+3tfICk8WQK+v/nLbgKk9RTji7lwofyBnWmfCOrYeu5ddPySw69vypqyZJiJE+6Mmzv/eNd2kNaBHDQqPzfwPh6ZAiDyiLmIuoIRH31jsG3OwPF5YpzWxoMYgdW1WViG84Wc8lvGMA3oNqWpXZ3eHsWmeTInjPT0VEagkHDNPJqNVEbb+ksN6SQTujZINyCn1gm5Zm1sUjJ4N]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765405967622-6e487d00-83cc-4d3a-94a6-8e19499d1c08.jpeg"/>
+			<description><![CDATA[Spying – Jasoosi Na Karo | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Spying – Jasoosi Na Karo | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Zakat Ka Matlab Kya Hai | Dr Israr Ahmed</title>
+			<itunes:title>Zakat Ka Matlab Kya Hai | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 17 Dec 2025 04:00:00 GMT</pubDate>
+			<itunes:duration>8:17</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/6939ee0b0e4329eef04608ad/media.mp3" length="14871153" type="audio/mpeg"/>
+			<guid isPermaLink="false">6939ee0b0e4329eef04608ad</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/zakat-ka-matlab-kya-hai-dr-israr-ahmed</link>
+			<acast:episodeId>6939ee0b0e4329eef04608ad</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>zakat-ka-matlab-kya-hai-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCeOLO8CvjE5QVyv4zPvcDUbirbjPQGquScUccXd0efeuOa678Nsd7PwvLdIg3bNEFXJXPaFA4AP6DiUdH70cW8yD03qK5xNwBbXiM/yOkDQfvY7InmLcGkZ6r1qEYp8udB0GVGfk+M5NZfCGIX8Szi6po0ZXm97TxSYC2FT6KDBU64zS2IOT8WLwiqLGMhLtD5DHx/TFA7Flny54Vp5uvVF]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1765403952389-2e3b1f80-ce9a-41b8-af92-c629edf73114.jpeg"/>
+			<description><![CDATA[<strong>Zakat Ka Matlab Kya Hai | Dr Israr Ahmed</strong><hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[<strong>Zakat Ka Matlab Kya Hai | Dr Israr Ahmed</strong><hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Why Is Allah Testing Me? | Dr Israr Ahmed</title>
+			<itunes:title>Why Is Allah Testing Me? | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 15 Dec 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>5:56</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/68864ba82a38d6f5cb2f8ca4/media.mp3" length="13796858" type="audio/mpeg"/>
+			<guid isPermaLink="false">68864ba82a38d6f5cb2f8ca4</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/why-is-allah-testing-me-dr-israr-ahmed</link>
+			<acast:episodeId>68864ba82a38d6f5cb2f8ca4</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>why-is-allah-testing-me-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCe0QStF3kBqnmPDCeWHuiUQmo37QOf9rk+V0AsU9DLI272MXMeeSDwJw9b6vv/V2hZB8aPcbDX4AMSCE7u+tJ2kmJqzpFSwUe+/BOyoxbFsL62buSmiZmYe/FWKhBpJUZZM7KO8zdez0pvrgQHbXvHKfnsfB+Jw4msVGc7GHEyNUUanXCTexv050En2GmZsETv/zFuBAgVmwHpyMnTBLYTGrK6kT9Sj6P10dD4b7fpTsw==]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754077269304-cfaa847e-88d1-4818-ac56-35c5bd329c90.jpeg"/>
+			<description><![CDATA[Problems in Life - Why Is Allah Testing Me? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Problems in Life - Why Is Allah Testing Me? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Waldain Ke Huqooq | Dr Israr Ahmed</title>
+			<itunes:title>Waldain Ke Huqooq | Dr Israr Ahmed</itunes:title>
+			<pubDate>Fri, 12 Dec 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>9:21</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/6886385970a3f95d45e4a7a9/media.mp3" length="22988481" type="audio/mpeg"/>
+			<guid isPermaLink="false">6886385970a3f95d45e4a7a9</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/parents-waldain-ke-huqooq-dr-israr-ahmed</link>
+			<acast:episodeId>6886385970a3f95d45e4a7a9</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>parents-waldain-ke-huqooq-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCeSIgK90xBRKg7aEX97qf39jQ1irvMW60ObM1crt5GQKiwKledD1EwTTa5hOYnPoxMYUhtrzYvqzG9d3HFKPWACI+Ad5BlBmj7zqcYU7VGHAte4c1OS+D1LghawsEISvYSjxor3aw7E1dByvNDHSEiLM9VyW9xcQ8++dkJcpjCb2GQivkRzGupjaJcLsHkYVzdhjWY+hgzM2NxjCPuy8xzu]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754077286862-77b4174f-ccf1-4d8d-bf3c-889883ff7b15.jpeg"/>
+			<description><![CDATA[Parents – Waldain Ke Huqooq | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Parents – Waldain Ke Huqooq | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Sahaba Ikram Ka Sabr | Dr Israr Ahmed</title>
+			<itunes:title>Sahaba Ikram Ka Sabr | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 10 Dec 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>10:54</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/68864b576e658a8b3c12b118/media.mp3" length="21938046" type="audio/mpeg"/>
+			<guid isPermaLink="false">68864b576e658a8b3c12b118</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/sahaba-ikram-ka-sabr-dr-israr-ahmed</link>
+			<acast:episodeId>68864b576e658a8b3c12b118</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>sahaba-ikram-ka-sabr-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCdncWyGdk8xrLUxbvzSCMb2VeY3SieSe4ajIYsHe+PxihJuIaZK+Kata9T7yHLx8HAR0H1C6zRzd06XEyrqvRXSR0EczAn/OjA2+Rc4IhOuYqSyYLANAyENBI7xRWN1CJ79RJV9GWbyZS3GOcqvjGFWApeer41Kz1gcopCAOunxSzo4AAZnE4v7ZuQz7wYkBblx7xOHReYMd3ruU1HhNzmn]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754076317823-253e7048-40ca-42a8-bef3-1f95f5ff2a84.jpeg"/>
+			<description><![CDATA[Sahaba Ikram Ka Sabr | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Sahaba Ikram Ka Sabr | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Quran Majeed Ki Tarteeb | Dr Israr Ahmed</title>
+			<itunes:title>Quran Majeed Ki Tarteeb | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 08 Dec 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>5:34</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/68864b026ba6bf2e171e8b9d/media.mp3" length="9848750" type="audio/mpeg"/>
+			<guid isPermaLink="false">68864b026ba6bf2e171e8b9d</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/quran-majeed-ki-tarteeb-dr-israr-ahmed</link>
+			<acast:episodeId>68864b026ba6bf2e171e8b9d</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>quran-majeed-ki-tarteeb-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCd7xg1UxASBQp21onRx94VLwzPdNW9a4hkMc+i5su00wByNYa/7PYTw3iI/F3QrrFMuKYS17e/btA+A74Cj5mi1pH1Mp6N0jPPtqVkokzZJQilIQf/iDulF+Y+8wSLc1w0Ipq8k7hdmyCPKXSuww8VQ1rvD7kQzR/h8ofBUSjiVhFUrOmkyQtyiCXaGbFgBDXck0kYQoNl6YTlYQvzDYpDY]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754075943701-4a5a642c-7e3d-44bb-bfde-612ad2e2328e.jpeg"/>
+			<description><![CDATA[Jama-e-Quran Aur Iski Tadween - Quran Majeed Ki Tarteeb | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Jama-e-Quran Aur Iski Tadween - Quran Majeed Ki Tarteeb | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Why Toba Is Important | Dr Israr Ahmed</title>
+			<itunes:title>Why Toba Is Important | Dr Israr Ahmed</itunes:title>
+			<pubDate>Fri, 05 Dec 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>7:31</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/6886203f6ba6bf2e1714652f/media.mp3" length="17197949" type="audio/mpeg"/>
+			<guid isPermaLink="false">6886203f6ba6bf2e1714652f</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/why-toba-is-important-dr-israr-ahmed</link>
+			<acast:episodeId>6886203f6ba6bf2e1714652f</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>why-toba-is-important-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCcIyh6E14JkEghTrsl8xs+nY/Dtzilz0fj60u6JnqVRbaDfah1xlL9VjUGnrRvkt9jf3qi8XN7953R1YrMbluosBTay4lsPS6vbTpA9bsg5l89M2x7X46MMj1iHpZM/ltyOamRG9MW0YuPP9gK+5BaSy416EFFYpcoVWFje4IAjniiyoBSnKP2Aa+0mo9JqUWn7v17TPrUs8AO6UYcnjR6a]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754075592743-d4b6063f-ea8e-4c50-81c1-399ec576b8c2.jpeg"/>
+			<description><![CDATA[Why Toba Is Important | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Why Toba Is Important | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Prediction About Masjid Al-Aqsa Aur Jerusalem | Dr Israr Ahmed</title>
+			<itunes:title>Prediction About Masjid Al-Aqsa Aur Jerusalem | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 03 Dec 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>9:37</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/68864a182a38d6f5cb2ec103/media.mp3" length="23761960" type="audio/mpeg"/>
+			<guid isPermaLink="false">68864a182a38d6f5cb2ec103</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/prediction-about-masjid-al-aqsa-aur-jerusalem-dr-israr-ahmed</link>
+			<acast:episodeId>68864a182a38d6f5cb2ec103</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>prediction-about-masjid-al-aqsa-aur-jerusalem-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCdiM2jhanxUOGYqERBNBCWe1vMBQiuJSXR/bpgLU/IiPHdeSuDFkouME8C7qsNu3/eKi4sHM0PtutL4x1SQi6IJm05hO17GGQzSwRELwSbRqaZJdUoRn5wGItRncBrQI04ouXslU1goDFLPvhdCwSthDaRsQ2w2Z14D4BbF0IOQCaRkm//+8Ryek5jTPbzCEViOov2ETWmBL15OX2AE3nzx]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754075121058-2ac5ef4c-0bdd-4543-a8f6-1ee63ffd232c.jpeg"/>
+			<description><![CDATA[Prediction About Masjid Al-Aqsa Aur Jerusalem | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Prediction About Masjid Al-Aqsa Aur Jerusalem | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Daswan, Chaleeswan, Barsi Aur Qur’an Khwani Karna Kaisa Hai? | Dr Israr Ahmed</title>
+			<itunes:title>Daswan, Chaleeswan, Barsi Aur Qur’an Khwani Karna Kaisa Hai? | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 01 Dec 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>3:31</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688649bf6ba6bf2e171e3aad/media.mp3" length="7993137" type="audio/mpeg"/>
+			<guid isPermaLink="false">688649bf6ba6bf2e171e3aad</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/daswan-chaleeswan-barsi-aur-quran-khwani-karna-kaisa-hai</link>
+			<acast:episodeId>688649bf6ba6bf2e171e3aad</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>daswan-chaleeswan-barsi-aur-quran-khwani-karna-kaisa-hai</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCf5ELdi+wp/okCvcymY9olGSNHZZItpRLFE4bbNpmwIbQyOtuQtcUEzLegHsbOkDGuy7Cb61rSnvXaCxgBufEo76IvMpSNEWiTjI9cuoBuHws9FGh4pljB/oAkxdypGoHGhcxjg4Xb9+OnUZcR7GCLQyTtUeRClBgmkE0mYimOtUpRpA0kgZJUip4pp63m9ETIhT5vUNP+Mj49siODYYJRU]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754074575356-3c62f789-5581-42f9-97b7-a18f48f56d1e.jpeg"/>
+			<description><![CDATA[Daswan, Chaleeswan, Barsi Aur Qur’an Khwani Karna Kaisa Hai? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Daswan, Chaleeswan, Barsi Aur Qur’an Khwani Karna Kaisa Hai? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>The Most Important Need of Humans | Dr Israr Ahmed</title>
+			<itunes:title>The Most Important Need of Humans | Dr Israr Ahmed</itunes:title>
+			<pubDate>Fri, 28 Nov 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>11:25</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/6886497de0a86cc3ab8e205b/media.mp3" length="21425714" type="audio/mpeg"/>
+			<guid isPermaLink="false">6886497de0a86cc3ab8e205b</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/the-most-important-need-of-humans-dr-israr-ahmed</link>
+			<acast:episodeId>6886497de0a86cc3ab8e205b</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>the-most-important-need-of-humans-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCe/sfHpmSVkpcBidRwrTOvqZjvFnV7FqgvWB/OoTP5qQMGIbTPGancDyeU9dOSrMkRmuInDQoEmExzUXfyxCzFcWGuYvEiNQ8g6hxTua9W7U1klmgyYptQwI7ytalwURKskXnKlO1HXl7V0ascK7+XnQQKlL/zBUflVH8mRlQ8+83uVWuFIWM7rxPii6Pkv15A9PUdejSuVHm0NDPeXMHNL]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754072343440-957317a0-7f5b-4fd9-a4cc-84afb1c8e1c4.jpeg"/>
+			<description><![CDATA[Social Justice - The Most Important Need of Humans | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Social Justice - The Most Important Need of Humans | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Qayamat Ka Manzar | Dr Israr Ahmed</title>
+			<itunes:title>Qayamat Ka Manzar | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 26 Nov 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>10:10</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688622406ba6bf2e1714e5fd/media.mp3" length="20157373" type="audio/mpeg"/>
+			<guid isPermaLink="false">688622406ba6bf2e1714e5fd</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/qayamat-ka-manzar-dr-israr-ahmed</link>
+			<acast:episodeId>688622406ba6bf2e1714e5fd</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>qayamat-ka-manzar-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCcvCREYmFyrt1YjLMVhozBat9h4loS/3hKlzOeGVetTzSN9gWBGIB0mR98faSCyMUlCpUQ8vWQL/E9wvxGSPvSo2tY8r8+ppjNA8TA/fQRK/CfKTEdzbz+b/yljys2ui25wQw3RM5xq5LnjfrcNEn1KE5lwl3JGxrHWupAV5av4Fdz7Mm/cFSQf72gUwiGvEsplIyU6EXftK9LA7/2C7k/z]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754072117217-bf4caf5f-5c8f-4821-ad96-b9a696d6d0e3.jpeg"/>
+			<description><![CDATA[Qayamat Ka Manzar | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Qayamat Ka Manzar | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Asal Sabr Kya Hai? - Types of Sabr | Dr Israr Ahmed</title>
+			<itunes:title>Asal Sabr Kya Hai? - Types of Sabr | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 24 Nov 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>7:22</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/6886270870a3f95d45e1724d/media.mp3" length="16341876" type="audio/mpeg"/>
+			<guid isPermaLink="false">6886270870a3f95d45e1724d</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/asal-sabr-kya-hai-types-of-sabr-dr-israr-ahmed</link>
+			<acast:episodeId>6886270870a3f95d45e1724d</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>asal-sabr-kya-hai-types-of-sabr-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCdxXAOGMUfbGXijxOm2aRX66b28gPylehj/f36pdo67PqxLRHIPwP5Dl7xx6yPyfIKyve/X6vOGkVCOiww4O1X5lZhJxcXaSVCVCQ69VcBRHyHbvCIyHeqn/wQRgA/tr5xKMdZRTj5afvRDiI+mHsbXPuyAwGAQWWmKQ2slcz3T+Xr+AIWeIqdUHoIv9f0JAwJ4EAwjul+UoN1jCrBSGyIp]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754071748010-2c16a8dd-8610-4648-9466-c9c86577a592.jpeg"/>
+			<description><![CDATA[What Is Real Patience - Asal Sabr Kya Hai? | Types of Sabr - Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[What Is Real Patience - Asal Sabr Kya Hai? | Types of Sabr - Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Real Imaan Kya Hai? | Dr Israr Ahmed</title>
+			<itunes:title>Real Imaan Kya Hai? | Dr Israr Ahmed</itunes:title>
+			<pubDate>Fri, 21 Nov 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>10:26</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/6886396370a3f95d45e4e505/media.mp3" length="21426025" type="audio/mpeg"/>
+			<guid isPermaLink="false">6886396370a3f95d45e4e505</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/what-is-real-imaan-dr-israr-ahmed</link>
+			<acast:episodeId>6886396370a3f95d45e4e505</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>what-is-real-imaan-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCf77Cr2t/gWBN1UcHUIctQxbi5a51scCcSUcHVUoR1cYPuUsjWGJhV0GZ4R6PIyeQodrFLFDplnbwvxrPXe0g4qUW0CjuHrev414HJDfax+gFK9h+BG64/YSYLTA4p+/uv8tfmW2MB8wETtvdkZczaLpRY5JMYXnsmiO+vUcEbddYCR8xc0meCOVC6N+PuZqh3qk9G5c28ZgQX1Mq2Styqp]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754055557828-f9eb02fe-021c-4d82-a94f-04976171a278.jpeg"/>
+			<description><![CDATA[What Is Real Imaan? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[What Is Real Imaan? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Struggle - Never Give Up | Dr Israr Ahmed</title>
+			<itunes:title>Struggle - Never Give Up | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 19 Nov 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>11:18</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688624c270a3f95d45e07f73/media.mp3" length="23990860" type="audio/mpeg"/>
+			<guid isPermaLink="false">688624c270a3f95d45e07f73</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/struggle-never-give-up-dr-israr-ahmed</link>
+			<acast:episodeId>688624c270a3f95d45e07f73</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>struggle-never-give-up-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCe/X+un6f12r8KGxlQlW8o25WOrLtzy1K/cHKRRFsvSV8OCKdoFT+UB0jcKMwKLVR02O7E0U8YMjRMCXerg9+ZR70fqt0tKQZMZl8Qo9rT63FJqV/WNgRhfaLzWzIt7855TyITV3GgSMJQJqHSxjsqUvLboglQC5TTGxWU7o+l/aNaqz0IoeIKp6cMYaL04f4Zn0PWIjsBVd9FadCe4B9+n]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754055244431-23daec95-3e0f-48c6-a5b8-42c1b78089a0.jpeg"/>
+			<description><![CDATA[Listen This Every Day and Change Your Life - Struggle | Never Give Up - Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Listen This Every Day and Change Your Life - Struggle | Never Give Up - Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Munafiq Ki Nishaniyan | Dr Israr Ahmed</title>
+			<itunes:title>Munafiq Ki Nishaniyan | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 17 Nov 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>6:17</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688637012a38d6f5cb2aecd3/media.mp3" length="12808788" type="audio/mpeg"/>
+			<guid isPermaLink="false">688637012a38d6f5cb2aecd3</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/munafiq-ki-nishaniyan-dr-israr-ahmed</link>
+			<acast:episodeId>688637012a38d6f5cb2aecd3</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>munafiq-ki-nishaniyan-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCfF4GLUCR/iKN21IcU8UPjaVW1OQOW/R0UkLoW1hYGBfevXAJh0wmN43JXyZGJJBUC2S1OxpIj+dUZSt2gZ16DrfzrY5rPsIkcgjEexAWTc2IUqWTD24D7lOzRYj7YzWZnFbcWIZN27pABQlkpqjIjh5/UDhG/rC5ZmH0LlPhFPLVkmgWszOncDYHOjj0Uul9Owx2PI8BbBhCq7jNrDpLSW]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754043737741-9142ac72-24b2-4a6b-bc21-81e5efd9c301.jpeg"/>
+			<description><![CDATA[Kya Munafiq Ka Koi Amal Qabool Hoga? - Munafiq Ki Nishaniyan | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Kya Munafiq Ka Koi Amal Qabool Hoga? - Munafiq Ki Nishaniyan | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Tauba Karne Ka Sahi Tarika | Dr Israr Ahmed</title>
+			<itunes:title>Tauba Karne Ka Sahi Tarika | Dr Israr Ahmed</itunes:title>
+			<pubDate>Fri, 14 Nov 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>26:56</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688638252a38d6f5cb2b2ce7/media.mp3" length="62965399" type="audio/mpeg"/>
+			<guid isPermaLink="false">688638252a38d6f5cb2b2ce7</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/tauba-karne-ka-sahi-tarika-dr-israr-ahmed</link>
+			<acast:episodeId>688638252a38d6f5cb2b2ce7</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>tauba-karne-ka-sahi-tarika-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCfqPiwdUsInwF4dp1PChCInlVwNnNxxPyYAD/Niy2M86pdNT5hilHGXujIAijekkbAHG17rowW2kDsWQ7/OuUQYxkKvEKs5KpzRqmDkechOtVeqtkagVy4jwu6AjmXH3pyQDLzCdg2znFx/PXHWPAolsyMKiUHad2uH0aD9PT3DTCSA8X5mGO+O+OY/qorm+4wFBueQI6KI60guxXdredm1Imkf/fJzaRmArIr+eBNyeA==]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754043168824-22ab7c1f-7a00-4523-9623-cfceeb3d45f6.jpeg"/>
+			<description><![CDATA[This Clip Will Change Your Life - Allah Loves You | Tauba Karne Ka Sahi Tarika - Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[This Clip Will Change Your Life - Allah Loves You | Tauba Karne Ka Sahi Tarika - Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>End Of Time | Dr Israr Ahmed</title>
+			<itunes:title>End Of Time | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 12 Nov 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>12:10</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688637b370a3f95d45e48af7/media.mp3" length="22044366" type="audio/mpeg"/>
+			<guid isPermaLink="false">688637b370a3f95d45e48af7</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/predictions-aur-qayamat-ki-nishaniyan-dr-israr-ahmed</link>
+			<acast:episodeId>688637b370a3f95d45e48af7</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>predictions-aur-qayamat-ki-nishaniyan-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCe9tKRqey1E6xj29CJSoyoNiyOnA+7n+5VsDJUZrrPp6Pi9xAdWxSPo/W8O1F54hTJQuzyCHOQMTBRE40OX5/ypGTbFZeUTKwVj6Oy9tKCIJrXH91HSZL2CQprZGY/MnI8pKbOevvYESWanIcFhnGu/zC6sJhPgJMikWwPAgti8dyknZgcAPdKnR0iZ+qPtBMF9StbXBhb2qOYQzFJnupqG]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754042981877-2f676802-046f-40bc-86ee-6c3197071062.jpeg"/>
+			<description><![CDATA[Secrets About End of Time &amp; Predictions - Qayamat Ki Nishaniyan | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Secrets About End of Time &amp; Predictions - Qayamat Ki Nishaniyan | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Taqdeer | Allah Par Yaqeen | Dr Israr Ahmed</title>
+			<itunes:title>Taqdeer | Allah Par Yaqeen | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 10 Nov 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>20:43</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688637346ba6bf2e171a53f8/media.mp3" length="35980480" type="audio/mpeg"/>
+			<guid isPermaLink="false">688637346ba6bf2e171a53f8</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/taqdeer-allah-par-yaqeen-dr-israr-ahmed</link>
+			<acast:episodeId>688637346ba6bf2e171a53f8</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>taqdeer-allah-par-yaqeen-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCfn8JMW++C/QoFjJ/qSM8GR3M2xEeiaaOX37Lpkcvb8+5KFXiCiO4d0mUoSTbaUOj7sKDvjG3qpX1/BUW0vjsfd6bQVjcDDMQ6j2TuVeUUl53x0Q452jH/1UBZ7NGvXzvcgmtfkG9StRjISqTb6vFzfr4UA0E986n7OPtrktW1mnIT+/znVSutmAAdtGxd0x+Ec9XKsiLE+sUvuQ1if/1B15xQa4NJeoRGmgSnOiqWnsw==]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754042708630-fd791d7b-f7c6-4dda-9607-c05afbef5d01.jpeg"/>
+			<description><![CDATA[Taqdeer | Allah Par Yaqeen | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Taqdeer | Allah Par Yaqeen | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Difference Between Iman and Nifaq | Dr Israr Ahmed</title>
+			<itunes:title>Difference Between Iman and Nifaq | Dr Israr Ahmed</itunes:title>
+			<pubDate>Fri, 07 Nov 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>8:08</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/6886251f2a38d6f5cb274147/media.mp3" length="15684455" type="audio/mpeg"/>
+			<guid isPermaLink="false">6886251f2a38d6f5cb274147</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/difference-between-iman-and-nifaq-dr-israr-ahmed</link>
+			<acast:episodeId>6886251f2a38d6f5cb274147</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>difference-between-iman-and-nifaq-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCd65gSiOH6t3qVKPTg+cE1h3K685vK0Q9B9zz+Q09VxhJ5VDU/KnNDY1eczWIIHG96IsuAVJ/xzPukFtGMuUvi2NUzLL35m5xyZBy7ixkYoV2VtytDDCuW3m3xnM8Hzm5XY77fIjW6hvMWxn6BPgxgqN10rnNDA+E8TvN61p+KnC2rhpKNI2P4kY6wb5xvmSdQbgJCa2OlKU023+XeRarq1]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754042537006-423f182d-e00b-49ad-99a3-d66d71b83557.jpeg"/>
+			<description><![CDATA[Difference Between Iman and Nifaq | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Difference Between Iman and Nifaq | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Hazrat Zulqarnain Aur Yajuj Majuj Ka Qissa | Dr Israr Ahmed</title>
+			<itunes:title>Hazrat Zulqarnain Aur Yajuj Majuj Ka Qissa | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 05 Nov 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>12:24</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688636abe0a86cc3ab8a5c27/media.mp3" length="28660549" type="audio/mpeg"/>
+			<guid isPermaLink="false">688636abe0a86cc3ab8a5c27</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/hazrat-zulqarnain-aur-yajuj-majuj-ka-qissa-dr-israr-ahmed</link>
+			<acast:episodeId>688636abe0a86cc3ab8a5c27</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>hazrat-zulqarnain-aur-yajuj-majuj-ka-qissa-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCfMEvUegcNnKtN79LG7j5pC2Lfz+dv3/2/zUEKqzreXV75wTJIqeYnNxqwcrlR3dqkFmUXX6NJ9cxleI446uZxmeS1LnZH5B7EYAGTEDNoGaKfsg4m9/CE+DrNXSQqd8OA8wUlpt94TRhuX/ykvP1Bls7Jumy8qC7cNl9g5SQX0oDnLLM61kIkaA3tpZiQVSKANqX2pxuOaQPF8cr0XLKaE]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754042326061-ff40ef37-4e19-4ddd-83b7-df5dcf85272f.jpeg"/>
+			<description><![CDATA[Yajuj Majuj Ka Khatma Kaise Hoga? | Hazrat Zulqarnain Aur Yajuj Majuj Ka Qissa | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Yajuj Majuj Ka Khatma Kaise Hoga? | Hazrat Zulqarnain Aur Yajuj Majuj Ka Qissa | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Surah Ar-Rahman Mein 4 Ajeeb Haqaiq | Dr Israr Ahmed</title>
+			<itunes:title>Surah Ar-Rahman Mein 4 Ajeeb Haqaiq | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 03 Nov 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>7:46</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688636696ba6bf2e171a2de9/media.mp3" length="13893747" type="audio/mpeg"/>
+			<guid isPermaLink="false">688636696ba6bf2e171a2de9</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/surah-ar-rahman-mein-4-ajeeb-haqaiq-4-dr-israr-ahmed</link>
+			<acast:episodeId>688636696ba6bf2e171a2de9</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>surah-ar-rahman-mein-4-ajeeb-haqaiq-4-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCe1BBjvPMwtPWz5GZZ62jKDiSqv2WfqUIrcLxVegD/967FA6fJKq6AIG94MC4gxZK3r/ftqWfUnRyX4xo1YXogV5eUEvKQ/sQx5BUulOWLW5U+745KJHIfwbznBKiOmIskdDWxCIMliJXcq6+Ei1bJxTXP4v/slJocmwsIKoRX41Xl8EhMgSK0YjGaHMMfx472ZjlITYFmeGvcvUlVRZcgZ]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754041511886-a4fd34f2-ab52-45b5-878f-20dcec7bd66b.jpeg"/>
+			<description><![CDATA[Surah Ar-Rahman Mein 4 Ajeeb Haqaiq - سورۃ الرحمٰن میں 4 عجیب حقائق | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Surah Ar-Rahman Mein 4 Ajeeb Haqaiq - سورۃ الرحمٰن میں 4 عجیب حقائق | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Don’t Lose Hope – Allah Knows Your Heart | Dr Israr Ahmed</title>
+			<itunes:title>Don’t Lose Hope – Allah Knows Your Heart | Dr Israr Ahmed</itunes:title>
+			<pubDate>Fri, 31 Oct 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>3:26</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/6886323b2a38d6f5cb29a500/media.mp3" length="6882277" type="audio/mpeg"/>
+			<guid isPermaLink="false">6886323b2a38d6f5cb29a500</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/dont-lose-hope-allah-knows-your-heart-dr-israr-ahmed</link>
+			<acast:episodeId>6886323b2a38d6f5cb29a500</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>dont-lose-hope-allah-knows-your-heart-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCc359LvdeEy8Ys2kcagboqN8vRV13hcYAUkfEUGZezZat7Sqdi9v03nx0PHaHzo1xPNKjUd3exgrNgw/LPwyBsM13+rxz64OlHglA9xedywtkDFsYUCNOI6QBsdVSiowV9l5y2lTmWMkdXhK+XPUhOs29F2l7VZLc+5Bu4ESXQOUcCaUPff5izEZQzwIgKy3h1zifkmwMOT2JHCPYDq2eAE]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1754041235854-3aae1d20-99f4-4b43-94a0-c8b1f83dd812.jpeg"/>
+			<description><![CDATA[Don’t Lose Hope – Allah Knows Your Heart | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Don’t Lose Hope – Allah Knows Your Heart | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Self-Control in Islam | Dr Israr Ahmed</title>
+			<itunes:title>Self-Control in Islam | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 29 Oct 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>3:01</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688632096e658a8b3c0d5830/media.mp3" length="6659109" type="audio/mpeg"/>
+			<guid isPermaLink="false">688632096e658a8b3c0d5830</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/self-control-in-islam-dr-israr-ahmed</link>
+			<acast:episodeId>688632096e658a8b3c0d5830</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>self-control-in-islam-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCdjvOYTCVsdfxOWLxT01Mz5A5sXHYGoal9XPvi0+8XePi93e0sox3krm6Q1p+rJ2H+NnDf0ow5kegWbUb37PRV3E7+v4uk2fVbc/QVoX0uUJs9EWit7SVp0iHZLbw24MVZBtC1cBFsrwebAn475swZ2GJXifTjevoYDoI+XPpNon5MpLsUb+49cbN01lcloyqhbhJVupdxfvcYVVnvl0vaN]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753973276304-68471bde-f30f-4967-89fe-7a06e614191b.jpeg"/>
+			<description><![CDATA[Self-Control in Islam | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Self-Control in Islam | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Respect Women - Aurat Ke Liye Parda | Dr Israr Ahmed</title>
+			<itunes:title>Respect Women - Aurat Ke Liye Parda | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 27 Oct 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>1:56</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688631ad2a38d6f5cb29909e/media.mp3" length="4311719" type="audio/mpeg"/>
+			<guid isPermaLink="false">688631ad2a38d6f5cb29909e</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/respect-women-aurat-ke-liye-parda-dr-israr-ahmed</link>
+			<acast:episodeId>688631ad2a38d6f5cb29909e</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>respect-women-aurat-ke-liye-parda-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCfFQK8V4fCRw+HIicVJIcPH/77oR0Sw7wcheeLXS6yNy7C94ao1bPlkf6DSa/mX+GxZd3sr2qEQx6gEH3+AOknwVl+xB+b95c7gur9QrDEGe283wR4RfRkOXO2E0xvqcfLZOFOU54r2ODiO1+BgCxeB0QcoU1z4PmphBnNaDspPT5RklfebqtBmTuINb6J9KklCjIqR4AJTYFPs3sOr1iOX]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753972949722-43b560bb-a0c4-43c9-bd3f-dcf0577bafbc.jpeg"/>
+			<description><![CDATA[Respect Women - Aurat Ke Liye Parda | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Respect Women - Aurat Ke Liye Parda | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Allah Ke Apne Banday Se Shikayat | Dr Israr Ahmed</title>
+			<itunes:title>Allah Ke Apne Banday Se Shikayat | Dr Israr Ahmed</itunes:title>
+			<pubDate>Fri, 24 Oct 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>3:25</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/6886315f70a3f95d45e368f7/media.mp3" length="7269843" type="audio/mpeg"/>
+			<guid isPermaLink="false">6886315f70a3f95d45e368f7</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/allah-ke-apne-banday-se-shikayat-dr-israr-ahmed</link>
+			<acast:episodeId>6886315f70a3f95d45e368f7</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>allah-ke-apne-banday-se-shikayat-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCd1ovKG8P+PezFJ25FEk2NrZnVCfevHoUnBi8th/+pm2Ow7NScfxtGUJQZFmA2acuKODRd3TR9XsGKj6jxlosOhsZEb1D9+C5Wji59CdQyvUVE2rdaljAnQZHNohFVq5jcNji36/H1soH11fsMl5RsFXZq9n7g0KGNLyVrdz7X7zWhD8lPwoZqx+hlk8dHi1vOSfoc4aTsHBsaWSMisaeS4]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753972726682-a55941c6-26ba-4985-9eab-0ff804efff69.jpeg"/>
+			<description><![CDATA[Allah Ki Apne Banday Se Shikayat | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Allah Ki Apne Banday Se Shikayat | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Reality of Today’s Ulama | Dr Israr Ahmed</title>
+			<itunes:title>Reality of Today’s Ulama | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 22 Oct 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>3:07</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688630dae0a86cc3ab893ec6/media.mp3" length="6042796" type="audio/mpeg"/>
+			<guid isPermaLink="false">688630dae0a86cc3ab893ec6</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/reality-of-todays-ulama-dr-israr-ahmed</link>
+			<acast:episodeId>688630dae0a86cc3ab893ec6</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>reality-of-todays-ulama-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCdfPO1Uaprco7xRL7W45TphUQ1PmgLtGE3Wl5d4cHnV0jS8WBHjw8pOX0o0QneatC1KcrwHHqxP9GpRKckM9kxtuvxc9scIBxWuLNUIjZssDbqUWgVRdEytqDXO3WS9CmA/HYMYSTYqfxvo9wAYiq56Kl58/pR4u7Dnc0jEhwZ3R2pGI+nXEISeXasfRfqOhhf8WjBSc3uvVry2quFzCeJ+]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753972337518-70cd1baf-836b-4b9f-8a5a-7d25bde5916e.jpeg"/>
+			<description><![CDATA[Reality of Today’s Ulama | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Reality of Today’s Ulama | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>The Promise of Allah | Dr Israr Ahmed</title>
+			<itunes:title>The Promise of Allah | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 20 Oct 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>3:49</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688630b46e658a8b3c0d1223/media.mp3" length="6938594" type="audio/mpeg"/>
+			<guid isPermaLink="false">688630b46e658a8b3c0d1223</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/the-promise-of-allah-dr-israr-ahmed</link>
+			<acast:episodeId>688630b46e658a8b3c0d1223</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>the-promise-of-allah-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCdIBsvsckWSD0n5ZFcu+5RqWiqB+jiokJjBXCqzajSd1hmir09BsZXptQRA+DdVpOAXJqV3+QwA8O59x6ub9qypBcpOfmJLQJLkGKcgbB5KqsHr+vVezhudOw5baeV5hVwL+wAi+dhSHwT2s19IDvJmse72tIDCAGwRBu/FhjGuJfbvXpDQd/dRIwHbjMrpvD3gZeqH5c8O3f0tLRk7U9lf]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753971958977-2dbc99a1-6057-4565-9299-62578a99aae2.jpeg"/>
+			<description><![CDATA[Promise of Allah – The Way to Success | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Promise of Allah – The Way to Success | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Real Success in the World | Dr Israr Ahmed</title>
+			<itunes:title>Real Success in the World | Dr Israr Ahmed</itunes:title>
+			<pubDate>Fri, 17 Oct 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>9:11</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/6886302c6ba6bf2e171828cf/media.mp3" length="18182486" type="audio/mpeg"/>
+			<guid isPermaLink="false">6886302c6ba6bf2e171828cf</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/real-success-in-the-world-dr-israr-ahmed</link>
+			<acast:episodeId>6886302c6ba6bf2e171828cf</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>real-success-in-the-world-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCe48qAD0MnkvEotpHr7MYqbsG9HTM2v4Oa9iqO06e9aumsvjMjQOxKz1UiVaRW2OXnNb36vZjB8FH0RHpRsVyHLEfcoOi0pjxnVTu2MwPKHD+GFmZZ0F6ZbW/K8F04Qz0K5lNuJAw1PUU3BeqPPRwSrkIUbKhy3vLTpP/bMF+2vTvPq2XnYk0C213l29Jy0/KopPl9nL9w3vwTZVrmoPWni]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753971629784-486ce80e-4265-494f-9d48-7fdf309447f2.jpeg"/>
+			<description><![CDATA[Real Success in the World | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Real Success in the World | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Hazrat Musa (AS) Aur Koh-e-Toor Ka Waqia | Dr Israr Ahmed</title>
+			<itunes:title>Hazrat Musa (AS) Aur Koh-e-Toor Ka Waqia | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 15 Oct 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>4:46</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/68862fda6ba6bf2e17181e83/media.mp3" length="8949832" type="audio/mpeg"/>
+			<guid isPermaLink="false">68862fda6ba6bf2e17181e83</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/hazrat-musa-as-aur-koh-e-toor-ka-waqia-dr-israr-ahmed</link>
+			<acast:episodeId>68862fda6ba6bf2e17181e83</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>hazrat-musa-as-aur-koh-e-toor-ka-waqia-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCc4HE9IIWZ3dThg+TdUyuiG1T9JPmswbrKezVry7XKLM+N01XRH9MX0rhv8HdvFoYO5T5dMLBS6ZTXb8e6Q7xlWct9z5Qt/hngGZ0DPOZ6yDm7cihtD2gTsjiaDYX2OGJidaZmasLgkvb4706T6OWOf+TIty24ik4NA0FpZF+cdn38lMjyeiMCeUWjIcLWakuO1yFIW4QcD9w9n8ejNmU3g]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753971150943-c7c87543-71bb-499e-a9fd-662af12b948f.jpeg"/>
+			<description><![CDATA[Hazrat Musa (AS) Aur Koh-e-Toor Ka Waqia | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Hazrat Musa (AS) Aur Koh-e-Toor Ka Waqia | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Dawah for Intelligent Minds | Dr Israr Ahmed</title>
+			<itunes:title>Dawah for Intelligent Minds | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 13 Oct 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>5:22</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/68862e3f2a38d6f5cb290e9c/media.mp3" length="5286892" type="audio/mpeg"/>
+			<guid isPermaLink="false">68862e3f2a38d6f5cb290e9c</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/dawah-for-intelligent-minds-dr-israr-ahmed</link>
+			<acast:episodeId>68862e3f2a38d6f5cb290e9c</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>dawah-for-intelligent-minds-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCeiIy7ZSFQ9boovjw3+E3eufsmqSr7Lnd60vmtzrheB7sNyThlaT4J+VaBApg2fGacs0apJPKUGAoFGXlZXEiu22XOrHGk/hgHwTk+erxrs7ApmytiVrTDDBnpDhoY1+wseWWsS7xcN1nGwJGdD/g+vTIOMCY8T7YjyMN4QDWZPBrgPtbWphX0xQP1pddl3woNxWYV33sPEvHVz35mXHeeN]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753776504661-c5849904-6cf5-4c0a-84c8-a472c5b00d44.jpeg"/>
+			<description><![CDATA[Way Of Dawah for Intelligent Minds | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Way Of Dawah for Intelligent Minds | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Taqdeer – Qismat Kya Hai? | Dr Israr Ahmed</title>
+			<itunes:title>Taqdeer – Qismat Kya Hai? | Dr Israr Ahmed</itunes:title>
+			<pubDate>Fri, 10 Oct 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>12:20</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/68862e00e0a86cc3ab88d016/media.mp3" length="21560190" type="audio/mpeg"/>
+			<guid isPermaLink="false">68862e00e0a86cc3ab88d016</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/taqdeer-qismat-kya-hai-dr-israr-ahmed</link>
+			<acast:episodeId>68862e00e0a86cc3ab88d016</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>taqdeer-qismat-kya-hai-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCcTN+Cwb5GgFwOdhdfa+S7tvbtF66/6eaPR/3WOCMvagXKv2xDxDb9reDotoNCLV22qxYIgheC+X6y5XfG/fMpzg3/gmAu1PH/Bb/Odp+cuerOiFr1l08ctapuuOsMZtx7vrv8hCGDPN7rlYUQzSWTT6tK/oBk4/VgRMFqd1Zj0b20o11/6DsO5EoUoUo5cCZAcCG8qkYWRtJyvDLGpGRIQ]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753775818471-3283eeba-0c82-464a-81f5-dc87aec93065.jpeg"/>
+			<description><![CDATA[Taqdeer – Qismat Kya Hai? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Taqdeer – Qismat Kya Hai? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Why Did Allah Create You? | Dr Israr Ahmed</title>
+			<itunes:title>Why Did Allah Create You? | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 08 Oct 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>5:59</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/68862dc36ba6bf2e1717c826/media.mp3" length="10694682" type="audio/mpeg"/>
+			<guid isPermaLink="false">68862dc36ba6bf2e1717c826</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/why-did-allah-create-you-dr-israr-ahmed</link>
+			<acast:episodeId>68862dc36ba6bf2e1717c826</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>why-did-allah-create-you-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCf7cKPYFJgRzQD6cA7Ye9IBKYuQMn0EW4lr1D0zPyfQ6FiHjCEYByXjb7SM2cq74dmP2qNPCaunD8wOzq2zZh/4nBqakoid9izMvXk8qYOBW8ffogWIb2Wthf/jEttqbTXh6WPbAoaNZqnVtA55ziNkpOM1AXVvophn/++683EP1Iktddw+GYHfA7e0Aj9XdGzgsIL+9kGFYUNJQ2oBH4YA]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753774962294-18e99dde-019a-4aa8-bf68-a04aea4ca280.jpeg"/>
+			<description><![CDATA[Creation of Humans – Why Did Allah Create You? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Creation of Humans – Why Did Allah Create You? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Who Is Allah? Who Is Ar-Rahman? | Dr Israr Ahmed</title>
+			<itunes:title>Who Is Allah? Who Is Ar-Rahman? | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 06 Oct 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>4:36</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/68862a4b2a38d6f5cb286068/media.mp3" length="8553416" type="audio/mpeg"/>
+			<guid isPermaLink="false">68862a4b2a38d6f5cb286068</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/who-is-allah-who-is-ar-rahman-dr-israr-ahmed</link>
+			<acast:episodeId>68862a4b2a38d6f5cb286068</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>who-is-allah-who-is-ar-rahman-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCcFAe0fnxBJy/1ju4Qxy1fh8gO4DvlGA40yms2g0/hOkcrfHIopjTygHFqGwwOPKFIai4SuTvs86Lx3UYCyl6ZsN5+RCLsbnUhsoXrvN+0o0jiYFqzWftPkn9ZAE50+ZlwgKI5WRn8O0spGGLALTj7M6k5ytJFtyv7Jp1Hkqk0AKTfi56I8aQ3Fc/LIkPLHW1bU1dcYpiEoWdS64FTtwEeP]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753774548794-a31078ca-923d-4920-b7e0-3e1193c2be76.jpeg"/>
+			<description><![CDATA[Who Is Allah? Who Is Ar-Rahman? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Who Is Allah? Who Is Ar-Rahman? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Must Listen - Most Important Hadith in Islam | Dr Israr Ahmed</title>
+			<itunes:title>Must Listen - Most Important Hadith in Islam | Dr Israr Ahmed</itunes:title>
+			<pubDate>Fri, 03 Oct 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>7:43</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/68862a032a38d6f5cb285688/media.mp3" length="17154021" type="audio/mpeg"/>
+			<guid isPermaLink="false">68862a032a38d6f5cb285688</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/must-listen-most-important-hadith-in-islam-dr-israr-ahmed</link>
+			<acast:episodeId>68862a032a38d6f5cb285688</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>must-listen-most-important-hadith-in-islam-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCfvx+Q4EX9HuFkrEmuWaOlZX7AoSLAggDgxFTNI9pCP2rwvAKtwoydXUh6I7SJDUEwt5xqFUIjOLWimZGHeTdbole+qrHL1+1KlClP1dCpnVbPKKbG2mEeNiVzdaEVDs2MKfmOqYuV0fLvL7NBBwirfeUcdwPD5l7Cxn5/k01+W+p9CmAdZeh44XWMxaLOyUEWtPA+XjgYMY18zoPnP2boe]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753774066967-5fc5b75b-b6cc-4f82-a5ab-8ff598c28eae.jpeg"/>
+			<description><![CDATA[Every Muslim MUST Listen to This - Most Important Hadith in Islam | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Every Muslim MUST Listen to This - Most Important Hadith in Islam | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Why Does Allah Give Pain? | Dr Israr Ahmed</title>
+			<itunes:title>Why Does Allah Give Pain? | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 01 Oct 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>5:31</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/68862991e0a86cc3ab88069e/media.mp3" length="8811211" type="audio/mpeg"/>
+			<guid isPermaLink="false">68862991e0a86cc3ab88069e</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/why-does-allah-give-pain-dr-israr-ahmed</link>
+			<acast:episodeId>68862991e0a86cc3ab88069e</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>why-does-allah-give-pain-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCfJPZnah4uA3CmGQU06SX0zXE9ZoEqfBMRprUcy0+n8EksNtuf23v8LMaF+QOI5eLzI00Oesn3naWjFXXf9ok3LacwnoBTGZ7xwyJaE12hVUNyOGxHXmKoyLhtPZuUcaYJCZUnQQJTHnllozb+WlXTfKfOJLpQE3Tzkwi0eMEF4QFFk9jo4DwxtdVuUn9GK7Pl3bScwPHSTKcqyJ4pxA4hI]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753773801815-d0e6d8fd-50fc-4951-bb1a-0567e109ccdf.jpeg"/>
+			<description><![CDATA[Who Is Gautam Buddha? - Why Is Allah Testing Me? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Who Is Gautam Buddha? - Why Is Allah Testing Me? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Struggle for the Deen of Allah | Dr Israr Ahmed</title>
+			<itunes:title>Struggle for the Deen of Allah | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 29 Sep 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>10:07</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688628f92a38d6f5cb2823d9/media.mp3" length="22042964" type="audio/mpeg"/>
+			<guid isPermaLink="false">688628f92a38d6f5cb2823d9</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/struggle-for-the-deen-of-allah-dr-israr-ahmed</link>
+			<acast:episodeId>688628f92a38d6f5cb2823d9</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>struggle-for-the-deen-of-allah-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCdIfRxrCF4XN/Mm6sfWD5BQw+r156XplXfeNZuZdwR71gWfP2W9pZ4m7S6ezLV3kB1O8ghyxUGSCR2b4xJF1EHrNvQrahhCawZx3E/KHSyvaVN+NhpnsQWENTUCvHQ1HeV4pH2POGzP6+Lu+o0tSTfzDdFQiOV+BF3WwnqR+MCF6birsMV5Q7sA0tKie+kSt3Cvqa7ZdAPkheRyfBhhQ1Fe]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753773578891-203592af-68c1-40e5-95b4-bf5909b1de31.jpeg"/>
+			<description><![CDATA[Struggle for the Deen of Allah | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Struggle for the Deen of Allah | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Dr Israr Ahmed’s Prediction Comes True After 18 Years</title>
+			<itunes:title>Dr Israr Ahmed’s Prediction Comes True After 18 Years</itunes:title>
+			<pubDate>Fri, 26 Sep 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>9:05</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688628a72a38d6f5cb280cf1/media.mp3" length="23154289" type="audio/mpeg"/>
+			<guid isPermaLink="false">688628a72a38d6f5cb280cf1</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/dr-israr-ahmeds-prediction-comes-true-after-18-years</link>
+			<acast:episodeId>688628a72a38d6f5cb280cf1</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>dr-israr-ahmeds-prediction-comes-true-after-18-years</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCez2ai7Rcrw1C9zvhczCWylp9qX/8JGazYD8uiZnYs7mtfCs3NguY+0Z4AUGUPjRKhdtczHOuya+VqjQYnUSxSXVeQ+5m3F4U6KXBlEc0wnDk7MzEh0UQMvpfyvoQ1KPkRxKUM5vErqXP9q2y6E+qRwsCf4oiNwQke5MqUn0LflTRR9QonCVfbhT3UnvXqjNsFQbdH/VwuLvTCvbp+A5qEn]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753773072078-156e25b1-1cb6-4aa6-9129-3ee15faf5e5e.jpeg"/>
+			<description><![CDATA[<p><strong>Transgender Bill in Pakistan | Dr Israr Ahmed</strong></p><p><br></p><hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[<p><strong>Transgender Bill in Pakistan | Dr Israr Ahmed</strong></p><p><br></p><hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Sadqa Kisko Dena Chahiye? | Dr Israr Ahmed</title>
+			<itunes:title>Sadqa Kisko Dena Chahiye? | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 24 Sep 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>7:50</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688628396ba6bf2e171672f1/media.mp3" length="15283784" type="audio/mpeg"/>
+			<guid isPermaLink="false">688628396ba6bf2e171672f1</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/sadqa-kisko-dena-chahiye-dr-israr-ahmed</link>
+			<acast:episodeId>688628396ba6bf2e171672f1</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>sadqa-kisko-dena-chahiye-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCdRaOR4uZTZaetNqJetHfmiojGvc4TsJoGTFWIINIyzFtblyQfX7GwhFGRpvQtwsIv/pdVGGbeUMJap5G5EAwm+wOOXh31okTErvZqJ+DMJFR6ykJWRfQw4ROQ3HQUxx49O2PZ4jsUK9yCI8HuHxLm3GOQHAk7yWid/v6QFuVVDbEIvgQPH5dT0SVA8GeJVIWi1VmU5IU4qadvA4R6pdSZM]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753771381012-63e5bf2a-5f7b-412c-ae15-32b9a17ec419.jpeg"/>
+			<description><![CDATA[Sadqa Dene Ka Sahi Tarika - Sadqa Kisko Dena Chahiye? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Sadqa Dene Ka Sahi Tarika - Sadqa Kisko Dena Chahiye? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Discipline Is Very Important for Success | Dr Israr Ahmed</title>
+			<itunes:title>Discipline Is Very Important for Success | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 22 Sep 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>9:42</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688627d570a3f95d45e19e6b/media.mp3" length="18978877" type="audio/mpeg"/>
+			<guid isPermaLink="false">688627d570a3f95d45e19e6b</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/discipline-is-very-important-for-success-dr-israr-ahmed</link>
+			<acast:episodeId>688627d570a3f95d45e19e6b</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>discipline-is-very-important-for-success-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCdFV9FalGsKYU4383iqTPOPt0NiF7gaaph8JXZVBhlQkXQIDRDR6gW7FI/rI1lRxKP3rUUGG2qbcwZw3izhq5/8wvVoIwEOuRvgW6VKFAhmMT0k327/KUvArMhhVE9W5zof5pn1M+zSf8WwZRvno45bJPyN+lpYiu8oq66O0AeZ96vaKQi+H+Qwv3NQAzkcrHPpYfN56/eZBCoHLMjXSGhN]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753770882617-c93d5527-5c32-4a46-90e3-0d8e52050216.jpeg"/>
+			<description><![CDATA[Discipline Is Very Important for Success | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Discipline Is Very Important for Success | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Qur’an Resolves Every Issue of Human Life | Dr Israr Ahmed</title>
+			<itunes:title>Qur’an Resolves Every Issue of Human Life | Dr Israr Ahmed</itunes:title>
+			<pubDate>Fri, 19 Sep 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>12:41</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688627a7e0a86cc3ab879e0e/media.mp3" length="23305075" type="audio/mpeg"/>
+			<guid isPermaLink="false">688627a7e0a86cc3ab879e0e</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/quran-resolves-every-issue-of-human-life-dr-israr-ahmed</link>
+			<acast:episodeId>688627a7e0a86cc3ab879e0e</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>quran-resolves-every-issue-of-human-life-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCeyIFhQ/8RhWFo4bKVLzZDsQIyIDsr+miwl2LVsSxV15C7TJj3LzMUSTiliYR34fOI+Qn9/FXiFM0LKVdqveeX7rmNTM59gaI8N5kp3Ttr3LrEOADd9dZoHFEMG/HTAWa+Pez4QCo/CCizD82fyuWXeJKR9ZFN3PlqGwWbBQdq1p5KzGpCHOh33JLBkldm1uD/8R1ZWWa/w8XW71SzVBdf6]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753770541345-4a372331-2635-40fb-882a-3762bdb77a27.jpeg"/>
+			<description><![CDATA[Qur’an Resolves Every Issue of Human Life | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Qur’an Resolves Every Issue of Human Life | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Spend in the Way of Allah | Dr Israr Ahmed</title>
+			<itunes:title>Spend in the Way of Allah | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 17 Sep 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>14:27</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/6886276c70a3f95d45e18504/media.mp3" length="33529524" type="audio/mpeg"/>
+			<guid isPermaLink="false">6886276c70a3f95d45e18504</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/spend-in-the-way-of-allah-dr-israr-ahmed</link>
+			<acast:episodeId>6886276c70a3f95d45e18504</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>spend-in-the-way-of-allah-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCdhjVoUJ8KDuYKfH69AaguBfbDauRDVsUvn9I8n5Us1qTGIKoealQuX3WEl1J6vwj0wXevkTtDDJe+Kamsg7AHCZxNMZiw4Jb1IvY560vJhHVynp8aZP7fK3zI/CpbSYXtfeqHnvDazYCRlVytlIjI82+GrQS4WpTkCbTl62CjEXacSRjlCK4vRbdiFXpnqScOAP8/zDIfU7SD7yX14Z0r9]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753770332966-6afc1cec-21d5-4168-84b7-40938128a2f1.jpeg"/>
+			<description><![CDATA[Spend in the Way of Allah | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Spend in the Way of Allah | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>12 Rabi-ul-Awal Special | Dr Israr Ahmed</title>
+			<itunes:title>12 Rabi-ul-Awal Special | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 15 Sep 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>6:39</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/68863cdfe0a86cc3ab8b5d7a/media.mp3" length="17008131" type="audio/mpeg"/>
+			<guid isPermaLink="false">68863cdfe0a86cc3ab8b5d7a</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/12-rabi-ul-awal-special-dr-israr-ahmed</link>
+			<acast:episodeId>68863cdfe0a86cc3ab8b5d7a</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>12-rabi-ul-awal-special-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCe5PATxIhEF/a6sIx9lh+Fyy0uGVVIEupayVPTY6YcQdtbYdVY0mdJZbB0Ucj2fbf/UBDgZcAcn5nrZ/45ANMy3fiuCN62Gg/dfWvAedva9EO5hXwEbHVOa/X2V+9Vtw28WIVoa6JNEVoE5nAtFXJr/bcKZr1UtqdqxIeQtW1Yb/j10MXlqYuO9kuD2UNsMBVWFSiDRQoR+ATg25GBcdnaKOhQd0aEGxstQFojNASbb/w==]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1757922346854-ad76c82f-1bfe-4ab4-bf43-73d3a2fef75a.jpeg"/>
+			<description><![CDATA[Seerat-un-Nabi - 12 Rabi-ul-Awal Special | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Seerat-un-Nabi - 12 Rabi-ul-Awal Special | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Witr Ki Namaz Mein Konsi Dua Parhi Jaye | Dr Israr Ahmed</title>
+			<itunes:title>Witr Ki Namaz Mein Konsi Dua Parhi Jaye | Dr Israr Ahmed</itunes:title>
+			<pubDate>Fri, 12 Sep 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>2:54</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/68862692e0a86cc3ab8763d0/media.mp3" length="6794336" type="audio/mpeg"/>
+			<guid isPermaLink="false">68862692e0a86cc3ab8763d0</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/witr-ki-namaz-mein-konsi-dua-parhi-jaye-dr-israr-ahmed</link>
+			<acast:episodeId>68862692e0a86cc3ab8763d0</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>witr-ki-namaz-mein-konsi-dua-parhi-jaye-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCfbiIzDcKtT0pSKrC4ogpCB+RBX6c8oajtv8L/NFiiBLDKi6KKJHW3SD0WXL/nXHUPR8IpfNsHNErkOOktIPny7Tl5K4xOqOAioKcfg6OWSA84FtDWgs3eFIqLzE0OXrKNkT/oCZVdgLcZBauu4+QPFFFr3sTiK/p4tBoe3pM3fLH0I8Y1l9/vgA5WudHw9BSVgQFuOuY5rLYGrQtm2JIdR]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753769866684-ef6eb866-a928-4277-8ab2-7191485025fa.jpeg"/>
+			<description><![CDATA[Witr Ki Namaz Mein Konsi Dua Parhi Jaye | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Witr Ki Namaz Mein Konsi Dua Parhi Jaye | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Naiki Ki Asal Rooh | Dr Israr Ahmed</title>
+			<itunes:title>Naiki Ki Asal Rooh | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 10 Sep 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>9:24</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688647e32a38d6f5cb2de63a/media.mp3" length="22395038" type="audio/mpeg"/>
+			<guid isPermaLink="false">688647e32a38d6f5cb2de63a</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/naiki-ki-asal-rooh-dr-israr-ahmed</link>
+			<acast:episodeId>688647e32a38d6f5cb2de63a</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>naiki-ki-asal-rooh-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCdm9ZFp7IeC4QIYmxjcpQBeGXv2mzLGTGd3pb/DmoaQy0y0cnIW39tgnxd0iaRxRJ6a/4XnW+cLfCFvKS+gOvbQfCJdByk2LL5m6NiPkAtjZhH2G2lisrDf5lN6OWiH3HYp82N8Hem2NoTrQhMt1g20v+JsLtRzgJp1MGEMKLoYjXhuMbTkK21lrbCQxJx2086AyDMLeox3rKxpOXxD/P32]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753769617531-31b65354-c3c6-4ace-afbf-e04d13665e28.jpeg"/>
+			<description><![CDATA[Naiki Ki Asal Rooh | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Naiki Ki Asal Rooh | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Tablighi Jamaat Ki Haqeeqat | Dr Israr Ahmed Ke Nazariyat </title>
+			<itunes:title>Tablighi Jamaat Ki Haqeeqat | Dr Israr Ahmed Ke Nazariyat </itunes:title>
+			<pubDate>Mon, 08 Sep 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>4:04</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688625c56ba6bf2e1715d1d7/media.mp3" length="9836978" type="audio/mpeg"/>
+			<guid isPermaLink="false">688625c56ba6bf2e1715d1d7</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/tablighi-jamaat-ki-haqeeqat-dr-israr-ahmed-ke-nazariyat</link>
+			<acast:episodeId>688625c56ba6bf2e1715d1d7</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>tablighi-jamaat-ki-haqeeqat-dr-israr-ahmed-ke-nazariyat</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCfn8dgXAMrmEdOCKagHcviY5ZTLtkU34DTkMHNiC9h4ZlD85PudU5dfoSYCwXl1qRerowajX8yg6RZCMtNKfnmr1yM0vsACeNuWDBqvrRYPRx6V7J6ZtWMylWb5xGlHU8TWHhQwWWYf/6DhF/U80l4kMoUtp2nuESGo0zrzVuhRZb1NJTEXmJUQch+j5kTzhD8dzpOOW9LcSjvtblZ4SrlG]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753719987228-f01eb6f0-e570-4895-b72f-8a2f45365df4.jpeg"/>
+			<description><![CDATA[Tablighi Jamaat Ki Haqeeqat | Dr Israr Ahmed Ke Nazariyat&nbsp;<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Tablighi Jamaat Ki Haqeeqat | Dr Israr Ahmed Ke Nazariyat&nbsp;<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Women’s Equality and Rights in Islam | Dr Israr Ahmed</title>
+			<itunes:title>Women’s Equality and Rights in Islam | Dr Israr Ahmed</itunes:title>
+			<pubDate>Fri, 05 Sep 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>8:23</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/6886254870a3f95d45e09f0a/media.mp3" length="16004518" type="audio/mpeg"/>
+			<guid isPermaLink="false">6886254870a3f95d45e09f0a</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/womens-equality-and-rights-in-islam-dr-israr-ahmed</link>
+			<acast:episodeId>6886254870a3f95d45e09f0a</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>womens-equality-and-rights-in-islam-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCeHqKr7K8D8gZRJkAIZu8/l4wgLxom9+lsh+YBXOP3lDMpHy7goYVoQZ08jjNwmzQuqM1NwPuBX28kiv91Seblta9dbKGacc6maT7VRub1JyRvHUvVfmyjZ4/oeO0knmH7/bLKIGRzOmIFGPtIigOCgCVLxnXUrS6IinAS/BOR82lx+i11vgRz98OfVpNcdfGFoRJvtTueO/FlqL7j1pe/A]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753717431507-142c04b1-673a-4e9e-b053-7525d3844960.jpeg"/>
+			<description><![CDATA[Women’s Equality and Rights in Islam | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Women’s Equality and Rights in Islam | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Difference Between Prophet Muhammad ﷺ and Other Prophets | Dr Israr Ahmed</title>
+			<itunes:title>Difference Between Prophet Muhammad ﷺ and Other Prophets | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 03 Sep 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>10:37</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688638fde0a86cc3ab8acc3c/media.mp3" length="18525846" type="audio/mpeg"/>
+			<guid isPermaLink="false">688638fde0a86cc3ab8acc3c</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/difference-between-prophet-muhammad-and-other-prophets</link>
+			<acast:episodeId>688638fde0a86cc3ab8acc3c</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>difference-between-prophet-muhammad-and-other-prophets</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCedydOrb4ISZ+9kH3+ch61NHv7maxT5GVSHBeNQnP0bIsNZbg5JjZEFbozqQh2XUNhACglboWXJA2QyPXhPrMGIb0FxvlF/gjMceQgATxk1vSHFIhofHNl/0BrQiQPWTCQ68FzQQj9g5PnjSL7uuFYyZLYt6lIvUBPVL13ih0YF10X+p8pN/YKGMIiesk3QEkuy1AbA1F0Z6d/Vqyx+ML8Y]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753711209813-5f57b602-d320-453f-bbbe-c619af482d62.jpeg"/>
+			<description><![CDATA[What Makes Prophet Muhammad ﷺ Different from Other Prophets? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[What Makes Prophet Muhammad ﷺ Different from Other Prophets? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Life of Prophet Muhammad ﷺ – Seerat-un-Nabi | Dr Israr Ahmed</title>
+			<itunes:title>Life of Prophet Muhammad ﷺ – Seerat-un-Nabi | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 01 Sep 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>9:19</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/68863b89e0a86cc3ab8b3519/media.mp3" length="18829348" type="audio/mpeg"/>
+			<guid isPermaLink="false">68863b89e0a86cc3ab8b3519</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/life-of-prophet-muhammad-seerat-un-nabi-dr-israr-ahmed</link>
+			<acast:episodeId>68863b89e0a86cc3ab8b3519</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>life-of-prophet-muhammad-seerat-un-nabi-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCfbFl7Pz961lPHcv2S5yf5uxE/MScZH4EkozSxX06VyVrFwx4b+TgSwRFlb00R/r3i5cZoWv4hfD3hqVRi+Tf55H2dYq2Blq3ogh8ZMBQ6VOk2ZENtaUrwQ0RwJdXzgLvSEQmlnGPv6uXXrn3Ykp7eNyv891wdLnyBNB2h4X/ZXMl8TtmzzVmc1MQuR+/fMtNTp8XM9tIVzr06AKlvEUeNq]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753710993867-7c2c23a2-f585-4c4e-83f3-db6b7b89f417.jpeg"/>
+			<description><![CDATA[Seerat-un-Nabi - Life of Prophet Muhammad ﷺ | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Seerat-un-Nabi - Life of Prophet Muhammad ﷺ | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Real Success in Life | Dr Israr Ahmed</title>
+			<itunes:title>Real Success in Life | Dr Israr Ahmed</itunes:title>
+			<pubDate>Fri, 29 Aug 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>3:47</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688624626ba6bf2e17157a0c/media.mp3" length="8782462" type="audio/mpeg"/>
+			<guid isPermaLink="false">688624626ba6bf2e17157a0c</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/real-success-in-life-dr-israr-ahmed</link>
+			<acast:episodeId>688624626ba6bf2e17157a0c</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>real-success-in-life-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCcT2RPHaplHt65e7rDtIs+0+wY/1xYoz81HS2UvT9f0xHJGFOl/mACp4kynnE5JaPmQhG9sZbrYX3kgVAAgOGkGkg0nyAYxzttCOZ3/Yb7ARp2D3UAKaIvrXF5pS5fDsNZUiKBV6yCBq4rO4oIB8TbxVzxZbFrLnqKmcYsBY7sqoWxWq6ahKscXqltBS7Ci+QLEOPr8TuAOR4eyMvHshKc4]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753710771128-fea29095-5e82-4333-9618-c4d768bffd52.jpeg"/>
+			<description><![CDATA[Real Success in Life | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Real Success in Life | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Waqt Khatam Ho Raha Hai - Time Is Running Out | Dr Israr Ahmed</title>
+			<itunes:title>Waqt Khatam Ho Raha Hai - Time Is Running Out | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 27 Aug 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>5:24</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688623fb6e658a8b3c0a6fe8/media.mp3" length="10389085" type="audio/mpeg"/>
+			<guid isPermaLink="false">688623fb6e658a8b3c0a6fe8</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/waqt-khatam-ho-raha-hai-time-is-running-out-dr-israr-ahmed</link>
+			<acast:episodeId>688623fb6e658a8b3c0a6fe8</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>waqt-khatam-ho-raha-hai-time-is-running-out-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCfSpEBH/QV0dhIxwkhiqbIwxVVhNZasevqwCfKVvqExrqWVoS5tfsioA138dIawb3BGap+zQXT//qKYKB7vkFTVfRpID668Bog91RuqnyNtLKmcLnFU0NyFKM6JpiLOuwDMCGdsRUnHO+rBZ0eACnb7RzyFi7HwOw8hVGvFcsyFEEH1ZryBEzEPFskQR/X4kwWq03DkxA1Jex8glDYzCAVy]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753710362293-3a737275-8f20-4a46-9d18-4372af174394.jpeg"/>
+			<description><![CDATA[Time Is Running Out - Waqt Guzar Raha Hai | Time Management - Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Time Is Running Out - Waqt Guzar Raha Hai | Time Management - Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Real Hypocrisy in Islam | Dr Israr Ahmed</title>
+			<itunes:title>Real Hypocrisy in Islam | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 25 Aug 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>10:25</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688623ad70a3f95d45e03095/media.mp3" length="17958567" type="audio/mpeg"/>
+			<guid isPermaLink="false">688623ad70a3f95d45e03095</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/real-hypocrisy-in-islam-dr-israr-ahmed</link>
+			<acast:episodeId>688623ad70a3f95d45e03095</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>real-hypocrisy-in-islam-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCcywknyosbc470BQz+RhzaxnqA3b4QGPQ3C2tGSBr6Ot1/6yApoUgQXxKEmE42g78BD+MBSEzcHO3YRzbYdbWt8xhz6rCvcg5/opapBC0Tnje1hSnBTzJGT2CGNoBCY2+jgTw8GUNBp5T6hHBhnE/3st2uJUeV8tzCUDQz3xNd8NICjne/jSG+aKugBG6MVImLypspCrzhcjwqGWIb5v8kh]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753709998459-e22a4b50-b8c9-4700-9b40-dda487a8b57a.jpeg"/>
+			<description><![CDATA[Real Hypocrisy in Islam | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Real Hypocrisy in Islam | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>The Life of This World Is a Test | Dr Israr Ahmed</title>
+			<itunes:title>The Life of This World Is a Test | Dr Israr Ahmed</itunes:title>
+			<pubDate>Fri, 22 Aug 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>9:17</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/68862365e0a86cc3ab86859b/media.mp3" length="13811261" type="audio/mpeg"/>
+			<guid isPermaLink="false">68862365e0a86cc3ab86859b</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/the-life-of-this-world-is-a-test-dr-israr-ahmed</link>
+			<acast:episodeId>68862365e0a86cc3ab86859b</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>the-life-of-this-world-is-a-test-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCdgRd1OSfSoFDkeQbrshAxUn4pXCNWyekbiUmxF7BckZ4IkAdKm9tyN02x9VGF/H/sKjyxO6NevFtA8tHUSWXU9EAE+YOfeYMNg87yDRBzBen0B39Yr9JSUgK6YMJAvMQFdXSHpZ53/gz/zPh+6T3eucxe1QMkpwG4JbnCFZYJUDLV+7O4DPCm3vGeeTFTRmsctstXW86VM/1YKRCYG6o81]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753709682991-f84059a6-aadc-4fbf-bc2c-b9c68eb339ef.jpeg"/>
+			<description><![CDATA[The Life of This World Is a Test | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[The Life of This World Is a Test | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Asal Neki Kya Hai | Dr Israr Ahmed</title>
+			<itunes:title>Asal Neki Kya Hai | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 20 Aug 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>10:16</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/6886231570a3f95d45e00726/media.mp3" length="17724674" type="audio/mpeg"/>
+			<guid isPermaLink="false">6886231570a3f95d45e00726</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/asal-neki-kya-hai-dr-israr-ahmed</link>
+			<acast:episodeId>6886231570a3f95d45e00726</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>asal-neki-kya-hai-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCcFAe0fnxBJy/1ju4Qxy1fh8gO4DvlGA40yms2g0/hOkcrfHIopjTygHFqGwwOPKFIai4SuTvs86Lx3UYCyl6ZsN5+RCLsbnUhsoXrvN+0o0jiYFqzWftPkn9ZAE50+ZlzC9r1BDnFvvXeoS3mT3Q7p+GrWWPBUHT2ASiCTmZJSPZsR8iPMGUrzvDvphD87GvmrZyC+dodNQGV/+gISdFYc]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753708218138-cfd48a7b-8e38-488b-a2df-93ee6f1f7719.jpeg"/>
+			<description><![CDATA[Asal Neki Kya Hai | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Asal Neki Kya Hai | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Failure and Success Come from Allah | Dr Israr Ahmed</title>
+			<itunes:title>Failure and Success Come from Allah | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 18 Aug 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>4:18</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688622b8e0a86cc3ab865417/media.mp3" length="9344055" type="audio/mpeg"/>
+			<guid isPermaLink="false">688622b8e0a86cc3ab865417</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/failure-and-success-come-from-allah-dr-israr-ahmed</link>
+			<acast:episodeId>688622b8e0a86cc3ab865417</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>failure-and-success-come-from-allah-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCfl3zPU1Vba8SDGYfbhQj9heXagW/W5PqF9TWXIuRGIydrz+gdFoXrosKDtyPOtiHxWBfqiW780r4l0tGbppY1VYhzXAOVCELn6IJ/9RNm/jrxvPSm8wZoaqV2C2sdmLmmiMS45AES3pyHMBZbpm3XhCZ/BfaS7mx+T6JFvhvvToSPdSprFmJ90AElE13MJROU1KCMqlhr7c6WYzufAYE1R]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753707803888-e6b90a26-bbd9-4c74-ad65-d8d87c2ed459.jpeg"/>
+			<description><![CDATA[Failure and Success Come from Allah | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Failure and Success Come from Allah | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Tauba Ki Azmat | Dr Israr Ahmed</title>
+			<itunes:title>Tauba Ki Azmat | Dr Israr Ahmed</itunes:title>
+			<pubDate>Fri, 15 Aug 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>9:41</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/68862294e0a86cc3ab86492f/media.mp3" length="22186772" type="audio/mpeg"/>
+			<guid isPermaLink="false">68862294e0a86cc3ab86492f</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/tauba-ki-azmat-dr-israr-ahmed</link>
+			<acast:episodeId>68862294e0a86cc3ab86492f</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>tauba-ki-azmat-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCc+AcK24uHK7vdyN4Fe3H+t4mdaRGI/TrnnrSPsyuOlXnfolYvRs1jCqwB6wyZzx4F5SheW21Hn/VpfcYZe+bIUZyLUxoGREhK416hwf/9xAniy2AuGlqwPzAn5WIBwZHHjRoU0wQ4NvfwHcZp1JmUnn1rE8ejfomHHKJTNPHhjpgGUpUgHWGbfSVTneySybUJf+zES1zrGVlKgbfHHVPP3]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753708267335-36ef5b99-26f1-4061-b90a-7bf36dadfc76.jpeg"/>
+			<description><![CDATA[Tauba Ki Azmat | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Tauba Ki Azmat | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Quaid-e-Azam, Allama Iqbal Aur Nazriya Pakistan | Dr Israr Ahmed</title>
+			<itunes:title>Quaid-e-Azam, Allama Iqbal Aur Nazriya Pakistan | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 13 Aug 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>19:12</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688626246e658a8b3c0af1bf/media.mp3" length="43828003" type="audio/mpeg"/>
+			<guid isPermaLink="false">688626246e658a8b3c0af1bf</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/quaid-e-azam-allama-iqbal-aur-nazriya-pakistan</link>
+			<acast:episodeId>688626246e658a8b3c0af1bf</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>quaid-e-azam-allama-iqbal-aur-nazriya-pakistan</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCcFAe0fnxBJy/1ju4Qxy1fh8gO4DvlGA40yms2g0/hOkcrfHIopjTygHFqGwwOPKFIai4SuTvs86Lx3UYCyl6ZsN5+RCLsbnUhsoXrvN+0o0jiYFqzWftPkn9ZAE50+ZlzoJaallwWX5PqvcrYkj1UCjdBhNVU9iXv5+HbzNyAF3LVfsDGDO3AEmcThGJ410MaYcBBDPCVnufrQTxyI+J2D]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753708672541-dcdcc0c6-5292-4feb-b51c-85b949be8e4a.jpeg"/>
+			<description><![CDATA[Quaid-e-Azam, Allama Iqbal Aur Nazriya Pakistan | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Quaid-e-Azam, Allama Iqbal Aur Nazriya Pakistan | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Believe in Allah | Dr Israr Ahmed</title>
+			<itunes:title>Believe in Allah | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 11 Aug 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>12:19</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688621d62a38d6f5cb26675a/media.mp3" length="24503412" type="audio/mpeg"/>
+			<guid isPermaLink="false">688621d62a38d6f5cb26675a</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/believe-in-allah-dr-israr-ahmed</link>
+			<acast:episodeId>688621d62a38d6f5cb26675a</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>believe-in-allah-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCfwy65V+ZIeYFmz2JoYvuf8wLIAPqYJhybMvue0fTWO/o/c70lwM5qRdOWsUIjBpk9Pz1FoqwER6NRySrWLGLGMhwCc8Ntc+wGH55BBq9t9nKCbTuUwL0Z/y3XisYhmZ3xVdRr4ncwvd+0hAFOw8A/ymhvoOn2NQDPQ4f1njPble3Zw9PLPNEcQdhx2FA7Wwu9yTbJ06FNq/TFdZZNMvbJ4]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753658598938-0892bbc6-4793-4fbf-83b8-0d5e72092be6.jpeg"/>
+			<description><![CDATA[Believe in Allah | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Believe in Allah | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Technology and Western Civilization (Maghribi Tehzeeb) | Dr Israr Ahmed</title>
+			<itunes:title>Technology and Western Civilization (Maghribi Tehzeeb) | Dr Israr Ahmed</itunes:title>
+			<pubDate>Fri, 08 Aug 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>11:44</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/68862167e0a86cc3ab8604bd/media.mp3" length="26769440" type="audio/mpeg"/>
+			<guid isPermaLink="false">68862167e0a86cc3ab8604bd</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/technology-and-western-civilization-maghribi-tehzeeb</link>
+			<acast:episodeId>68862167e0a86cc3ab8604bd</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>technology-and-western-civilization-maghribi-tehzeeb</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCdOLv1TpVx7z5XtqrzEF+zuyPpMWtHTe1u7FEg0lpX/tpWcJQf8dWMEua5GJa3yNIAR9gk1gbDL+M5HxTg8kycibLylhHnWtEKbGYQonebm4D2MCHqNGAqJ9E4v1xCzsoOaQMQKy1VbkHuofOS9S10Qo81Y3CVClPUbGq+kqEIXjH0qzAyqAcAvmsQKZGaDFwnT+k4mOLIBif+eVA7JhXDP]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753656127655-c5f616d0-a023-4fb8-9bf6-672c26cb22e7.jpeg"/>
+			<description><![CDATA[Technology and Western Civilization (Maghribi Tehzeeb) | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Technology and Western Civilization (Maghribi Tehzeeb) | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Remember the Promise You Made  | Dr Israr Ahmed</title>
+			<itunes:title>Remember the Promise You Made  | Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 06 Aug 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>8:00</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/6886210d6e658a8b3c09ae4e/media.mp3" length="16100322" type="audio/mpeg"/>
+			<guid isPermaLink="false">6886210d6e658a8b3c09ae4e</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/remember-the-promise-you-made-dr-israr-ahmed</link>
+			<acast:episodeId>6886210d6e658a8b3c09ae4e</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>remember-the-promise-you-made-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCcp+iX/CxZ5JiwuNyKSYHn5/VXeCIWAj+NLPqIVImueYd96G9hm7wRbEVcSquAhYCzZJEvGzT3gIvwmtP5612j4L3/wnuSCsta60HiPYpyOErmbFCX7gwENaIHkuJohW8YUbRw4yaAXpmOGY+BFSl2+TXZGYtnw/jC1qCsTXhhnAPCnXU+yY7eXE5szSBzs+Lsz4sBq8ZiEALYgywrJ0XwM]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753649585185-3b2ce8d9-4a17-4912-aff0-4533f2be26bc.jpeg"/>
+			<description><![CDATA[Remember the Promise You Made | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Remember the Promise You Made | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Wahdat-ul-Wajood Ka Falsafa Kya Hai | Dr Israr Ahmed</title>
+			<itunes:title>Wahdat-ul-Wajood Ka Falsafa Kya Hai | Dr Israr Ahmed</itunes:title>
+			<pubDate>Mon, 04 Aug 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>6:55</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/688620be6ba6bf2e1714850d/media.mp3" length="13125035" type="audio/mpeg"/>
+			<guid isPermaLink="false">688620be6ba6bf2e1714850d</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/wahdat-ul-wajood-ka-falsafa-kya-hai-dr-israr-ahmed</link>
+			<acast:episodeId>688620be6ba6bf2e1714850d</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>wahdat-ul-wajood-ka-falsafa-kya-hai-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCel3uZVl8REJ5RvftHOuKHhg+9cRZ5Flm7hWetiIWEyCY0AC/EALvEY3ZeU0bTniePBQ+FnJ0mBR4b3/6xvj3luODzOzbX8/CZm7Ddj2F+VA5mnn8cFSAFBm02Gf4vQzmsfvZKYWTLOdHZ4+TZ8X9R+Icc/GPZsvC5cBVp4azQ8PgFl3Ui7qQG5KhAhk02eQzvpuDqokb1ZAwBc1twyTPE+]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753648877700-f98f4331-d98e-45e4-bbca-6858ed381a6b.jpeg"/>
+			<description><![CDATA[Wahdat-ul-Wajood Ka Falsafa Kya Hai | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Wahdat-ul-Wajood Ka Falsafa Kya Hai | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>Yazeed Kon Tha? | Dr Israr Ahmed</title>
+			<itunes:title>Yazeed Kon Tha? | Dr Israr Ahmed</itunes:title>
+			<pubDate>Fri, 01 Aug 2025 06:00:00 GMT</pubDate>
+			<itunes:duration>10:24</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/68864a952a38d6f5cb2f2390/media.mp3" length="27281435" type="audio/mpeg"/>
+			<guid isPermaLink="false">68864a952a38d6f5cb2f2390</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/yazeed-kon-tha-dr-israr-ahmed</link>
+			<acast:episodeId>68864a952a38d6f5cb2f2390</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>yazeed-kon-tha-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCeMjAV4/NAxu8pcjkTygnEo6tHLKm8xB1yUr9DXhHWfnTmi0B9ixKFBiZ0kpJbmsyZAgABU1adBnrh5VLJvG0QzYm38FqLcznREDCL3HcODNtr+iu8nqlEv8AIbEkvnW+PIhf/cQUrowzOWw7iO0iqZulu9ZBCoD2cUDvNV/1S6MjHdqLpu1PpUfHouife/SqwVnW7FRckFsqkL317c7oCH]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1753648597448-f2aaf021-a5fa-45d8-bb08-676076b5456c.jpeg"/>
+			<description><![CDATA[Hazrat Imam Hussain (R.A) Aur Karbala Ka Haqeeqat - Yazeed Kon Tha? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[Hazrat Imam Hussain (R.A) Aur Karbala Ka Haqeeqat - Yazeed Kon Tha? | Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+		<item>
+			<title>U.S.A Israel Ko Kyun Support Karta Hai? | Prediction By Dr Israr Ahmed</title>
+			<itunes:title>U.S.A Israel Ko Kyun Support Karta Hai? | Prediction By Dr Israr Ahmed</itunes:title>
+			<pubDate>Wed, 09 Jul 2025 21:57:32 GMT</pubDate>
+			<itunes:duration>17:05</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/686ee2a0ea74e132fb4a79e5/e/686ee5cd9af244138ca112cc/media.mp3" length="13976268" type="audio/mpeg"/>
+			<guid isPermaLink="false">686ee5cd9af244138ca112cc</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/dr-israr-ahmed-podcast/episodes/why-usa-support-israel-prediction-by-dr-israr-ahmed</link>
+			<acast:episodeId>686ee5cd9af244138ca112cc</acast:episodeId>
+			<acast:showId>686ee2a0ea74e132fb4a79e5</acast:showId>
+			<acast:episodeUrl>why-usa-support-israel-prediction-by-dr-israr-ahmed</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmbKbhgrQiwYShz70Q9/ffXZMTtedvdcRQbP4eiLMjXzCKLPjEYLpGj+NMVKa+5C8pL4u/EOj1Vw4h5MMJYp0lCe38m4j/47Blqehg1nexkAE0EDbQG67hRX818YXIL2S/L2h3/ANa20X0utdJ/IKy5kxHLpd6UhAc3s3oa/k4rXR6AxKx5Pvgt6pQQuzxBvXabi6y5qw4jixYR3bGIRC8nfWbVB6We/zmLREZjT2DCoDzQ8IoP0gvlzZO+4/wZw3AooLrQxoUQfug/6VpDvCmCBFKYiCP63E2UjLjkB3NHFSVeaWP4osH5maVtiKAAzDOg==]]></acast:settings>
+			<itunes:episodeType>trailer</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/686ee2a0ea74e132fb4a79e5/1752098242033-7b8ffcec-04f6-4e71-87d8-44ed40cdde8c.jpeg"/>
+			<description><![CDATA[امریکہ اسرائیل کا ساتھ کیوں دیتا ہے - (Why U.S.A Support Israel) | Prediction By Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></description>
+			<itunes:summary><![CDATA[امریکہ اسرائیل کا ساتھ کیوں دیتا ہے - (Why U.S.A Support Israel) | Prediction By Dr Israr Ahmed<hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>]]></itunes:summary>
+		</item>
+    	<itunes:category text="Education"/>
+    	<itunes:category text="Society &amp; Culture"/>
+		<itunes:category text="Religion &amp; Spirituality">
+			<itunes:category text="Islam"/>
+		</itunes:category>
+    </channel>
+</rss>
