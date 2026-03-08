@@ -42,6 +42,8 @@ dependencies:
   hive_flutter: ^1.1.0
   path_provider: ^2.1.5
   just_audio: ^0.10.5
+  shared_preferences: ^2.5.4
+  http: ^1.2.0
 
 dev_dependencies:
   flutter_test:

@@ -1,5 +1,4 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter/material.dart';
 import 'surah.dart';
 
 
@@ -323,7 +322,7 @@ class Ayah extends Equatable {
       sajda: sajda,
       translation: translation ?? this.translation,
       transliteration: transliteration ?? this.transliteration,
-      ayahWords: words ?? this.ayahWords,
+      ayahWords: words ?? ayahWords,
       audioUrl: audioUrl ?? this.audioUrl,
       tajweedText: tajweedText ?? this.tajweedText,
       tafseerText: tafseerText ?? this.tafseerText,

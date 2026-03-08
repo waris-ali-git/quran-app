@@ -23,6 +23,7 @@ class TranslationOption {
   });
 }
 
+@Deprecated('Dynamic translations from AlQuran.cloud are used instead')
 const List<TranslationOption> kAvailableTranslations = [
   // Urdu
   TranslationOption(

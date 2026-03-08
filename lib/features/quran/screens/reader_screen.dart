@@ -5,13 +5,14 @@ import '../state/quran_bloc.dart';
 import '../models/surah.dart';
 import '../models/ayah.dart';
 import '../models/reading_mode.dart';
-import '../services/tajweed_service.dart';
 import '../widgets/tafseer_bottom_sheet.dart';
 import 'widgets/word_by_word_ayah.dart';
 import 'widgets/tajweed_ayah.dart';
 import 'widgets/reading_settings_sheet.dart';
-import '../services/audio_service.dart';
+import 'widgets/reciter_selection_sheet.dart';
+import 'widgets/ayah_toolbar.dart';
 import 'package:just_audio/just_audio.dart';
+
 class ReaderScreen extends StatefulWidget {
   final Surah surah;
   final ReadingDisplayMode initialMode;
@@ -116,6 +117,77 @@ class _ReaderScreenState extends State<ReaderScreen> {
           return const SizedBox.shrink();
         },
       ),
+      bottomNavigationBar: _buildPersistentAudioPlayer(),
+    );
+  }
+
+  // ─────────────────────────────────────────────
+  // PERSISTENT TAFSEER PLAYER
+  // ─────────────────────────────────────────────
+  Widget _buildPersistentAudioPlayer() {
+    final audioService = QuranAudioService();
+    return StreamBuilder<PlayerState>(
+      stream: audioService.tafseerPlayerStateStream,
+      builder: (context, snapshot) {
+        if (!audioService.hasTafseerAudio) return const SizedBox.shrink();
+        
+        final playerState = snapshot.data;
+        final playing = playerState?.playing ?? false;
+        
+        return Container(
+          color: const Color(0xFF1B5E20),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+          child: SafeArea(
+            bottom: true,
+            top: false,
+            child: Row(
+              children: [
+                IconButton(
+                  icon: Icon(playing ? Icons.pause : Icons.play_arrow, color: Colors.white),
+                  onPressed: () {
+                    if (playing) {
+                      audioService.pauseTafseer();
+                    } else {
+                      if (audioService.currentTafseerUrl != null) {
+                        audioService.playTafseer(
+                          url: audioService.currentTafseerUrl!, 
+                          surahName: audioService.tafseerSurahName ?? '', 
+                          scholarName: audioService.tafseerScholarName ?? ''
+                        );
+                      }
+                    }
+                  }
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Tafseer: Surah ${audioService.tafseerSurahName ?? ''}",
+                        style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      Text(
+                        audioService.tafseerScholarName ?? 'Playing',
+                        style: const TextStyle(color: Colors.white70, fontSize: 11),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ],
+                  ),
+                ),
+                IconButton(
+                  icon: const Icon(Icons.close, color: Colors.white70),
+                  onPressed: () {
+                    audioService.stopTafseer();
+                  }
+                ),
+              ],
+            ),
+          ),
+        );
+      },
     );
   }
 
@@ -123,6 +195,8 @@ class _ReaderScreenState extends State<ReaderScreen> {
   // APP BAR
   // ─────────────────────────────────────────────
   AppBar _buildAppBar(BuildContext context) {
+    final audioService = QuranAudioService();
+
     return AppBar(
       backgroundColor: const Color(0xFF1B5E20),
       title: Column(
@@ -139,10 +213,24 @@ class _ReaderScreenState extends State<ReaderScreen> {
             widget.surah.englishName,
             style: const TextStyle(color: Colors.white70, fontSize: 12),
           ),
+          const SizedBox(height: 2),
+          Text(
+            'Reciter: ${audioService.selectedReciter.name}',
+            style: const TextStyle(color: Colors.white70, fontSize: 10),
+          ),
         ],
       ),
       centerTitle: true,
       actions: [
+        // Reciter selection button
+        IconButton(
+          icon: const Icon(Icons.person, color: Colors.white),
+          onPressed: () {
+            showReciterSelectionSheet(context);
+            setState(() {}); // Rebuild to show new reciter
+          },
+          tooltip: 'Select Reciter',
+        ),
         // Settings button
         IconButton(
           icon: const Icon(Icons.settings, color: Colors.white),
@@ -165,7 +253,10 @@ class _ReaderScreenState extends State<ReaderScreen> {
         surahNumber: widget.surah.number,
         surahName: widget.surah.name,
       ),
-    );
+    ).then((_) {
+      // Refresh to ensure persistent player shows up if started
+      setState((){});
+    });
   }
 
   // ─────────────────────────────────────────────
@@ -396,6 +487,7 @@ class _StandardAyahCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
       decoration: BoxDecoration(
@@ -403,7 +495,7 @@ class _StandardAyahCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.04),
+            color: Colors.black.withValues(alpha: 0.04),
             blurRadius: 4,
             offset: const Offset(0, 2),
           ),
@@ -412,71 +504,13 @@ class _StandardAyahCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          // Ayah number + bookmark row
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-            child: Row(
-              children: [
-                _AyahNumberBadge(number: ayah.numberInSurah),
-                const Spacer(),
-                // Audio Play Button
-                StreamBuilder<PlayerState>(
-                  stream: QuranAudioService().playerStateStream,
-                  builder: (context, snapshot) {
-                     final playerState = snapshot.data;
-                     final processingState = playerState?.processingState;
-                     final playing = playerState?.playing;
-                     
-                     final currentUrl = QuranAudioService().currentUrl;
-                     final isMyAyah = currentUrl == ayah.audioUrl;
-
-                     if (isMyAyah && (processingState == ProcessingState.loading || processingState == ProcessingState.buffering)) {
-                       return const Padding(
-                         padding: EdgeInsets.all(8.0),
-                         child: SizedBox(
-                           width: 20,
-                           height: 20,
-                           child: CircularProgressIndicator(strokeWidth: 2),
-                         ),
-                       );
-                     }
-
-                     return IconButton(
-                       icon: Icon(
-                         isMyAyah && playing == true ? Icons.pause_circle_filled : Icons.play_circle_filled,
-                         color: isMyAyah && playing == true ? Colors.amber[800] : Colors.blueGrey,
-                         size: 28,
-                       ),
-                       onPressed: () {
-                         if (ayah.audioUrl != null) {
-                           if (isMyAyah && playing == true) {
-                             QuranAudioService().pause();
-                           } else {
-                             QuranAudioService().playAyah(ayah.audioUrl!);
-                           }
-                         }
-                       },
-                     );
-                  },
-                ),
-                // Tafseer Button
-                IconButton(
-                  icon: const Icon(Icons.menu_book, color: Colors.blueGrey, size: 24),
-                  onPressed: onTafseerTap,
-                  tooltip: 'Tafseer',
-                ),
-                IconButton(
-                  icon: Icon(
-                    isBookmarked ? Icons.bookmark : Icons.bookmark_border,
-                    color: isBookmarked ? const Color(0xFF1B5E20) : Colors.grey,
-                    size: 20,
-                  ),
-                  onPressed: onBookmarkToggle,
-                  padding: EdgeInsets.zero,
-                  constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
-                ),
-              ],
-            ),
+          // Ayah Toolbar
+          AyahToolbar(
+            ayah: ayah,
+            surahNumber: surahNumber,
+            isBookmarked: isBookmarked,
+            onBookmarkToggle: onBookmarkToggle,
+            onTafseerTap: onTafseerTap,
           ),
 
           // Arabic text (RTL)
@@ -532,34 +566,6 @@ class _StandardAyahCard extends StatelessWidget {
               ),
             ),
         ],
-      ),
-    );
-  }
-}
-
-class _AyahNumberBadge extends StatelessWidget {
-  final int number;
-
-  const _AyahNumberBadge({required this.number});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 32,
-      height: 32,
-      decoration: BoxDecoration(
-        border: Border.all(color: const Color(0xFF1B5E20)),
-        borderRadius: BorderRadius.circular(6),
-      ),
-      child: Center(
-        child: Text(
-          '$number',
-          style: const TextStyle(
-            color: Color(0xFF1B5E20),
-            fontWeight: FontWeight.bold,
-            fontSize: 12,
-          ),
-        ),
       ),
     );
   }

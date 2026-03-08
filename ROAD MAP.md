@@ -5,6 +5,12 @@
 - Quran Auth source find
 - Audio Recitation
 
+---
+## 1. Multi Language support Interface
+## 2. Hadith Collection
+## 3. Home page design
+## 4. Tafseer k or bhi sources
+---
 
 
 # 🕌 Quran Feature - Complete Implementation Guide
@@ -700,3 +706,4 @@ class TajweedService {
       case TajweedRule.none:
         return '';
     }
+

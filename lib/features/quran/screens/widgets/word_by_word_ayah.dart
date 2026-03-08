@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import '../../models/ayah.dart';
 import '../../models/reading_mode.dart';
 import '../../services/tajweed_service.dart';
-import '../../services/audio_service.dart';
-import 'package:just_audio/just_audio.dart';
+import './ayah_toolbar.dart';
 
 /// Word-by-Word Ayah Widget
 /// Bilkul waise jaisa image mein hai:
@@ -50,7 +49,7 @@ class WordByWordAyahWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.06),
+            color: Colors.black.withValues(alpha: 0.06),
             blurRadius: 8,
             offset: const Offset(0, 3),
           ),
@@ -59,71 +58,13 @@ class WordByWordAyahWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          // ─── Top Row: Ayah number + Bookmark ───
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-            child: Row(
-              children: [
-                _AyahBadge(number: ayah.numberInSurah),
-                const Spacer(),
-                // Audio Play Button
-                StreamBuilder<PlayerState>(
-                  stream: QuranAudioService().playerStateStream,
-                  builder: (context, snapshot) {
-                    final playerState = snapshot.data;
-                    final processingState = playerState?.processingState;
-                    final playing = playerState?.playing;
-                    
-                    final currentUrl = QuranAudioService().currentUrl;
-                    final isMyAyah = currentUrl == ayah.audioUrl;
-
-                    if (isMyAyah && (processingState == ProcessingState.loading || processingState == ProcessingState.buffering)) {
-                      return const Padding(
-                         padding: EdgeInsets.all(8.0),
-                         child: SizedBox(
-                           width: 20,
-                           height: 20,
-                           child: CircularProgressIndicator(strokeWidth: 2),
-                         ),
-                       );
-                    }
-
-                    return IconButton(
-                      icon: Icon(
-                        isMyAyah && playing == true ? Icons.pause_circle_filled : Icons.play_circle_filled,
-                        color: isMyAyah && playing == true ? Colors.amber[800] : Colors.blueGrey,
-                        size: 28,
-                      ),
-                      onPressed: () {
-                        if (ayah.audioUrl != null) {
-                          if (isMyAyah && playing == true) {
-                            QuranAudioService().pause();
-                          } else {
-                            QuranAudioService().playAyah(ayah.audioUrl!);
-                          }
-                        }
-                      },
-                    );
-                  },
-                ),
-                // Tafseer Button
-                IconButton(
-                  icon: const Icon(Icons.menu_book, color: Colors.blueGrey, size: 24),
-                  onPressed: onTafseerTap,
-                  tooltip: 'Tafseer',
-                ),
-                IconButton(
-                  icon: Icon(
-                    isBookmarked ? Icons.bookmark : Icons.bookmark_border,
-                    color: isBookmarked ? const Color(0xFF1B5E20) : Colors.grey,
-                    size: 20,
-                  ),
-                  onPressed: onBookmarkToggle,
-                  padding: EdgeInsets.zero,
-                  constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
-                ),
-              ],
-            ),
+          // ─── Top Row: Ayah Toolbar ───
+          AyahToolbar(
+            ayah: ayah,
+            surahNumber: surahNumber,
+            isBookmarked: isBookmarked,
+            onBookmarkToggle: onBookmarkToggle,
+            onTafseerTap: onTafseerTap,
           ),
 
           // ─── Word-by-Word Grid (RTL) ───────────
@@ -299,32 +240,6 @@ class _WordCard extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
             ),
         ],
-      ),
-    );
-  }
-}
-
-// ─── Ayah Number Badge ───────────────────────────────────────
-class _AyahBadge extends StatelessWidget {
-  final int number;
-
-  const _AyahBadge({required this.number});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-      decoration: BoxDecoration(
-        color: const Color(0xFF1B5E20),
-        borderRadius: BorderRadius.circular(20),
-      ),
-      child: Text(
-        '($number)',
-        style: const TextStyle(
-          color: Colors.white,
-          fontWeight: FontWeight.bold,
-          fontSize: 13,
-        ),
       ),
     );
   }

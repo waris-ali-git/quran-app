@@ -30,17 +30,21 @@ class _SurahListScreenState extends State<SurahListScreen> {
     super.dispose();
   }
 
+  void _applyFilter(String query) {
+    if (query.isEmpty) {
+      _filteredSurahs = _allSurahs;
+    } else {
+      _filteredSurahs = _allSurahs.where((s) {
+        return s.englishName.toLowerCase().contains(query.toLowerCase()) ||
+            s.name.contains(query) ||
+            s.number.toString() == query;
+      }).toList();
+    }
+  }
+
   void _filterSurahs(String query) {
     setState(() {
-      if (query.isEmpty) {
-        _filteredSurahs = _allSurahs;
-      } else {
-        _filteredSurahs = _allSurahs.where((s) {
-          return s.englishName.toLowerCase().contains(query.toLowerCase()) ||
-              s.name.contains(query) ||
-              s.number.toString() == query;
-        }).toList();
-      }
+      _applyFilter(query);
     });
   }
 
@@ -59,14 +63,15 @@ class _SurahListScreenState extends State<SurahListScreen> {
           ),
         ),
         centerTitle: true,
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.search, color: Colors.white),
-            onPressed: () => _showSearchBottomSheet(context),
-          ),
-        ],
       ),
       body: BlocBuilder<QuranBloc, QuranState>(
+        buildWhen: (previous, current) {
+          // Prevent full list rebuilds on unrelated state changes like ReadingMode or Bookmarks
+          return current is SurahsLoaded || 
+                 current is QuranSearchResults || 
+                 current is QuranLoading || 
+                 current is QuranError;
+        },
         builder: (context, state) {
           // 1. Search Results
           if (state is QuranSearchResults) {
@@ -78,11 +83,7 @@ class _SurahListScreenState extends State<SurahListScreen> {
             _allSurahs = state.surahs;
             _lastRead = state.lastRead;
             // Apply current search filter if any
-            if (_searchController.text.isNotEmpty) {
-              _filterSurahs(_searchController.text);
-            } else {
-              _filteredSurahs = _allSurahs;
-            }
+            _applyFilter(_searchController.text);
           }
 
           // 3. Error (only if no data)
@@ -99,14 +100,55 @@ class _SurahListScreenState extends State<SurahListScreen> {
           }
 
           // 5. Show List (from Cache or State)
-          if (_filteredSurahs.isNotEmpty) {
-             return Column(
-              children: [
-                if (_lastRead != null) _LastReadBanner(lastRead: _lastRead!),
-                _SearchBar(
-                  controller: _searchController,
-                  onChanged: _filterSurahs,
-                ),
+          return Column(
+            children: [
+              if (_lastRead != null) _LastReadBanner(
+                lastRead: _lastRead!,
+                onContinue: () {
+                  final surahNum = _lastRead!['surahNumber'] as int;
+                  try {
+                    final surah = _allSurahs.firstWhere((s) => s.number == surahNum);
+                    _openSurah(context, surah, ReadingDisplayMode.arabicWithTranslation);
+                  } catch (_) {}
+                },
+              ),
+              _SearchBar(
+                controller: _searchController,
+                onChanged: _filterSurahs,
+                onSubmitted: (val) {
+                  if (val.isNotEmpty) {
+                    context.read<QuranBloc>().add(SearchQuranEvent(query: val));
+                  }
+                },
+              ),
+              if (_filteredSurahs.isEmpty && _searchController.text.isNotEmpty)
+                Expanded(
+                  child: Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Icon(Icons.search_off, size: 64, color: Colors.grey),
+                        const SizedBox(height: 16),
+                        const Text(
+                          'یہ نام کسی سورہ کا نہیں ہے',
+                          style: TextStyle(fontSize: 18, color: Colors.grey),
+                        ),
+                        const SizedBox(height: 8),
+                        TextButton.icon(
+                          onPressed: () {
+                            context.read<QuranBloc>().add(SearchQuranEvent(query: _searchController.text));
+                          },
+                          icon: const Icon(Icons.menu_book, color: Color(0xFF1B5E20)),
+                          label: Text(
+                            'قرآن کی آیات میں تلاش کریں: "${_searchController.text}"',
+                            style: const TextStyle(color: Color(0xFF1B5E20)),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                )
+              else
                 Expanded(
                   child: ListView.builder(
                     itemCount: _filteredSurahs.length,
@@ -122,11 +164,8 @@ class _SurahListScreenState extends State<SurahListScreen> {
                     },
                   ),
                 ),
-              ],
-            );
-          }
-
-          return const SizedBox.shrink();
+            ],
+          );
         },
       ),
     );
@@ -203,21 +242,6 @@ class _SurahListScreenState extends State<SurahListScreen> {
       context.read<QuranBloc>().add(const LoadSurahsEvent());
     }
   }
-
-  void _showSearchBottomSheet(BuildContext context) {
-    showModalBottomSheet(
-      context: context,
-      isScrollControlled: true,
-      backgroundColor: Colors.white,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (_) => BlocProvider.value(
-        value: context.read<QuranBloc>(),
-        child: const _QuranSearchSheet(),
-      ),
-    );
-  }
 }
 
 // ─── Widgets ──────────────────────────────────────────────
@@ -278,8 +302,9 @@ class _ErrorWidget extends StatelessWidget {
 
 class _LastReadBanner extends StatelessWidget {
   final Map<String, dynamic> lastRead;
+  final VoidCallback onContinue;
 
-  const _LastReadBanner({required this.lastRead});
+  const _LastReadBanner({required this.lastRead, required this.onContinue});
 
   @override
   Widget build(BuildContext context) {
@@ -293,7 +318,7 @@ class _LastReadBanner extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: Colors.green.withOpacity(0.3),
+            color: Colors.green.withValues(alpha: 0.3),
             blurRadius: 8,
             offset: const Offset(0, 3),
           ),
@@ -322,9 +347,7 @@ class _LastReadBanner extends StatelessWidget {
             ),
           ),
           TextButton(
-            onPressed: () {
-              // Navigate to last read position
-            },
+            onPressed: onContinue,
             child: const Text('جاری رکھیں', style: TextStyle(color: Colors.white)),
           ),
         ],
@@ -336,8 +359,9 @@ class _LastReadBanner extends StatelessWidget {
 class _SearchBar extends StatelessWidget {
   final TextEditingController controller;
   final ValueChanged<String> onChanged;
+  final ValueChanged<String> onSubmitted;
 
-  const _SearchBar({required this.controller, required this.onChanged});
+  const _SearchBar({required this.controller, required this.onChanged, required this.onSubmitted});
 
   @override
   Widget build(BuildContext context) {
@@ -346,9 +370,20 @@ class _SearchBar extends StatelessWidget {
       child: TextField(
         controller: controller,
         onChanged: onChanged,
+        onSubmitted: onSubmitted,
+        textInputAction: TextInputAction.search,
         decoration: InputDecoration(
           hintText: 'سورہ تلاش کریں...',
           prefixIcon: const Icon(Icons.search, color: Colors.grey),
+          suffixIcon: IconButton(
+            icon: const Icon(Icons.menu_book, color: Color(0xFF1B5E20)),
+            tooltip: 'Search in Quran texts',
+            onPressed: () {
+              if (controller.text.isNotEmpty) {
+                onSubmitted(controller.text);
+              }
+            },
+          ),
           filled: true,
           fillColor: Colors.white,
           border: OutlineInputBorder(
@@ -380,7 +415,7 @@ class _SurahListTile extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.04),
+              color: Colors.black.withValues(alpha: 0.04),
               blurRadius: 4,
               offset: const Offset(0, 2),
             ),
@@ -564,52 +599,3 @@ class _ModeTile extends StatelessWidget {
   }
 }
 
-class _QuranSearchSheet extends StatefulWidget {
-  const _QuranSearchSheet();
-
-  @override
-  State<_QuranSearchSheet> createState() => _QuranSearchSheetState();
-}
-
-class _QuranSearchSheetState extends State<_QuranSearchSheet> {
-  final _ctrl = TextEditingController();
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(
-        left: 16,
-        right: 16,
-        top: 16,
-        bottom: MediaQuery.of(context).viewInsets.bottom + 16,
-      ),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          TextField(
-            controller: _ctrl,
-            autofocus: true,
-            decoration: InputDecoration(
-              hintText: 'قرآن میں تلاش کریں...',
-              prefixIcon: const Icon(Icons.search),
-              border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
-              suffixIcon: IconButton(
-                icon: const Icon(Icons.send, color: Color(0xFF1B5E20)),
-                onPressed: () {
-                  context.read<QuranBloc>().add(
-                    SearchQuranEvent(query: _ctrl.text),
-                  );
-                  Navigator.pop(context);
-                },
-              ),
-            ),
-            onSubmitted: (val) {
-              context.read<QuranBloc>().add(SearchQuranEvent(query: val));
-              Navigator.pop(context);
-            },
-          ),
-        ],
-      ),
-    );
-  }
-}

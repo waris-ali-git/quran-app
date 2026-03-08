@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../state/quran_bloc.dart';
 import '../../models/reading_mode.dart';
 import '../widgets/tajweed_ayah.dart';
+import '../translation_selection_screen.dart';
 
 /// Reading Settings Bottom Sheet
 /// - Reading mode select karo
@@ -291,20 +292,47 @@ class _TranslationSelector extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DropdownButtonFormField<String>(
-      value: current,
-      decoration: InputDecoration(
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
-        contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-      ),
-      items: kAvailableTranslations
-          .map((t) => DropdownMenuItem(
-        value: t.edition,
-        child: Text(t.displayName),
-      ))
-          .toList(),
-      onChanged: (val) {
-        if (val != null) onChanged(val);
+    return BlocBuilder<QuranBloc, QuranState>(
+      builder: (context, state) {
+        final bloc = context.read<QuranBloc>();
+        final translations = bloc.availableTranslations;
+        
+        String displayName = current;
+        if (translations.isNotEmpty) {
+          try {
+            final edition = translations.firstWhere((t) => t.identifier == current);
+            displayName = edition.englishName;
+          } catch (_) {}
+        }
+
+        return InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const TranslationSelectionScreen()),
+            );
+          },
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.grey[300]!),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Expanded(
+                  child: Text(
+                    displayName,
+                    style: const TextStyle(fontSize: 16),
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+                const Icon(Icons.arrow_forward_ios, size: 16, color: Colors.grey),
+              ],
+            ),
+          ),
+        );
       },
     );
   }
@@ -335,7 +363,7 @@ class _ToggleTile extends StatelessWidget {
       trailing: Switch(
         value: value,
         onChanged: onChanged,
-        activeColor: const Color(0xFF1B5E20),
+        activeThumbColor: const Color(0xFF1B5E20),
       ),
       contentPadding: EdgeInsets.zero,
     );

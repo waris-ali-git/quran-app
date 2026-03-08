@@ -4,6 +4,7 @@ import 'package:equatable/equatable.dart';
 import '../models/surah.dart';
 import '../models/ayah.dart';
 import '../models/reading_mode.dart';
+import '../models/translation_edition.dart';
 import '../services/quran_service.dart';
 
 part 'quran_event.dart';
@@ -15,6 +16,9 @@ class QuranBloc extends Bloc<QuranEvent, QuranState> {
   // Current state ka snapshot rakhne ke liye (preferences persist ke liye)
   ReadingPreferences _preferences = const ReadingPreferences();
   List<String> _bookmarks = [];
+  List<TranslationEdition> _availableTranslations = [];
+
+  List<TranslationEdition> get availableTranslations => _availableTranslations;
 
   QuranBloc(this._quranService) : super(const QuranInitial()) {
     on<LoadSurahsEvent>(_onLoadSurahs);
@@ -45,6 +49,7 @@ class QuranBloc extends Bloc<QuranEvent, QuranState> {
       final lastRead = await _quranService.getLastRead();
       _preferences = await _quranService.getReadingPreferences();
       _bookmarks = await _quranService.getBookmarks();
+      _availableTranslations = await _quranService.getAvailableTranslations();
 
       emit(SurahsLoaded(surahs: surahs, lastRead: lastRead));
     } catch (e) {
@@ -62,21 +67,27 @@ class QuranBloc extends Bloc<QuranEvent, QuranState> {
     emit(const QuranLoading());
     try {
       final edition = event.translationEdition ?? _preferences.selectedTranslation;
-      var surah = await _quranService.getSurahWithTranslation(
-        event.surahNumber,
-        edition,
-      );
+      Surah surah;
 
       // Agar Tajweed mode active hai, to WBW data (jisme tajweed info hai) fetch karke merge karo
       if (_preferences.displayMode == ReadingDisplayMode.tajweed ||
           _preferences.showTajweed) {
         try {
-          final wbwAyahs = await _quranService.getSurahWithWordByWord(event.surahNumber);
+          // Fetch concurrently to avoid extra loading time
+          final results = await Future.wait([
+            _quranService.getSurahWithTranslation(event.surahNumber, edition),
+            _quranService.getSurahWithWordByWord(event.surahNumber),
+          ]);
+          surah = results[0] as Surah;
+          final wbwAyahs = results[1] as List<Ayah>;
           surah = _mergeWbwData(surah, wbwAyahs);
         } catch (e) {
           // WBW fail hone par bhi basic surah show karo, bas tajweed nahi hogi
           debugPrint('Tajweed data load failed: $e');
+          surah = await _quranService.getSurahWithTranslation(event.surahNumber, edition);
         }
+      } else {
+        surah = await _quranService.getSurahWithTranslation(event.surahNumber, edition);
       }
 
       _bookmarks = await _quranService.getBookmarks();

@@ -3,6 +3,7 @@ import 'package:hive/hive.dart';
 import '../models/surah.dart';
 import '../models/ayah.dart';
 import '../models/reading_mode.dart';
+import '../models/translation_edition.dart';
 
 /// Quran Service — AlQuran.cloud + Quran.com dono APIs use karta hai
 /// AlQuran.cloud  → Surah list, Ayah text, Translation
@@ -22,6 +23,35 @@ class QuranService {
   // ─────────────────────────────────────────────
   // 1. SURAH LIST  (AlQuran.cloud)
   // ─────────────────────────────────────────────
+
+  Future<List<TranslationEdition>> getAvailableTranslations() async {
+    const cacheKey = 'available_translations';
+    try {
+      final cached = _cacheBox.get(cacheKey);
+      if (cached != null) {
+        return (cached as List)
+            .map((e) => TranslationEdition.fromJson(Map<String, dynamic>.from(e as Map)))
+            .toList();
+      }
+
+      final res = await _dio.get('$_alQuranBase/edition/type/translation');
+      if (res.statusCode == 200) {
+        final data = res.data['data'] as List;
+        final editions = data.map((e) => TranslationEdition.fromJson(Map<String, dynamic>.from(e as Map))).toList();
+        await _cacheBox.put(cacheKey, data);
+        return editions;
+      }
+      return [];
+    } catch (_) {
+      final cached = _cacheBox.get(cacheKey);
+      if (cached != null) {
+        return (cached as List)
+            .map((e) => TranslationEdition.fromJson(Map<String, dynamic>.from(e as Map)))
+            .toList();
+      }
+      return [];
+    }
+  }
 
   Future<List<Surah>> getAllSurahs() async {
     const cacheKey = 'all_surahs';
@@ -60,7 +90,7 @@ class QuranService {
       int surahNumber,
       String translationEdition,
       ) async {
-    final cacheKey = 'surah_${surahNumber}_${translationEdition}_tj_tf'; // Changed key for Tafseer
+    final cacheKey = 'surah_${surahNumber}_${translationEdition}_ur_maududi';
     try {
       final cached = _cacheBox.get(cacheKey);
       if (cached != null) {
