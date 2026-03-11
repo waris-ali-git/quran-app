@@ -57,3 +57,23 @@ class HadithError extends HadithState {
   @override
   List<Object?> get props => [message];
 }
+
+/// State when all translations of hadiths for a section are loaded
+class HadithAllTranslationsLoaded extends HadithState {
+  final HadithBook selectedBook;
+  final HadithSection selectedSection;
+  final List<MultiTranslationHadith> hadiths;
+  final List<String> availableLanguages;
+  final Set<String> selectedLanguages;
+
+  const HadithAllTranslationsLoaded({
+    required this.selectedBook,
+    required this.selectedSection,
+    required this.hadiths,
+    required this.availableLanguages,
+    required this.selectedLanguages,
+  });
+
+  @override
+  List<Object?> get props => [selectedBook, selectedSection, hadiths, availableLanguages, selectedLanguages];
+}

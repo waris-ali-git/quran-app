@@ -113,3 +113,20 @@ class HadithItem {
     );
   }
 }
+
+/// Holds one hadith's text across multiple translations/languages.
+class MultiTranslationHadith {
+  final dynamic hadithNumber;
+  final dynamic arabicNumber;
+  final List<HadithGrade> grades;
+  /// Map of language label → translated text
+  final Map<String, String> translations;
+
+  const MultiTranslationHadith({
+    required this.hadithNumber,
+    required this.arabicNumber,
+    required this.grades,
+    required this.translations,
+  });
+}
+

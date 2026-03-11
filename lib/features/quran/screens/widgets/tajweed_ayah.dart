@@ -68,7 +68,7 @@ class TajweedAyahWidget extends StatelessWidget {
                     ? TajweedService.parseTajweedTextToSpans(
                         ayah.tajweedText!,
                         preferences.arabicFontSize,
-                        'AmiriQuran',
+                        'UthmanicHafs',
                       )
                     : allSegments.map((seg) {
                         return TextSpan(
@@ -76,7 +76,7 @@ class TajweedAyahWidget extends StatelessWidget {
                           style: TextStyle(
                             color: TajweedService.getTajweedColor(seg.rule),
                             fontSize: preferences.arabicFontSize,
-                            fontFamily: 'AmiriQuran',
+                            fontFamily: 'UthmanicHafs',
                             height: 2.0,
                           ),
                         );
@@ -129,7 +129,7 @@ class TajweedAyahWidget extends StatelessWidget {
     final words = ayah.ayahWords;
     if (words == null || words.isEmpty) {
       // Fallback: pure text ko single segment banana
-      return [TajweedSegment(text: ayah.text, rule: TajweedRule.none)];
+      return [TajweedSegment(text: ayah.text.cleanArabic, rule: TajweedRule.none)];
     }
 
     final segments = <TajweedSegment>[];
@@ -138,7 +138,7 @@ class TajweedAyahWidget extends StatelessWidget {
       if (word.tajweedSegments != null && word.tajweedSegments!.isNotEmpty) {
         segments.addAll(word.tajweedSegments!);
       } else {
-        segments.add(TajweedSegment(text: word.arabic, rule: TajweedRule.none));
+        segments.add(TajweedSegment(text: word.arabic.cleanArabic, rule: TajweedRule.none));
       }
       // Words ke beech space add karo (last word ke baad nahi)
       if (i < words.length - 1) {

@@ -101,7 +101,7 @@ class ReadingSettingsSheet extends StatelessWidget {
                       min: 18,
                       max: 42,
                       previewText: 'بِسۡمِ اللّٰہِ',
-                      previewFontFamily: 'AmiriQuran',
+                      previewFontFamily: 'UthmanicHafs',
                       onChanged: (val) {
                         context.read<QuranBloc>().add(ChangeFontSizeEvent(
                           arabicSize: val,

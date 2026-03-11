@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../models/ayah.dart';
 import '../state/quran_bloc.dart';
 import '../models/surah.dart';
 import '../models/reading_mode.dart';
@@ -57,9 +58,10 @@ class _SurahListScreenState extends State<SurahListScreen> {
         title: const Text(
           'القرآن الكريم',
           style: TextStyle(
-            color: Colors.white,
-            fontSize: 22,
-            fontFamily: 'AmiriQuran',
+              fontFamily: 'surah-name-v2-icon',
+              fontSize: 32,
+              color: Colors.white,
+              fontFeatures: [FontFeature.enable('liga')]
           ),
         ),
         centerTitle: true,
@@ -201,7 +203,7 @@ class _SurahListScreenState extends State<SurahListScreen> {
                 itemBuilder: (context, index) {
                   final ayah = state.results[index];
                   return ListTile(
-                    title: Text(ayah.text, textAlign: TextAlign.right, style: const TextStyle(fontFamily: 'AmiriQuran', fontSize: 20)),
+                    title: Text(ayah.text.cleanArabic, textAlign: TextAlign.right, style: const TextStyle(fontFamily: 'UthmanicHafs', fontSize: 20)),
                     subtitle: Text(
                       "Surah ${ayah.surah?.name ?? '?'} : Ayah ${ayah.numberInSurah}",
                       style: const TextStyle(color: Colors.grey),
@@ -466,13 +468,14 @@ class _SurahListTile extends StatelessWidget {
                 ),
               ),
 
-              // Arabic name
+              // Arabic name (Icon Font)
               Text(
-                surah.name,
+                'surah${surah.number.toString().padLeft(3, '0')}',
                 style: const TextStyle(
-                  fontFamily: 'AmiriQuran',
-                  fontSize: 20,
+                  fontFamily: 'surah-name-v2-icon',
+                  fontSize: 39,
                   color: Color(0xFF1B5E20),
+                  fontFeatures: [FontFeature.enable('liga')],
                 ),
               ),
             ],
@@ -500,7 +503,7 @@ class _SurahListTile extends StatelessWidget {
                 Text(
                   surah.name,
                   style: const TextStyle(
-                    fontFamily: 'AmiriQuran',
+                    fontFamily: 'UthmanicHafs',
                     fontSize: 22,
                     color: Color(0xFF1B5E20),
                   ),

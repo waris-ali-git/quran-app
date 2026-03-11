@@ -82,9 +82,9 @@ class WordByWordAyahWidget extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               child: Text(
-                ayah.text,
+                ayah.text.cleanArabic,
                 style: TextStyle(
-                  fontFamily: 'AmiriQuran',
+                  fontFamily: 'UthmanicHafs',
                   fontSize: preferences.arabicFontSize,
                   height: 2.0,
                 ),
@@ -196,7 +196,7 @@ class _WordCard extends StatelessWidget {
                     style: TextStyle(
                       color: TajweedService.getTajweedColor(seg.rule),
                       fontSize: arabicFontSize,
-                      fontFamily: 'AmiriQuran',
+                      fontFamily: 'UthmanicHafs',
                       height: 1.8,
                     ),
                   );
@@ -205,11 +205,11 @@ class _WordCard extends StatelessWidget {
             )
           else
             Text(
-              word.arabic,
+              word.arabic.cleanArabic,
               style: TextStyle(
                 color: color,
                 fontSize: arabicFontSize,
-                fontFamily: 'AmiriQuran',
+                fontFamily: 'UthmanicHafs',
                 height: 1.8,
               ),
               textDirection: TextDirection.rtl,

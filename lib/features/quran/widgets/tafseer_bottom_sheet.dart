@@ -207,16 +207,30 @@ class _TafseerBottomSheetState extends State<TafseerBottomSheet> {
             ),
 
             // Header
-            const Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                'Tafseer',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xFF1B5E20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text(
+                  'Tafseer',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF1B5E20),
+                  ),
                 ),
-              ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 4.0),
+                  child: Text(
+                    'surah${widget.surahNumber.toString().padLeft(3, '0')}',
+                    style: const TextStyle(
+                      fontFamily: 'surah-name-v2-icon',
+                      fontSize: 38,
+                      color: Color(0xFF1B5E20),
+                      fontFeatures: [FontFeature.enable('liga')],
+                    ),
+                  ),
+                ),
+              ],
             ),
             const SizedBox(height: 8),
 
@@ -343,10 +357,10 @@ class _TafseerBottomSheetState extends State<TafseerBottomSheet> {
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     child: Text(
-                                      widget.ayah.text,
+                                      widget.ayah.text.cleanArabic,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
-                                        fontFamily: 'AmiriQuran',
+                                        fontFamily: 'UthmanicHafs',
                                         fontSize: 20,
                                       ),
                                     ),

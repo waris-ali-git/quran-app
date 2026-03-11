@@ -33,3 +33,22 @@ class ChangeHadithTranslationEvent extends HadithEvent {
   @override
   List<Object?> get props => [language];
 }
+
+/// Load ALL available translations for a section
+class LoadAllTranslationsForSectionEvent extends HadithEvent {
+  final HadithSection section;
+  const LoadAllTranslationsForSectionEvent({required this.section});
+
+  @override
+  List<Object?> get props => [section];
+}
+
+/// Toggle a specific language on/off in the multi-translation view
+class ToggleHadithLanguageEvent extends HadithEvent {
+  final String language;
+  const ToggleHadithLanguageEvent({required this.language});
+
+  @override
+  List<Object?> get props => [language];
+}
+

@@ -1,6 +1,29 @@
 import 'package:equatable/equatable.dart';
 import 'surah.dart';
 
+extension ArabicStringExtension on String {
+  /// Fixes UthmanicHafs font dotted circle issues by doing smart unicode substitutions
+  /// instead of just removing the characters.
+  String get cleanArabic {
+    String t = this;
+    
+    // 1. Remove anomalous formatting characters and the empty end-of-ayah marker
+    t = t.replaceAll(RegExp(r'[\u200E\u200F\u202A-\u202E\u200B\u200C\u200D\uFEFF\u06DD]'), '');
+    
+    // 2. Fix Sifr Mustadeer (silent letter marker) showing as a dotted circle.
+    // UthmanicHafs font expects the standard Sukun (\u0652) to render the round circle,
+    // while the actual Quranic Sukun is \u06E1 (Khah head).
+    t = t.replaceAll('\u06DF', '\u0652'); // Sifr Mustadeer 
+    t = t.replaceAll('\u06E0', '\u0652'); // Sifr Mustateel (Tall Zero) -> map to circle if unsupported
+    
+    // 3. Fix Small High Alif/Waw/Yeh rendering on dotted circles due to stacked diacritics
+    t = t.replaceAll('\u064E\u0670', '\u0670'); // Fatha + Small Alif -> Small Alif
+    t = t.replaceAll('\u064F\u06E2', '\u06E2'); // Damma + Small Waw -> Small Waw
+    t = t.replaceAll('\u0650\u06E3', '\u06E3'); // Kasra + Small Yeh -> Small Yeh
+
+    return t;
+  }
+}
 
 // ───────────────────────────────────────────────
 // TAJWEED RULE ENUM (Complete — image jaise)

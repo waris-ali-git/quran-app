@@ -6,11 +6,12 @@ import '../models/surah.dart';
 import '../models/ayah.dart';
 import '../models/reading_mode.dart';
 import '../widgets/tafseer_bottom_sheet.dart';
-import 'widgets/word_by_word_ayah.dart';
-import 'widgets/tajweed_ayah.dart';
 import 'widgets/reading_settings_sheet.dart';
+import 'widgets/tajweed_ayah.dart';
+import 'widgets/word_by_word_ayah.dart';
 import 'widgets/reciter_selection_sheet.dart';
 import 'widgets/ayah_toolbar.dart';
+import 'widgets/mushaf_page_preview.dart';
 import 'package:just_audio/just_audio.dart';
 
 class ReaderScreen extends StatefulWidget {
@@ -195,29 +196,27 @@ class _ReaderScreenState extends State<ReaderScreen> {
   // APP BAR
   // ─────────────────────────────────────────────
   AppBar _buildAppBar(BuildContext context) {
-    final audioService = QuranAudioService();
-
     return AppBar(
       backgroundColor: const Color(0xFF1B5E20),
       title: Column(
         children: [
-          Text(
-            widget.surah.name,
-            style: const TextStyle(
-              color: Colors.white,
-              fontFamily: 'AmiriQuran',
-              fontSize: 20,
+          Padding(
+            padding: const EdgeInsets.only(top: 4.0),
+            child: Text(
+              'surah${widget.surah.number.toString().padLeft(3, '0')}',
+              style: const TextStyle(
+                color: Colors.white,
+                fontFamily: 'surah-name-v2-icon',
+                fontSize: 33,
+                fontFeatures: [FontFeature.enable('liga')],
+              ),
             ),
           ),
           Text(
             widget.surah.englishName,
             style: const TextStyle(color: Colors.white70, fontSize: 12),
           ),
-          const SizedBox(height: 2),
-          Text(
-            'Reciter: ${audioService.selectedReciter.name}',
-            style: const TextStyle(color: Colors.white70, fontSize: 10),
-          ),
+          const SizedBox(height: 9),
         ],
       ),
       centerTitle: true,
@@ -268,6 +267,21 @@ class _ReaderScreenState extends State<ReaderScreen> {
       ReadingPreferences prefs,
       List<String> bookmarks,
       ) {
+    
+    // Preview for Arabic Only mode using the Mushaf Layout
+    if (prefs.displayMode == ReadingDisplayMode.arabicOnly) {
+      return CustomScrollView(
+        controller: _scrollController,
+        slivers: [
+          SliverToBoxAdapter(child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: MushafPagePreview(surah: surah),
+          )),
+          const SliverPadding(padding: EdgeInsets.only(bottom: 40)),
+        ],
+      );
+    }
+
     final ayahs = surah.ayahs ?? [];
 
     return CustomScrollView(
@@ -447,7 +461,7 @@ class _BismillahHeader extends StatelessWidget {
           Text(
             'بِسۡمِ اللّٰہِ الرَّحۡمٰنِ الرَّحِیۡمِ',
             style: TextStyle(
-              fontFamily: 'AmiriQuran',
+              fontFamily: 'UthmanicHafs',
               fontSize: 26,
               color: Colors.white,
               height: 2,
@@ -517,9 +531,9 @@ class _StandardAyahCard extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: Text(
-              ayah.text,
+              ayah.text.cleanArabic,
               style: TextStyle(
-                fontFamily: 'AmiriQuran',
+                fontFamily: 'UthmanicHafs',
                 fontSize: preferences.arabicFontSize,
                 height: 2.0,
                 color: Colors.black87,
