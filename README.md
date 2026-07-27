@@ -2,8 +2,7 @@
 
 <br/>
 
-![Noor Demo](lib/assets/images/ayah.gif)
-
+![Noor Demo](https://raw.githubusercontent.com/waris-ali-git/Noor/master/images/ayah.gif)
 <br/><br/>
 
 # ✨ Noor — The Complete Islamic Companion
