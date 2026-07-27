@@ -2,7 +2,7 @@
 
 <br/>
 
-<img src="lib/assets/images/allah_name.png" height="80" alt="Allah Name"/>
+![Demo GIF](assets/images/ayah.gif)
 
 <br/><br/>
 
