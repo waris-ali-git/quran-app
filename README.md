@@ -2,7 +2,7 @@
 
 <br/>
 
-<img src="lib/assets/images/ayat.gif" width="700" alt="Noor Demo" /><br/><br/>
+<img src="lib/assets/images/ayat.gif" width="650" alt="Noor Demo" /><br/><br/>
 
 # ✨ Noor — The Complete Islamic Companion
 
