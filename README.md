@@ -2,8 +2,7 @@
 
 <br/>
 
-<img src="lib/assets/images/allah_name.png" height="80" alt="Allah Name"/>
-
+![Noor Demo](https://raw.githubusercontent.com/waris-ali-git/Noor/master/images/ayah.gif)
 <br/><br/>
 
 # ✨ Noor — The Complete Islamic Companion
