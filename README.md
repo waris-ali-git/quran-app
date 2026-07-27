@@ -2,7 +2,7 @@
 
 <br/>
 
-![Demo GIF](assets/images/ayah.gif)
+![Noor Demo](lib/assets/images/ayah.gif)
 
 <br/><br/>
 
