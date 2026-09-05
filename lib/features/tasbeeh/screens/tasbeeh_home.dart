@@ -243,7 +243,7 @@ class _TasbeehHomeScreenState extends State<TasbeehHomeScreen>
               height: 280,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: TasbeehColors.standardBlue.withOpacity(0.06),
+                color: TasbeehColors.standardBlue.withValues(alpha: 0.06),
               ),
             ),
           ),
@@ -279,7 +279,7 @@ class _TasbeehHomeScreenState extends State<TasbeehHomeScreen>
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: TasbeehColors.standardBlue.withOpacity(0.25),
+                      color: TasbeehColors.standardBlue.withValues(alpha: 0.25),
                       blurRadius: 30,
                       spreadRadius: 4,
                       offset: const Offset(0, 8),
@@ -396,7 +396,7 @@ class _TasbeehHomeScreenState extends State<TasbeehHomeScreen>
             top: BorderSide(color: TasbeehColors.babyBlue, width: 1)),
         boxShadow: [
           BoxShadow(
-            color: TasbeehColors.standardBlue.withOpacity(0.08),
+            color: TasbeehColors.standardBlue.withValues(alpha: 0.08),
             blurRadius: 12,
             offset: const Offset(0, -4),
           ),
@@ -572,7 +572,7 @@ class _ActionButton extends StatelessWidget {
               boxShadow: [
                 BoxShadow(
                   color: TasbeehColors.standardBlue
-                      .withOpacity(primary ? 0.3 : 0.1),
+                      .withValues(alpha: primary ? 0.3 : 0.1),
                   blurRadius: primary ? 16 : 8,
                   offset: const Offset(0, 4),
                 ),

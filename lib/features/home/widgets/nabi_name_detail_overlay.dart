@@ -15,7 +15,7 @@ void showNabiNameDetailOverlay(BuildContext context, Map<String, String> data, i
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
           child: Container(
-            color: Colors.black.withOpacity(0.45),
+            color: Colors.black.withValues(alpha: 0.45),
             child: Center(
               child: SingleChildScrollView(
                 physics: const BouncingScrollPhysics(),

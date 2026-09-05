@@ -109,7 +109,7 @@ class _TasbeehStatsScreenState extends State<TasbeehStatsScreen> {
                   border: Border.all(color: TasbeehColors.babyBlue),
                   boxShadow: [
                     BoxShadow(
-                      color: TasbeehColors.standardBlue.withOpacity(0.12),
+                      color: TasbeehColors.standardBlue.withValues(alpha: 0.12),
                       blurRadius: 16,
                       offset: const Offset(0, 6),
                     ),

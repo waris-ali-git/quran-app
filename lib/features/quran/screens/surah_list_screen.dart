@@ -956,7 +956,7 @@ class _NoLastReadPlaceholder extends StatelessWidget {
       margin: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: const Color(0xFFF4F1ED).withOpacity(0.5),
+        color: const Color(0xFFF4F1ED).withValues(alpha: 0.5),
         borderRadius: BorderRadius.circular(24),
         border: Border.all(color: const Color(0xFFD6D6D6), width: 1),
       ),

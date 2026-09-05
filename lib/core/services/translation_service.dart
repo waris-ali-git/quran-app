@@ -1,11 +1,60 @@
-import 'dart:convert';
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 
 class TranslationService {
   final Dio _dio;
   
   // Simple in-memory cache to prevent redundant API calls
   static final Map<String, String> _cache = {};
+
+  static const Map<String, Map<String, String>> _phraseMap = {
+    'jazakallah': {
+      'ur': 'جزاک اللہ خیراً',
+      'hi': 'जज़ाकअल्लाह',
+      'ar': 'جزاك الله خيراً',
+      'en': 'JazakAllah',
+      'fr': "Qu'Allah vous récompense",
+      'es': 'Que Allah te recompense',
+      'tr': 'Allah razı olsun',
+      'id': 'Jazakallahu khairan',
+      'bn': 'জাজাকাল্লাহ',
+      'ms': 'Jazakallahu khairan',
+      'fa': 'جزاک الله',
+      'ru': 'Джазакаллаху хайран',
+    },
+    'hadith of the day': {
+      'ur': 'حدیثِ مبارکہ',
+      'hi': 'आज की हदीस',
+      'ar': 'حديث اليوم',
+      'en': 'Hadith of the Day',
+      'fr': 'Hadith du jour',
+      'es': 'Hadiz del día',
+      'tr': 'Günün Hadisi',
+      'id': 'Hadits Hari Ini',
+      'bn': 'আজকের হাদিস',
+    },
+    'daily hadith': {
+      'ur': 'آج کی حدیثِ مبارکہ',
+      'hi': 'दैनिक हदीस',
+      'ar': 'الحديث اليومي',
+      'en': 'Daily Hadith',
+      'fr': 'Hadith quotidien',
+      'es': 'Hadiz diario',
+      'tr': 'Günlük Hadis',
+      'id': 'Hadits Harian',
+      'bn': 'দৈনিক হাদিস',
+    },
+    'daily hadith of the day • tap to view': {
+      'ur': 'آج کی حدیثِ مبارکہ • دیکھنے کے لیے ٹیپ کریں',
+      'hi': 'आज की हदीस • देखने के लिए टैप करें',
+      'ar': 'حديث اليوم • انقر للعرض',
+      'en': 'Daily Hadith of the Day • Tap to view',
+      'fr': 'Hadith du jour • Appuyez pour voir',
+      'es': 'Hadiz del día • Toca para ver',
+      'tr': 'Günün Hadisi • Görmek için dokunun',
+      'id': 'Hadits Hari Ini • Ketuk untuk melihat',
+    },
+  };
 
   static const Map<String, String> _urduOverrides = {
     'kalma': 'کلمہ',
@@ -29,6 +78,13 @@ class TranslationService {
     'fifth kalma (astaghfar)': 'پانچواں کلمہ (استغفار)',
     'sixth kalma (radde kufr)': 'چھٹا کلمہ (ردِ کفر)',
     'transliteration': 'رومن اردو',
+    'copy': 'کاپی',
+    'share': 'شیئر',
+    'jazakallah': 'جزاک اللہ خیراً',
+    'hadith of the day': 'حدیثِ مبارکہ',
+    'daily hadith': 'آج کی حدیثِ مبارکہ',
+    'daily hadith of the day • tap to view': 'آج کی حدیثِ مبارکہ • دیکھنے کے لیے ٹیپ کریں',
+    'hadith copied to clipboard': 'حدیث کاپی کر لی گئی ہے',
   };
 
   TranslationService(this._dio);
@@ -38,11 +94,19 @@ class TranslationService {
     required String targetLang,
     String sourceLang = 'auto',
   }) async {
-    // If target is English (and source is assumed English) or text is empty
     if (text.trim().isEmpty) return text;
+
+    final key = text.trim().toLowerCase();
+
+    // Check multi-language phrase map first (JazakAllah, Daily Hadith, etc.)
+    if (_phraseMap.containsKey(key)) {
+      final langMap = _phraseMap[key]!;
+      if (langMap.containsKey(targetLang)) {
+        return langMap[targetLang]!;
+      }
+    }
     
     if (targetLang == 'ur') {
-      final key = text.trim().toLowerCase();
       if (_urduOverrides.containsKey(key)) {
         return _urduOverrides[key]!;
       }
@@ -66,9 +130,6 @@ class TranslationService {
       );
 
       if (response.statusCode == 200) {
-        // The response is a nested array. The translated text is built by 
-        // concatenating the first element of each array in the first main array.
-        // Example response: [[["Translated Text","Original Text",null,null,1]],null,"en",null,null,null,1,[]]
         final List<dynamic> data = response.data;
         if (data.isNotEmpty && data[0] is List) {
           final List<dynamic> translationParts = data[0];
@@ -85,10 +146,10 @@ class TranslationService {
           return result;
         }
       }
-      return text; // Fallback to original text on parsing error
+      return text;
     } catch (e) {
-      print('Translation Error: $e');
-      return text; // Fallback to original text on network/other error
+      debugPrint('Translation Error: $e');
+      return text;
     }
   }
 }

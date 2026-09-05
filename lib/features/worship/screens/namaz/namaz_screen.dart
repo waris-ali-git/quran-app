@@ -789,7 +789,7 @@ class _CalendarTabState extends State<_CalendarTab> {
       textColor = const Color(0xFF1A2E44);
     } else {
       gradient = const [Color(0xFFFFFFFF), Color(0xFFF8FAFC)];
-      textColor = const Color(0xFF6B8FB5).withOpacity(0.8);
+      textColor = const Color(0xFF6B8FB5).withValues(alpha: 0.8);
     }
 
     // Color definitions for specific prayers
@@ -822,14 +822,14 @@ class _CalendarTabState extends State<_CalendarTab> {
             color: isSelected
                 ? const Color(0xFF90BDE7)
                 : isToday
-                    ? const Color(0xFF3487D1).withOpacity(0.55)
-                    : Colors.white.withOpacity(0.9),
+                    ? const Color(0xFF3487D1).withValues(alpha: 0.55)
+                    : Colors.white.withValues(alpha: 0.9),
             width: isSelected || isToday ? 1.5 : 1,
           ),
           boxShadow: [
             if (isSelected || count > 0)
               BoxShadow(
-                color: const Color(0xFF90BDE7).withOpacity(0.12),
+                color: const Color(0xFF90BDE7).withValues(alpha: 0.12),
                 blurRadius: 8,
                 offset: const Offset(0, 3),
               ),
@@ -979,7 +979,7 @@ class _CalendarTabState extends State<_CalendarTab> {
   }) {
     final activeColor = isCompleted ? prayerColor : TasbeehColors.textLight;
     final bgGradient = isCompleted
-        ? [prayerColor.withOpacity(0.12), prayerColor.withOpacity(0.24)]
+        ? [prayerColor.withValues(alpha: 0.12), prayerColor.withValues(alpha: 0.24)]
         : const [Color(0xFFF6FCFF), Color(0xFFEAF4FB)];
 
     return Container(
@@ -993,7 +993,7 @@ class _CalendarTabState extends State<_CalendarTab> {
         ),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: activeColor.withOpacity(isCompleted ? 0.35 : 0.16),
+          color: activeColor.withValues(alpha: isCompleted ? 0.35 : 0.16),
           width: isCompleted ? 1.2 : 1,
         ),
       ),
@@ -1014,7 +1014,7 @@ class _CalendarTabState extends State<_CalendarTab> {
             overflow: TextOverflow.ellipsis,
             style: TextStyle(
               color: isCompleted
-                  ? prayerColor.withOpacity(0.9)
+                  ? prayerColor.withValues(alpha: 0.9)
                   : TasbeehColors.textPrimary,
               fontSize: 13,
               fontWeight: FontWeight.bold,
@@ -1066,7 +1066,7 @@ class _MiniPrayerDonutPainter extends CustomPainter {
 
     for (int i = 0; i < totalPrayers; i++) {
       final isDone = completedList[i];
-      paint.color = isDone ? colors[i] : const Color(0xFF6B8FB5).withOpacity(0.12);
+      paint.color = isDone ? colors[i] : const Color(0xFF6B8FB5).withValues(alpha: 0.12);
 
       final startAngle = -3.141592653589793 / 2 + i * angleSegment + gap / 2;
       final sweepAngle = angleSegment - gap;
@@ -1113,7 +1113,7 @@ class _SelectedDayDonutPainter extends CustomPainter {
 
     for (int i = 0; i < totalPrayers; i++) {
       final isDone = completedList[i];
-      paint.color = isDone ? colors[i] : const Color(0xFF6B8FB5).withOpacity(0.12);
+      paint.color = isDone ? colors[i] : const Color(0xFF6B8FB5).withValues(alpha: 0.12);
 
       final startAngle = -3.141592653589793 / 2 + i * angleSegment + gap / 2;
       final sweepAngle = angleSegment - gap;

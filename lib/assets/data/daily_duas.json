@@ -1,0 +1,239 @@
+[
+  {
+    "id": "dua_ramadan_1",
+    "arabic": "شَهْرُ رَمَضَانَ الَّذِي أُنزِلَ فِيهِ الْقُرْآنُ هُدًى لِّلنَّاسِ وَبَيِّنَاتٍ مِّنَ الْهُدَىٰ وَالْفُرْقَانِ",
+    "translation": "The month of Ramadan in which was revealed the Quran, a guidance for the people and clear proofs of guidance and criterion.",
+    "translationUrdu": "رمضان کا مہینہ وہ ہے جس میں قرآن نازل کیا گیا، جو لوگوں کے لیے ہدایت ہے اور ہدایت اور حق و باطل میں تمیز کی روشن نشانیاں ہیں۔",
+    "surahName": "Al-Baqarah",
+    "surahNumber": 2,
+    "ayahNumber": 185,
+    "occasionTag": "ramadan_start",
+    "hijriMonth": 9,
+    "hijriDay": 1
+  },
+  {
+    "id": "dua_ramadan_dua",
+    "arabic": "وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ ۖ أُجِيبُ دَعْوَةَ الدَّاعِ إِذَا دَعَانِ",
+    "translation": "And when My servants ask you concerning Me, indeed I am near. I respond to the invocation of the supplicant when he calls upon Me.",
+    "translationUrdu": "اور جب میرے بندے آپ سے میرے بارے میں پوچھیں، تو یقیناً میں قریب ہوں۔ جب کوئی پکارنے والا مجھے پکارتا ہے تو میں اس کی دعا قبول کرتا ہوں۔",
+    "surahName": "Al-Baqarah",
+    "surahNumber": 2,
+    "ayahNumber": 186,
+    "occasionTag": "ramadan_general",
+    "hijriMonth": 9
+  },
+  {
+    "id": "dua_laylatul_qadr",
+    "arabic": "إِنَّا أَنزَلْنَاهُ فِي لَيْلَةِ الْقَدْرِ ۝ وَمَا أَدْرَاكَ مَا لَيْلَةُ الْقَدْرِ ۝ لَيْلَةُ الْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ",
+    "translation": "Indeed, We sent the Quran down during the Night of Decree. And what can make you know what is the Night of Decree? The Night of Decree is better than a thousand months.",
+    "translationUrdu": "بے شک ہم نے اسے شبِ قدر میں نازل کیا۔ اور آپ کو کیا معلوم کہ شبِ قدر کیا ہے؟ شبِ قدر ہزار مہینوں سے بہتر ہے۔",
+    "surahName": "Al-Qadr",
+    "surahNumber": 97,
+    "ayahNumber": 1,
+    "occasionTag": "laylatul_qadr",
+    "hijriMonth": 9,
+    "hijriDay": 27
+  },
+  {
+    "id": "dua_arafah",
+    "arabic": "قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ",
+    "translation": "Say, He is Allah, [who is] One, Allah, the Eternal Refuge. He neither begets nor is born, Nor is there to Him any equivalent.",
+    "translationUrdu": "کہہ دیجیے کہ وہ اللہ ایک ہے۔ اللہ بے نیاز ہے۔ نہ اس کی کوئی اولاد ہے اور نہ وہ کسی کی اولاد ہے۔ اور نہ کوئی اس کا ہمسر ہے۔",
+    "surahName": "Al-Ikhlas",
+    "surahNumber": 112,
+    "ayahNumber": 1,
+    "occasionTag": "arafah",
+    "hijriMonth": 12,
+    "hijriDay": 9
+  },
+  {
+    "id": "dua_jummah",
+    "arabic": "إِنَّ اللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ ۚ يَا أَيُّهَا الَّذِينَ آمَنُوا صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيمًا",
+    "translation": "Indeed, Allah confers blessing upon the Prophet, and His angels ask Him to do so. O you who have believed, ask [Allah to confer] blessing upon him and ask [Allah to grant him] peace.",
+    "translationUrdu": "بے شک اللہ اور اس کے فرشتے نبی پر درود بھیجتے ہیں۔ اے ایمان والو! تم بھی ان پر درود و سلام بھیجو۔",
+    "surahName": "Al-Ahzab",
+    "surahNumber": 33,
+    "ayahNumber": 56,
+    "occasionTag": "jummah"
+  },
+  {
+    "id": "dua_rabbana_1",
+    "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+    "translation": "Our Lord, give us in this world that which is good and in the Hereafter that which is good and protect us from the punishment of the Fire.",
+    "translationUrdu": "اے ہمارے رب! ہمیں دنیا میں بھی بھلائی عطا فرما اور آخرت میں بھی بھلائی دے اور ہمیں آگ کے عذاب سے بچا۔",
+    "surahName": "Al-Baqarah",
+    "surahNumber": 2,
+    "ayahNumber": 201
+  },
+  {
+    "id": "dua_rabbana_2",
+    "arabic": "رَبَّنَا لاَ تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً إِنَّكَ أَنتَ الْوَهَّابُ",
+    "translation": "Our Lord, let not our hearts swerve after You have guided us and grant us from Yourself mercy. Indeed, You are the Bestower.",
+    "translationUrdu": "اے ہمارے رب! ہمارے دلوں کو ہدایت دینے کے بعد ٹیڑھا نہ فرما اور ہمیں اپنے پاس سے رحمت عطا کر، بے شک تو ہی بڑا عطا فرمانے والا ہے۔",
+    "surahName": "Ali 'Imran",
+    "surahNumber": 3,
+    "ayahNumber": 8
+  },
+  {
+    "id": "dua_rabbana_3",
+    "arabic": "رَبِّ زِدْنِي عِلْمًا",
+    "translation": "My Lord, increase me in knowledge.",
+    "translationUrdu": "اے میرے رب! میرے علم میں اضافہ فرما۔",
+    "surahName": "Taha",
+    "surahNumber": 20,
+    "ayahNumber": 114
+  },
+  {
+    "id": "dua_rabbana_4",
+    "arabic": "رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ",
+    "translation": "Our Lord, pour upon us patience and plant firmly our feet and give us victory over the disbelieving people.",
+    "translationUrdu": "اے ہمارے رب! ہم پر صبر و استقامت نازل فرما، ہمارے قدم جما دے اور کافروں کی قوم پر ہماری مدد فرما۔",
+    "surahName": "Al-Baqarah",
+    "surahNumber": 2,
+    "ayahNumber": 250
+  },
+  {
+    "id": "dua_rabbana_5",
+    "arabic": "رَبَّنَا ظَلَمْنَا أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ",
+    "translation": "Our Lord, we have wronged ourselves, and if You do not forgive us and have mercy upon us, we will surely be among the losers.",
+    "translationUrdu": "اے ہمارے رب! ہم نے اپنی جانوں پر ظلم کیا، اگر تو نے ہمیں معاف نہ فرمایا اور ہم پر رحم نہ کیا تو ہم یقیناً نقصان اٹھانے والوں میں سے ہو جائیں گے۔",
+    "surahName": "Al-A'raf",
+    "surahNumber": 7,
+    "ayahNumber": 23
+  },
+  {
+    "id": "dua_rabbana_6",
+    "arabic": "رَبِّ اجْعَلْنِي مُقِيمَ الصَّلاَةِ وَمِن ذُرِّيَّتِي رَبَّنَا وَتَقَبَّلْ دُعَاءِ",
+    "translation": "My Lord, make me an establisher of prayer, and [also] from my descendants. Our Lord, and accept my supplication.",
+    "translationUrdu": "اے میرے رب! مجھے اور میری اولاد کو نماز قائم کرنے والا بنا، اے ہمارے رب! اور میری دعا قبول فرما۔",
+    "surahName": "Ibrahim",
+    "surahNumber": 14,
+    "ayahNumber": 40
+  },
+  {
+    "id": "dua_rabbana_7",
+    "arabic": "رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الْحِسَابُ",
+    "translation": "Our Lord, forgive me and my parents and the believers the Day the account is established.",
+    "translationUrdu": "اے ہمارے رب! مجھے، میرے والدین اور تمام مومنوں کو اس دن بخش دے جس دن حساب قائم ہوگا۔",
+    "surahName": "Ibrahim",
+    "surahNumber": 14,
+    "ayahNumber": 41
+  },
+  {
+    "id": "dua_rabbana_8",
+    "arabic": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
+    "translation": "Our Lord, grant us from among our wives and offspring comfort to our eyes and make us a leader for the righteous.",
+    "translationUrdu": "اے ہمارے رب! ہمیں ہماری بیویوں اور ہماری اولاد کی طرف سے آنکھوں کی ٹھنڈک عطا فرما اور ہمیں پرہیزگاروں کا پیشوا بنا۔",
+    "surahName": "Al-Furqan",
+    "surahNumber": 25,
+    "ayahNumber": 74
+  },
+  {
+    "id": "dua_rabbana_9",
+    "arabic": "رَبِّ اشْرَحْ لِي صَدْرِي ۝ وَيَسِّرْ لِي أَمْرِي ۝ وَاحْلُلْ عُقْدَةً مِّن لِّسَانِي ۝ يَفْقَهُوا قَوْلِي",
+    "translation": "My Lord, expand for me my breast [with assurance] And ease for me my task And untie the knot from my tongue That they may understand my speech.",
+    "translationUrdu": "اے میرے رب! میرا سینہ کھول دے، اور میرا کام آسان کر دے، اور میری زبان کی گرہ کھول دے تاکہ لوگ میری بات سمجھ سکیں۔",
+    "surahName": "Taha",
+    "surahNumber": 20,
+    "ayahNumber": 25
+  },
+  {
+    "id": "dua_rabbana_10",
+    "arabic": "لا إِلَهَ إِلاَّ أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ",
+    "translation": "There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.",
+    "translationUrdu": "تیرے سوا کوئی معبود نہیں، تو پاک ہے، بے شک میں ہی ظالموں میں سے تھا۔",
+    "surahName": "Al-Anbiya",
+    "surahNumber": 21,
+    "ayahNumber": 87
+  },
+  {
+    "id": "dua_rabbana_11",
+    "arabic": "رَبِّ لا تَذَرْنِي فَرْدًا وَأَنتَ خَيْرُ الْوَارِثِينَ",
+    "translation": "My Lord, do not leave me alone [with no heir], while You are the best of inheritors.",
+    "translationUrdu": "اے میرے رب! مجھے اکیلا نہ چھوڑ اور تو سب سے بہترین وارث ہے۔",
+    "surahName": "Al-Anbiya",
+    "surahNumber": 21,
+    "ayahNumber": 89
+  },
+  {
+    "id": "dua_rabbana_12",
+    "arabic": "رَبِّ أَنزِلْنِي مُنزَلاً مُّبَارَكًا وَأَنتَ خَيْرُ الْمُنزِلِينَ",
+    "translation": "My Lord, let me land at a blessed landing place, and You are the best to accommodate [us].",
+    "translationUrdu": "اے میرے رب! مجھے برکت والی جگہ پر اتار اور تو بہترین اتارنے والا ہے۔",
+    "surahName": "Al-Mu'minun",
+    "surahNumber": 23,
+    "ayahNumber": 29
+  },
+  {
+    "id": "dua_rabbana_13",
+    "arabic": "رَّبِّ أَعُوذُ بِكَ مِنْ هَمَزَاتِ الشَّيَاطِينِ ۝ وَأَعُوذُ بِكَ رَبِّ أَن يَحْضُرُونِ",
+    "translation": "My Lord, I seek refuge in You from the incitements of the devils, And I seek refuge in You, my Lord, lest they be present with me.",
+    "translationUrdu": "اے میرے رب! میں شیاطین کے وسوسوں سے تیری پناہ مانگتا ہوں، اور اے رب! میں اس سے بھی تیری پناہ مانگتا ہوں کہ وہ میرے پاس آئیں۔",
+    "surahName": "Al-Mu'minun",
+    "surahNumber": 23,
+    "ayahNumber": 97
+  },
+  {
+    "id": "dua_rabbana_14",
+    "arabic": "رَبَّنَا آمَنَّا فَاغْفِرْ لَنَا وَارْحَمْنَا وَأَنتَ خَيْرُ الرَّاحِمِينَ",
+    "translation": "Our Lord, we have believed, so forgive us and have mercy upon us, and You are the best of the merciful.",
+    "translationUrdu": "اے ہمارے رب! ہم ایمان لائے، پس ہمیں بخش دے اور ہم پر رحم فرما، اور تو سب سے بہترین رحم فرمانے والا ہے۔",
+    "surahName": "Al-Mu'minun",
+    "surahNumber": 23,
+    "ayahNumber": 109
+  },
+  {
+    "id": "dua_rabbana_15",
+    "arabic": "رَّبِّ اغْفِرْ وَارْحَمْ وَأَنتَ خَيْرُ الرَّاحِمِينَ",
+    "translation": "My Lord, forgive and have mercy, and You are the best of the merciful.",
+    "translationUrdu": "اے میرے رب! بخش دے اور رحم فرما، اور تو سب سے بہترین رحم فرمانے والا ہے۔",
+    "surahName": "Al-Mu'minun",
+    "surahNumber": 23,
+    "ayahNumber": 118
+  },
+  {
+    "id": "dua_rabbana_16",
+    "arabic": "رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ",
+    "translation": "My Lord, enable me to be grateful for Your favor which You have bestowed upon me and upon my parents and to work righteousness of which You will approve.",
+    "translationUrdu": "اے میرے رب! مجھے توفیق دے کہ میں تیری اس نعمت کا شکر ادا کروں جو تو نے مجھ پر اور میرے والدین پر کی اور ایسا نیک عمل کروں جس سے تو راضی ہو۔",
+    "surahName": "An-Naml",
+    "surahNumber": 27,
+    "ayahNumber": 19
+  },
+  {
+    "id": "dua_rabbana_17",
+    "arabic": "رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
+    "translation": "My Lord, indeed I am, for whatever good You would send down to me, in need.",
+    "translationUrdu": "اے میرے رب! تو جو بھی بھلائی میری طرف نازل کرے، میں اس کا محتاج ہوں۔",
+    "surahName": "Al-Qasas",
+    "surahNumber": 28,
+    "ayahNumber": 24
+  },
+  {
+    "id": "dua_rabbana_18",
+    "arabic": "حَسْبِيَ اللَّهُ لا إِلَهَ إِلاَّ هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ",
+    "translation": "Sufficient for me is Allah; there is no deity except Him. On Him I have relied, and He is the Lord of the Great Throne.",
+    "translationUrdu": "مجھے اللہ ہی کافی ہے، اس کے سوا کوئی معبود نہیں، اسی پر میں نے توکل کیا اور وہ عرشِ عظیم کا رب ہے۔",
+    "surahName": "At-Tawbah",
+    "surahNumber": 9,
+    "ayahNumber": 129
+  },
+  {
+    "id": "dua_rabbana_19",
+    "arabic": "رَبَّنَا لاَ تَجْعَلْنَا مَعَ الْقَوْمِ الظَّالِمِينَ",
+    "translation": "Our Lord, do not place us with the wrongdoing people.",
+    "translationUrdu": "اے ہمارے رب! ہمیں ظالم لوگوں کے ساتھ شامل نہ فرما۔",
+    "surahName": "Al-A'raf",
+    "surahNumber": 7,
+    "ayahNumber": 47
+  },
+  {
+    "id": "dua_rabbana_20",
+    "arabic": "رَبَّنَا وَسِعْتَ كُلَّ شَيْءٍ رَّحْمَةً وَعِلْمًا فَاغْفِرْ لِلَّذِينَ تَابُوا وَاتَّبَعُوا سَبِيلَكَ وَقِهِمْ عَذَابَ الْجَحِيمِ",
+    "translation": "Our Lord, You have encompassed all things in mercy and knowledge, so forgive those who have repented and followed Your way and protect them from the punishment of Hellfire.",
+    "translationUrdu": "اے ہمارے رب! تیری رحمت اور علم ہر چیز کو گھیرے ہوئے ہے، پس ان لوگوں کو بخش دے جنہوں نے توبہ کی اور تیرے راستے کی پیروی کی اور انہیں دوزخ کے عذاب سے بچا۔",
+    "surahName": "Ghafir",
+    "surahNumber": 40,
+    "ayahNumber": 7
+  }
+]

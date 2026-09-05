@@ -143,7 +143,7 @@ class _HajjScreenState extends State<HajjScreen> {
             borderRadius: BorderRadius.circular(16),
             boxShadow: [
               BoxShadow(
-                color: _deepColor.withOpacity(0.12),
+                color: _deepColor.withValues(alpha: 0.12),
                 blurRadius: 8,
                 offset: const Offset(0, 3),
               ),
@@ -227,7 +227,7 @@ class _HajjScreenState extends State<HajjScreen> {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: _deepColor.withOpacity(0.12),
+            color: _deepColor.withValues(alpha: 0.12),
             blurRadius: 10,
             offset: const Offset(0, 4),
           )
@@ -254,7 +254,7 @@ class _HajjScreenState extends State<HajjScreen> {
                   color: Color(0xFF2A1A0A)),
               textDirection: TextDirection.rtl,
             ),
-            Divider(height: 32, color: _deepColor.withOpacity(0.2)),
+            Divider(height: 32, color: _deepColor.withValues(alpha: 0.2)),
             Text(
               transliteration,
               style: TextStyle(
@@ -293,7 +293,7 @@ class _HajjScreenState extends State<HajjScreen> {
             borderRadius: BorderRadius.circular(16),
             boxShadow: [
               BoxShadow(
-                color: _deepColor.withOpacity(0.07),
+                color: _deepColor.withValues(alpha: 0.07),
                 blurRadius: 8,
                 offset: const Offset(0, 2),
               ),

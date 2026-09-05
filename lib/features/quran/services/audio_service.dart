@@ -191,8 +191,16 @@ class QuranAudioService {
   Future<void> pauseTafseer() async => await _tafseerPlayer.pause();
   
   Future<void> stopTafseer() async {
-    await _tafseerPlayer.stop();
     _currentTafseerUrl = null;
+    tafseerSurahName = null;
+    tafseerScholarName = null;
+    tafseerSurahNumber = null;
+    tafseerSourceId = null;
+    try {
+      await _tafseerPlayer.stop();
+    } catch (e) {
+      debugPrint("Error stopping tafseer player: $e");
+    }
   }
 
   Future<void> seekTafseer(Duration position) async => await _tafseerPlayer.seek(position);

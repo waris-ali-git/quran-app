@@ -10,7 +10,7 @@ import 'package:http/http.dart' as http;
 import 'package:just_audio/just_audio.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../../../shared/widgets/custom_button.dart';
+import '../../../shared/icons/icomoon.dart';
 import '../../quran/screens/surah_list_screen.dart';
 import '../../hadith/screens/hadith_books_screen.dart';
 import '../../worship/screens/worship_home.dart';
@@ -18,9 +18,9 @@ import '../../worship/models/prayer_tracking_record.dart';
 import '../../worship/services/prayer_tracking_service.dart';
 import '../../dua/screens/duas_home_screen.dart';
 import '../../qibla/screens/qibla_compass.dart';
+import '../../grammar/screens/grammar_home_screen.dart';
 import '../../tasbeeh/screens/tasbeeh_home.dart';
 import '../../tasbeeh/state/tasbeeh_bloc.dart';
-import '../../../../shared/icons/icomoon.dart';
 import '../asma_ul_husna_screen.dart';
 import '../asma_un_nabi_screen.dart';
 import '../../prophets/prophets_list_screen.dart';
@@ -28,7 +28,17 @@ import '../../../core/widgets/language_selector_button.dart';
 import '../../../core/widgets/translated_text.dart';
 import '../widgets/streak_widget.dart';
 import '../../../core/services/notification_service.dart';
+import '../../../core/services/hijri_service.dart';
 import '../../../core/constants.dart';
+import '../models/daily_dua.dart';
+import '../services/daily_dua_service.dart';
+import '../../hadith/services/daily_hadith_service.dart';
+import '../../hadith/screens/widgets/daily_hadith_dialog.dart';
+import '../../hadith/screens/widgets/animated_gradient_reveal_text.dart';
+import '../../../core/di.dart';
+import '../../../core/services/translation_service.dart';
+import '../../../core/state/language_cubit.dart';
+import 'package:share_plus/share_plus.dart';
 
 // ──────────────────────────────────────────────────────────
 // Colour Palette
@@ -36,9 +46,7 @@ import '../../../core/constants.dart';
 const _bg = Color(0xFFF4FBFE); // Ice White
 const _gold1 = Color(0xFFD9F1FD); // Powder Blue (hero gradient start)
 const _gold2 = Color(0xFFA6C7F2); // Baby Blue   (hero gradient end / icon tint)
-const _clockClr = Color(0xFF2D5F8A); // deep blue
 const _orange = Color(0xFF90BDE7); // Carolina Blue (replaces orange accent)
-const _cardBg = Color(0xFFF4FBFE); // Ice White card bg
 const _muted = Color(0xFF6B8FB5); // steel blue muted
 const _dark = Color(0xFF1A2E44); // deep navy dark text
 
@@ -297,14 +305,22 @@ class _HomeTabState extends State<_HomeTab> {
 
   // Adhan Preview & Settings
   final AudioPlayer _audioPlayer = AudioPlayer();
+  StreamSubscription<ProcessingState>? _audioStateSubscription;
   bool _enableAdhanNotifications = true;
   bool _isPlayingPreview = false;
+
+  // Daily Ayah / Dua & Hijri Date
+  DailyDua _todayDua = DailyDua.fallback;
+  HijriDate? _todayHijri;
+  int _hijriOffset = 0;
 
   @override
   void initState() {
     super.initState();
     _loadUserName();
     _loadNotificationSettings();
+    _loadDailyDua();
+    _checkAndShowDailyHadith();
     NotificationService().scheduleInactivityReminder();
     _timer = Timer.periodic(const Duration(seconds: 1), (_) {
       if (!mounted) return;
@@ -316,9 +332,42 @@ class _HomeTabState extends State<_HomeTab> {
     _initLocation();
   }
 
+  Future<void> _checkAndShowDailyHadith() async {
+    final shouldShow = await DailyHadithService.shouldShowPopUpToday();
+    if (shouldShow) {
+      final hadith = await DailyHadithService.getTodayHadith();
+      if (!mounted) return;
+      WidgetsBinding.instance.addPostFrameCallback((_) async {
+        if (!mounted) return;
+        await DailyHadithDialog.show(context, hadith);
+        await DailyHadithService.markPopUpShownToday();
+      });
+    }
+  }
+
+  Future<void> _openTodayHadithDialogManually() async {
+    final hadith = await DailyHadithService.getTodayHadith();
+    if (!mounted) return;
+    DailyHadithDialog.show(context, hadith);
+  }
+
+  Future<void> _loadDailyDua() async {
+    final offset = await HijriService.getSavedOffset();
+    final hijri = await HijriService.getTodayHijriDate();
+    final dua = await DailyDuaService.getTodayDua();
+    if (mounted) {
+      setState(() {
+        _hijriOffset = offset;
+        _todayHijri = hijri;
+        _todayDua = dua;
+      });
+    }
+  }
+
   @override
   void dispose() {
     _timer.cancel();
+    _audioStateSubscription?.cancel();
     _audioPlayer.dispose();
     super.dispose();
   }
@@ -384,7 +433,7 @@ class _HomeTabState extends State<_HomeTab> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: const Text('Azaan Notifications Enabled!'),
-          backgroundColor: const Color(0xFF90BDE7).withOpacity(0.9),
+          backgroundColor: const Color(0xFF90BDE7).withValues(alpha: 0.9),
           behavior: SnackBarBehavior.floating,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         ),
@@ -394,7 +443,7 @@ class _HomeTabState extends State<_HomeTab> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: const Text('Azaan Notifications Disabled.'),
-          backgroundColor: Colors.redAccent.withOpacity(0.9),
+          backgroundColor: Colors.redAccent.withValues(alpha: 0.9),
           behavior: SnackBarBehavior.floating,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         ),
@@ -416,7 +465,9 @@ class _HomeTabState extends State<_HomeTab> {
         await _audioPlayer.setUrl('https://github.com/AalianKhan/adhans/raw/master/adhan.mp3');
         await _audioPlayer.play();
 
-        _audioPlayer.processingStateStream.listen((state) {
+        // Cancel any existing subscription before creating a new one
+        await _audioStateSubscription?.cancel();
+        _audioStateSubscription = _audioPlayer.processingStateStream.listen((state) {
           if (state == ProcessingState.completed) {
             if (mounted) {
               setState(() {
@@ -586,6 +637,7 @@ class _HomeTabState extends State<_HomeTab> {
                           children: [
                             _hero(),
                             _quickGrid(),
+                            _dailyHadithBannerCard(),
                           ],
                         ),
                         // Top spacing is 2 + 218 = 220 for Hero.
@@ -776,7 +828,7 @@ class _HomeTabState extends State<_HomeTab> {
                             shape: BoxShape.circle,
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.black.withOpacity(0.04),
+                                color: Colors.black.withValues(alpha: 0.04),
                                 blurRadius: 8,
                                 offset: const Offset(0, 2),
                               ),
@@ -856,6 +908,131 @@ class _HomeTabState extends State<_HomeTab> {
     );
   }
 
+  // ── Hijri Offset Dialog ─────────────────────────────────
+  void _showHijriOffsetDialog() {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return StatefulBuilder(
+          builder: (context, setDialogState) {
+            return AlertDialog(
+              backgroundColor: Colors.white,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(24)),
+              title: Row(
+                children: [
+                  const Icon(Icons.calendar_month_rounded,
+                      color: Color(0xFF3487D1)),
+                  const SizedBox(width: 8),
+                  Text(
+                    'Hijri Date Adjustment',
+                    style: GoogleFonts.poppins(
+                      fontSize: 17,
+                      fontWeight: FontWeight.w600,
+                      color: const Color(0xFF1A2E44),
+                    ),
+                  ),
+                ],
+              ),
+              content: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    'Adjust Hijri date to match your regional moon sighting:',
+                    style: GoogleFonts.montserrat(
+                      fontSize: 13,
+                      color: const Color(0xFF6B8FB5),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [-2, -1, 0, 1, 2].map((offset) {
+                      final isSelected = _hijriOffset == offset;
+                      final label = offset > 0
+                          ? '+$offset'
+                          : offset == 0
+                              ? '0'
+                              : '$offset';
+                      return GestureDetector(
+                        onTap: () async {
+                          await HijriService.setSavedOffset(offset);
+                          setDialogState(() {
+                            _hijriOffset = offset;
+                          });
+                          await _loadDailyDua();
+                          if (context.mounted) Navigator.pop(context);
+                        },
+                        child: Container(
+                          width: 44,
+                          height: 44,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: isSelected
+                                ? const Color(0xFF3487D1)
+                                : const Color(0xFFF4FBFE),
+                            border: Border.all(
+                              color: isSelected
+                                  ? const Color(0xFF3487D1)
+                                  : const Color(0xFFA6C7F2),
+                            ),
+                          ),
+                          child: Center(
+                            child: Text(
+                              label,
+                              style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                                color: isSelected
+                                    ? Colors.white
+                                    : const Color(0xFF1A2E44),
+                              ),
+                            ),
+                          ),
+                        ),
+                      );
+                    }).toList(),
+                  ),
+                  const SizedBox(height: 12),
+                  if (_todayHijri != null)
+                    Text(
+                      'Today: ${_todayHijri!.formattedEn}',
+                      style: GoogleFonts.montserrat(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w600,
+                        color: const Color(0xFF3487D1),
+                      ),
+                    ),
+                ],
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.pop(context),
+                  child: Text('Close',
+                      style: GoogleFonts.poppins(
+                          color: const Color(0xFF6B8FB5))),
+                ),
+              ],
+            );
+          },
+        );
+      },
+    );
+  }
+
+  // ── Daily Dua Detail Bottom Sheet ───────────────────────
+  void _showDuaDetailModal() {
+    DailyDuaDetailModal.show(
+      context: context,
+      dua: _todayDua,
+      hijriDate: _todayHijri,
+      onAdjustDate: () {
+        Navigator.pop(context);
+        _showHijriOffsetDialog();
+      },
+    );
+  }
+
   // ── Hero Card  (live clock + mosque silhouette) ───────
   Widget _hero() => Padding(
         padding: const EdgeInsets.fromLTRB(16, 4, 16, 0),
@@ -880,56 +1057,80 @@ class _HomeTabState extends State<_HomeTab> {
               ),
               // Content overlay
               Padding(
-                padding: const EdgeInsets.fromLTRB(20, 16, 20, 18),
+                padding: const EdgeInsets.fromLTRB(20, 14, 20, 14),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    // ── Daily Dua ──
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 16, vertical: 10),
-                      decoration: BoxDecoration(
-                        color: const Color(0xFF90BDE7).withValues(alpha: 0.25),
-                        // Pastel blue shade
-                        borderRadius: BorderRadius.circular(16),
-                      ),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          FittedBox(
-                            fit: BoxFit.scaleDown,
-                            child: Text(
-                              'رَبِّ زِدْنِي عِلْمًا',
-                              style: GoogleFonts.amiri(
-                                fontSize: 32,
-                                fontWeight: FontWeight.w700,
-                                color: Colors.white,
+                    // ── Daily Dua / Ayah Card (Dynamic & Interactive) ──
+                    GestureDetector(
+                      onTap: _showDuaDetailModal,
+                      behavior: HitTestBehavior.opaque,
+                      child: Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 14, vertical: 8),
+                        decoration: BoxDecoration(
+                          color: const Color(0xFF90BDE7).withValues(alpha: 0.25),
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(Icons.auto_awesome,
+                                    color: Colors.white.withValues(alpha: 0.9),
+                                    size: 12),
+                                const SizedBox(width: 4),
+                              ],
+                            ),
+                            const SizedBox(height: 3),
+                            FittedBox(
+                              fit: BoxFit.scaleDown,
+                              child: Text(
+                                _todayDua.arabic,
+                                style: GoogleFonts.amiri(
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.w700,
+                                  color: Colors.white,
+                                ),
+                                textAlign: TextAlign.center,
+                                textDirection: TextDirection.rtl,
+                              ),
+                            ),
+                            const SizedBox(height: 2),
+                            Text(
+                              '"${_todayDua.translation}"',
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: GoogleFonts.montserrat(
+                                fontSize: 11,
+                                fontWeight: FontWeight.w500,
+                                fontStyle: FontStyle.italic,
+                                color: Colors.white.withValues(alpha: 0.95),
                               ),
                               textAlign: TextAlign.center,
-                              textDirection: TextDirection.rtl,
                             ),
-                          ),
-                          const SizedBox(height: 4),
-                          Text(
-                            '"O my Lord, increase me in knowledge"',
-                            style: GoogleFonts.montserrat(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w500,
-                              fontStyle: FontStyle.italic,
-                              color: Colors.white.withOpacity(0.9),
+                            const SizedBox(height: 2),
+                            Text(
+                              'Surah ${_todayDua.surahName} [${_todayDua.surahNumber}:${_todayDua.ayahNumber}]',
+                              style: GoogleFonts.montserrat(
+                                fontSize: 9.5,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white.withValues(alpha: 0.85),
+                              ),
                             ),
-                            textAlign: TextAlign.center,
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                     // ── Info row (remaining time | date + location) ──
                     Container(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 12, vertical: 8),
+                          horizontal: 12, vertical: 6),
                       decoration: BoxDecoration(
                         color: const Color(0xFF90BDE7).withValues(alpha: 0.25),
-                        // Pastel blue shade
                         borderRadius: BorderRadius.circular(16),
                       ),
                       child: Row(children: [
@@ -950,7 +1151,7 @@ class _HomeTabState extends State<_HomeTab> {
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: GoogleFonts.montserrat(
-                              fontSize: 13,
+                              fontSize: 12,
                               fontWeight: FontWeight.w400,
                               color: Colors.white,
                             ),
@@ -959,30 +1160,39 @@ class _HomeTabState extends State<_HomeTab> {
                         ])),
                         Container(
                             width: 1,
-                            height: 36,
+                            height: 32,
                             color: Colors.white.withValues(alpha: 0.3)),
                         Expanded(
-                            child: Column(children: [
-                          Text(_dateStr,
+                            child: GestureDetector(
+                          onTap: _showHijriOffsetDialog,
+                          child: Column(children: [
+                            Text(
+                              _todayHijri != null
+                                  ? _todayHijri!.formattedEn
+                                  : _dateStr,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                               style: GoogleFonts.montserrat(
-                                fontSize: 8.5,
+                                fontSize: 9.5,
                                 letterSpacing: 0.5,
-                                color: Colors.white.withValues(alpha: 0.8),
-                                fontWeight: FontWeight.w600,
-                              )),
-                          const SizedBox(height: 2),
-                          Text(
-                            _loc.isEmpty ? 'Locating...' : _loc,
-                            style: GoogleFonts.montserrat(
-                              fontSize: 13,
-                              fontWeight: FontWeight.w400,
-                              color: Colors.white,
+                                color: Colors.white,
+                                fontWeight: FontWeight.w700,
+                              ),
                             ),
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                            textAlign: TextAlign.center,
-                          ),
-                        ])),
+                            const SizedBox(height: 2),
+                            Text(
+                              _loc.isEmpty ? 'Locating...' : '$_dateStr • $_loc',
+                              style: GoogleFonts.montserrat(
+                                fontSize: 10,
+                                fontWeight: FontWeight.w400,
+                                color: Colors.white.withValues(alpha: 0.85),
+                              ),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              textAlign: TextAlign.center,
+                            ),
+                          ]),
+                        )),
                       ]),
                     ),
                   ],
@@ -1005,8 +1215,8 @@ class _HomeTabState extends State<_HomeTab> {
           () => _nav(const DuasHomeScreen())),
       _FItem('Prophets', Icomoon.prophetStory,
           () => _nav(const ProphetsListScreen())),
-      _FItem('Qibla', const IconData(0xe903, fontFamily: 'CustomIcons'),
-          () => _nav(const QiblaCompassScreen())),
+      _FItem('Grammar', Icons.spellcheck_rounded,
+          () => _nav(const GrammarHomeScreen())),
     ];
 
     final gradients = [
@@ -1099,6 +1309,81 @@ class _HomeTabState extends State<_HomeTab> {
           ],
         ),
       );
+
+  // ── Daily Hadith Banner Card ─────────────────────────
+  Widget _dailyHadithBannerCard() {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 14, 16, 0),
+      child: GestureDetector(
+        onTap: _openTodayHadithDialogManually,
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(
+              colors: [Color(0xFFD9F1FD), Color(0xFFFAFDFF)],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            borderRadius: BorderRadius.circular(20),
+            border: Border.all(color: const Color(0xFFA6C7F2)),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withValues(alpha: 0.04),
+                blurRadius: 10,
+                offset: const Offset(0, 3),
+              ),
+            ],
+          ),
+          child: Row(
+            children: [
+              Container(
+                width: 44,
+                height: 44,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Color(0xFF90BDE7),
+                ),
+                child: const Icon(
+                  Icomoon.hadith,
+                  color: Colors.white,
+                  size: 22,
+                ),
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    TranslatedText(
+                      'Daily Hadith',
+                      style: GoogleFonts.poppins(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: const Color(0xFF1A2E44),
+                      ),
+                    ),
+                    const SizedBox(height: 2),
+                    TranslatedText(
+                      'Daily Hadith of the Day • Tap to view',
+                      style: GoogleFonts.poppins(
+                        fontSize: 11.5,
+                        color: const Color(0xFF6B8FB5),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const Icon(
+                Icons.chevron_right_rounded,
+                color: Color(0xFF3487D1),
+                size: 24,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
 
   // ── Prayer Times Section ──────────────────────────────
   Widget _prayerSection() {
@@ -1369,7 +1654,7 @@ class _CircularPrayerTrackerState extends State<_CircularPrayerTracker>
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('$displayTitle time has not started yet!'),
-            backgroundColor: Colors.redAccent.withOpacity(0.8),
+            backgroundColor: Colors.redAccent.withValues(alpha: 0.8),
             duration: const Duration(seconds: 2),
             behavior: SnackBarBehavior.floating,
             shape: RoundedRectangleBorder(
@@ -1459,8 +1744,8 @@ class _CircularPrayerTrackerState extends State<_CircularPrayerTracker>
       activeColors.add(activeColors.first);
     } else if (activeColors.isEmpty) {
       activeColors = [
-        Colors.grey.withOpacity(0.1),
-        Colors.grey.withOpacity(0.1)
+        Colors.grey.withValues(alpha: 0.1),
+        Colors.grey.withValues(alpha: 0.1)
       ];
     }
 
@@ -1510,7 +1795,7 @@ class _CircularPrayerTrackerState extends State<_CircularPrayerTracker>
                       margin: const EdgeInsets.symmetric(horizontal: 4),
                       padding: const EdgeInsets.all(12),
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.6),
+                        color: Colors.white.withValues(alpha: 0.6),
                         borderRadius: BorderRadius.circular(24),
                         boxShadow: [
                           BoxShadow(
@@ -1653,18 +1938,18 @@ class _CircularPrayerTrackerState extends State<_CircularPrayerTracker>
                 padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 2),
                 decoration: BoxDecoration(
                   color: isToday 
-                      ? const Color(0xFF90BDE7).withOpacity(0.12)
-                      : Colors.white.withOpacity(0.45),
+                      ? const Color(0xFF90BDE7).withValues(alpha: 0.12)
+                      : Colors.white.withValues(alpha: 0.45),
                   borderRadius: BorderRadius.circular(10),
                   border: Border.all(
                     color: isToday 
-                        ? const Color(0xFF90BDE7).withOpacity(0.6)
-                        : const Color(0xFF6B8FB5).withOpacity(0.12),
+                        ? const Color(0xFF90BDE7).withValues(alpha: 0.6)
+                        : const Color(0xFF6B8FB5).withValues(alpha: 0.12),
                     width: isToday ? 1.2 : 0.8,
                   ),
                   boxShadow: isToday ? [
                     BoxShadow(
-                      color: const Color(0xFF90BDE7).withOpacity(0.1),
+                      color: const Color(0xFF90BDE7).withValues(alpha: 0.1),
                       blurRadius: 4,
                       offset: const Offset(0, 2),
                     )
@@ -1686,7 +1971,7 @@ class _CircularPrayerTrackerState extends State<_CircularPrayerTracker>
                       style: GoogleFonts.poppins(
                         fontSize: 10,
                         fontWeight: isToday ? FontWeight.bold : FontWeight.w500,
-                        color: isToday ? const Color(0xFF1A2E44) : const Color(0xFF6B8FB5).withOpacity(0.8),
+                        color: isToday ? const Color(0xFF1A2E44) : const Color(0xFF6B8FB5).withValues(alpha: 0.8),
                       ),
                     ),
                     const SizedBox(height: 6),
@@ -1703,11 +1988,11 @@ class _CircularPrayerTrackerState extends State<_CircularPrayerTracker>
                             shape: BoxShape.circle,
                             color: isDone 
                                 ? color 
-                                : const Color(0xFF6B8FB5).withOpacity(0.1),
+                                : const Color(0xFF6B8FB5).withValues(alpha: 0.1),
                             border: isDone
                                 ? null
                                 : Border.all(
-                                    color: const Color(0xFF6B8FB5).withOpacity(0.2),
+                                    color: const Color(0xFF6B8FB5).withValues(alpha: 0.2),
                                     width: 0.5,
                                   ),
                           ),
@@ -1745,7 +2030,7 @@ class _CircularPrayerTrackerState extends State<_CircularPrayerTracker>
                 border: Border.all(
                   color: _ticked[i]
                       ? colors[i]
-                      : const Color(0xFF6B8FB5).withOpacity(0.3),
+                      : const Color(0xFF6B8FB5).withValues(alpha: 0.3),
                   width: 1.5,
                 ),
               ),
@@ -1767,7 +2052,7 @@ class _CircularPrayerTrackerState extends State<_CircularPrayerTracker>
                           ? FontWeight.w700
                           : FontWeight.w500,
                       color: _ticked[i]
-                          ? const Color(0xFF6B8FB5).withOpacity(0.5)
+                          ? const Color(0xFF6B8FB5).withValues(alpha: 0.5)
                           : const Color(0xFF1A2E44),
                       decoration:
                           _ticked[i] ? TextDecoration.lineThrough : null,
@@ -1778,7 +2063,7 @@ class _CircularPrayerTrackerState extends State<_CircularPrayerTracker>
                     style: GoogleFonts.montserrat(
                       fontSize: 11,
                       fontWeight: FontWeight.w600,
-                      color: const Color(0xFF6B8FB5).withOpacity(0.8),
+                      color: const Color(0xFF6B8FB5).withValues(alpha: 0.8),
                     ),
                   ),
                 ],
@@ -1804,7 +2089,7 @@ class _PrayerDonutPainter extends CustomPainter {
 
     // Background track
     final trackPaint = Paint()
-      ..color = const Color(0xFF6B8FB5).withOpacity(0.12)
+      ..color = const Color(0xFF6B8FB5).withValues(alpha: 0.12)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 14
       ..strokeCap = StrokeCap.round;
@@ -1870,4 +2155,345 @@ class _PItem {
   final String name, emoji, time;
 
   const _PItem(this.name, this.emoji, this.time);
+}
+
+// ──────────────────────────────────────────────────────────
+// Daily Dua Detail Bottom Sheet Widget
+// ──────────────────────────────────────────────────────────
+class DailyDuaDetailModal extends StatefulWidget {
+  final DailyDua dua;
+  final HijriDate? hijriDate;
+  final VoidCallback onAdjustDate;
+
+  const DailyDuaDetailModal({
+    super.key,
+    required this.dua,
+    this.hijriDate,
+    required this.onAdjustDate,
+  });
+
+  static Future<void> show({
+    required BuildContext context,
+    required DailyDua dua,
+    HijriDate? hijriDate,
+    required VoidCallback onAdjustDate,
+  }) {
+    return showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (context) => DailyDuaDetailModal(
+        dua: dua,
+        hijriDate: hijriDate,
+        onAdjustDate: onAdjustDate,
+      ),
+    );
+  }
+
+  @override
+  State<DailyDuaDetailModal> createState() => _DailyDuaDetailModalState();
+}
+
+class _DailyDuaDetailModalState extends State<DailyDuaDetailModal> {
+  int _animationKeySeed = 0;
+
+  void _replayAnimation() {
+    setState(() {
+      _animationKeySeed++;
+    });
+  }
+
+  Future<void> _shareDua(BuildContext context) async {
+    final String currentLang = context.read<LanguageCubit>().state;
+    String translationText;
+
+    if (currentLang == 'ur') {
+      translationText = widget.dua.translationUrdu ?? widget.dua.translation;
+    } else if (currentLang == 'en') {
+      translationText = widget.dua.translation;
+    } else {
+      translationText = await sl<TranslationService>().translate(
+        text: widget.dua.translation,
+        targetLang: currentLang,
+      );
+    }
+
+    final shareText =
+        '${widget.dua.arabic}\n\n"$translationText"\n\nSurah ${widget.dua.surahName} [${widget.dua.surahNumber}:${widget.dua.ayahNumber}]\n\n- Quran App';
+    await Share.share(shareText);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: const BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
+      ),
+      padding: const EdgeInsets.fromLTRB(24, 16, 24, 30),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          // Drag handle bar
+          Center(
+            child: Container(
+              width: 40,
+              height: 4,
+              decoration: BoxDecoration(
+                color: Colors.grey.shade300,
+                borderRadius: BorderRadius.circular(2),
+              ),
+            ),
+          ),
+          const SizedBox(height: 12),
+
+          // Header Row with Category Badge, Replay Icon, & Share Button
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                decoration: BoxDecoration(
+                  color: const Color(0xFFD9F1FD),
+                  borderRadius: BorderRadius.circular(14),
+                ),
+                child: TranslatedText(
+                  'Daily Ayah & Dua',
+                  style: GoogleFonts.poppins(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                    color: const Color(0xFF1A2E44),
+                  ),
+                ),
+              ),
+              Row(
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.replay_rounded,
+                        color: Color(0xFF3487D1), size: 22),
+                    tooltip: 'Replay Reveal Animation',
+                    onPressed: _replayAnimation,
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.share_rounded,
+                        color: Color(0xFF3487D1), size: 22),
+                    onPressed: () => _shareDua(context),
+                  ),
+                ],
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+
+          // Arabic Text Box with Animated Gradient Reveal (RTL, Light Blue -> Light Pink -> Navy Black)
+          Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: const Color(0xFFF4FBFE),
+              borderRadius: BorderRadius.circular(18),
+              border: Border.all(color: const Color(0xFFD9F1FD)),
+            ),
+            child: AnimatedGradientRevealText(
+              key: ValueKey(
+                  'dua_arabic_${widget.dua.id}_$_animationKeySeed'),
+              text: widget.dua.arabic,
+              textAlign: TextAlign.center,
+              textDirection: TextDirection.rtl,
+              backgroundColor: const Color(0xFFF4FBFE),
+              duration: const Duration(milliseconds: 5000),
+              style: GoogleFonts.amiri(
+                fontSize: 24,
+                fontWeight: FontWeight.w700,
+                height: 1.8,
+                color: const Color(0xFF1A2E44),
+              ),
+            ),
+          ),
+          const SizedBox(height: 14),
+
+          // Dynamic Translation Box with Animated Gradient Reveal based on selected global language
+          BlocBuilder<LanguageCubit, String>(
+            builder: (context, currentLang) {
+              final bool isRtl = currentLang == 'ur' || currentLang == 'ar';
+              final TextDirection direction =
+                  isRtl ? TextDirection.rtl : TextDirection.ltr;
+
+              if (currentLang == 'ur') {
+                final String textUrdu =
+                    widget.dua.translationUrdu ?? widget.dua.translation;
+                return Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(14),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(16),
+                    border: Border.all(color: const Color(0xFFDBE9FA)),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withValues(alpha: 0.02),
+                        blurRadius: 8,
+                        offset: const Offset(0, 2),
+                      ),
+                    ],
+                  ),
+                  child: AnimatedGradientRevealText(
+                    key: ValueKey(
+                        'dua_trans_ur_${widget.dua.id}_$_animationKeySeed'),
+                    text: textUrdu,
+                    textAlign: TextAlign.center,
+                    textDirection: TextDirection.rtl,
+                    backgroundColor: Colors.white,
+                    duration: const Duration(milliseconds: 4500),
+                    delay: const Duration(milliseconds: 3200),
+                    style: const TextStyle(
+                      fontFamily: 'Jameel Noori',
+                      fontSize: 17,
+                      height: 1.7,
+                      color: Color(0xFF1A2E44),
+                    ),
+                  ),
+                );
+              } else if (currentLang == 'en') {
+                return Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(14),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(16),
+                    border: Border.all(color: const Color(0xFFDBE9FA)),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withValues(alpha: 0.02),
+                        blurRadius: 8,
+                        offset: const Offset(0, 2),
+                      ),
+                    ],
+                  ),
+                  child: AnimatedGradientRevealText(
+                    key: ValueKey(
+                        'dua_trans_en_${widget.dua.id}_$_animationKeySeed'),
+                    text: '"${widget.dua.translation}"',
+                    textAlign: TextAlign.center,
+                    textDirection: TextDirection.ltr,
+                    backgroundColor: Colors.white,
+                    duration: const Duration(milliseconds: 4500),
+                    delay: const Duration(milliseconds: 3200),
+                    style: GoogleFonts.montserrat(
+                      fontSize: 13.5,
+                      fontWeight: FontWeight.w500,
+                      fontStyle: FontStyle.italic,
+                      color: const Color(0xFF1A2E44),
+                      height: 1.4,
+                    ),
+                  ),
+                );
+              } else {
+                // For any other global language (fr, es, tr, id, hi, ar, etc.)
+                return FutureBuilder<String>(
+                  future: sl<TranslationService>().translate(
+                    text: widget.dua.translation,
+                    targetLang: currentLang,
+                  ),
+                  builder: (context, snapshot) {
+                    final String translatedStr =
+                        snapshot.data ?? widget.dua.translation;
+                    return Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(14),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(16),
+                        border: Border.all(color: const Color(0xFFDBE9FA)),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withValues(alpha: 0.02),
+                            blurRadius: 8,
+                            offset: const Offset(0, 2),
+                          ),
+                        ],
+                      ),
+                      child: AnimatedGradientRevealText(
+                        key: ValueKey(
+                            'dua_trans_${currentLang}_${widget.dua.id}_${_animationKeySeed}_${translatedStr.hashCode}'),
+                        text: '"$translatedStr"',
+                        textAlign: TextAlign.center,
+                        textDirection: direction,
+                        backgroundColor: Colors.white,
+                        duration: const Duration(milliseconds: 4500),
+                        delay: const Duration(milliseconds: 3200),
+                        style: GoogleFonts.montserrat(
+                          fontSize: 13.5,
+                          fontWeight: FontWeight.w500,
+                          fontStyle: FontStyle.italic,
+                          color: const Color(0xFF1A2E44),
+                          height: 1.4,
+                        ),
+                      ),
+                    );
+                  },
+                );
+              }
+            },
+          ),
+          const SizedBox(height: 14),
+
+          // Surah reference line
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(Icons.bookmark_border_rounded,
+                  size: 16, color: Colors.grey.shade600),
+              const SizedBox(width: 4),
+              Text(
+                'Surah ${widget.dua.surahName} [${widget.dua.surahNumber}:${widget.dua.ayahNumber}]',
+                style: GoogleFonts.montserrat(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w600,
+                  color: const Color(0xFF6B8FB5),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 20),
+
+          // Action Buttons
+          Row(
+            children: [
+              Expanded(
+                child: OutlinedButton.icon(
+                  onPressed: widget.onAdjustDate,
+                  icon: const Icon(Icons.edit_calendar, size: 18),
+                  label: const TranslatedText('Adjust Date'),
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: const Color(0xFF3487D1),
+                    side: const BorderSide(color: Color(0xFF3487D1)),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(14)),
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: ElevatedButton(
+                  onPressed: () => Navigator.pop(context),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFF90BDE7),
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(14)),
+                  ),
+                  child: const TranslatedText('JazakAllah'),
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
 }

@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:just_audio/just_audio.dart';
 import '../../models/ayah.dart';
 import '../../models/reading_mode.dart';
 import '../../services/tajweed_service.dart';
-import '../../services/audio_service.dart';
 import '../../state/quran_bloc.dart';
 import '../../../../shared/icons/icomoon.dart';
 import '../../../../shared/icons/custom_icons_v2.dart';
 import '../../../../shared/widgets/custom_button.dart';
 import '../../../../core/widgets/translated_text.dart';
 import '../widgets/reciter_selection_sheet.dart';
+import '../reader_screen.dart';
 import '../translation_selection_screen.dart';
 
 /// Tajweed Mode Ayah Widget
@@ -46,8 +45,12 @@ class TajweedAyahWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final audioService = QuranAudioService();
     final allSegments = _buildTajweedSegments();
+
+    String? translationText = ayah.translation;
+    if (ayah.numberInSurah == 1 && surahNumber != 1 && surahNumber != 9 && translationText != null && translationText.isNotEmpty) {
+      translationText = cleanBismillahTranslation(translationText);
+    }
 
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 16),
@@ -171,7 +174,7 @@ class TajweedAyahWidget extends StatelessWidget {
                         padding: const EdgeInsets.all(6),
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          color: const Color(0xFF90BDE7).withOpacity(0.15),
+                          color: const Color(0xFF90BDE7).withValues(alpha: 0.15),
                         ),
                         child: const Icon(
                           Icons.format_list_bulleted,
@@ -201,11 +204,11 @@ class TajweedAyahWidget extends StatelessWidget {
             ),
 
           // Translation
-          if (ayah.translation != null && ayah.translation!.isNotEmpty)
+          if (translationText != null && translationText.isNotEmpty)
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
               child: Text(
-                ayah.translation!,
+                translationText,
                 textAlign: preferences.selectedTranslation.startsWith('ar') || preferences.selectedTranslation.startsWith('ur') ? TextAlign.right : TextAlign.left,
                 textDirection: preferences.selectedTranslation.startsWith('ar') || preferences.selectedTranslation.startsWith('ur') ? TextDirection.rtl : TextDirection.ltr,
                 style: TextStyle(
@@ -297,7 +300,7 @@ void showTajweedLegendDialog(BuildContext context) {
     context: context,
     barrierDismissible: true,
     barrierLabel: 'Tajweed Legend',
-    barrierColor: Colors.black.withOpacity(0.35),
+    barrierColor: Colors.black.withValues(alpha: 0.35),
     transitionDuration: const Duration(milliseconds: 280),
     pageBuilder: (ctx, anim1, anim2) {
       return const Align(
@@ -348,7 +351,7 @@ class TajweedLegendDialogWidget extends StatelessWidget {
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: const Color(0xFF90BDE7).withOpacity(0.15),
+                  color: const Color(0xFF90BDE7).withValues(alpha: 0.15),
                 ),
                 child: const Icon(Icons.palette, color: Color(0xFF90BDE7), size: 18),
               ),
@@ -369,7 +372,7 @@ class TajweedLegendDialogWidget extends StatelessWidget {
                   padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.white.withOpacity(0.5),
+                    color: Colors.white.withValues(alpha: 0.5),
                   ),
                   child: const Icon(Icons.close, size: 16, color: Colors.black45),
                 ),
@@ -413,7 +416,7 @@ class _TajweedRow extends StatelessWidget {
             width: 22,
             height: 22,
             decoration: BoxDecoration(
-              color: color.withOpacity(0.15),
+              color: color.withValues(alpha: 0.15),
               borderRadius: BorderRadius.circular(6),
               border: Border.all(color: color, width: 1.5),
             ),

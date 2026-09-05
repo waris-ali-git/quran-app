@@ -24,7 +24,7 @@ class PrimaryArcPainter extends CustomPainter {
 
     // ── Track arc ──
     final trackPaint = Paint()
-      ..color = TasbeehColors.babyBlue.withOpacity(0.5)
+      ..color = TasbeehColors.babyBlue.withValues(alpha: 0.5)
       ..style = PaintingStyle.stroke
       ..strokeWidth = strokeWidth
       ..strokeCap = StrokeCap.round;
@@ -46,8 +46,8 @@ class PrimaryArcPainter extends CustomPainter {
           startAngle: -math.pi / 2,
           endAngle: -math.pi / 2 + 2 * math.pi * progress,
           colors: [
-            TasbeehColors.blueLight.withOpacity(0.0),
-            TasbeehColors.standardBlue.withOpacity(0.3),
+            TasbeehColors.blueLight.withValues(alpha: 0.0),
+            TasbeehColors.standardBlue.withValues(alpha: 0.3),
           ],
         ).createShader(Rect.fromCircle(center: center, radius: radius))
         ..style = PaintingStyle.stroke
@@ -168,7 +168,7 @@ class TasbeehBeadsRow extends StatelessWidget {
                 boxShadow: isActive
                     ? [
                   BoxShadow(
-                    color: TasbeehColors.standardBlue.withOpacity(0.4),
+                    color: TasbeehColors.standardBlue.withValues(alpha: 0.4),
                     blurRadius: 6,
                     spreadRadius: 1,
                   )
@@ -218,7 +218,7 @@ class PrimaryIconButton extends StatelessWidget {
           ),
           boxShadow: [
             BoxShadow(
-              color: TasbeehColors.standardBlue.withOpacity(0.15),
+              color: TasbeehColors.standardBlue.withValues(alpha: 0.15),
               blurRadius: 8,
               offset: const Offset(0, 2),
             ),
@@ -252,8 +252,8 @@ class PrimaryDivider extends StatelessWidget {
         gradient: LinearGradient(
           colors: [
             Colors.transparent,
-            TasbeehColors.standardBlue.withOpacity(opacity),
-            TasbeehColors.standardBlue.withOpacity(opacity),
+            TasbeehColors.standardBlue.withValues(alpha: opacity),
+            TasbeehColors.standardBlue.withValues(alpha: opacity),
             Colors.transparent,
           ],
         ),
@@ -288,7 +288,7 @@ class StatCard extends StatelessWidget {
         border: Border.all(color: TasbeehColors.babyBlue, width: 1),
         boxShadow: [
           BoxShadow(
-            color: TasbeehColors.standardBlue.withOpacity(0.08),
+            color: TasbeehColors.standardBlue.withValues(alpha: 0.08),
             blurRadius: 12,
             offset: const Offset(0, 4),
           ),

@@ -90,41 +90,33 @@ class SurahSkeletonCard extends StatelessWidget {
   }
 }
 
-/// Header skeleton (Bismillah area) — shown immediately on load
+/// Header skeleton (Bismillah area) — plain blank shimmer, no text
 class BismillahSkeletonHeader extends StatelessWidget {
   const BismillahSkeletonHeader({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // Real Bismillah is always rendered (it's static), so just return the real one.
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.symmetric(vertical: 20),
-      margin: const EdgeInsets.all(12),
-      decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [Color(0xFF90BDE7), Color(0xFF388E3C)],
+    return Shimmer.fromColors(
+      baseColor: const Color(0xFFE8E4DF),
+      highlightColor: const Color(0xFFF8F5F0),
+      period: const Duration(milliseconds: 1200),
+      child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+        padding: const EdgeInsets.symmetric(vertical: 28, horizontal: 24),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(12),
         ),
-        borderRadius: BorderRadius.circular(16),
-      ),
-      child: const Column(
-        children: [
-          Text(
-            'بِسۡمِ اللّٰہِ الرَّحۡمٰنِ الرَّحِیۡمِ',
-            style: TextStyle(
-              fontFamily: 'UthmanicHafs',
-              fontSize: 26,
+        child: Center(
+          child: Container(
+            width: 220,
+            height: 22,
+            decoration: BoxDecoration(
               color: Colors.white,
-              height: 2,
+              borderRadius: BorderRadius.circular(4),
             ),
-            textAlign: TextAlign.center,
           ),
-          Text(
-            'In the Name of Allah — the Most Compassionate, Most Merciful',
-            style: TextStyle(color: Colors.white70, fontSize: 12),
-            textAlign: TextAlign.center,
-          ),
-        ],
+        ),
       ),
     );
   }

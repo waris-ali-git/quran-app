@@ -195,7 +195,7 @@ class _AddTasbeehScreenState extends State<AddTasbeehScreen> {
                     borderRadius: BorderRadius.circular(16),
                     boxShadow: [
                       BoxShadow(
-                        color: TasbeehColors.standardBlue.withOpacity(0.4),
+                        color: TasbeehColors.standardBlue.withValues(alpha: 0.4),
                         blurRadius: 16,
                         offset: const Offset(0, 6),
                       ),
@@ -259,7 +259,7 @@ class _AddTasbeehScreenState extends State<AddTasbeehScreen> {
       decoration: InputDecoration(
         hintText: hint,
         hintStyle: TextStyle(
-          color: TasbeehColors.textLight.withOpacity(0.6),
+          color: TasbeehColors.textLight.withValues(alpha: 0.6),
           fontFamily: arabicStyle ? 'Amiri' : null,
           fontSize: arabicStyle ? 18 : 14,
         ),

@@ -17,7 +17,7 @@ class _FeelingDuaDetailScreenState extends State<FeelingDuaDetailScreen>
   final ScrollController _scrollController = ScrollController();
 
   Color get _deepColor => widget.category.color;
-  Color get _lightColor => widget.category.color.withOpacity(0.5);
+  Color get _lightColor => widget.category.color.withValues(alpha: 0.5);
 
   @override
   void dispose() {
@@ -67,7 +67,7 @@ class _FeelingDuaDetailScreenState extends State<FeelingDuaDetailScreen>
         child: Container(
           margin: const EdgeInsets.all(8),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.2),
+            color: Colors.white.withValues(alpha: 0.2),
             shape: BoxShape.circle,
           ),
           child: const Icon(Icons.arrow_back_ios_new_rounded,
@@ -79,7 +79,7 @@ class _FeelingDuaDetailScreenState extends State<FeelingDuaDetailScreen>
         Container(
           margin: const EdgeInsets.all(8),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.2),
+            color: Colors.white.withValues(alpha: 0.2),
             shape: BoxShape.circle,
           ),
           child: IconButton(
@@ -110,7 +110,7 @@ class _FeelingDuaDetailScreenState extends State<FeelingDuaDetailScreen>
                   height: 200,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.white.withOpacity(0.06),
+                    color: Colors.white.withValues(alpha: 0.06),
                   ),
                 ),
               ),
@@ -122,7 +122,7 @@ class _FeelingDuaDetailScreenState extends State<FeelingDuaDetailScreen>
                   height: 140,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.white.withOpacity(0.05),
+                    color: Colors.white.withValues(alpha: 0.05),
                   ),
                 ),
               ),
@@ -154,7 +154,7 @@ class _FeelingDuaDetailScreenState extends State<FeelingDuaDetailScreen>
                         overflow: TextOverflow.ellipsis,
                         style: TextStyle(
                           fontSize: 14,
-                          color: Colors.white.withOpacity(0.9),
+                          color: Colors.white.withValues(alpha: 0.9),
                         ),
                       ),
                     ],
@@ -193,7 +193,7 @@ class _DuaCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(24),
         boxShadow: [
           BoxShadow(
-            color: deepColor.withOpacity(0.08),
+            color: deepColor.withValues(alpha: 0.08),
             blurRadius: 16,
             offset: const Offset(0, 4),
           ),
@@ -256,7 +256,7 @@ class _DuaCard extends StatelessWidget {
               width: double.infinity,
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: lightColor.withOpacity(0.15),
+                color: lightColor.withValues(alpha: 0.15),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Text(
@@ -264,7 +264,7 @@ class _DuaCard extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 14,
                   fontStyle: FontStyle.italic,
-                  color: const Color(0xFF1C1C1E).withOpacity(0.7),
+                  color: const Color(0xFF1C1C1E).withValues(alpha: 0.7),
                   height: 1.5,
                 ),
               ),
@@ -292,14 +292,14 @@ class _DuaCard extends StatelessWidget {
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Icon(Icons.menu_book_rounded, size: 14, color: deepColor.withOpacity(0.6)),
+                Icon(Icons.menu_book_rounded, size: 14, color: deepColor.withValues(alpha: 0.6)),
                 const SizedBox(width: 8),
                 Expanded(
                   child: TranslatedText(
                     dua.reference.isNotEmpty ? dua.reference : dua.hadith,
                     style: TextStyle(
                       fontSize: 12,
-                      color: deepColor.withOpacity(0.8),
+                      color: deepColor.withValues(alpha: 0.8),
                       fontWeight: FontWeight.w500,
                     ),
                   ),

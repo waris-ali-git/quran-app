@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../core/widgets/translated_text.dart';
 import '../../../core/widgets/language_selector_button.dart';
-import '../../../shared/widgets/custom_button.dart';
 import 'kalma/kalma_screen.dart';
 import 'namaz/namaz_screen.dart';
 import 'roza/roza_screen.dart';
@@ -102,7 +101,7 @@ class WorshipHomeScreen extends StatelessWidget {
                       ),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.1),
+                          color: Colors.black.withValues(alpha: 0.1),
                           blurRadius: 8,
                           offset: const Offset(0, 4),
                         ),
@@ -116,8 +115,8 @@ class WorshipHomeScreen extends StatelessWidget {
                           end: Alignment.bottomCenter,
                           colors: [
                             Colors.transparent,
-                            Colors.black.withOpacity(0.05),
-                            Colors.black.withOpacity(0.55),
+                            Colors.black.withValues(alpha: 0.05),
+                            Colors.black.withValues(alpha: 0.55),
                           ],
                           stops: const [0.0, 0.6, 1.0],
                         ),
@@ -144,7 +143,7 @@ class WorshipHomeScreen extends StatelessWidget {
                             overflow: TextOverflow.ellipsis,
                             style: TextStyle(
                               fontSize: 12,
-                              color: Colors.white.withOpacity(0.85),
+                              color: Colors.white.withValues(alpha: 0.85),
                             ),
                           ),
                         ],

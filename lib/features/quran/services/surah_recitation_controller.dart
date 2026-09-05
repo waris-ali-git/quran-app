@@ -4,9 +4,6 @@ import 'package:just_audio/just_audio.dart';
 import 'word_timing_service.dart';
 
 /// Holds the current highlight state for the mushaf.
-/// [activeAyah] = currently playing ayah number in surah (1-based)
-/// [activeWordIndex] = currently highlighted word (1-based position from API)
-/// [fadingWords] = set of "${ayahNumber}_${wordPosition}" keys fading out
 class RecitationHighlightState {
   final int? activeAyah;
   final int? activeWordIndex;
@@ -34,25 +31,17 @@ class RecitationHighlightState {
     );
   }
 
-  /// Check if a specific word should be highlighted golden
-  bool isWordActive(int ayahNumberInSurah, int wordPosition) {
-    return activeAyah == ayahNumberInSurah && activeWordIndex == wordPosition;
-  }
+  bool isWordActive(int ayahNumberInSurah, int wordPosition) =>
+      activeAyah == ayahNumberInSurah && activeWordIndex == wordPosition;
 
-  /// Check if a word is in the fading-out phase
-  bool isWordFading(int ayahNumberInSurah, int wordPosition) {
-    return fadingWords.contains('${ayahNumberInSurah}_$wordPosition');
-  }
+  bool isWordFading(int ayahNumberInSurah, int wordPosition) =>
+      fadingWords.contains('${ayahNumberInSurah}_$wordPosition');
 }
 
 /// Controls surah-level recitation with word-level golden highlighting.
-/// 
-/// Flow:
-/// 1. Load chapter audio + timing segments via WordTimingService
-/// 2. Play full-chapter audio via just_audio
-/// 3. Monitor audio position via periodic timer
-/// 4. Map position → current verse + word → emit highlight state
-/// 5. When a word finishes, add to fading set (stays golden ~2s then removed)
+///
+/// Bismillah is handled externally (in the UI layer) by playing a separate
+/// AudioPlayer before calling [play()]. This keeps loadChapter() reliable.
 class SurahRecitationController extends ChangeNotifier {
   final WordTimingService _timingService;
   final AudioPlayer _player = AudioPlayer();
@@ -60,11 +49,7 @@ class SurahRecitationController extends ChangeNotifier {
   ChapterAudioData? _audioData;
   RecitationHighlightState _state = const RecitationHighlightState();
   Timer? _positionTimer;
-
-  // Track previous word to detect transitions
   String? _prevWordKey;
-
-  // Completion listener
   StreamSubscription<PlayerState>? _completionSub;
 
   RecitationHighlightState get state => _state;
@@ -74,7 +59,7 @@ class SurahRecitationController extends ChangeNotifier {
 
   SurahRecitationController(this._timingService);
 
-  /// Initialize audio data for a chapter. Call before play.
+  /// Load chapter audio + word timing segments. Call once before playing.
   Future<bool> loadChapter(int chapterNumber, {String reciterId = 'alafasy'}) async {
     _isLoading = true;
     notifyListeners();
@@ -92,13 +77,10 @@ class SurahRecitationController extends ChangeNotifier {
       }
 
       await _player.setUrl(_audioData!.audioUrl);
-      
-      // Listen for completion (only once)
+
       _completionSub?.cancel();
-      _completionSub = _player.playerStateStream.listen((playerState) {
-        if (playerState.processingState == ProcessingState.completed) {
-          stop();
-        }
+      _completionSub = _player.playerStateStream.listen((ps) {
+        if (ps.processingState == ProcessingState.completed) stop();
       });
 
       _isLoading = false;
@@ -112,43 +94,31 @@ class SurahRecitationController extends ChangeNotifier {
     }
   }
 
-  /// Start or resume playback — instant UI update
   Future<void> play() async {
     if (_audioData == null) return;
-
-    // Update state FIRST so UI responds instantly
     _state = _state.copyWith(isPlaying: true);
     notifyListeners();
 
-    // Start position tracking immediately
     _positionTimer?.cancel();
     _positionTimer = Timer.periodic(const Duration(milliseconds: 50), (_) {
       _updateHighlightFromPosition();
     });
 
-    // Then start audio (might take a few ms)
     _player.play();
   }
 
-  /// Pause — instantly freezes everything
   Future<void> pause() async {
-    // Stop tracking immediately
     _positionTimer?.cancel();
-
-    // Freeze current highlight: keep active word golden, clear fading
     _state = RecitationHighlightState(
       activeAyah: _state.activeAyah,
       activeWordIndex: _state.activeWordIndex,
-      fadingWords: const {}, // clear fading trail on pause
+      fadingWords: const {},
       isPlaying: false,
     );
     notifyListeners();
-
-    // Then pause audio
     _player.pause();
   }
 
-  /// Toggle play/pause
   Future<void> togglePlayPause() async {
     if (_state.isPlaying) {
       await pause();
@@ -157,7 +127,6 @@ class SurahRecitationController extends ChangeNotifier {
     }
   }
 
-  /// Stop and reset everything
   Future<void> stop() async {
     _positionTimer?.cancel();
     _player.stop();
@@ -166,13 +135,11 @@ class SurahRecitationController extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Core logic: map current audio position to the active word
   void _updateHighlightFromPosition() {
     if (_audioData == null) return;
 
     final posMs = _player.position.inMilliseconds;
-    
-    // Find which verse we're in
+
     VerseTiming? currentVerse;
     for (final vt in _audioData!.verseTimings) {
       if (posMs >= vt.timestampFrom && posMs < vt.timestampTo) {
@@ -180,10 +147,8 @@ class SurahRecitationController extends ChangeNotifier {
         break;
       }
     }
-
     if (currentVerse == null) return;
 
-    // Find which word we're on
     int? activeWord;
     for (final wt in currentVerse.wordTimings) {
       if (posMs >= wt.startMs && posMs < wt.endMs) {
@@ -192,7 +157,6 @@ class SurahRecitationController extends ChangeNotifier {
       }
     }
 
-    // If between word gaps, keep the last word active
     if (activeWord == null && currentVerse.wordTimings.isNotEmpty) {
       for (int i = currentVerse.wordTimings.length - 1; i >= 0; i--) {
         if (posMs >= currentVerse.wordTimings[i].startMs) {
@@ -205,13 +169,10 @@ class SurahRecitationController extends ChangeNotifier {
     final ayahNum = currentVerse.ayahNumber;
     final newWordKey = activeWord != null ? '${ayahNum}_$activeWord' : null;
 
-    // Only update if word changed
     if (newWordKey != _prevWordKey) {
-      // Add previous word to fading set
       final newFading = Set<String>.from(_state.fadingWords);
       if (_prevWordKey != null) {
         newFading.add(_prevWordKey!);
-        // Schedule removal after 2 seconds
         final keyToRemove = _prevWordKey!;
         Future.delayed(const Duration(seconds: 2), () {
           if (_state.fadingWords.contains(keyToRemove)) {
@@ -241,4 +202,3 @@ class SurahRecitationController extends ChangeNotifier {
     super.dispose();
   }
 }
-

@@ -183,8 +183,8 @@ class _DhikrCard extends StatelessWidget {
           boxShadow: [
             BoxShadow(
               color: isActive
-                  ? TasbeehColors.standardBlue.withOpacity(0.15)
-                  : TasbeehColors.standardBlue.withOpacity(0.06),
+                  ? TasbeehColors.standardBlue.withValues(alpha: 0.15)
+                  : TasbeehColors.standardBlue.withValues(alpha: 0.06),
               blurRadius: isActive ? 16 : 8,
               offset: const Offset(0, 4),
             ),
@@ -199,7 +199,7 @@ class _DhikrCard extends StatelessWidget {
                 gradient: LinearGradient(
                   colors: [
                     TasbeehColors.whisperBlue,
-                    TasbeehColors.babyBlue.withOpacity(0.5),
+                    TasbeehColors.babyBlue.withValues(alpha: 0.5),
                   ],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,

@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:just_audio/just_audio.dart';
 import '../services/audio_service.dart';
 import '../services/tafseer_service.dart';
-import '../models/tafseer_source.dart';
 import '../../../core/di.dart';
 import '../services/verse_by_verse_controller.dart';
 
@@ -66,6 +65,7 @@ class _GlobalTafseerPlayerWidgetState extends State<GlobalTafseerPlayerWidget>
           _isPlaying = false;
           _isLoading = false;
           _position = Duration.zero;
+          _audioService.stopTafseer();
         }
       });
       if (hasAudio) {
@@ -94,7 +94,11 @@ class _GlobalTafseerPlayerWidgetState extends State<GlobalTafseerPlayerWidget>
     // Sync initial state
     _hasAudio = _audioService.hasTafseerAudio;
     _isPlaying = _audioService.isTafseerPlaying;
-    if (_hasAudio) _slideController.value = 1.0;
+    if (_hasAudio) {
+      _slideController.value = 1.0;
+    } else {
+      _slideController.value = 0.0;
+    }
   }
 
   @override

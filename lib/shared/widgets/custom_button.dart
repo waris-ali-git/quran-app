@@ -172,11 +172,11 @@ class _LiquidGlassButtonState extends State<LiquidGlassButton>
     super.dispose();
   }
 
-  void _onTapDown(_) {
+  void _onTapDown(TapDownDetails _) {
     _pressController.forward();
   }
 
-  void _onTapUp(_) {
+  void _onTapUp(TapUpDetails _) {
     _pressController.reverse();
     widget.onTap?.call();
   }

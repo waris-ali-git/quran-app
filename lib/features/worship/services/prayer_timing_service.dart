@@ -29,7 +29,7 @@ class PrayerTimingService {
     }
 
     return await Geolocator.getCurrentPosition(
-        desiredAccuracy: LocationAccuracy.low);
+        locationSettings: const LocationSettings(accuracy: LocationAccuracy.low));
   }
 
   Future<PrayerTiming?> getTodayTimings() async {

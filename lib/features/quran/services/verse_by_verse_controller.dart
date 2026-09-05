@@ -308,7 +308,6 @@ class VerseByVerseController extends ChangeNotifier {
         case VersePlaybackStep.tafseer:
           url = _config.tafseerAudioUrlResolver?.call(_state.surahNumber);
           if (url == null) {
-            // No tafseer audio for this surah — skip
             await _advanceStep();
             return;
           }
@@ -316,11 +315,6 @@ class VerseByVerseController extends ChangeNotifier {
 
         case VersePlaybackStep.idle:
           return;
-      }
-
-      if (url == null) {
-        await _advanceStep();
-        return;
       }
 
       debugPrint('▶️ V-b-V [$step] ayah ${_state.currentAyahInSurah}: $url');
@@ -396,22 +390,13 @@ class VerseByVerseController extends ChangeNotifier {
   VersePlaybackStep? _firstEnabledStep() {
     if (_config.playRecitation) return VersePlaybackStep.recitation;
     if (_config.playTranslation) return VersePlaybackStep.translation;
-    if (_config.playTafseer) return VersePlaybackStep.tafseer;
     return null;
   }
 
   /// Returns the next enabled step after the given one.
   VersePlaybackStep? _nextEnabledStepAfter(VersePlaybackStep current) {
-    final order = [
-      VersePlaybackStep.recitation,
-      VersePlaybackStep.translation,
-      VersePlaybackStep.tafseer,
-    ];
-    final currentIdx = order.indexOf(current);
-    for (int i = currentIdx + 1; i < order.length; i++) {
-      final candidate = order[i];
-      if (candidate == VersePlaybackStep.translation && _config.playTranslation) return candidate;
-      if (candidate == VersePlaybackStep.tafseer && _config.playTafseer) return candidate;
+    if (current == VersePlaybackStep.recitation && _config.playTranslation) {
+      return VersePlaybackStep.translation;
     }
     return null;
   }

@@ -72,7 +72,7 @@ class ReadingSettingsSheet extends StatelessWidget {
                             context: context,
                             barrierDismissible: true,
                             barrierLabel: 'Wbw Language Selector',
-                            barrierColor: Colors.black.withOpacity(0.05),
+                            barrierColor: Colors.black.withValues(alpha: 0.05),
                             transitionDuration: const Duration(milliseconds: 300),
                             pageBuilder: (context, anim1, anim2) {
                               return Align(
@@ -409,7 +409,7 @@ class _ToggleTile extends StatelessWidget {
                   padding: const EdgeInsets.all(6),
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: const Color(0xFF90BDE7).withOpacity(0.12),
+                    color: const Color(0xFF90BDE7).withValues(alpha: 0.12),
                   ),
                   child: const Icon(
                     Icons.format_list_bulleted,

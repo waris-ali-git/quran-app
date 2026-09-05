@@ -5,6 +5,8 @@ import 'features/hadith/state/hadith_bloc.dart';
 import 'features/tasbeeh/state/tasbeeh_bloc.dart';
 
 import 'features/onboarding/screens/onboarding_screen.dart';
+import 'features/home/screens/home_screen.dart';
+import 'features/quran/services/preferences_service.dart';
 import 'core/state/language_cubit.dart';
 import 'core/di.dart';
 
@@ -16,12 +18,15 @@ void main() async {
   await setupDependencies();
   await NotificationService().init();
 
-  // TEST MODE: always show onboarding on every launch
-  runApp(const IslamicApp());
+  final bool completedOnboarding = PreferencesService().getCompletedOnboarding();
+
+  runApp(IslamicApp(showOnboarding: !completedOnboarding));
 }
 
 class IslamicApp extends StatelessWidget {
-  const IslamicApp({super.key});
+  final bool showOnboarding;
+
+  const IslamicApp({super.key, this.showOnboarding = false});
 
   @override
   Widget build(BuildContext context) {
@@ -45,9 +50,10 @@ class IslamicApp extends StatelessWidget {
               ),
               fontFamily: 'Poppins',
             ),
-            home: const OnboardingScreen(),
+            home: showOnboarding ? const OnboardingScreen() : const HomeScreen(),
           );
         }),
     );
   }
 }
+

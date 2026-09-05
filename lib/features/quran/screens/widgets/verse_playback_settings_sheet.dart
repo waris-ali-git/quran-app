@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../../models/translation_audio_edition.dart';
-import '../../models/reciter.dart';
 import '../../services/verse_by_verse_controller.dart';
 import '../../services/audio_service.dart';
 import 'reciter_selection_sheet.dart';
@@ -67,7 +66,7 @@ class _VersePlaybackSettingsSheetState extends State<VersePlaybackSettingsSheet>
                 Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF90BDE7).withOpacity(0.15),
+                    color: const Color(0xFF90BDE7).withValues(alpha: 0.15),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: const Icon(Icons.queue_music_rounded, color: Color(0xFF90BDE7), size: 22),
@@ -121,7 +120,7 @@ class _VersePlaybackSettingsSheetState extends State<VersePlaybackSettingsSheet>
                   _StepToggle(
                     icon: Icons.menu_book_rounded,
                     label: 'Tafseer Audio',
-                    subtitle: 'Surah Fatiha only (Ibn Kathir)',
+                    subtitle: 'Tafsir Ibn Kathir Audio',
                     value: _config.playTafseer,
                     onChanged: (v) => _update(_config.copyWith(playTafseer: v)),
                     accentColor: const Color(0xFF7C4DFF),
@@ -223,10 +222,10 @@ class _StepToggle extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(bottom: 8),
       decoration: BoxDecoration(
-        color: value ? accentColor.withOpacity(0.08) : Colors.black.withOpacity(0.02),
+        color: value ? accentColor.withValues(alpha: 0.08) : Colors.black.withValues(alpha: 0.02),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: value ? accentColor.withOpacity(0.3) : Colors.black12,
+          color: value ? accentColor.withValues(alpha: 0.3) : Colors.black12,
         ),
       ),
       child: SwitchListTile(
@@ -268,10 +267,10 @@ class _EditionTile extends StatelessWidget {
         margin: const EdgeInsets.only(bottom: 6),
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
         decoration: BoxDecoration(
-          color: isSelected ? const Color(0xFF90BDE7).withOpacity(0.12) : Colors.black.withOpacity(0.02),
+          color: isSelected ? const Color(0xFF90BDE7).withValues(alpha: 0.12) : Colors.black.withValues(alpha: 0.02),
           borderRadius: BorderRadius.circular(10),
           border: Border.all(
-            color: isSelected ? const Color(0xFF90BDE7).withOpacity(0.6) : Colors.black12,
+            color: isSelected ? const Color(0xFF90BDE7).withValues(alpha: 0.6) : Colors.black12,
             width: isSelected ? 1.5 : 1,
           ),
         ),

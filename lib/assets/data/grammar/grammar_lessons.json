@@ -1,0 +1,1623 @@
+[
+  {
+    "id": 1,
+    "category": "Nahw",
+    "title": "Kalam & Kalima (Speech & Word)",
+    "arabicTitle": "الكلام والكلمة",
+    "description": "Kalam is a complete, meaningful sentence in Arabic. Kalima is a single word. Every Kalima falls into exactly one of three categories: Ism (noun), Fi'l (verb), or Harf (particle). This three-way division is the foundation of all Arabic grammar.",
+    "examples": [
+      {
+        "arabic": "زَيْدٌ قَائِمٌ",
+        "transliteration": "Zaydun qaa'imun",
+        "meaning": "Zayd is standing (a complete Kalam)"
+      },
+      {
+        "arabic": "زَيْدٌ",
+        "transliteration": "Zaydun",
+        "meaning": "Zayd (a single Kalima — an Ism)"
+      }
+    ],
+    "quiz": {
+      "question": "Every word in Arabic must be one of three types. Which of these is NOT one of them?",
+      "options": [
+        "Ism",
+        "Fi'l",
+        "Harf",
+        "Jumla"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": 2,
+    "category": "Nahw",
+    "title": "Ism (Noun)",
+    "arabicTitle": "الاسم",
+    "description": "An Ism is a word that denotes a person, place, thing, or idea independent of time. It is one of the three fundamental parts of Arabic speech. An Ism can carry grammatical case markers: Raf' (ضمة), Nasb (فتحة), or Jarr (كسرة), and it can accept Tanwin, Al (the definite article), and Idafa.",
+    "examples": [
+      {
+        "arabic": "كِتَابٌ",
+        "transliteration": "Kitaabun",
+        "meaning": "A book (Raf' — subject)"
+      },
+      {
+        "arabic": "رَجُلٌ",
+        "transliteration": "Rajulun",
+        "meaning": "A man"
+      },
+      {
+        "arabic": "مَسْجِدٌ",
+        "transliteration": "Masjidun",
+        "meaning": "A mosque"
+      }
+    ],
+    "quiz": {
+      "question": "Which of these is an Ism (noun)?",
+      "options": [
+        "كَتَبَ",
+        "كِتَابٌ",
+        "فِي",
+        "هُوَ"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 3,
+    "category": "Nahw",
+    "title": "Fi'l (Verb)",
+    "arabicTitle": "الفعل",
+    "description": "A Fi'l is a word that denotes an action or state tied to a specific time. There are three types: Maadi (past ماضي), Mudhari' (present/future مضارع), and Amr (command أمر).",
+    "examples": [
+      {
+        "arabic": "كَتَبَ",
+        "transliteration": "Kataba",
+        "meaning": "He wrote (past)"
+      },
+      {
+        "arabic": "يَكْتُبُ",
+        "transliteration": "Yaktubu",
+        "meaning": "He writes (present)"
+      },
+      {
+        "arabic": "اُكْتُبْ",
+        "transliteration": "Uktub",
+        "meaning": "Write! (command)"
+      }
+    ],
+    "quiz": {
+      "question": "Which verb is in the past tense (Maadi)?",
+      "options": [
+        "يَكْتُبُ",
+        "اُكْتُبْ",
+        "كَتَبَ",
+        "كِتَابٌ"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": 4,
+    "category": "Nahw",
+    "title": "Harf (Particle)",
+    "arabicTitle": "الحرف",
+    "description": "A Harf is a word that has no independent meaning on its own — it only conveys meaning in conjunction with other words. Examples include prepositions, conjunctions, and negation particles. A Harf never takes case endings or Tanwin.",
+    "examples": [
+      {
+        "arabic": "فِي",
+        "transliteration": "Fi",
+        "meaning": "In (preposition)"
+      },
+      {
+        "arabic": "مِنْ",
+        "transliteration": "Min",
+        "meaning": "From (preposition)"
+      },
+      {
+        "arabic": "لَا",
+        "transliteration": "Laa",
+        "meaning": "No / Not (negation)"
+      }
+    ],
+    "quiz": {
+      "question": "Which of the following is a Harf (particle)?",
+      "options": [
+        "كِتَابٌ",
+        "كَتَبَ",
+        "عَلَى",
+        "قَلَمٌ"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": 5,
+    "category": "Nahw",
+    "title": "Jumla Ismiyya & Fi'liyya",
+    "arabicTitle": "الجملة الاسمية والفعلية",
+    "description": "Arabic sentences are of two types. A Jumla Ismiyya (nominal sentence) begins with an Ism and consists of Mubtada + Khabar. A Jumla Fi'liyya (verbal sentence) begins with a Fi'l and consists of Fi'l + Fa'il, emphasizing the occurrence of an action.",
+    "examples": [
+      {
+        "arabic": "الطَّالِبُ مُجْتَهِدٌ",
+        "transliteration": "At-taalibu mujtahidun",
+        "meaning": "The student is diligent (Jumla Ismiyya)"
+      },
+      {
+        "arabic": "ذَهَبَ الطَّالِبُ",
+        "transliteration": "Dhahaba at-taalibu",
+        "meaning": "The student went (Jumla Fi'liyya)"
+      }
+    ],
+    "quiz": {
+      "question": "A sentence that begins with a verb is called:",
+      "options": [
+        "Jumla Ismiyya",
+        "Jumla Fi'liyya",
+        "Jumla Harfiyya",
+        "Jumla Shartiyya"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 6,
+    "category": "Nahw",
+    "title": "I'rab — Raf' (Nominative)",
+    "arabicTitle": "الرفع",
+    "description": "Raf' is the nominative case, marked by a Damma (ُ) or its equivalent. It is the case of the Subject (Mubtada), Predicate (Khabar), Subject of Kana, Predicate of Inna, and the Doer (Fa'il).",
+    "examples": [
+      {
+        "arabic": "الْكِتَابُ جَمِيلٌ",
+        "transliteration": "Al-kitaabu jameel",
+        "meaning": "The book is beautiful — both words are Marfoo' (Raf')"
+      },
+      {
+        "arabic": "جَاءَ الرَّجُلُ",
+        "transliteration": "Jaa'a ar-rajulu",
+        "meaning": "The man came — ar-rajulu is Fa'il (Marfoo')"
+      }
+    ],
+    "quiz": {
+      "question": "Which case marker indicates Raf'?",
+      "options": [
+        "فتحة (Fatha)",
+        "ضمة (Damma)",
+        "كسرة (Kasra)",
+        "سكون (Sukun)"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 7,
+    "category": "Nahw",
+    "title": "I'rab — Nasb (Accusative)",
+    "arabicTitle": "النصب",
+    "description": "Nasb is the accusative/subjunctive case, marked by a Fatha (َ) or its equivalent. It is the case of the direct object (Maf'ul), object of certain particles like إِنَّ, and the Mudhari' Fi'l after Nasb particles (أَنْ، لَنْ، كَيْ).",
+    "examples": [
+      {
+        "arabic": "قَرَأْتُ كِتَاباً",
+        "transliteration": "Qara'tu kitaaban",
+        "meaning": "I read a book — kitaaban is Maf'ul (Mansub)"
+      },
+      {
+        "arabic": "لَنْ أَكْذِبَ",
+        "transliteration": "Lan akdhiba",
+        "meaning": "I will never lie — akdhiba is Mansub"
+      }
+    ],
+    "quiz": {
+      "question": "Which particle causes Nasb on a Mudhari' verb?",
+      "options": [
+        "لَمْ",
+        "لَنْ",
+        "سَوْفَ",
+        "قَدْ"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 8,
+    "category": "Nahw",
+    "title": "I'rab — Jarr (Genitive)",
+    "arabicTitle": "الجر",
+    "description": "Jarr is the genitive case, marked by a Kasra (ِ) or its equivalent. A noun takes Jarr when it follows a preposition (Harf Jarr) or is in an Idafa (possessive) construction.",
+    "examples": [
+      {
+        "arabic": "ذَهَبْتُ إِلَى الْمَسْجِدِ",
+        "transliteration": "Dhahabtu ilal-masjidi",
+        "meaning": "I went to the mosque — al-masjidi is Majrur"
+      },
+      {
+        "arabic": "كِتَابُ اللهِ",
+        "transliteration": "Kitaabullahi",
+        "meaning": "The book of Allah — Allahi is Mudaf ilayh (Majrur)"
+      }
+    ],
+    "quiz": {
+      "question": "When does a noun take Jarr?",
+      "options": [
+        "When it is the subject",
+        "When it follows a preposition",
+        "When it is a command",
+        "When it follows 'inna'"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 9,
+    "category": "Nahw",
+    "title": "I'rab — Jazm (Jussive)",
+    "arabicTitle": "الجزم",
+    "description": "Jazm is a state exclusive to the Mudhari' verb, marked by a Sukun (ْ) or the dropping of the final letter/noon. It occurs after Jazm particles such as لَمْ (did not), لَمَّا (not yet), and in conditional and imperative structures.",
+    "examples": [
+      {
+        "arabic": "لَمْ يَكْتُبْ",
+        "transliteration": "Lam yaktub",
+        "meaning": "He did not write — yaktub is Majzoom"
+      },
+      {
+        "arabic": "لَا تَخَفْ",
+        "transliteration": "Laa takhaf",
+        "meaning": "Do not be afraid — takhaf is Majzoom"
+      }
+    ],
+    "quiz": {
+      "question": "Jazm can only occur on which type of word?",
+      "options": [
+        "Ism",
+        "Fi'l Maadi",
+        "Fi'l Mudhari'",
+        "Harf"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": 10,
+    "category": "Nahw",
+    "title": "Mubtada & Khabar",
+    "arabicTitle": "المبتدأ والخبر",
+    "description": "A nominal sentence (جملة اسمية) begins with a noun. The subject is called Mubtada (مبتدأ) and is always Marfoo'. The predicate is called Khabar (خبر) and is also Marfoo'. Together they form a complete thought.",
+    "examples": [
+      {
+        "arabic": "اللهُ أَكْبَرُ",
+        "transliteration": "Allaahu Akbar",
+        "meaning": "Allah is the Greatest — Allah = Mubtada, Akbar = Khabar"
+      },
+      {
+        "arabic": "الْبَيْتُ كَبِيرٌ",
+        "transliteration": "Al-baytu kabeerun",
+        "meaning": "The house is big"
+      }
+    ],
+    "quiz": {
+      "question": "In 'الْكِتَابُ مُفِيدٌ', what is الْكِتَابُ?",
+      "options": [
+        "Khabar",
+        "Mubtada",
+        "Fa'il",
+        "Maf'ul"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 11,
+    "category": "Nahw",
+    "title": "Fa'il (Doer/Subject)",
+    "arabicTitle": "الفاعل",
+    "description": "The Fa'il is the doer of the action in a verbal sentence — the one who performs the Fi'l. It always comes after the verb and is always Marfoo'. The verb agrees with the Fa'il in gender but stays singular even if the Fa'il is plural.",
+    "examples": [
+      {
+        "arabic": "قَامَ زَيْدٌ",
+        "transliteration": "Qaama Zaydun",
+        "meaning": "Zayd stood up — Zaydun is Fa'il"
+      },
+      {
+        "arabic": "تَكَلَّمَتِ الْمُعَلِّمَةُ",
+        "transliteration": "Takallamat al-mu'allimatu",
+        "meaning": "The teacher (f) spoke"
+      }
+    ],
+    "quiz": {
+      "question": "What is the grammatical case of the Fa'il?",
+      "options": [
+        "Nasb",
+        "Jarr",
+        "Raf'",
+        "Jazm"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": 12,
+    "category": "Nahw",
+    "title": "Maf'ul Bihi (Direct Object)",
+    "arabicTitle": "المفعول به",
+    "description": "The Maf'ul Bihi is the direct object — the noun that receives the action of the verb. It is always in the Nasb (accusative) case and typically follows the Fa'il in a verbal sentence.",
+    "examples": [
+      {
+        "arabic": "أَكَلَ الْوَلَدُ التُّفَّاحَةَ",
+        "transliteration": "Akala al-waladu at-tuffaahata",
+        "meaning": "The boy ate the apple — at-tuffaahata is Maf'ul Bihi"
+      },
+      {
+        "arabic": "فَتَحَ الْبَابَ",
+        "transliteration": "Fataha al-baaba",
+        "meaning": "He opened the door"
+      }
+    ],
+    "quiz": {
+      "question": "What case does the Maf'ul Bihi always take?",
+      "options": [
+        "Raf'",
+        "Nasb",
+        "Jarr",
+        "Jazm"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 13,
+    "category": "Nahw",
+    "title": "Na'at (Adjective)",
+    "arabicTitle": "النعت",
+    "description": "Na'at is a descriptive adjective that follows the noun it describes (Man'ut) and must agree with it in four things: case (Raf'/Nasb/Jarr), definiteness, gender, and number.",
+    "examples": [
+      {
+        "arabic": "رَجُلٌ كَرِيمٌ",
+        "transliteration": "Rajulun kareemun",
+        "meaning": "A generous man — kareemun describes rajulun"
+      },
+      {
+        "arabic": "الْبَيْتُ الْكَبِيرُ",
+        "transliteration": "Al-baytu al-kabeeru",
+        "meaning": "The big house"
+      }
+    ],
+    "quiz": {
+      "question": "Na'at must agree with the Man'ut in how many things?",
+      "options": [
+        "Two",
+        "Three",
+        "Four",
+        "Five"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": 14,
+    "category": "Nahw",
+    "title": "Ma'rifa & Nakira (Definite & Indefinite)",
+    "arabicTitle": "المعرفة والنكرة",
+    "description": "A Nakira (indefinite noun) refers to something unspecific and usually carries Tanwin, like كِتَابٌ (a book). A Ma'rifa (definite noun) refers to something specific — proper names, pronouns, or nouns with الـ (Al), like الْكِتَابُ (the book).",
+    "examples": [
+      {
+        "arabic": "كِتَابٌ",
+        "transliteration": "Kitaabun",
+        "meaning": "A book (Nakira — indefinite)"
+      },
+      {
+        "arabic": "الْكِتَابُ",
+        "transliteration": "Al-kitaabu",
+        "meaning": "The book (Ma'rifa — definite)"
+      }
+    ],
+    "quiz": {
+      "question": "What typically marks a noun as Nakira?",
+      "options": [
+        "The letter Alif Lam",
+        "Tanwin",
+        "Being a proper name",
+        "Being a pronoun"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 15,
+    "category": "Nahw",
+    "title": "Mudhakkar & Mu'annath (Gender)",
+    "arabicTitle": "المذكر والمؤنث",
+    "description": "Arabic nouns are either Mudhakkar (masculine) or Mu'annath (feminine). Feminine nouns are usually marked with a Ta Marbuta (ة) at the end, though some feminine words have no visible marker and must be memorised.",
+    "examples": [
+      {
+        "arabic": "مُعَلِّمٌ",
+        "transliteration": "Mu'allimun",
+        "meaning": "A (male) teacher — Mudhakkar"
+      },
+      {
+        "arabic": "مُعَلِّمَةٌ",
+        "transliteration": "Mu'allimatun",
+        "meaning": "A (female) teacher — Mu'annath"
+      }
+    ],
+    "quiz": {
+      "question": "Which letter most commonly marks a feminine noun?",
+      "options": [
+        "ألف",
+        "واو",
+        "تاء مربوطة",
+        "ياء"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": 16,
+    "category": "Nahw",
+    "title": "Mufrad, Muthanna & Jam'",
+    "arabicTitle": "المفرد والمثنى والجمع",
+    "description": "Arabic nouns have three numbers: Mufrad (singular — one), Muthanna (dual — exactly two, formed by adding انِ/يْنِ), and Jam' (plural — three or more).",
+    "examples": [
+      {
+        "arabic": "كِتَابٌ",
+        "transliteration": "Kitaabun",
+        "meaning": "One book — Mufrad"
+      },
+      {
+        "arabic": "كِتَابَانِ",
+        "transliteration": "Kitaabaani",
+        "meaning": "Two books — Muthanna"
+      },
+      {
+        "arabic": "كُتُبٌ",
+        "transliteration": "Kutubun",
+        "meaning": "Books — Jam'"
+      }
+    ],
+    "quiz": {
+      "question": "How many things does the Muthanna (dual) refer to?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Many"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 17,
+    "category": "Nahw",
+    "title": "Jam' — Salim & Taksir",
+    "arabicTitle": "جمع السالم والتكسير",
+    "description": "There are two main plural types: Jam' Salim (sound plural), which keeps the singular form and adds a suffix — ونَ/ينَ for masculine, اتٌ for feminine — and Jam' Taksir (broken plural), where the internal pattern of the word changes irregularly.",
+    "examples": [
+      {
+        "arabic": "مُسْلِمُونَ",
+        "transliteration": "Muslimoona",
+        "meaning": "Muslims (m) — Jam' Mudhakkar Salim"
+      },
+      {
+        "arabic": "مُسْلِمَاتٌ",
+        "transliteration": "Muslimaatun",
+        "meaning": "Muslims (f) — Jam' Mu'annath Salim"
+      },
+      {
+        "arabic": "رِجَالٌ",
+        "transliteration": "Rijaalun",
+        "meaning": "Men (from رَجُلٌ) — Jam' Taksir"
+      }
+    ],
+    "quiz": {
+      "question": "What is Jam' Taksir (broken plural)?",
+      "options": [
+        "A plural formed by a regular suffix",
+        "A plural with an irregular internal pattern change",
+        "The dual form",
+        "A feminine singular"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 18,
+    "category": "Nahw",
+    "title": "Dhamir (Pronouns)",
+    "arabicTitle": "الضمير",
+    "description": "A Dhamir is a pronoun that stands in place of a noun. Munfasil (detached) pronouns stand alone, like هُوَ (he) and أَنَا (I). Muttasil (attached) pronouns are suffixed to a verb, noun, or particle, like the هُ in كِتَابُهُ (his book).",
+    "examples": [
+      {
+        "arabic": "هُوَ",
+        "transliteration": "Huwa",
+        "meaning": "He (Munfasil — detached)"
+      },
+      {
+        "arabic": "كِتَابُهُ",
+        "transliteration": "Kitaabuhu",
+        "meaning": "His book — huu is Muttasil (attached)"
+      }
+    ],
+    "quiz": {
+      "question": "What is a Dhamir Muttasil?",
+      "options": [
+        "A standalone pronoun",
+        "A pronoun attached to another word",
+        "A demonstrative pronoun",
+        "A relative pronoun"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 19,
+    "category": "Nahw",
+    "title": "Ism al-Ishara (Demonstratives)",
+    "arabicTitle": "اسم الإشارة",
+    "description": "Ism al-Ishara points to something specific. هَذَا (this, masculine), هَذِهِ (this, feminine), ذَلِكَ (that, masculine), and تِلْكَ (that, feminine) are the most common demonstrative pronouns.",
+    "examples": [
+      {
+        "arabic": "هَذَا كِتَابٌ",
+        "transliteration": "Haadha kitaabun",
+        "meaning": "This is a book"
+      },
+      {
+        "arabic": "تِلْكَ سَيَّارَةٌ",
+        "transliteration": "Tilka sayyaaratun",
+        "meaning": "That is a car"
+      }
+    ],
+    "quiz": {
+      "question": "Which word means 'this' for a feminine noun?",
+      "options": [
+        "هَذَا",
+        "هَذِهِ",
+        "ذَلِكَ",
+        "تِلْكَ"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 20,
+    "category": "Nahw",
+    "title": "Ism al-Mawsul (Relative Pronouns)",
+    "arabicTitle": "الاسم الموصول",
+    "description": "Ism al-Mawsul connects a noun to a following descriptive clause (Sila). الَّذِي (who/that, masculine singular) and الَّتِي (who/that, feminine singular) are the most common relative pronouns.",
+    "examples": [
+      {
+        "arabic": "جَاءَ الَّذِي كَتَبَ الدَّرْسَ",
+        "transliteration": "Jaa'a alladhee kataba ad-darsa",
+        "meaning": "The one who wrote the lesson came"
+      },
+      {
+        "arabic": "رَأَيْتُ الَّتِي نَجَحَتْ",
+        "transliteration": "Ra'aytu allatee najahat",
+        "meaning": "I saw the one (f) who succeeded"
+      }
+    ],
+    "quiz": {
+      "question": "Which relative pronoun is used for a feminine singular?",
+      "options": [
+        "الَّذِي",
+        "الَّتِي",
+        "الَّذِينَ",
+        "اللَّاتِي"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 21,
+    "category": "Nahw",
+    "title": "Harf al-Jarr (Prepositions)",
+    "arabicTitle": "حروف الجر",
+    "description": "Prepositions always put the following noun into the Jarr case. Common ones include فِي (in), مِنْ (from), إِلَى (to), عَلَى (on), بِ (with/by), and لِ (for).",
+    "examples": [
+      {
+        "arabic": "فِي الْبَيْتِ",
+        "transliteration": "Fil-bayti",
+        "meaning": "In the house"
+      },
+      {
+        "arabic": "مِنَ الْمَسْجِدِ",
+        "transliteration": "Minal-masjidi",
+        "meaning": "From the mosque"
+      }
+    ],
+    "quiz": {
+      "question": "What case does a Harf Jarr always require?",
+      "options": [
+        "Raf'",
+        "Nasb",
+        "Jarr",
+        "Jazm"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": 22,
+    "category": "Nahw",
+    "title": "Fi'l Majhul (Passive Voice)",
+    "arabicTitle": "الفعل المجهول",
+    "description": "In the passive voice, the doer is unknown or unmentioned, so the direct object takes the position of the subject and is called Na'ib al-Fa'il. The internal vowelling of the verb changes: Damma on the first letter, Kasra before the last.",
+    "examples": [
+      {
+        "arabic": "كُتِبَ الدَّرْسُ",
+        "transliteration": "Kutiba ad-darsu",
+        "meaning": "The lesson was written — ad-darsu is Na'ib al-Fa'il"
+      },
+      {
+        "arabic": "يُكْتَبُ الدَّرْسُ",
+        "transliteration": "Yuktabu ad-darsu",
+        "meaning": "The lesson is being written"
+      }
+    ],
+    "quiz": {
+      "question": "In the passive voice, what replaces the Fa'il?",
+      "options": [
+        "Mubtada",
+        "Khabar",
+        "Na'ib al-Fa'il",
+        "Maf'ul Mutlaq"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": 23,
+    "category": "Nahw",
+    "title": "Kana & Its Sisters",
+    "arabicTitle": "كان وأخواتها",
+    "description": "كَانَ and its sisters (كان، أصبح، أمسى، أضحى، صار...) are special verbs that enter on a nominal sentence, put the Mubtada in Raf' (called Ism Kana) and the Khabar in Nasb (called Khabar Kana).",
+    "examples": [
+      {
+        "arabic": "كَانَ اللهُ غَفُوراً",
+        "transliteration": "Kaanallaahu Ghafooran",
+        "meaning": "Allah was/is Ever Forgiving — Allahu=Raf', Ghafooran=Nasb"
+      },
+      {
+        "arabic": "أَصْبَحَ الطِّفْلُ كَبِيراً",
+        "transliteration": "Asbaha at-tiflu kabeeran",
+        "meaning": "The child grew up big"
+      }
+    ],
+    "quiz": {
+      "question": "After كَانَ, what case does the Khabar take?",
+      "options": [
+        "Raf'",
+        "Jarr",
+        "Nasb",
+        "Jazm"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": 24,
+    "category": "Nahw",
+    "title": "Inna & Its Sisters",
+    "arabicTitle": "إن وأخواتها",
+    "description": "إِنَّ and its sisters (إن، أن، كأن، لكن، ليت، لعل) enter on a nominal sentence and put the Mubtada in Nasb (Ism Inna) while the Khabar remains in Raf' (Khabar Inna).",
+    "examples": [
+      {
+        "arabic": "إِنَّ اللهَ غَفُورٌ",
+        "transliteration": "Innal-laaha Ghafoor",
+        "meaning": "Indeed Allah is Forgiving — Allaha=Nasb, Ghafoor=Raf'"
+      },
+      {
+        "arabic": "لَعَلَّ الْفَرَجَ قَرِيبٌ",
+        "transliteration": "La'allal-faraja qareeb",
+        "meaning": "Perhaps relief is near"
+      }
+    ],
+    "quiz": {
+      "question": "After إِنَّ, what case does the Ism (subject) take?",
+      "options": [
+        "Raf'",
+        "Jarr",
+        "Nasb",
+        "Jazm"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": 25,
+    "category": "Nahw",
+    "title": "Idafa (Possessive Construction)",
+    "arabicTitle": "الإضافة",
+    "description": "Idafa is a two-word possessive structure. The first word (Mudaf) never takes Tanwin and is in the case demanded by its position in the sentence. The second word (Mudaf ilayh) is always Majrur (Jarr).",
+    "examples": [
+      {
+        "arabic": "بَيْتُ اللهِ",
+        "transliteration": "Baytullaahi",
+        "meaning": "The House of Allah"
+      },
+      {
+        "arabic": "كِتَابُ الطَّالِبِ",
+        "transliteration": "Kitaabut-taalibi",
+        "meaning": "The student's book"
+      }
+    ],
+    "quiz": {
+      "question": "In an Idafa, what case is the Mudaf ilayh always in?",
+      "options": [
+        "Raf'",
+        "Nasb",
+        "Jarr",
+        "Jazm"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": 26,
+    "category": "Nahw",
+    "title": "Istithna (Exception)",
+    "arabicTitle": "الاستثناء",
+    "description": "Istithna expresses an exception using إِلَّا (except) and similar particles. The excluded noun (Mustathna) usually takes the Nasb case when the sentence is complete and affirmative.",
+    "examples": [
+      {
+        "arabic": "حَضَرَ الطُّلَّابُ إِلَّا خَالِداً",
+        "transliteration": "Hadara at-tullaabu illa Khaalidan",
+        "meaning": "The students attended except Khalid — Khaalidan is Mansub"
+      },
+      {
+        "arabic": "مَا نَجَحَ أَحَدٌ إِلَّا زَيْدٌ",
+        "transliteration": "Maa najaha ahadun illa Zaydun",
+        "meaning": "No one succeeded except Zayd"
+      }
+    ],
+    "quiz": {
+      "question": "Which particle is used to express an exception?",
+      "options": [
+        "إِنَّ",
+        "إِلَّا",
+        "لَعَلَّ",
+        "كَأَنَّ"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 27,
+    "category": "Nahw",
+    "title": "Hal (Circumstantial Accusative)",
+    "arabicTitle": "الحال",
+    "description": "Hal is a word, always in the Nasb case, that describes the state or condition of the doer or object at the time of the action. It answers the question 'how?' or 'in what state?'.",
+    "examples": [
+      {
+        "arabic": "جَاءَ زَيْدٌ رَاكِباً",
+        "transliteration": "Jaa'a Zaydun raakiban",
+        "meaning": "Zayd came riding — raakiban describes his state"
+      },
+      {
+        "arabic": "رَأَيْتُهُ بَاكِياً",
+        "transliteration": "Ra'aytuhu baakiyan",
+        "meaning": "I saw him crying"
+      }
+    ],
+    "quiz": {
+      "question": "What case does the Hal always take?",
+      "options": [
+        "Raf'",
+        "Nasb",
+        "Jarr",
+        "Jazm"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 28,
+    "category": "Nahw",
+    "title": "Tamyiz (Specification)",
+    "arabicTitle": "التمييز",
+    "description": "Tamyiz is a noun in the Nasb case that clarifies or specifies an ambiguous word before it, often following numbers, weights, measures, or comparisons.",
+    "examples": [
+      {
+        "arabic": "عِنْدِي عِشْرُونَ كِتَاباً",
+        "transliteration": "'Indee 'ishroona kitaaban",
+        "meaning": "I have twenty books — kitaaban is Tamyiz"
+      },
+      {
+        "arabic": "اِزْدَادَ عِلْماً",
+        "transliteration": "Izdaada 'ilman",
+        "meaning": "He increased in knowledge"
+      }
+    ],
+    "quiz": {
+      "question": "Tamyiz most often follows what kind of word?",
+      "options": [
+        "A preposition",
+        "A number or measure",
+        "A pronoun",
+        "A relative clause"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 29,
+    "category": "Nahw",
+    "title": "Nida (Vocative — Calling)",
+    "arabicTitle": "النداء",
+    "description": "Nida is the grammatical structure used to call or address someone, using particles like يَا. The noun being called (Munada) is typically Marfoo' if it is a single definite name.",
+    "examples": [
+      {
+        "arabic": "يَا مُحَمَّدُ",
+        "transliteration": "Yaa Muhammadu",
+        "meaning": "O Muhammad!"
+      },
+      {
+        "arabic": "يَا رَبِّ",
+        "transliteration": "Yaa Rabbi",
+        "meaning": "O my Lord!"
+      }
+    ],
+    "quiz": {
+      "question": "Which particle is most commonly used for calling someone?",
+      "options": [
+        "يَا",
+        "إِلَّا",
+        "لَنْ",
+        "قَدْ"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": 30,
+    "category": "Nahw",
+    "title": "Adawat al-Shart (Conditional Particles)",
+    "arabicTitle": "أدوات الشرط",
+    "description": "Conditional particles like إِنْ (if) and مَنْ (whoever) introduce a condition clause (Fi'l ash-Shart) followed by a result clause (Jawab ash-Shart). Both verbs are typically in Jazm.",
+    "examples": [
+      {
+        "arabic": "إِنْ تَجْتَهِدْ تَنْجَحْ",
+        "transliteration": "In tajtahid tanjah",
+        "meaning": "If you strive, you will succeed"
+      },
+      {
+        "arabic": "مَنْ يَزْرَعْ يَحْصُدْ",
+        "transliteration": "Man yazra' yahsud",
+        "meaning": "Whoever sows will reap"
+      }
+    ],
+    "quiz": {
+      "question": "What is the mood of the verbs in a conditional sentence with إِنْ?",
+      "options": [
+        "Raf'",
+        "Nasb",
+        "Jazm",
+        "No case"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": 31,
+    "category": "Sarf",
+    "title": "Arabic Root System",
+    "arabicTitle": "الجذر العربي",
+    "description": "Almost all Arabic words are derived from a 3-letter root (sometimes 4-letter). Understanding the root unlocks the meaning of hundreds of related words. The root carries the core semantic meaning, while patterns (Awzan أوزان) determine the exact word form.",
+    "examples": [
+      {
+        "arabic": "ك - ت - ب",
+        "transliteration": "K-T-B",
+        "meaning": "Root of all words related to writing"
+      },
+      {
+        "arabic": "كَتَبَ، كِتَاب، كَاتِب، مَكْتَب، مَكْتُوب",
+        "transliteration": "Kataba, Kitaab, Kaatib, Maktab, Maktoob",
+        "meaning": "He wrote, book, writer, office, written"
+      }
+    ],
+    "quiz": {
+      "question": "What is the root of كِتَابٌ (book)?",
+      "options": [
+        "ق ر أ",
+        "ك ت ب",
+        "ع ل م",
+        "ر ح م"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 32,
+    "category": "Sarf",
+    "title": "Wazn — The Pattern System",
+    "arabicTitle": "الوزن",
+    "description": "Arabic morphology uses a pattern system (Awzan) to derive words. The root letters are substituted into patterns built on ف-ع-ل. For example, فَاعِل is the pattern for 'doer', giving كَاتِب (writer) from ك-ت-ب.",
+    "examples": [
+      {
+        "arabic": "فَاعِل",
+        "transliteration": "Faa'il",
+        "meaning": "Doer/Active Participle — e.g., كَاتِب (writer)"
+      },
+      {
+        "arabic": "مَفْعُول",
+        "transliteration": "Maf'ool",
+        "meaning": "Object/Passive Participle — e.g., مَكْتُوب (written)"
+      },
+      {
+        "arabic": "فِعَال",
+        "transliteration": "Fi'aal",
+        "meaning": "Noun of action/instrument — e.g., كِتَاب (book)"
+      }
+    ],
+    "quiz": {
+      "question": "What is the Wazn (pattern) of كَاتِب (writer)?",
+      "options": [
+        "مَفْعُول",
+        "فِعَال",
+        "فَاعِل",
+        "مُفَعِّل"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": 33,
+    "category": "Sarf",
+    "title": "Thulathi Mujarrad (Bare Triliteral)",
+    "arabicTitle": "الثلاثي المجرد",
+    "description": "Thulathi Mujarrad is the simplest verb form, consisting of exactly three root letters with no extra letters added, such as فَعَلَ (fa'ala). It is the base from which all augmented forms are derived.",
+    "examples": [
+      {
+        "arabic": "نَصَرَ",
+        "transliteration": "Nasara",
+        "meaning": "He helped — 3 root letters, no addition"
+      },
+      {
+        "arabic": "جَلَسَ",
+        "transliteration": "Jalasa",
+        "meaning": "He sat — bare triliteral"
+      }
+    ],
+    "quiz": {
+      "question": "How many letters does a Thulathi Mujarrad verb have?",
+      "options": [
+        "Two",
+        "Three",
+        "Four",
+        "Five"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 34,
+    "category": "Sarf",
+    "title": "Thulathi Mazid (Augmented Triliteral)",
+    "arabicTitle": "الثلاثي المزيد",
+    "description": "Thulathi Mazid verbs add one, two, or three extra letters to the bare triliteral root to create new but related meanings — such as intensity, causation, or reciprocity. These form the famous 'ten forms' (Awzan) of Arabic verbs.",
+    "examples": [
+      {
+        "arabic": "كَتَّبَ (Form II)",
+        "transliteration": "Kattaba",
+        "meaning": "He made (someone) write / dictated"
+      },
+      {
+        "arabic": "كَاتَبَ (Form III)",
+        "transliteration": "Kaataba",
+        "meaning": "He corresponded with (someone)"
+      }
+    ],
+    "quiz": {
+      "question": "What does Thulathi Mazid mean?",
+      "options": [
+        "A verb with no extra letters",
+        "A verb with extra letters added to the root",
+        "A four-letter root",
+        "A passive verb"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 35,
+    "category": "Sarf",
+    "title": "Form II — Fa''ala (تفعيل)",
+    "arabicTitle": "باب فَعَّلَ",
+    "description": "Form II doubles the middle root letter and often conveys intensity or causation (making someone do the action). Its Masdar pattern is typically تَفْعِيل.",
+    "examples": [
+      {
+        "arabic": "عَلَّمَ",
+        "transliteration": "'Allama",
+        "meaning": "He taught (caused to know) — from عَلِمَ (he knew)"
+      },
+      {
+        "arabic": "كَسَّرَ",
+        "transliteration": "Kassara",
+        "meaning": "He smashed to pieces (intensive) — from كَسَرَ (he broke)"
+      }
+    ],
+    "quiz": {
+      "question": "What is the defining feature of Form II verbs?",
+      "options": [
+        "A prefixed hamza",
+        "Doubling the middle letter",
+        "A prefixed ta",
+        "An infixed alif"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 36,
+    "category": "Sarf",
+    "title": "Form III — Faa'ala (مفاعلة)",
+    "arabicTitle": "باب فَاعَلَ",
+    "description": "Form III adds an Alif after the first root letter and typically expresses an action done towards or with another person (reciprocity or effort directed at someone).",
+    "examples": [
+      {
+        "arabic": "قَاتَلَ",
+        "transliteration": "Qaatala",
+        "meaning": "He fought (with someone) — from قَتَلَ (he killed)"
+      },
+      {
+        "arabic": "سَافَرَ",
+        "transliteration": "Saafara",
+        "meaning": "He traveled"
+      }
+    ],
+    "quiz": {
+      "question": "What does Form III (فَاعَلَ) typically express?",
+      "options": [
+        "Intensity",
+        "An action directed at/with another",
+        "Reflexivity",
+        "Seeking something"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 37,
+    "category": "Sarf",
+    "title": "Form IV — Af'ala (إفعال)",
+    "arabicTitle": "باب أَفْعَلَ",
+    "description": "Form IV prefixes a Hamza to the root and usually conveys causation — making someone else do or become something. Its Masdar pattern is إِفْعَال.",
+    "examples": [
+      {
+        "arabic": "أَكْرَمَ",
+        "transliteration": "Akrama",
+        "meaning": "He honoured (made generous to) — from كَرُمَ (he was noble)"
+      },
+      {
+        "arabic": "آمَنَ",
+        "transliteration": "Aamana",
+        "meaning": "He believed — from أَمِنَ (he was safe)"
+      }
+    ],
+    "quiz": {
+      "question": "What prefix defines Form IV verbs?",
+      "options": [
+        "Ta",
+        "Hamza",
+        "Seen",
+        "Alif+Noon"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 38,
+    "category": "Sarf",
+    "title": "Form V — Tafa''ala (تفعُّل)",
+    "arabicTitle": "باب تَفَعَّلَ",
+    "description": "Form V adds تَ before Form II's pattern and often expresses the reflexive of Form II — doing the action to oneself, or gradually undergoing a process.",
+    "examples": [
+      {
+        "arabic": "تَعَلَّمَ",
+        "transliteration": "Ta'allama",
+        "meaning": "He learned (taught himself) — from عَلَّمَ (he taught)"
+      },
+      {
+        "arabic": "تَكَسَّرَ",
+        "transliteration": "Takassara",
+        "meaning": "It broke into pieces (by itself)"
+      }
+    ],
+    "quiz": {
+      "question": "Form V is typically the reflexive of which form?",
+      "options": [
+        "Form I",
+        "Form II",
+        "Form III",
+        "Form IV"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 39,
+    "category": "Sarf",
+    "title": "Form VI — Tafaa'ala (تفاعُل)",
+    "arabicTitle": "باب تَفَاعَلَ",
+    "description": "Form VI adds تَ before Form III's pattern, expressing mutual or reciprocal action performed between two or more parties together.",
+    "examples": [
+      {
+        "arabic": "تَعَاوَنَ",
+        "transliteration": "Ta'aawana",
+        "meaning": "They cooperated (helped each other)"
+      },
+      {
+        "arabic": "تَقَاتَلَ",
+        "transliteration": "Taqaatala",
+        "meaning": "They fought each other"
+      }
+    ],
+    "quiz": {
+      "question": "What does Form VI typically express?",
+      "options": [
+        "Causation",
+        "Mutual/reciprocal action",
+        "Seeking",
+        "Passivity"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 40,
+    "category": "Sarf",
+    "title": "Form VII — Infa'ala (انفعال)",
+    "arabicTitle": "باب اِنْفَعَلَ",
+    "description": "Form VII prefixes اِنْـ to the root and almost always conveys a passive or reflexive meaning — something happening to the subject without an active agent expressed.",
+    "examples": [
+      {
+        "arabic": "اِنْكَسَرَ",
+        "transliteration": "Inkasara",
+        "meaning": "It broke / got broken — from كَسَرَ (he broke it)"
+      },
+      {
+        "arabic": "اِنْفَتَحَ",
+        "transliteration": "Infataha",
+        "meaning": "It opened (by itself)"
+      }
+    ],
+    "quiz": {
+      "question": "Form VII (اِنْفَعَلَ) typically conveys:",
+      "options": [
+        "Intensity",
+        "A passive/reflexive sense",
+        "Reciprocity",
+        "Seeking help"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 41,
+    "category": "Sarf",
+    "title": "Form VIII — Ifta'ala (افتعال)",
+    "arabicTitle": "باب اِفْتَعَلَ",
+    "description": "Form VIII infixes تَ after the first root letter, often conveying reflexive action, effort, or a meaning close to the root but affecting the subject itself.",
+    "examples": [
+      {
+        "arabic": "اِجْتَمَعَ",
+        "transliteration": "Ijtama'a",
+        "meaning": "He/They gathered (together) — from جَمَعَ (he gathered/collected)"
+      },
+      {
+        "arabic": "اِخْتَارَ",
+        "transliteration": "Ikhtaara",
+        "meaning": "He chose (selected for himself)"
+      }
+    ],
+    "quiz": {
+      "question": "Where is the extra ت placed in Form VIII?",
+      "options": [
+        "At the start",
+        "Infixed after the first root letter",
+        "Doubled in the middle",
+        "At the end"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 42,
+    "category": "Sarf",
+    "title": "Form X — Istaf'ala (استفعال)",
+    "arabicTitle": "باب اِسْتَفْعَلَ",
+    "description": "Form X prefixes اِسْتَـ to the root and typically expresses seeking, requesting, or considering something to have a quality — 'to seek/ask for X'.",
+    "examples": [
+      {
+        "arabic": "اِسْتَغْفَرَ",
+        "transliteration": "Istaghfara",
+        "meaning": "He sought forgiveness — from غَفَرَ (He forgave)"
+      },
+      {
+        "arabic": "اِسْتَخْرَجَ",
+        "transliteration": "Istakhraja",
+        "meaning": "He extracted (sought to bring out)"
+      }
+    ],
+    "quiz": {
+      "question": "What does Form X (اِسْتَفْعَلَ) typically express?",
+      "options": [
+        "Seeking/requesting something",
+        "Mutual action",
+        "Simple past action",
+        "Doubling for intensity"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "id": 43,
+    "category": "Sarf",
+    "title": "Verb Conjugation — Maadi (Past Tense)",
+    "arabicTitle": "الفعل الماضي",
+    "description": "The past tense verb (Maadi) is the base form in Arabic. It is conjugated for person (1st, 2nd, 3rd), gender (masculine/feminine), and number (singular, dual, plural) using suffixes.",
+    "examples": [
+      {
+        "arabic": "كَتَبَ / كَتَبَتْ",
+        "transliteration": "Kataba / Katabat",
+        "meaning": "He wrote / She wrote"
+      },
+      {
+        "arabic": "كَتَبْتَ / كَتَبْتِ",
+        "transliteration": "Katabta / Katabti",
+        "meaning": "You (m) wrote / You (f) wrote"
+      },
+      {
+        "arabic": "كَتَبْتُ",
+        "transliteration": "Katabtu",
+        "meaning": "I wrote"
+      }
+    ],
+    "quiz": {
+      "question": "What suffix do you add to a past tense verb for 'I' (1st person singular)?",
+      "options": [
+        "ـتَ",
+        "ـتُ",
+        "ـنَا",
+        "ـتُمْ"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 44,
+    "category": "Sarf",
+    "title": "Verb Conjugation — Mudhari' (Present/Future)",
+    "arabicTitle": "الفعل المضارع",
+    "description": "The Mudhari' tense expresses present or future actions. It is formed by adding prefixes (و ن ت أ — wanataa) and sometimes suffixes to the root. It is always Marfoo' by default unless a Nasb or Jazm particle precedes it.",
+    "examples": [
+      {
+        "arabic": "يَكْتُبُ / تَكْتُبُ",
+        "transliteration": "Yaktubu / Taktubu",
+        "meaning": "He writes / She writes"
+      },
+      {
+        "arabic": "أَكْتُبُ",
+        "transliteration": "Aktubu",
+        "meaning": "I write"
+      },
+      {
+        "arabic": "نَكْتُبُ",
+        "transliteration": "Naktubu",
+        "meaning": "We write"
+      }
+    ],
+    "quiz": {
+      "question": "Which prefix is used for 3rd person masculine singular Mudhari'?",
+      "options": [
+        "أ",
+        "ن",
+        "ي",
+        "ت"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": 45,
+    "category": "Sarf",
+    "title": "Fi'l al-Amr (Imperative)",
+    "arabicTitle": "فعل الأمر",
+    "description": "Fi'l al-Amr is the command form, derived from the Mudhari' by dropping the present-tense prefix and adjusting the ending. It is only used for the 2nd person (you) and always ends in Sukun, dropped noon, or a stable letter.",
+    "examples": [
+      {
+        "arabic": "اُكْتُبْ",
+        "transliteration": "Uktub",
+        "meaning": "Write! (to a male)"
+      },
+      {
+        "arabic": "اِقْرَئِي",
+        "transliteration": "Iqra'ee",
+        "meaning": "Read! (to a female)"
+      }
+    ],
+    "quiz": {
+      "question": "Fi'l al-Amr is used to address which grammatical person?",
+      "options": [
+        "1st person (I/we)",
+        "2nd person (you)",
+        "3rd person (he/she)",
+        "All persons"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 46,
+    "category": "Sarf",
+    "title": "Active & Passive Participles",
+    "arabicTitle": "اسم الفاعل واسم المفعول",
+    "description": "Ism al-Fa'il (اسم الفاعل) is the active participle — 'the one who does'. Its pattern is فَاعِل. Ism al-Maf'ul (اسم المفعول) is the passive participle — 'the one who is acted upon'. Its pattern is مَفْعُول.",
+    "examples": [
+      {
+        "arabic": "كَاتِب",
+        "transliteration": "Kaatib",
+        "meaning": "Writer (active) — from ك ت ب"
+      },
+      {
+        "arabic": "مَكْتُوب",
+        "transliteration": "Maktoob",
+        "meaning": "Written (passive) — from ك ت ب"
+      },
+      {
+        "arabic": "مُؤْمِن / مُؤْمَن بِهِ",
+        "transliteration": "Mu'min / Mu'man bih",
+        "meaning": "Believer (active) / Believed in (passive)"
+      }
+    ],
+    "quiz": {
+      "question": "What is the pattern for Ism al-Fa'il (active participle)?",
+      "options": [
+        "مَفْعُول",
+        "فِعَال",
+        "فَعَّال",
+        "فَاعِل"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": 47,
+    "category": "Sarf",
+    "title": "Masdar — The Verbal Noun",
+    "arabicTitle": "المصدر",
+    "description": "The Masdar is the verbal noun — it expresses the action without reference to time, doer, or gender. For Form I verbs, the Masdar is irregular and must be memorised. For Forms II–X, the Masdar follows fixed patterns.",
+    "examples": [
+      {
+        "arabic": "ذِكْر",
+        "transliteration": "Dhikr",
+        "meaning": "Remembrance (from ذَكَرَ — to remember)"
+      },
+      {
+        "arabic": "إِيمَان",
+        "transliteration": "Eemaan",
+        "meaning": "Faith (from آمَنَ — Form IV)"
+      },
+      {
+        "arabic": "تَسْبِيح",
+        "transliteration": "Tasbeeh",
+        "meaning": "Glorification (from سَبَّحَ — Form II)"
+      }
+    ],
+    "quiz": {
+      "question": "What is the Masdar (verbal noun) of سَبَّحَ (Form II)?",
+      "options": [
+        "سُبْحَان",
+        "تَسْبِيح",
+        "سَابِح",
+        "مُسَبَّح"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 48,
+    "category": "Sarf",
+    "title": "Ism Tafdil (Comparative/Superlative)",
+    "arabicTitle": "اسم التفضيل",
+    "description": "Ism Tafdil expresses 'more/most' comparisons, formed mainly on the pattern أَفْعَل from a Thulathi Mujarrad root. It is used both comparatively (bigger than) and superlatively (the biggest).",
+    "examples": [
+      {
+        "arabic": "أَكْبَرُ",
+        "transliteration": "Akbaru",
+        "meaning": "Bigger/biggest — from كَبُرَ (to be big)"
+      },
+      {
+        "arabic": "هُوَ أَفْضَلُ مِنْ أَخِيهِ",
+        "transliteration": "Huwa afdalu min akheehi",
+        "meaning": "He is better than his brother"
+      }
+    ],
+    "quiz": {
+      "question": "What is the typical pattern of Ism Tafdil?",
+      "options": [
+        "فَاعِل",
+        "مَفْعُول",
+        "أَفْعَل",
+        "فَعِيل"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": 49,
+    "category": "Sarf",
+    "title": "Ism al-Makan wal-Zaman",
+    "arabicTitle": "اسم المكان والزمان",
+    "description": "Ism Makan (noun of place) and Ism Zaman (noun of time) indicate where or when an action takes place. From Thulathi Mujarrad they commonly follow the pattern مَفْعَل or مَفْعِل.",
+    "examples": [
+      {
+        "arabic": "مَكْتَب",
+        "transliteration": "Maktab",
+        "meaning": "Office / place of writing — from ك ت ب"
+      },
+      {
+        "arabic": "مَغْرِب",
+        "transliteration": "Maghrib",
+        "meaning": "Place/time of sunset — from غ ر ب"
+      }
+    ],
+    "quiz": {
+      "question": "Ism Makan wal-Zaman indicates:",
+      "options": [
+        "The doer of an action",
+        "The place or time of an action",
+        "The instrument used",
+        "The passive object"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 50,
+    "category": "Sarf",
+    "title": "Ism al-Aala (Noun of Instrument)",
+    "arabicTitle": "اسم الآلة",
+    "description": "Ism al-Aala names the tool or instrument used to perform an action. Common patterns include مِفْعَل, مِفْعَلَة, and مِفْعَال.",
+    "examples": [
+      {
+        "arabic": "مِفْتَاح",
+        "transliteration": "Miftaah",
+        "meaning": "Key (instrument for opening) — from ف ت ح"
+      },
+      {
+        "arabic": "مِكْنَسَة",
+        "transliteration": "Miknasah",
+        "meaning": "Broom (instrument for sweeping)"
+      }
+    ],
+    "quiz": {
+      "question": "Ism al-Aala refers to:",
+      "options": [
+        "A place",
+        "A time",
+        "An instrument/tool",
+        "A comparison"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": 51,
+    "category": "Sarf",
+    "title": "Sahih & Mu'tal Verbs",
+    "arabicTitle": "الصحيح والمعتل",
+    "description": "A Fi'l Sahih has three sound root letters with no و، ا، or ي among them, and conjugates regularly. A Fi'l Mu'tal contains one of these weak letters, causing irregular changes during conjugation.",
+    "examples": [
+      {
+        "arabic": "كَتَبَ",
+        "transliteration": "Kataba",
+        "meaning": "He wrote — Sahih (sound, no weak letters)"
+      },
+      {
+        "arabic": "قَالَ / دَعَا / رَمَى",
+        "transliteration": "Qaala / Da'aa / Ramaa",
+        "meaning": "He said / He called / He threw — all Mu'tal (contain weak letters)"
+      }
+    ],
+    "quiz": {
+      "question": "What makes a verb Mu'tal (weak)?",
+      "options": [
+        "It has a doubled letter",
+        "It contains و، ا، or ي in its root",
+        "It is passive",
+        "It is a command"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "id": 52,
+    "category": "Sarf",
+    "title": "Tathniya (Dual Formation)",
+    "arabicTitle": "التثنية",
+    "description": "To form the Muthanna (dual) of a noun, add انِ in the Raf' case or يْنِ in the Nasb/Jarr cases to the singular, after removing Tanwin.",
+    "examples": [
+      {
+        "arabic": "طَالِبٌ ← طَالِبَانِ",
+        "transliteration": "Taalibun -> Taalibaani",
+        "meaning": "One student -> two students (Raf')"
+      },
+      {
+        "arabic": "رَأَيْتُ طَالِبَيْنِ",
+        "transliteration": "Ra'aytu taalibayni",
+        "meaning": "I saw two students (Nasb)"
+      }
+    ],
+    "quiz": {
+      "question": "Which suffix marks the dual in the Nasb/Jarr case?",
+      "options": [
+        "ونَ",
+        "اتٌ",
+        "انِ",
+        "يْنِ"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "id": 53,
+    "category": "Sarf",
+    "title": "Jam' Mudhakkar & Mu'annath Salim",
+    "arabicTitle": "جمع المذكر والمؤنث السالم",
+    "description": "Jam' Mudhakkar Salim (sound masculine plural) adds ونَ (Raf') or ينَ (Nasb/Jarr) to the singular. Jam' Mu'annath Salim (sound feminine plural) adds اتٌ to the singular, most often for words ending in Ta Marbuta.",
+    "examples": [
+      {
+        "arabic": "مُسْلِمٌ ← مُسْلِمُونَ",
+        "transliteration": "Muslimun -> Muslimoona",
+        "meaning": "One Muslim (m) -> Muslims (m)"
+      },
+      {
+        "arabic": "مُسْلِمَةٌ ← مُسْلِمَاتٌ",
+        "transliteration": "Muslimatun -> Muslimaatun",
+        "meaning": "One Muslim (f) -> Muslims (f)"
+      }
+    ],
+    "quiz": {
+      "question": "What suffix forms the sound feminine plural?",
+      "options": [
+        "ونَ",
+        "ينَ",
+        "اتٌ",
+        "انِ"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "id": 54,
+    "category": "Sarf",
+    "title": "Al-Muzari' — Signs of I'rab",
+    "arabicTitle": "علامات إعراب المضارع",
+    "description": "The Mudhari' verb shows its case through changing endings: Damma for Raf', Fatha for Nasb, and Sukun (or dropped noon in the five verbs) for Jazm — unlike the Maadi, which never changes for case.",
+    "examples": [
+      {
+        "arabic": "يَكْتُبُ (Raf')",
+        "transliteration": "Yaktubu",
+        "meaning": "He writes — Damma ending"
+      },
+      {
+        "arabic": "لَنْ يَكْتُبَ (Nasb)",
+        "transliteration": "Lan yaktuba",
+        "meaning": "He will never write — Fatha ending"
+      },
+      {
+        "arabic": "لَمْ يَكْتُبْ (Jazm)",
+        "transliteration": "Lam yaktub",
+        "meaning": "He did not write — Sukun ending"
+      }
+    ],
+    "quiz": {
+      "question": "Which verb type can show Raf', Nasb, and Jazm case endings?",
+      "options": [
+        "Fi'l Maadi",
+        "Fi'l Amr",
+        "Fi'l Mudhari'",
+        "Harf"
+      ],
+      "answer": 2
+    }
+  }
+]

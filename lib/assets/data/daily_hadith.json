@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "arabic": "إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى",
+    "urdu": "اعمال کا دارومدار نیتوں پر ہے، اور ہر شخص کو وہی ملے گا جس کی اس نے نیت کی۔",
+    "english": "Actions are judged by intentions, and every person will get what they intended.",
+    "book": "صحيح البخاري",
+    "hadithNumber": "1",
+    "narrator": "عمر بن الخطاب رضي الله عنه",
+    "chapter": "كتاب بدء الوحي",
+    "grade": "صحيح"
+  },
+  {
+    "id": 2,
+    "arabic": "خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ",
+    "urdu": "تم میں سے بہترین شخص وہ ہے جو قرآن سیکھے اور اسے دوسروں کو سکھائے۔",
+    "english": "The best among you are those who learn the Quran and teach it.",
+    "book": "صحيح البخاري",
+    "hadithNumber": "5027",
+    "narrator": "عثمان بن عفان رضي الله عنه",
+    "chapter": "كتاب فضائل القرآن",
+    "grade": "صحيح"
+  },
+  {
+    "id": 3,
+    "arabic": "مَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الْجَنَّةِ",
+    "urdu": "جو شخص علم کی تلاش میں کسی راستے پر چلتا ہے، اللہ تعالیٰ اس کے لیے جنت کا راستہ آسان فرما دیتا ہے۔",
+    "english": "Whoever treads a path in search of knowledge, Allah will make easy for him a path to Paradise.",
+    "book": "صحيح مسلم",
+    "hadithNumber": "2699",
+    "narrator": "أبو هريرة رضي الله عنه",
+    "chapter": "كتاب الذكر والدعاء والتوبة",
+    "grade": "صحيح"
+  },
+  {
+    "id": 4,
+    "arabic": "لاَ يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ",
+    "urdu": "تم میں سے کوئی اس وقت تک کامل مومن نہیں ہو سکتا جب تک وہ اپنے بھائی کے لیے وہی پسند نہ کرے جو اپنے لیے پسند کرتا ہے۔",
+    "english": "None of you truly believes until he wishes for his brother what he wishes for himself.",
+    "book": "صحيح البخاري",
+    "hadithNumber": "13",
+    "narrator": "أنس بن مالك رضي الله عنه",
+    "chapter": "كتاب الإيمان",
+    "grade": "صحيح"
+  },
+  {
+    "id": 5,
+    "arabic": "الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ",
+    "urdu": "مسلمان وہ ہے جس کی زبان اور ہاتھ سے دوسرے مسلمان محفوظ رہیں۔",
+    "english": "A true Muslim is the one from whose tongue and hand other Muslims are safe.",
+    "book": "صحيح البخاري",
+    "hadithNumber": "10",
+    "narrator": "عبد الله بن عمرو رضي الله عنهما",
+    "chapter": "كتاب الإيمان",
+    "grade": "صحيح"
+  },
+  {
+    "id": 6,
+    "arabic": "تَبَسُّمُكَ فِي وَجْهِ أَخِيكَ لَكَ صَدَقَةٌ",
+    "urdu": "اپنے بھائی کے چہرے کے سامنے تمہارا مسکرانا تمہارے لیے صدقہ ہے۔",
+    "english": "Your smile for your brother is a charity for you.",
+    "book": "سنن الترمذي",
+    "hadithNumber": "1956",
+    "narrator": "أبو ذر الغفاري رضي الله عنه",
+    "chapter": "كتاب البر والصلة",
+    "grade": "حسن"
+  },
+  {
+    "id": 7,
+    "arabic": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ",
+    "urdu": "جو شخص اللہ اور آخرت کے دن پر ایمان رکھتا ہو، اسے چاہیے کہ اچھی بات کہے یا خاموش رہے۔",
+    "english": "Whoever believes in Allah and the Last Day should speak good or remain silent.",
+    "book": "صحيح البخاري",
+    "hadithNumber": "6018",
+    "narrator": "أبو هريرة رضي الله عنه",
+    "chapter": "كتاب الأدب",
+    "grade": "صحيح"
+  },
+  {
+    "id": 8,
+    "arabic": "احْفَظِ اللَّهَ يَحْفَظْكَ، احْفَظِ اللَّهَ تَجِدْهُ تُجَاهَكَ",
+    "urdu": "اللہ کے احکام کی حفاظت کرو، وہ تمہاری حفاظت فرمائے گا۔ اللہ کو یاد رکھو، تم اسے اپنے سامنے پاؤ گے۔",
+    "english": "Be mindful of Allah and He will protect you. Be mindful of Allah and you will find Him in front of you.",
+    "book": "سنن الترمذي",
+    "hadithNumber": "2516",
+    "narrator": "عبد الله بن عباس رضي الله عنهما",
+    "chapter": "كتاب صفة القيامة",
+    "grade": "حسن صحيح"
+  },
+  {
+    "id": 9,
+    "arabic": "مَنْ صَلَّى عَلَيَّ صَلاَةً وَاحِدَةً صَلَّى اللَّهُ عَلَيْهِ عَشْرًا",
+    "urdu": "جو شخص مجھ پر ایک بار درود بھیجتا ہے، اللہ تعالیٰ اس پر دس رحمتیں نازل فرماتا ہے۔",
+    "english": "Whoever sends blessings upon me once, Allah sends ten blessings upon him.",
+    "book": "صحيح مسلم",
+    "hadithNumber": "408",
+    "narrator": "أبو هريرة رضي الله عنه",
+    "chapter": "كتاب الصلاة",
+    "grade": "صحيح"
+  },
+  {
+    "id": 10,
+    "arabic": "الطَّهُورُ شَطْرُ الإِيمَانِ، وَالْحَمْدُ لِلَّهِ تَمْلأُ الْمِيزَانَ",
+    "urdu": "پاکیزگی نصف ایمان ہے، اور الحمد للہ (کہنا) میزان کو بھر دیتا ہے۔",
+    "english": "Purity is half of faith, and saying Al-hamdulillah fills the scales.",
+    "book": "صحيح مسلم",
+    "hadithNumber": "223",
+    "narrator": "أبو مالك الأشعري رضي الله عنه",
+    "chapter": "كتاب الطهارة",
+    "grade": "صحيح"
+  },
+  {
+    "id": 11,
+    "arabic": "الدُّعَاءُ هُوَ الْعِبَادَةُ",
+    "urdu": "دعا ہی اصل عبادت ہے۔",
+    "english": "Supplication is the essence of worship.",
+    "book": "سنن الترمذي",
+    "hadithNumber": "3372",
+    "narrator": "النعمان بن بشير رضي الله عنه",
+    "chapter": "كتاب الدعوات",
+    "grade": "صحيح"
+  },
+  {
+    "id": 12,
+    "arabic": "إِنَّ اللَّهَ جَمِيلٌ يُحِبُّ الْجَمَالَ",
+    "urdu": "بے شک اللہ خوبصورت ہے اور خوبصورتی (جمال) کو پسند فرماتا ہے۔",
+    "english": "Verily, Allah is Beautiful and He loves beauty.",
+    "book": "صحيح مسلم",
+    "hadithNumber": "91",
+    "narrator": "عبد الله بن مسعود رضي الله عنه",
+    "chapter": "كتاب الإيمان",
+    "grade": "صحيح"
+  },
+  {
+    "id": 13,
+    "arabic": "أَحَبُّ الأَعْمَالِ إِلَى اللَّهِ أَدْوَمُهَا وَإِنْ قَلَّ",
+    "urdu": "اللہ کے ہاں سب سے محبوب عمل وہ ہے جو ہمیشہ کیا جائے، اگرچہ وہ تھوڑا ہی کیوں نہ ہو۔",
+    "english": "The most beloved deeds to Allah are those done consistently, even if they are small.",
+    "book": "صحيح البخاري",
+    "hadithNumber": "6465",
+    "narrator": "عائشة رضي الله عنها",
+    "chapter": "كتاب الرقاق",
+    "grade": "صحيح"
+  },
+  {
+    "id": 14,
+    "arabic": "الرَّاحِمُونَ يَرْحَمُهُمُ الرَّحْمَنُ، ارْحَمُوا مَنْ فِي الأَرْضِ يَرْحَمْكُمْ مَنْ فِي السَّمَاءِ",
+    "urdu": "رحم کرنے والوں پر رحمن رحم فرماتا ہے۔ زمین والوں پر رحم کرو، آسمان والا تم پر رحم کرے گا۔",
+    "english": "The merciful are shown mercy by the Most Merciful. Show mercy to those on earth and the One above the heavens will show mercy to you.",
+    "book": "سنن الترمذي",
+    "hadithNumber": "1924",
+    "narrator": "عبد الله بن عمرو رضي الله عنهما",
+    "chapter": "كتاب البر والصلة",
+    "grade": "حسن صحيح"
+  },
+  {
+    "id": 15,
+    "arabic": "مَنْ قَرَأَ حَرْفًا مِنْ كِتَابِ اللَّهِ فَلَهُ بِهِ حَسَنَةٌ، وَالْحَسَنَةُ بِعَشْرِ أَمْثَالِهَا",
+    "urdu": "جو شخص اللہ کی کتاب کا ایک حرف پڑھے گا، اس کے لیے ایک نیکی ہے اور ایک نیکی کا اجر دس گنا ہے۔",
+    "english": "Whoever reads a letter from the Book of Allah will receive a good deed, and that good deed will be rewarded tenfold.",
+    "book": "سنن الترمذي",
+    "hadithNumber": "2910",
+    "narrator": "عبد الله بن مسعود رضي الله عنه",
+    "chapter": "كتاب فضائل القرآن",
+    "grade": "حسن صحيح"
+  }
+]

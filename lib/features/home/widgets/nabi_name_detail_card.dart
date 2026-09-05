@@ -56,12 +56,12 @@ class _NabiNameDetailCardState extends State<NabiNameDetailCard> {
               color: const Color(0xFFFAFDFF), // TasbeehColors.background
               borderRadius: BorderRadius.circular(32),
               elevation: 8,
-              shadowColor: const Color(0xFF90BDE7).withOpacity(0.15),
+              shadowColor: const Color(0xFF90BDE7).withValues(alpha: 0.15),
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(32),
                   border: Border.all(
-                    color: const Color(0xFF90BDE7).withOpacity(0.4),
+                    color: const Color(0xFF90BDE7).withValues(alpha: 0.4),
                     width: 2,
                   ),
                   image: const DecorationImage(
@@ -79,10 +79,10 @@ class _NabiNameDetailCardState extends State<NabiNameDetailCard> {
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
                         decoration: BoxDecoration(
-                          color: const Color(0xFF90BDE7).withOpacity(0.08),
+                          color: const Color(0xFF90BDE7).withValues(alpha: 0.08),
                           borderRadius: BorderRadius.circular(12),
                           border: Border.all(
-                            color: const Color(0xFF90BDE7).withOpacity(0.3),
+                            color: const Color(0xFF90BDE7).withValues(alpha: 0.3),
                           ),
                         ),
                         child: Text(
@@ -156,10 +156,10 @@ class _NabiNameDetailCardState extends State<NabiNameDetailCard> {
                       Container(
                         padding: const EdgeInsets.all(16),
                         decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.6),
+                          color: Colors.white.withValues(alpha: 0.6),
                           borderRadius: BorderRadius.circular(16),
                           border: Border.all(
-                            color: const Color(0xFF90BDE7).withOpacity(0.2),
+                            color: const Color(0xFF90BDE7).withValues(alpha: 0.2),
                           ),
                         ),
                         child: Text(
@@ -193,7 +193,7 @@ class _NabiNameDetailCardState extends State<NabiNameDetailCard> {
                 borderRadius: BorderRadius.circular(20),
               ),
               elevation: 4,
-              shadowColor: const Color(0xFF90BDE7).withOpacity(0.5),
+              shadowColor: const Color(0xFF90BDE7).withValues(alpha: 0.5),
             ),
           ),
         ],
@@ -210,7 +210,7 @@ class _NabiNameDetailCardState extends State<NabiNameDetailCard> {
           height: 1.5,
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [Colors.transparent, const Color(0xFF90BDE7).withOpacity(0.5)],
+              colors: [Colors.transparent, const Color(0xFF90BDE7).withValues(alpha: 0.5)],
             ),
           ),
         ),
@@ -219,7 +219,7 @@ class _NabiNameDetailCardState extends State<NabiNameDetailCard> {
           child: Icon(
             Icons.eco, // Decorative leaf/eco icon for Prophet names
             size: 14,
-            color: const Color(0xFF90BDE7).withOpacity(0.7),
+            color: const Color(0xFF90BDE7).withValues(alpha: 0.7),
           ),
         ),
         Container(
@@ -227,7 +227,7 @@ class _NabiNameDetailCardState extends State<NabiNameDetailCard> {
           height: 1.5,
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [const Color(0xFF90BDE7).withOpacity(0.5), Colors.transparent],
+              colors: [const Color(0xFF90BDE7).withValues(alpha: 0.5), Colors.transparent],
             ),
           ),
         ),

@@ -252,7 +252,7 @@ class TasbeehBloc extends Cubit<TasbeehState> {
   }
 
   Future<void> _vibrateMilestone() async {
-    final hasVibrator = await Vibration.hasVibrator() ?? false;
+    final hasVibrator = (await Vibration.hasVibrator()) == true;
     if (hasVibrator) {
       Vibration.vibrate(pattern: [0, 100, 50, 100, 50, 200]);
     }

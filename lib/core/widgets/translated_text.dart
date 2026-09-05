@@ -95,8 +95,8 @@ class _TranslatedTextState extends State<TranslatedText> {
       return Text(
         widget.text,
         style: effectiveStyle?.copyWith(
-            color: effectiveStyle.color?.withOpacity(0.5) ??
-                Colors.grey.withOpacity(0.5)),
+            color: effectiveStyle.color?.withValues(alpha: 0.5) ??
+                Colors.grey.withValues(alpha: 0.5)),
         textAlign: widget.textAlign,
         maxLines: widget.maxLines,
         overflow: widget.overflow,

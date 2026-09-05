@@ -162,7 +162,7 @@ class _ProphetDetailScreenState extends State<ProphetDetailScreen>
         child: Container(
           margin: const EdgeInsets.all(8),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.2),
+            color: Colors.white.withValues(alpha: 0.2),
             shape: BoxShape.circle,
           ),
           child: const Icon(Icons.arrow_back_ios_new_rounded,
@@ -174,7 +174,7 @@ class _ProphetDetailScreenState extends State<ProphetDetailScreen>
         Container(
           margin: const EdgeInsets.all(8),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.2),
+            color: Colors.white.withValues(alpha: 0.2),
             shape: BoxShape.circle,
           ),
           child: IconButton(
@@ -205,7 +205,7 @@ class _ProphetDetailScreenState extends State<ProphetDetailScreen>
                   height: 200,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.white.withOpacity(0.06),
+                    color: Colors.white.withValues(alpha: 0.06),
                   ),
                 ),
               ),
@@ -217,7 +217,7 @@ class _ProphetDetailScreenState extends State<ProphetDetailScreen>
                   height: 140,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.white.withOpacity(0.05),
+                    color: Colors.white.withValues(alpha: 0.05),
                   ),
                 ),
               ),
@@ -236,7 +236,7 @@ class _ProphetDetailScreenState extends State<ProphetDetailScreen>
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 10, vertical: 4),
                             decoration: BoxDecoration(
-                              color: Colors.white.withOpacity(0.2),
+                              color: Colors.white.withValues(alpha: 0.2),
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: Text(
@@ -266,7 +266,7 @@ class _ProphetDetailScreenState extends State<ProphetDetailScreen>
                           style: TextStyle(
                             fontSize: 36,
                             fontWeight: FontWeight.w700,
-                            color: Colors.white.withOpacity(0.9),
+                            color: Colors.white.withValues(alpha: 0.9),
                             height: 1.2,
                           ),
                         ),
@@ -291,7 +291,7 @@ class _ProphetDetailScreenState extends State<ProphetDetailScreen>
                         overflow: TextOverflow.ellipsis,
                         style: TextStyle(
                           fontSize: 14,
-                          color: Colors.white.withOpacity(0.8),
+                          color: Colors.white.withValues(alpha: 0.8),
                           fontStyle: FontStyle.italic,
                         ),
                       ),
@@ -316,7 +316,7 @@ class _ProphetDetailScreenState extends State<ProphetDetailScreen>
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: _deepColor.withOpacity(0.1),
+            color: _deepColor.withValues(alpha: 0.1),
             blurRadius: 16,
             offset: const Offset(0, 4),
           ),
@@ -354,7 +354,7 @@ class _ProphetDetailScreenState extends State<ProphetDetailScreen>
               text,
               style: TextStyle(
                 fontSize: 12,
-                color: const Color(0xFF2D1B69).withOpacity(0.75),
+                color: const Color(0xFF2D1B69).withValues(alpha: 0.75),
                 fontWeight: FontWeight.w500,
               ),
               maxLines: 2,
@@ -372,10 +372,10 @@ class _ProphetDetailScreenState extends State<ProphetDetailScreen>
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [_lightColor, _lightColor.withOpacity(0.6)],
+          colors: [_lightColor, _lightColor.withValues(alpha: 0.6)],
         ),
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: _deepColor.withOpacity(0.2), width: 1),
+        border: Border.all(color: _deepColor.withValues(alpha: 0.2), width: 1),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -383,7 +383,7 @@ class _ProphetDetailScreenState extends State<ProphetDetailScreen>
           Container(
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: _deepColor.withOpacity(0.15),
+              color: _deepColor.withValues(alpha: 0.15),
               shape: BoxShape.circle,
             ),
             child: Icon(Icons.lightbulb_rounded, color: _deepColor, size: 18),
@@ -407,7 +407,7 @@ class _ProphetDetailScreenState extends State<ProphetDetailScreen>
                   widget.prophet.keyLesson,
                   style: TextStyle(
                     fontSize: 14,
-                    color: const Color(0xFF2D1B69).withOpacity(0.85),
+                    color: const Color(0xFF2D1B69).withValues(alpha: 0.85),
                     fontStyle: FontStyle.italic,
                     height: 1.5,
                   ),
@@ -428,7 +428,7 @@ class _ProphetDetailScreenState extends State<ProphetDetailScreen>
         widget.prophet.shortBio,
         style: TextStyle(
           fontSize: 15,
-          color: const Color(0xFF2D1B69).withOpacity(0.7),
+          color: const Color(0xFF2D1B69).withValues(alpha: 0.7),
           height: 1.65,
         ),
       ),
@@ -444,7 +444,7 @@ class _ProphetDetailScreenState extends State<ProphetDetailScreen>
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: _deepColor.withOpacity(0.08),
+            color: _deepColor.withValues(alpha: 0.08),
             blurRadius: 12,
             offset: const Offset(0, 3),
           ),
@@ -525,7 +525,7 @@ class _ProphetDetailScreenState extends State<ProphetDetailScreen>
                               style: TextStyle(
                                 fontSize: 14,
                                 color:
-                                    const Color(0xFF2D1B69).withOpacity(0.8),
+                                    const Color(0xFF2D1B69).withValues(alpha: 0.8),
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
@@ -683,7 +683,7 @@ class _ProphetDetailScreenState extends State<ProphetDetailScreen>
                             isActive ? FontWeight.w600 : FontWeight.w500,
                         color: isActive
                             ? _deepColor
-                            : const Color(0xFF2D1B69).withOpacity(0.75),
+                            : const Color(0xFF2D1B69).withValues(alpha: 0.75),
                       ),
                     ),
                     trailing: isActive
@@ -758,7 +758,7 @@ class _SectionWidget extends StatelessWidget {
               borderRadius: BorderRadius.circular(16),
               boxShadow: [
                 BoxShadow(
-                  color: deepColor.withOpacity(0.06),
+                  color: deepColor.withValues(alpha: 0.06),
                   blurRadius: 10,
                   offset: const Offset(0, 3),
                 ),

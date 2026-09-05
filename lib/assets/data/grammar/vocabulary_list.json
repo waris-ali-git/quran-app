@@ -1,0 +1,2945 @@
+[
+  {
+    "rank": 1,
+    "arabic": "مِن",
+    "transliteration": "Min",
+    "meaning": "From / Of",
+    "root": "—",
+    "partOfSpeech": "Harf (Preposition)",
+    "frequency": 3226
+  },
+  {
+    "rank": 2,
+    "arabic": "ٱللَّه",
+    "transliteration": "Allah",
+    "meaning": "Allah (proper name of God)",
+    "root": "أ ل ه",
+    "partOfSpeech": "Ism (Proper Noun)",
+    "frequency": 2699
+  },
+  {
+    "rank": 3,
+    "arabic": "فِى",
+    "transliteration": "Fi",
+    "meaning": "In / Among",
+    "root": "—",
+    "partOfSpeech": "Harf (Preposition)",
+    "frequency": 1701
+  },
+  {
+    "rank": 4,
+    "arabic": "إِنّ",
+    "transliteration": "Inna",
+    "meaning": "Indeed / Verily",
+    "root": "—",
+    "partOfSpeech": "Harf (Accusative particle)",
+    "frequency": 1682
+  },
+  {
+    "rank": 5,
+    "arabic": "قَالَ",
+    "transliteration": "Qaala",
+    "meaning": "He said / to say",
+    "root": "ق و ل",
+    "partOfSpeech": "Fi'l Maadi (Verb)",
+    "frequency": 1618
+  },
+  {
+    "rank": 6,
+    "arabic": "عَلَىٰ",
+    "transliteration": "'Ala",
+    "meaning": "On / Upon / Over",
+    "root": "—",
+    "partOfSpeech": "Harf (Preposition)",
+    "frequency": 1445
+  },
+  {
+    "rank": 7,
+    "arabic": "ٱلَّذِى",
+    "transliteration": "Alladhi",
+    "meaning": "Who / Which (relative pronoun, m. sg.)",
+    "root": "ل ذ ي",
+    "partOfSpeech": "Ism Mawsul (Relative Pronoun)",
+    "frequency": 1442
+  },
+  {
+    "rank": 8,
+    "arabic": "لَا",
+    "transliteration": "Laa",
+    "meaning": "No / Not",
+    "root": "—",
+    "partOfSpeech": "Harf (Negation)",
+    "frequency": 1364
+  },
+  {
+    "rank": 9,
+    "arabic": "كَانَ",
+    "transliteration": "Kaana",
+    "meaning": "He was / to be",
+    "root": "ك و ن",
+    "partOfSpeech": "Fi'l Maadi (Kana Sister)",
+    "frequency": 1358
+  },
+  {
+    "rank": 10,
+    "arabic": "مَا",
+    "transliteration": "Maa",
+    "meaning": "What / That which",
+    "root": "—",
+    "partOfSpeech": "Ism Mawsul (Relative Pronoun)",
+    "frequency": 1266
+  },
+  {
+    "rank": 11,
+    "arabic": "رَبّ",
+    "transliteration": "Rabb",
+    "meaning": "Lord",
+    "root": "ر ب ب",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 975
+  },
+  {
+    "rank": 12,
+    "arabic": "إِلَىٰ",
+    "transliteration": "Ila",
+    "meaning": "To / Towards",
+    "root": "—",
+    "partOfSpeech": "Harf (Preposition)",
+    "frequency": 742
+  },
+  {
+    "rank": 13,
+    "arabic": "مَن",
+    "transliteration": "Man",
+    "meaning": "Who / Whoever",
+    "root": "—",
+    "partOfSpeech": "Ism Mawsul (Relative Pronoun)",
+    "frequency": 606
+  },
+  {
+    "rank": 14,
+    "arabic": "إِن",
+    "transliteration": "In",
+    "meaning": "If",
+    "root": "—",
+    "partOfSpeech": "Harf (Conditional particle)",
+    "frequency": 578
+  },
+  {
+    "rank": 15,
+    "arabic": "أَن",
+    "transliteration": "An",
+    "meaning": "That (subordinating)",
+    "root": "—",
+    "partOfSpeech": "Harf (Subordinating conjunction)",
+    "frequency": 578
+  },
+  {
+    "rank": 16,
+    "arabic": "إِلَّا",
+    "transliteration": "Illa",
+    "meaning": "Except / Unless",
+    "root": "—",
+    "partOfSpeech": "Harf (Restriction particle)",
+    "frequency": 558
+  },
+  {
+    "rank": 17,
+    "arabic": "آمَنَ",
+    "transliteration": "Aamana",
+    "meaning": "He believed / to believe",
+    "root": "ا م ن",
+    "partOfSpeech": "Fi'l Maadi (Form IV)",
+    "frequency": 537
+  },
+  {
+    "rank": 18,
+    "arabic": "ذَٰلِك",
+    "transliteration": "Dhalika",
+    "meaning": "That",
+    "root": "ذ ل ك",
+    "partOfSpeech": "Ism (Demonstrative pronoun)",
+    "frequency": 520
+  },
+  {
+    "rank": 19,
+    "arabic": "عَن",
+    "transliteration": "'An",
+    "meaning": "From / About / Away from",
+    "root": "—",
+    "partOfSpeech": "Harf (Preposition)",
+    "frequency": 465
+  },
+  {
+    "rank": 20,
+    "arabic": "أَرْض",
+    "transliteration": "Ard",
+    "meaning": "Earth / Land",
+    "root": "أ ر ض",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 461
+  },
+  {
+    "rank": 21,
+    "arabic": "قَد",
+    "transliteration": "Qad",
+    "meaning": "Indeed / Already",
+    "root": "—",
+    "partOfSpeech": "Harf (Particle of certainty)",
+    "frequency": 406
+  },
+  {
+    "rank": 22,
+    "arabic": "إِذَا",
+    "transliteration": "Idha",
+    "meaning": "When / If",
+    "root": "—",
+    "partOfSpeech": "Zarf (Time adverb)",
+    "frequency": 405
+  },
+  {
+    "rank": 23,
+    "arabic": "قَوْم",
+    "transliteration": "Qawm",
+    "meaning": "People / Nation",
+    "root": "ق و م",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 383
+  },
+  {
+    "rank": 24,
+    "arabic": "ءَايَة",
+    "transliteration": "Aayah",
+    "meaning": "Sign / Verse",
+    "root": "أ ي ي",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 382
+  },
+  {
+    "rank": 25,
+    "arabic": "عَلِمَ",
+    "transliteration": "'Alima",
+    "meaning": "He knew / to know",
+    "root": "ع ل م",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 382
+  },
+  {
+    "rank": 26,
+    "arabic": "أَنّ",
+    "transliteration": "Anna",
+    "meaning": "That (emphatic, subordinating)",
+    "root": "أ ن ن",
+    "partOfSpeech": "Harf (Accusative particle)",
+    "frequency": 362
+  },
+  {
+    "rank": 27,
+    "arabic": "كُلّ",
+    "transliteration": "Kull",
+    "meaning": "Every / All",
+    "root": "ك ل ل",
+    "partOfSpeech": "Ism (Noun, quantifier)",
+    "frequency": 358
+  },
+  {
+    "rank": 28,
+    "arabic": "لَم",
+    "transliteration": "Lam",
+    "meaning": "Not (past negation)",
+    "root": "—",
+    "partOfSpeech": "Harf (Negation)",
+    "frequency": 353
+  },
+  {
+    "rank": 29,
+    "arabic": "جَعَلَ",
+    "transliteration": "Ja'ala",
+    "meaning": "He made / to make",
+    "root": "ج ع ل",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 340
+  },
+  {
+    "rank": 30,
+    "arabic": "ثُمّ",
+    "transliteration": "Thumma",
+    "meaning": "Then / Thereafter",
+    "root": "—",
+    "partOfSpeech": "Harf (Coordinating conjunction)",
+    "frequency": 338
+  },
+  {
+    "rank": 31,
+    "arabic": "رَسُول",
+    "transliteration": "Rasul",
+    "meaning": "Messenger",
+    "root": "ر س ل",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 332
+  },
+  {
+    "rank": 32,
+    "arabic": "يَوْم",
+    "transliteration": "Yawm",
+    "meaning": "Day",
+    "root": "ي و م",
+    "partOfSpeech": "Ism (Zarf Zaman — time noun)",
+    "frequency": 325
+  },
+  {
+    "rank": 33,
+    "arabic": "عَذَاب",
+    "transliteration": "'Adhaab",
+    "meaning": "Punishment / Torment",
+    "root": "ع ذ ب",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 322
+  },
+  {
+    "rank": 34,
+    "arabic": "هَٰذَا",
+    "transliteration": "Hadha",
+    "meaning": "This",
+    "root": "ه ذ ا",
+    "partOfSpeech": "Ism (Demonstrative pronoun)",
+    "frequency": 317
+  },
+  {
+    "rank": 35,
+    "arabic": "سَمَآء",
+    "transliteration": "Samaa'",
+    "meaning": "Sky / Heaven",
+    "root": "س م و",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 310
+  },
+  {
+    "rank": 36,
+    "arabic": "نَفْس",
+    "transliteration": "Nafs",
+    "meaning": "Soul / Self",
+    "root": "ن ف س",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 295
+  },
+  {
+    "rank": 37,
+    "arabic": "كَفَرَ",
+    "transliteration": "Kafara",
+    "meaning": "He disbelieved / to disbelieve",
+    "root": "ك ف ر",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 289
+  },
+  {
+    "rank": 38,
+    "arabic": "شَىْء",
+    "transliteration": "Shay'",
+    "meaning": "Thing",
+    "root": "ش ي أ",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 283
+  },
+  {
+    "rank": 39,
+    "arabic": "أَو",
+    "transliteration": "Aw",
+    "meaning": "Or",
+    "root": "—",
+    "partOfSpeech": "Harf (Coordinating conjunction)",
+    "frequency": 280
+  },
+  {
+    "rank": 40,
+    "arabic": "جَآءَ",
+    "transliteration": "Jaa'a",
+    "meaning": "He came / to come",
+    "root": "ج ي ا",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 278
+  },
+  {
+    "rank": 41,
+    "arabic": "عَمِلَ",
+    "transliteration": "'Amila",
+    "meaning": "He did/worked / to do, work",
+    "root": "ع م ل",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 276
+  },
+  {
+    "rank": 42,
+    "arabic": "آتَى",
+    "transliteration": "Aataa",
+    "meaning": "He gave / to give",
+    "root": "ا ت ي",
+    "partOfSpeech": "Fi'l Maadi (Form IV)",
+    "frequency": 271
+  },
+  {
+    "rank": 43,
+    "arabic": "رَءَا",
+    "transliteration": "Ra'aa",
+    "meaning": "He saw / to see",
+    "root": "ر ا ي",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 271
+  },
+  {
+    "rank": 44,
+    "arabic": "أَتَى",
+    "transliteration": "Ataa",
+    "meaning": "He came/brought / to come, bring",
+    "root": "ا ت ي",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 264
+  },
+  {
+    "rank": 45,
+    "arabic": "كِتَٰب",
+    "transliteration": "Kitaab",
+    "meaning": "Book",
+    "root": "ك ت ب",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 260
+  },
+  {
+    "rank": 46,
+    "arabic": "بَيْن",
+    "transliteration": "Bayn",
+    "meaning": "Between",
+    "root": "ب ي ن",
+    "partOfSpeech": "Zarf Makan (Location adverb)",
+    "frequency": 243
+  },
+  {
+    "rank": 47,
+    "arabic": "حَقّ",
+    "transliteration": "Haqq",
+    "meaning": "Truth / Right",
+    "root": "ح ق ق",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 242
+  },
+  {
+    "rank": 48,
+    "arabic": "نَّاس",
+    "transliteration": "Naas",
+    "meaning": "People / Mankind",
+    "root": "ن و س",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 241
+  },
+  {
+    "rank": 49,
+    "arabic": "إِذ",
+    "transliteration": "Idh",
+    "meaning": "When (past)",
+    "root": "—",
+    "partOfSpeech": "Zarf (Time adverb)",
+    "frequency": 239
+  },
+  {
+    "rank": 50,
+    "arabic": "شَآءَ",
+    "transliteration": "Shaa'a",
+    "meaning": "He willed/wished / to will, wish",
+    "root": "ش ي ا",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 236
+  },
+  {
+    "rank": 51,
+    "arabic": "أُولَٰٓئِك",
+    "transliteration": "Ula'ika",
+    "meaning": "Those",
+    "root": "أ و ل",
+    "partOfSpeech": "Ism (Demonstrative pronoun)",
+    "frequency": 204
+  },
+  {
+    "rank": 52,
+    "arabic": "قَبْل",
+    "transliteration": "Qabl",
+    "meaning": "Before",
+    "root": "ق ب ل",
+    "partOfSpeech": "Ism (Noun / Time adverb)",
+    "frequency": 197
+  },
+  {
+    "rank": 53,
+    "arabic": "مُؤْمِن",
+    "transliteration": "Mu'min",
+    "meaning": "Believer",
+    "root": "أ م ن",
+    "partOfSpeech": "Ism (Noun, active participle)",
+    "frequency": 195
+  },
+  {
+    "rank": 54,
+    "arabic": "لَو",
+    "transliteration": "Law",
+    "meaning": "If (hypothetical)",
+    "root": "—",
+    "partOfSpeech": "Harf (Conditional particle)",
+    "frequency": 184
+  },
+  {
+    "rank": 55,
+    "arabic": "خَلَقَ",
+    "transliteration": "Khalaqa",
+    "meaning": "He created / to create",
+    "root": "خ ل ق",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 184
+  },
+  {
+    "rank": 56,
+    "arabic": "أَنزَلَ",
+    "transliteration": "Anzala",
+    "meaning": "He sent down / to reveal",
+    "root": "ن ز ل",
+    "partOfSpeech": "Fi'l Maadi (Form IV)",
+    "frequency": 183
+  },
+  {
+    "rank": 57,
+    "arabic": "سَبِيل",
+    "transliteration": "Sabil",
+    "meaning": "Way / Path",
+    "root": "س ب ل",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 176
+  },
+  {
+    "rank": 58,
+    "arabic": "كَذَّبَ",
+    "transliteration": "Kadhdhaba",
+    "meaning": "He denied/rejected",
+    "root": "ك ذ ب",
+    "partOfSpeech": "Fi'l Maadi (Form II)",
+    "frequency": 176
+  },
+  {
+    "rank": 59,
+    "arabic": "دَعَا",
+    "transliteration": "Da'aa",
+    "meaning": "He called/invited/prayed",
+    "root": "د ع و",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 170
+  },
+  {
+    "rank": 60,
+    "arabic": "أَمْر",
+    "transliteration": "Amr",
+    "meaning": "Command / Matter / Affair",
+    "root": "أ م ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 166
+  },
+  {
+    "rank": 61,
+    "arabic": "ٱتَّقَىٰ",
+    "transliteration": "Ittaqaa",
+    "meaning": "He was righteous / feared (Allah)",
+    "root": "و ق ي",
+    "partOfSpeech": "Fi'l Maadi (Form VIII)",
+    "frequency": 166
+  },
+  {
+    "rank": 62,
+    "arabic": "عِند",
+    "transliteration": "'Ind",
+    "meaning": "With / Near",
+    "root": "ع ن د",
+    "partOfSpeech": "Zarf Makan (Location adverb)",
+    "frequency": 160
+  },
+  {
+    "rank": 63,
+    "arabic": "مَع",
+    "transliteration": "Ma'",
+    "meaning": "With / Together with",
+    "root": "—",
+    "partOfSpeech": "Zarf Makan (Location adverb)",
+    "frequency": 159
+  },
+  {
+    "rank": 64,
+    "arabic": "بَعْض",
+    "transliteration": "Ba'd",
+    "meaning": "Some / A part of",
+    "root": "ب ع ض",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 157
+  },
+  {
+    "rank": 65,
+    "arabic": "لَمَّا",
+    "transliteration": "Lammaa",
+    "meaning": "When / Not yet",
+    "root": "—",
+    "partOfSpeech": "Zarf (Time adverb)",
+    "frequency": 156
+  },
+  {
+    "rank": 66,
+    "arabic": "أَيُّهَا",
+    "transliteration": "Ayyuhaa",
+    "meaning": "O! (vocative particle)",
+    "root": "أ ي ي",
+    "partOfSpeech": "Ism (Noun, used in address)",
+    "frequency": 153
+  },
+  {
+    "rank": 67,
+    "arabic": "خَيْر",
+    "transliteration": "Khayr",
+    "meaning": "Good / Better",
+    "root": "خ ي ر",
+    "partOfSpeech": "Ism (Noun / Comparative adjective)",
+    "frequency": 148
+  },
+  {
+    "rank": 68,
+    "arabic": "إِلَٰه",
+    "transliteration": "Ilaah",
+    "meaning": "God / Deity",
+    "root": "أ ل ه",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 147
+  },
+  {
+    "rank": 69,
+    "arabic": "نَار",
+    "transliteration": "Naar",
+    "meaning": "Fire",
+    "root": "ن و ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 145
+  },
+  {
+    "rank": 70,
+    "arabic": "غَيْر",
+    "transliteration": "Ghayr",
+    "meaning": "Other than / Not",
+    "root": "غ ي ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 144
+  },
+  {
+    "rank": 71,
+    "arabic": "هَدَى",
+    "transliteration": "Hadaa",
+    "meaning": "He guided / to guide",
+    "root": "ه د ي",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 144
+  },
+  {
+    "rank": 72,
+    "arabic": "أَرَادَ",
+    "transliteration": "Araada",
+    "meaning": "He intended/wanted / to desire",
+    "root": "ر و د",
+    "partOfSpeech": "Fi'l Maadi (Form IV)",
+    "frequency": 139
+  },
+  {
+    "rank": 73,
+    "arabic": "أَم",
+    "transliteration": "Am",
+    "meaning": "Or (interrogative)",
+    "root": "—",
+    "partOfSpeech": "Harf (Coordinating conjunction)",
+    "frequency": 137
+  },
+  {
+    "rank": 74,
+    "arabic": "مُوسَىٰ",
+    "transliteration": "Musa",
+    "meaning": "Moses (Prophet)",
+    "root": "—",
+    "partOfSpeech": "Ism 'Alam (Proper Noun)",
+    "frequency": 136
+  },
+  {
+    "rank": 75,
+    "arabic": "ٱتَّبَعَ",
+    "transliteration": "Ittaba'a",
+    "meaning": "He followed / to follow",
+    "root": "ت ب ع",
+    "partOfSpeech": "Fi'l Maadi (Form VIII)",
+    "frequency": 136
+  },
+  {
+    "rank": 76,
+    "arabic": "دُون",
+    "transliteration": "Dun",
+    "meaning": "Besides / Other than / Below",
+    "root": "د و ن",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 135
+  },
+  {
+    "rank": 77,
+    "arabic": "آخِر",
+    "transliteration": "Aakhir",
+    "meaning": "Last / Final",
+    "root": "أ خ ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 133
+  },
+  {
+    "rank": 78,
+    "arabic": "بَعْد",
+    "transliteration": "Ba'd",
+    "meaning": "After",
+    "root": "ب ع د",
+    "partOfSpeech": "Ism (Noun / Time adverb)",
+    "frequency": 133
+  },
+  {
+    "rank": 79,
+    "arabic": "قَلْب",
+    "transliteration": "Qalb",
+    "meaning": "Heart",
+    "root": "ق ل ب",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 132
+  },
+  {
+    "rank": 80,
+    "arabic": "عَبْد",
+    "transliteration": "'Abd",
+    "meaning": "Servant / Slave",
+    "root": "ع ب د",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 131
+  },
+  {
+    "rank": 81,
+    "arabic": "أَرْسَلَ",
+    "transliteration": "Arsala",
+    "meaning": "He sent / to send",
+    "root": "ر س ل",
+    "partOfSpeech": "Fi'l Maadi (Form IV)",
+    "frequency": 130
+  },
+  {
+    "rank": 82,
+    "arabic": "أَهْل",
+    "transliteration": "Ahl",
+    "meaning": "Family / People (of)",
+    "root": "أ ه ل",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 127
+  },
+  {
+    "rank": 83,
+    "arabic": "أَخَذَ",
+    "transliteration": "Akhadha",
+    "meaning": "He took/seized",
+    "root": "ا خ ذ",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 127
+  },
+  {
+    "rank": 84,
+    "arabic": "ٱتَّخَذَ",
+    "transliteration": "Ittakhadha",
+    "meaning": "He took (for himself)",
+    "root": "ا خ ذ",
+    "partOfSpeech": "Fi'l Maadi (Form VIII)",
+    "frequency": 124
+  },
+  {
+    "rank": 85,
+    "arabic": "لَعَلّ",
+    "transliteration": "La'alla",
+    "meaning": "Perhaps / So that",
+    "root": "—",
+    "partOfSpeech": "Harf (Inna Sister — hope/expectation)",
+    "frequency": 123
+  },
+  {
+    "rank": 86,
+    "arabic": "بَل",
+    "transliteration": "Bal",
+    "meaning": "Rather / But",
+    "root": "—",
+    "partOfSpeech": "Harf (Retraction particle)",
+    "frequency": 122
+  },
+  {
+    "rank": 87,
+    "arabic": "عَبَدَ",
+    "transliteration": "'Abada",
+    "meaning": "He worshipped / to worship",
+    "root": "ع ب د",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 122
+  },
+  {
+    "rank": 88,
+    "arabic": "يَد",
+    "transliteration": "Yad",
+    "meaning": "Hand",
+    "root": "ي د ي",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 120
+  },
+  {
+    "rank": 89,
+    "arabic": "كَٰفِرُون",
+    "transliteration": "Kaafiruun",
+    "meaning": "Disbelievers",
+    "root": "ك ف ر",
+    "partOfSpeech": "Ism (Noun, active participle pl.)",
+    "frequency": 119
+  },
+  {
+    "rank": 90,
+    "arabic": "رَحْمَة",
+    "transliteration": "Rahmah",
+    "meaning": "Mercy",
+    "root": "ر ح م",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 114
+  },
+  {
+    "rank": 91,
+    "arabic": "رَّحِيم",
+    "transliteration": "Raheem",
+    "meaning": "Ever Merciful",
+    "root": "ر ح م",
+    "partOfSpeech": "Ism (Sifah Mushabbiha)",
+    "frequency": 112
+  },
+  {
+    "rank": 92,
+    "arabic": "ظَلَمَ",
+    "transliteration": "Dhalama",
+    "meaning": "He wronged/oppressed",
+    "root": "ظ ل م",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 110
+  },
+  {
+    "rank": 93,
+    "arabic": "سَأَلَ",
+    "transliteration": "Sa'ala",
+    "meaning": "He asked / to ask",
+    "root": "س ا ل",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 106
+  },
+  {
+    "rank": 94,
+    "arabic": "وَجَدَ",
+    "transliteration": "Wajada",
+    "meaning": "He found / to find",
+    "root": "و ج د",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 106
+  },
+  {
+    "rank": 95,
+    "arabic": "أَجْر",
+    "transliteration": "Ajr",
+    "meaning": "Reward",
+    "root": "أ ج ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 105
+  },
+  {
+    "rank": 96,
+    "arabic": "ظَالِم",
+    "transliteration": "Dhaalim",
+    "meaning": "Wrongdoer",
+    "root": "ظ ل م",
+    "partOfSpeech": "Ism (Noun, active participle)",
+    "frequency": 105
+  },
+  {
+    "rank": 97,
+    "arabic": "عِلْم",
+    "transliteration": "'Ilm",
+    "meaning": "Knowledge",
+    "root": "ع ل م",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 105
+  },
+  {
+    "rank": 98,
+    "arabic": "عَظِيم",
+    "transliteration": "'Adheem",
+    "meaning": "Great / Mighty",
+    "root": "ع ظ م",
+    "partOfSpeech": "Ism (Sifah — intensive adjective)",
+    "frequency": 104
+  },
+  {
+    "rank": 99,
+    "arabic": "لَن",
+    "transliteration": "Lan",
+    "meaning": "Never (future negation)",
+    "root": "—",
+    "partOfSpeech": "Harf (Negation)",
+    "frequency": 104
+  },
+  {
+    "rank": 100,
+    "arabic": "عَلِيم",
+    "transliteration": "'Aleem",
+    "meaning": "All-Knowing",
+    "root": "ع ل م",
+    "partOfSpeech": "Ism (Sifah — intensive adjective)",
+    "frequency": 101
+  },
+  {
+    "rank": 101,
+    "arabic": "أَخْرَجَ",
+    "transliteration": "Akhraja",
+    "meaning": "He brought forth/expelled",
+    "root": "خ ر ج",
+    "partOfSpeech": "Fi'l Maadi (Form IV)",
+    "frequency": 99
+  },
+  {
+    "rank": 102,
+    "arabic": "جَنَّة",
+    "transliteration": "Jannah",
+    "meaning": "Garden / Paradise",
+    "root": "ج ن ن",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 96
+  },
+  {
+    "rank": 103,
+    "arabic": "حَتَّىٰ",
+    "transliteration": "Hattaa",
+    "meaning": "Until",
+    "root": "—",
+    "partOfSpeech": "Harf (Preposition)",
+    "frequency": 95
+  },
+  {
+    "rank": 104,
+    "arabic": "هَل",
+    "transliteration": "Hal",
+    "meaning": "Is / Does (question particle)",
+    "root": "—",
+    "partOfSpeech": "Harf (Interrogative particle)",
+    "frequency": 93
+  },
+  {
+    "rank": 105,
+    "arabic": "أَكَلَ",
+    "transliteration": "Akala",
+    "meaning": "He ate / to eat",
+    "root": "ا ك ل",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 93
+  },
+  {
+    "rank": 106,
+    "arabic": "دِين",
+    "transliteration": "Deen",
+    "meaning": "Religion",
+    "root": "د ي ن",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 92
+  },
+  {
+    "rank": 107,
+    "arabic": "قَوْل",
+    "transliteration": "Qawl",
+    "meaning": "Saying / Word",
+    "root": "ق و ل",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 92
+  },
+  {
+    "rank": 108,
+    "arabic": "ذُو",
+    "transliteration": "Dhu",
+    "meaning": "Possessor of",
+    "root": "ذ و ي",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 90
+  },
+  {
+    "rank": 109,
+    "arabic": "لَّيْسَ",
+    "transliteration": "Laysa",
+    "meaning": "He is not / to not be",
+    "root": "ل ي س",
+    "partOfSpeech": "Fi'l Maadi (defective verb)",
+    "frequency": 89
+  },
+  {
+    "rank": 110,
+    "arabic": "مَلَك",
+    "transliteration": "Malak",
+    "meaning": "Angel",
+    "root": "م ل ك",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 88
+  },
+  {
+    "rank": 111,
+    "arabic": "فَعَلَ",
+    "transliteration": "Fa'ala",
+    "meaning": "He did / to do",
+    "root": "ف ع ل",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 88
+  },
+  {
+    "rank": 112,
+    "arabic": "مَثَل",
+    "transliteration": "Mathal",
+    "meaning": "Example / Parable",
+    "root": "م ث ل",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 87
+  },
+  {
+    "rank": 113,
+    "arabic": "نَّظَرَ",
+    "transliteration": "Nadhara",
+    "meaning": "He looked / to look, see",
+    "root": "ن ظ ر",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 87
+  },
+  {
+    "rank": 114,
+    "arabic": "مَال",
+    "transliteration": "Maal",
+    "meaning": "Wealth",
+    "root": "م و ل",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 86
+  },
+  {
+    "rank": 115,
+    "arabic": "وَلِىّ",
+    "transliteration": "Wali",
+    "meaning": "Protector / Guardian",
+    "root": "و ل ي",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 86
+  },
+  {
+    "rank": 116,
+    "arabic": "هُدًى",
+    "transliteration": "Hudaa",
+    "meaning": "Guidance",
+    "root": "ه د ي",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 85
+  },
+  {
+    "rank": 117,
+    "arabic": "حَكِيم",
+    "transliteration": "Hakeem",
+    "meaning": "All-Wise",
+    "root": "ح ك م",
+    "partOfSpeech": "Ism (Sifah Mushabbiha)",
+    "frequency": 84
+  },
+  {
+    "rank": 118,
+    "arabic": "فَضْل",
+    "transliteration": "Fadl",
+    "meaning": "Grace / Bounty / Favour",
+    "root": "ف ض ل",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 84
+  },
+  {
+    "rank": 119,
+    "arabic": "ذَكَرَ",
+    "transliteration": "Dhakara",
+    "meaning": "He remembered/mentioned",
+    "root": "ذ ك ر",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 84
+  },
+  {
+    "rank": 120,
+    "arabic": "صَلَوٰة",
+    "transliteration": "Salaah",
+    "meaning": "Prayer",
+    "root": "ص ل و",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 83
+  },
+  {
+    "rank": 121,
+    "arabic": "خَافَ",
+    "transliteration": "Khaafa",
+    "meaning": "He feared / to fear",
+    "root": "خ و ف",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 83
+  },
+  {
+    "rank": 122,
+    "arabic": "قَتَلَ",
+    "transliteration": "Qatala",
+    "meaning": "He killed / to kill",
+    "root": "ق ت ل",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 83
+  },
+  {
+    "rank": 123,
+    "arabic": "لَيْل",
+    "transliteration": "Layl",
+    "meaning": "Night",
+    "root": "ل ي ل",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 82
+  },
+  {
+    "rank": 124,
+    "arabic": "بُنَىّ",
+    "transliteration": "Bunayya",
+    "meaning": "My dear son",
+    "root": "ب ن ي",
+    "partOfSpeech": "Ism (Noun, diminutive)",
+    "frequency": 80
+  },
+  {
+    "rank": 125,
+    "arabic": "شَيْطَٰن",
+    "transliteration": "Shaytaan",
+    "meaning": "Satan",
+    "root": "ش ط ن",
+    "partOfSpeech": "Ism 'Alam (Proper Noun)",
+    "frequency": 80
+  },
+  {
+    "rank": 126,
+    "arabic": "كَيْف",
+    "transliteration": "Kayfa",
+    "meaning": "How",
+    "root": "—",
+    "partOfSpeech": "Harf (Interrogative particle)",
+    "frequency": 80
+  },
+  {
+    "rank": 127,
+    "arabic": "رَجَعَ",
+    "transliteration": "Raja'a",
+    "meaning": "He returned / to return",
+    "root": "ر ج ع",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 79
+  },
+  {
+    "rank": 128,
+    "arabic": "أَصْحَٰب",
+    "transliteration": "As-haab",
+    "meaning": "Companions / People of",
+    "root": "ص ح ب",
+    "partOfSpeech": "Ism (Noun, plural)",
+    "frequency": 78
+  },
+  {
+    "rank": 129,
+    "arabic": "أَكْثَر",
+    "transliteration": "Akthar",
+    "meaning": "Most / Majority",
+    "root": "ك ث ر",
+    "partOfSpeech": "Ism (Noun, comparative)",
+    "frequency": 78
+  },
+  {
+    "rank": 130,
+    "arabic": "سَمِعَ",
+    "transliteration": "Sami'a",
+    "meaning": "He heard / to hear, listen",
+    "root": "س م ع",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 78
+  },
+  {
+    "rank": 131,
+    "arabic": "تَوَلَّىٰ",
+    "transliteration": "Tawallaa",
+    "meaning": "He turned away",
+    "root": "و ل ي",
+    "partOfSpeech": "Fi'l Maadi (Form V)",
+    "frequency": 78
+  },
+  {
+    "rank": 132,
+    "arabic": "جَهَنَّم",
+    "transliteration": "Jahannam",
+    "meaning": "Hell",
+    "root": "—",
+    "partOfSpeech": "Ism 'Alam (Proper Noun)",
+    "frequency": 77
+  },
+  {
+    "rank": 133,
+    "arabic": "أَمَرَ",
+    "transliteration": "Amara",
+    "meaning": "He ordered/commanded",
+    "root": "ا م ر",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 77
+  },
+  {
+    "rank": 134,
+    "arabic": "حَيَوٰة",
+    "transliteration": "Hayaah",
+    "meaning": "Life",
+    "root": "ح ي ي",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 76
+  },
+  {
+    "rank": 135,
+    "arabic": "ذِكْر",
+    "transliteration": "Dhikr",
+    "meaning": "Remembrance",
+    "root": "ذ ك ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 76
+  },
+  {
+    "rank": 136,
+    "arabic": "زَوْج",
+    "transliteration": "Zawj",
+    "meaning": "Spouse / Pair",
+    "root": "ز و ج",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 76
+  },
+  {
+    "rank": 137,
+    "arabic": "دَخَلَ",
+    "transliteration": "Dakhala",
+    "meaning": "He entered / to enter",
+    "root": "د خ ل",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 76
+  },
+  {
+    "rank": 138,
+    "arabic": "أَخ",
+    "transliteration": "Akh",
+    "meaning": "Brother",
+    "root": "أ خ و",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 75
+  },
+  {
+    "rank": 139,
+    "arabic": "مِثْل",
+    "transliteration": "Mithl",
+    "meaning": "Like / Similar to",
+    "root": "م ث ل",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 75
+  },
+  {
+    "rank": 140,
+    "arabic": "نَّبِىّ",
+    "transliteration": "Nabi",
+    "meaning": "Prophet",
+    "root": "ن ب أ",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 75
+  },
+  {
+    "rank": 141,
+    "arabic": "أَحَد",
+    "transliteration": "Ahad",
+    "meaning": "One / Anyone",
+    "root": "أ ح د",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 74
+  },
+  {
+    "rank": 142,
+    "arabic": "خَٰلِد",
+    "transliteration": "Khaalid",
+    "meaning": "Abiding forever",
+    "root": "خ ل د",
+    "partOfSpeech": "Ism (Noun, active participle)",
+    "frequency": 74
+  },
+  {
+    "rank": 143,
+    "arabic": "دُّنْيَا",
+    "transliteration": "Dunyaa",
+    "meaning": "The world / Worldly life",
+    "root": "د ن و",
+    "partOfSpeech": "Ism (Sifah, feminine elative)",
+    "frequency": 74
+  },
+  {
+    "rank": 144,
+    "arabic": "فِرْعَوْن",
+    "transliteration": "Fir'awn",
+    "meaning": "Pharaoh",
+    "root": "—",
+    "partOfSpeech": "Ism 'Alam (Proper Noun)",
+    "frequency": 74
+  },
+  {
+    "rank": 145,
+    "arabic": "عَٰلَمِين",
+    "transliteration": "'Aalameen",
+    "meaning": "Worlds / All mankind",
+    "root": "ع ل م",
+    "partOfSpeech": "Ism (Noun, plural)",
+    "frequency": 73
+  },
+  {
+    "rank": 146,
+    "arabic": "جَزَىٰ",
+    "transliteration": "Jazaa",
+    "meaning": "He rewarded/recompensed",
+    "root": "ج ز ي",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 73
+  },
+  {
+    "rank": 147,
+    "arabic": "أَلِيم",
+    "transliteration": "Aleem",
+    "meaning": "Painful",
+    "root": "أ ل م",
+    "partOfSpeech": "Ism (Sifah — intensive adjective)",
+    "frequency": 72
+  },
+  {
+    "rank": 148,
+    "arabic": "مُّبِين",
+    "transliteration": "Mubeen",
+    "meaning": "Clear / Manifest",
+    "root": "ب ي ن",
+    "partOfSpeech": "Ism (Noun/Adjective, active participle)",
+    "frequency": 72
+  },
+  {
+    "rank": 149,
+    "arabic": "أَطَاعَ",
+    "transliteration": "Ataa'a",
+    "meaning": "He obeyed / to obey",
+    "root": "ط و ع",
+    "partOfSpeech": "Fi'l Maadi (Form IV)",
+    "frequency": 72
+  },
+  {
+    "rank": 150,
+    "arabic": "أَوْحَىٰٓ",
+    "transliteration": "Awhaa",
+    "meaning": "He revealed/inspired",
+    "root": "و ح ي",
+    "partOfSpeech": "Fi'l Maadi (Form IV)",
+    "frequency": 72
+  },
+  {
+    "rank": 151,
+    "arabic": "إِنسَٰن",
+    "transliteration": "Insaan",
+    "meaning": "Human being",
+    "root": "أ ن س",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 71
+  },
+  {
+    "rank": 152,
+    "arabic": "عَمَل",
+    "transliteration": "'Amal",
+    "meaning": "Deed / Work",
+    "root": "ع م ل",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 71
+  },
+  {
+    "rank": 153,
+    "arabic": "وَجْه",
+    "transliteration": "Wajh",
+    "meaning": "Face",
+    "root": "و ج ه",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 71
+  },
+  {
+    "rank": 154,
+    "arabic": "أَشْرَكَ",
+    "transliteration": "Ashraka",
+    "meaning": "He associated partners (with Allah)",
+    "root": "ش ر ك",
+    "partOfSpeech": "Fi'l Maadi (Form IV)",
+    "frequency": 71
+  },
+  {
+    "rank": 155,
+    "arabic": "أَلْقَىٰٓ",
+    "transliteration": "Alqaa",
+    "meaning": "He cast/threw",
+    "root": "ل ق ي",
+    "partOfSpeech": "Fi'l Maadi (Form IV)",
+    "frequency": 71
+  },
+  {
+    "rank": 156,
+    "arabic": "قِيَٰمَة",
+    "transliteration": "Qiyaamah",
+    "meaning": "Resurrection",
+    "root": "ق و م",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 70
+  },
+  {
+    "rank": 157,
+    "arabic": "يَوْمَئِذ",
+    "transliteration": "Yawma'idhin",
+    "meaning": "That day",
+    "root": "ي و م",
+    "partOfSpeech": "Zarf (Time adverb)",
+    "frequency": 70
+  },
+  {
+    "rank": 158,
+    "arabic": "وَعَدَ",
+    "transliteration": "Wa'ada",
+    "meaning": "He promised / to promise",
+    "root": "و ع د",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 70
+  },
+  {
+    "rank": 159,
+    "arabic": "إِبْرَاهِيم",
+    "transliteration": "Ibraaheem",
+    "meaning": "Abraham (Prophet)",
+    "root": "—",
+    "partOfSpeech": "Ism 'Alam (Proper Noun)",
+    "frequency": 69
+  },
+  {
+    "rank": 160,
+    "arabic": "قُرْءَان",
+    "transliteration": "Qur'an",
+    "meaning": "The Quran",
+    "root": "ق ر أ",
+    "partOfSpeech": "Ism 'Alam (Proper Noun)",
+    "frequency": 68
+  },
+  {
+    "rank": 161,
+    "arabic": "أَنفَقَ",
+    "transliteration": "Anfaqa",
+    "meaning": "He spent / to spend",
+    "root": "ن ف ق",
+    "partOfSpeech": "Fi'l Maadi (Form IV)",
+    "frequency": 68
+  },
+  {
+    "rank": 162,
+    "arabic": "بَيْت",
+    "transliteration": "Bayt",
+    "meaning": "House",
+    "root": "ب ي ت",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 65
+  },
+  {
+    "rank": 163,
+    "arabic": "لَٰكِن",
+    "transliteration": "Laakin",
+    "meaning": "But",
+    "root": "—",
+    "partOfSpeech": "Harf (Amendment particle)",
+    "frequency": 65
+  },
+  {
+    "rank": 164,
+    "arabic": "يَمِين",
+    "transliteration": "Yameen",
+    "meaning": "Right hand / Oath",
+    "root": "ي م ن",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 65
+  },
+  {
+    "rank": 165,
+    "arabic": "غَفَرَ",
+    "transliteration": "Ghafara",
+    "meaning": "He forgave / to forgive",
+    "root": "غ ف ر",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 65
+  },
+  {
+    "rank": 166,
+    "arabic": "آبَاء",
+    "transliteration": "Aabaa'",
+    "meaning": "Fathers / Forefathers",
+    "root": "أ ب و",
+    "partOfSpeech": "Ism (Noun, plural)",
+    "frequency": 64
+  },
+  {
+    "rank": 167,
+    "arabic": "أُمَّة",
+    "transliteration": "Ummah",
+    "meaning": "Community / Nation",
+    "root": "أ م م",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 64
+  },
+  {
+    "rank": 168,
+    "arabic": "أَحَبَّ",
+    "transliteration": "Ahabba",
+    "meaning": "He loved/liked",
+    "root": "ح ب ب",
+    "partOfSpeech": "Fi'l Maadi (Form IV)",
+    "frequency": 64
+  },
+  {
+    "rank": 169,
+    "arabic": "أَصَابَ",
+    "transliteration": "Asaaba",
+    "meaning": "He struck/befell/bestowed",
+    "root": "ص و ب",
+    "partOfSpeech": "Fi'l Maadi (Form IV)",
+    "frequency": 64
+  },
+  {
+    "rank": 170,
+    "arabic": "أَضَلَّ",
+    "transliteration": "Adalla",
+    "meaning": "He misled / to let go astray",
+    "root": "ض ل ل",
+    "partOfSpeech": "Fi'l Maadi (Form IV)",
+    "frequency": 64
+  },
+  {
+    "rank": 171,
+    "arabic": "ٱبْن",
+    "transliteration": "Ibn",
+    "meaning": "Son",
+    "root": "ب ن ي",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 63
+  },
+  {
+    "rank": 172,
+    "arabic": "عَزِيز",
+    "transliteration": "'Azeez",
+    "meaning": "Mighty / Honourable",
+    "root": "ع ز ز",
+    "partOfSpeech": "Ism (Sifah Mushabbiha)",
+    "frequency": 63
+  },
+  {
+    "rank": 173,
+    "arabic": "مَآء",
+    "transliteration": "Maa'",
+    "meaning": "Water",
+    "root": "م و ه",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 63
+  },
+  {
+    "rank": 174,
+    "arabic": "تَابَ",
+    "transliteration": "Taaba",
+    "meaning": "He repented/turned",
+    "root": "ت و ب",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 63
+  },
+  {
+    "rank": 175,
+    "arabic": "صَّٰلِحَٰت",
+    "transliteration": "Saalihaat",
+    "meaning": "Righteous deeds",
+    "root": "ص ل ح",
+    "partOfSpeech": "Ism (Noun, plural)",
+    "frequency": 62
+  },
+  {
+    "rank": 176,
+    "arabic": "غَفُور",
+    "transliteration": "Ghafoor",
+    "meaning": "All-Forgiving",
+    "root": "غ ف ر",
+    "partOfSpeech": "Ism (Sifah — intensive Form فَعُول)",
+    "frequency": 62
+  },
+  {
+    "rank": 177,
+    "arabic": "كَسَبَ",
+    "transliteration": "Kasaba",
+    "meaning": "He earned / to earn",
+    "root": "ك س ب",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 62
+  },
+  {
+    "rank": 178,
+    "arabic": "نَزَّلَ",
+    "transliteration": "Nazzala",
+    "meaning": "He sent down/revealed",
+    "root": "ن ز ل",
+    "partOfSpeech": "Fi'l Maadi (Form II)",
+    "frequency": 62
+  },
+  {
+    "rank": 179,
+    "arabic": "أَوَّل",
+    "transliteration": "Awwal",
+    "meaning": "First",
+    "root": "أ و ل",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 61
+  },
+  {
+    "rank": 180,
+    "arabic": "تَلَىٰ",
+    "transliteration": "Talaa",
+    "meaning": "He recited / to recite",
+    "root": "ت ل و",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 61
+  },
+  {
+    "rank": 181,
+    "arabic": "رَزَقَ",
+    "transliteration": "Razaqa",
+    "meaning": "He provided / to provide",
+    "root": "ر ز ق",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 61
+  },
+  {
+    "rank": 182,
+    "arabic": "صَٰلِح",
+    "transliteration": "Saalih",
+    "meaning": "Righteous",
+    "root": "ص ل ح",
+    "partOfSpeech": "Ism (Noun/Adjective, active participle)",
+    "frequency": 60
+  },
+  {
+    "rank": 183,
+    "arabic": "صَادِق",
+    "transliteration": "Saadiq",
+    "meaning": "Truthful",
+    "root": "ص د ق",
+    "partOfSpeech": "Ism (Noun, active participle)",
+    "frequency": 59
+  },
+  {
+    "rank": 184,
+    "arabic": "نِسَآء",
+    "transliteration": "Nisaa'",
+    "meaning": "Women",
+    "root": "ن س و",
+    "partOfSpeech": "Ism (Noun, plural)",
+    "frequency": 59
+  },
+  {
+    "rank": 185,
+    "arabic": "قَضَىٰٓ",
+    "transliteration": "Qadaa",
+    "meaning": "He decreed/judged",
+    "root": "ق ض ي",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 59
+  },
+  {
+    "rank": 186,
+    "arabic": "نَصَرَ",
+    "transliteration": "Nasara",
+    "meaning": "He helped / to help",
+    "root": "ن ص ر",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 59
+  },
+  {
+    "rank": 187,
+    "arabic": "نَذِير",
+    "transliteration": "Nadheer",
+    "meaning": "Warner",
+    "root": "ن ذ ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 58
+  },
+  {
+    "rank": 188,
+    "arabic": "صَبَرَ",
+    "transliteration": "Sabara",
+    "meaning": "He was patient",
+    "root": "ص ب ر",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 58
+  },
+  {
+    "rank": 189,
+    "arabic": "عَيْن",
+    "transliteration": "'Ayn",
+    "meaning": "Eye / Spring",
+    "root": "ع ي ن",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 57
+  },
+  {
+    "rank": 190,
+    "arabic": "قَرْيَة",
+    "transliteration": "Qaryah",
+    "meaning": "Town / Village",
+    "root": "ق ر ي",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 57
+  },
+  {
+    "rank": 191,
+    "arabic": "جَرَيْ",
+    "transliteration": "Jaraa",
+    "meaning": "He flowed/ran",
+    "root": "ج ر ي",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 57
+  },
+  {
+    "rank": 192,
+    "arabic": "نَهَار",
+    "transliteration": "Nahaar",
+    "meaning": "Daytime",
+    "root": "ن ه ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 56
+  },
+  {
+    "rank": 193,
+    "arabic": "وَلَد",
+    "transliteration": "Walad",
+    "meaning": "Child / Offspring",
+    "root": "و ل د",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 56
+  },
+  {
+    "rank": 194,
+    "arabic": "مَسَّ",
+    "transliteration": "Massa",
+    "meaning": "He touched / to touch",
+    "root": "م س س",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 56
+  },
+  {
+    "rank": 195,
+    "arabic": "بَيِّنَة",
+    "transliteration": "Bayyinah",
+    "meaning": "Clear proof",
+    "root": "ب ي ن",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 55
+  },
+  {
+    "rank": 196,
+    "arabic": "رِزْق",
+    "transliteration": "Rizq",
+    "meaning": "Provision / Sustenance",
+    "root": "ر ز ق",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 55
+  },
+  {
+    "rank": 197,
+    "arabic": "ضَرَبَ",
+    "transliteration": "Daraba",
+    "meaning": "He struck / to strike, set forth",
+    "root": "ض ر ب",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 55
+  },
+  {
+    "rank": 198,
+    "arabic": "نَهَر",
+    "transliteration": "Nahr",
+    "meaning": "River",
+    "root": "ن ه ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 54
+  },
+  {
+    "rank": 199,
+    "arabic": "قَٰتَلَ",
+    "transliteration": "Qaatala",
+    "meaning": "He fought / to fight",
+    "root": "ق ت ل",
+    "partOfSpeech": "Fi'l Maadi (Form III)",
+    "frequency": 54
+  },
+  {
+    "rank": 200,
+    "arabic": "أَقَامَ",
+    "transliteration": "Aqaama",
+    "meaning": "He established",
+    "root": "ق و م",
+    "partOfSpeech": "Fi'l Maadi (Form IV)",
+    "frequency": 54
+  },
+  {
+    "rank": 201,
+    "arabic": "جَمِيع",
+    "transliteration": "Jamee'",
+    "meaning": "All / Together",
+    "root": "ج م ع",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 53
+  },
+  {
+    "rank": 202,
+    "arabic": "خَرَجَ",
+    "transliteration": "Kharaja",
+    "meaning": "He went out / to leave, depart",
+    "root": "خ ر ج",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 53
+  },
+  {
+    "rank": 203,
+    "arabic": "ضَلَّ",
+    "transliteration": "Dalla",
+    "meaning": "He went astray/erred",
+    "root": "ض ل ل",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 53
+  },
+  {
+    "rank": 204,
+    "arabic": "أَجَل",
+    "transliteration": "Ajal",
+    "meaning": "Appointed term",
+    "root": "أ ج ل",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 52
+  },
+  {
+    "rank": 205,
+    "arabic": "خَلْق",
+    "transliteration": "Khalq",
+    "meaning": "Creation",
+    "root": "خ ل ق",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 52
+  },
+  {
+    "rank": 206,
+    "arabic": "بَعَثَ",
+    "transliteration": "Ba'atha",
+    "meaning": "He raised/resurrected/sent",
+    "root": "ب ع ث",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 52
+  },
+  {
+    "rank": 207,
+    "arabic": "أَحْيَا",
+    "transliteration": "Ahyaa",
+    "meaning": "He gave life",
+    "root": "ح ي ي",
+    "partOfSpeech": "Fi'l Maadi (Form IV)",
+    "frequency": 51
+  },
+  {
+    "rank": 208,
+    "arabic": "تَذَكَّرَ",
+    "transliteration": "Tadhakkara",
+    "meaning": "He received admonition",
+    "root": "ذ ك ر",
+    "partOfSpeech": "Fi'l Maadi (Form V)",
+    "frequency": 51
+  },
+  {
+    "rank": 209,
+    "arabic": "أَهْلَكَ",
+    "transliteration": "Ahlaka",
+    "meaning": "He destroyed / to destroy",
+    "root": "ه ل ك",
+    "partOfSpeech": "Fi'l Maadi (Form IV)",
+    "frequency": 51
+  },
+  {
+    "rank": 210,
+    "arabic": "سُوٓء",
+    "transliteration": "Soo'",
+    "meaning": "Evil / Harm",
+    "root": "س و أ",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 50
+  },
+  {
+    "rank": 211,
+    "arabic": "مَوْت",
+    "transliteration": "Mawt",
+    "meaning": "Death",
+    "root": "م و ت",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 50
+  },
+  {
+    "rank": 212,
+    "arabic": "نِعْمَة",
+    "transliteration": "Ni'mah",
+    "meaning": "Favour / Blessing",
+    "root": "ن ع م",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 50
+  },
+  {
+    "rank": 213,
+    "arabic": "ٱفْتَرَىٰ",
+    "transliteration": "Iftaraa",
+    "meaning": "He invented (a lie)",
+    "root": "ف ر ي",
+    "partOfSpeech": "Fi'l Maadi (Form VIII)",
+    "frequency": 50
+  },
+  {
+    "rank": 214,
+    "arabic": "عَدُوّ",
+    "transliteration": "'Aduww",
+    "meaning": "Enemy",
+    "root": "ع د و",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 49
+  },
+  {
+    "rank": 215,
+    "arabic": "غَيْب",
+    "transliteration": "Ghayb",
+    "meaning": "The unseen",
+    "root": "غ ي ب",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 49
+  },
+  {
+    "rank": 216,
+    "arabic": "مُتَّقِين",
+    "transliteration": "Muttaqeen",
+    "meaning": "The righteous / God-fearing",
+    "root": "و ق ي",
+    "partOfSpeech": "Ism (Noun, plural)",
+    "frequency": 49
+  },
+  {
+    "rank": 217,
+    "arabic": "وَعْد",
+    "transliteration": "Wa'd",
+    "meaning": "Promise",
+    "root": "و ع د",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 49
+  },
+  {
+    "rank": 218,
+    "arabic": "زَادَ",
+    "transliteration": "Zaada",
+    "meaning": "He increased / to increase",
+    "root": "ز ي د",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 49
+  },
+  {
+    "rank": 219,
+    "arabic": "عَقَلَ",
+    "transliteration": "'Aqala",
+    "meaning": "He understood/reasoned",
+    "root": "ع ق ل",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 49
+  },
+  {
+    "rank": 220,
+    "arabic": "كَتَبَ",
+    "transliteration": "Kataba",
+    "meaning": "He wrote/prescribed/ordained",
+    "root": "ك ت ب",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 49
+  },
+  {
+    "rank": 221,
+    "arabic": "بَصَر",
+    "transliteration": "Basar",
+    "meaning": "Sight / Vision",
+    "root": "ب ص ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 48
+  },
+  {
+    "rank": 222,
+    "arabic": "تَحْت",
+    "transliteration": "Taht",
+    "meaning": "Under / Beneath",
+    "root": "ت ح ت",
+    "partOfSpeech": "Zarf Makan (Location adverb)",
+    "frequency": 48
+  },
+  {
+    "rank": 223,
+    "arabic": "دَار",
+    "transliteration": "Daar",
+    "meaning": "Home / Abode",
+    "root": "د و ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 48
+  },
+  {
+    "rank": 224,
+    "arabic": "مُلْك",
+    "transliteration": "Mulk",
+    "meaning": "Dominion / Kingship",
+    "root": "م ل ك",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 48
+  },
+  {
+    "rank": 225,
+    "arabic": "سَاعَة",
+    "transliteration": "Saa'ah",
+    "meaning": "The Hour / A moment",
+    "root": "س و ع",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 47
+  },
+  {
+    "rank": 226,
+    "arabic": "ظَنَّ",
+    "transliteration": "Dhanna",
+    "meaning": "He thought/assumed/guessed",
+    "root": "ظ ن ن",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 47
+  },
+  {
+    "rank": 227,
+    "arabic": "أَبٌ",
+    "transliteration": "Ab",
+    "meaning": "Father",
+    "root": "أ ب و",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 46
+  },
+  {
+    "rank": 228,
+    "arabic": "شَكَرَ",
+    "transliteration": "Shakara",
+    "meaning": "He was grateful",
+    "root": "ش ك ر",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 46
+  },
+  {
+    "rank": 229,
+    "arabic": "نَبَّأَ",
+    "transliteration": "Nabba'a",
+    "meaning": "He informed / to inform",
+    "root": "ن ب ا",
+    "partOfSpeech": "Fi'l Maadi (Form II)",
+    "frequency": 46
+  },
+  {
+    "rank": 230,
+    "arabic": "أُولِى",
+    "transliteration": "Ulee",
+    "meaning": "Possessors of",
+    "root": "أ و ل",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 45
+  },
+  {
+    "rank": 231,
+    "arabic": "إِيمَٰن",
+    "transliteration": "Eemaan",
+    "meaning": "Faith",
+    "root": "أ م ن",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 45
+  },
+  {
+    "rank": 232,
+    "arabic": "رَّحْمَٰن",
+    "transliteration": "Rahmaan",
+    "meaning": "The Most Gracious",
+    "root": "ر ح م",
+    "partOfSpeech": "Ism (Sifah — intensive Form فَعْلَان)",
+    "frequency": 45
+  },
+  {
+    "rank": 233,
+    "arabic": "صِرَٰط",
+    "transliteration": "Siraat",
+    "meaning": "Path",
+    "root": "ص ر ط",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 45
+  },
+  {
+    "rank": 234,
+    "arabic": "حَكَمَ",
+    "transliteration": "Hakama",
+    "meaning": "He judged / to judge",
+    "root": "ح ك م",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 45
+  },
+  {
+    "rank": 235,
+    "arabic": "يَذَرَ",
+    "transliteration": "Yadharu",
+    "meaning": "He leaves/forsakes",
+    "root": "و ذ ر",
+    "partOfSpeech": "Fi'l Mudhari' (defective verb)",
+    "frequency": 45
+  },
+  {
+    "rank": 236,
+    "arabic": "آخَر",
+    "transliteration": "Aakhar",
+    "meaning": "Another / Other",
+    "root": "أ خ ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 44
+  },
+  {
+    "rank": 237,
+    "arabic": "أَمَّا",
+    "transliteration": "Ammaa",
+    "meaning": "As for",
+    "root": "—",
+    "partOfSpeech": "Harf (Explanation particle)",
+    "frequency": 44
+  },
+  {
+    "rank": 238,
+    "arabic": "صَدْر",
+    "transliteration": "Sadr",
+    "meaning": "Chest / Breast",
+    "root": "ص د ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 44
+  },
+  {
+    "rank": 239,
+    "arabic": "قَدِير",
+    "transliteration": "Qadeer",
+    "meaning": "All-Powerful",
+    "root": "ق د ر",
+    "partOfSpeech": "Ism (Sifah — intensive adjective)",
+    "frequency": 44
+  },
+  {
+    "rank": 240,
+    "arabic": "مُجْرِم",
+    "transliteration": "Mujrim",
+    "meaning": "Criminal / Sinner",
+    "root": "ج ر م",
+    "partOfSpeech": "Ism (Noun, active participle)",
+    "frequency": 44
+  },
+  {
+    "rank": 241,
+    "arabic": "مُشْرِك",
+    "transliteration": "Mushrik",
+    "meaning": "Polytheist",
+    "root": "ش ر ك",
+    "partOfSpeech": "Ism (Noun, active participle)",
+    "frequency": 44
+  },
+  {
+    "rank": 242,
+    "arabic": "حَسِبَ",
+    "transliteration": "Hasiba",
+    "meaning": "He thought/reckoned",
+    "root": "ح س ب",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 44
+  },
+  {
+    "rank": 243,
+    "arabic": "شَهِدَ",
+    "transliteration": "Shahida",
+    "meaning": "He testified/bore witness",
+    "root": "ش ه د",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 44
+  },
+  {
+    "rank": 244,
+    "arabic": "مَلَكَتْ",
+    "transliteration": "Malakat",
+    "meaning": "She possessed / to possess",
+    "root": "م ل ك",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 44
+  },
+  {
+    "rank": 245,
+    "arabic": "نَادَىٰ",
+    "transliteration": "Naadaa",
+    "meaning": "He called out / to call",
+    "root": "ن د و",
+    "partOfSpeech": "Fi'l Maadi (Form III)",
+    "frequency": 44
+  },
+  {
+    "rank": 246,
+    "arabic": "أَنذَرَ",
+    "transliteration": "Andhara",
+    "meaning": "He warned / to warn",
+    "root": "ن ذ ر",
+    "partOfSpeech": "Fi'l Maadi (Form IV)",
+    "frequency": 44
+  },
+  {
+    "rank": 247,
+    "arabic": "إِسْرَائِيل",
+    "transliteration": "Israa'eel",
+    "meaning": "Israel (Jacob)",
+    "root": "—",
+    "partOfSpeech": "Ism 'Alam (Proper Noun)",
+    "frequency": 43
+  },
+  {
+    "rank": 248,
+    "arabic": "حَمْد",
+    "transliteration": "Hamd",
+    "meaning": "Praise",
+    "root": "ح م د",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 43
+  },
+  {
+    "rank": 249,
+    "arabic": "قَلِيل",
+    "transliteration": "Qaleel",
+    "meaning": "Little / Few",
+    "root": "ق ل ل",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 43
+  },
+  {
+    "rank": 250,
+    "arabic": "نُوح",
+    "transliteration": "Nooh",
+    "meaning": "Noah (Prophet)",
+    "root": "ن و ح",
+    "partOfSpeech": "Ism 'Alam (Proper Noun)",
+    "frequency": 43
+  },
+  {
+    "rank": 251,
+    "arabic": "نُور",
+    "transliteration": "Noor",
+    "meaning": "Light",
+    "root": "ن و ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 43
+  },
+  {
+    "rank": 252,
+    "arabic": "جَزَآء",
+    "transliteration": "Jazaa'",
+    "meaning": "Reward / Recompense",
+    "root": "ج ز ي",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 42
+  },
+  {
+    "rank": 253,
+    "arabic": "سَوْف",
+    "transliteration": "Sawfa",
+    "meaning": "Will (future particle)",
+    "root": "—",
+    "partOfSpeech": "Harf (Future particle)",
+    "frequency": 42
+  },
+  {
+    "rank": 254,
+    "arabic": "كَثِير",
+    "transliteration": "Katheer",
+    "meaning": "Much / Many",
+    "root": "ك ث ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 42
+  },
+  {
+    "rank": 255,
+    "arabic": "أُدْخِلَ",
+    "transliteration": "Udkhila",
+    "meaning": "He was admitted / to admit",
+    "root": "د خ ل",
+    "partOfSpeech": "Fi'l Maadi (Form IV, passive)",
+    "frequency": 42
+  },
+  {
+    "rank": 256,
+    "arabic": "سَبَّحَ",
+    "transliteration": "Sabbaha",
+    "meaning": "He glorified/praised",
+    "root": "س ب ح",
+    "partOfSpeech": "Fi'l Maadi (Form II)",
+    "frequency": 42
+  },
+  {
+    "rank": 257,
+    "arabic": "ٱسْتَطَاعَ",
+    "transliteration": "Istataa'a",
+    "meaning": "He was able / to be capable",
+    "root": "ط و ع",
+    "partOfSpeech": "Fi'l Maadi (Form X)",
+    "frequency": 42
+  },
+  {
+    "rank": 258,
+    "arabic": "بَحْر",
+    "transliteration": "Bahr",
+    "meaning": "Sea",
+    "root": "ب ح ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 41
+  },
+  {
+    "rank": 259,
+    "arabic": "سُبْحَٰن",
+    "transliteration": "Subhaan",
+    "meaning": "Glory be to",
+    "root": "س ب ح",
+    "partOfSpeech": "Ism (Noun, masdar)",
+    "frequency": 41
+  },
+  {
+    "rank": 260,
+    "arabic": "سَلَٰم",
+    "transliteration": "Salaam",
+    "meaning": "Peace",
+    "root": "س ل م",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 41
+  },
+  {
+    "rank": 261,
+    "arabic": "حَمَلَ",
+    "transliteration": "Hamala",
+    "meaning": "He carried/bore",
+    "root": "ح م ل",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 41
+  },
+  {
+    "rank": 262,
+    "arabic": "عَذَّبَ",
+    "transliteration": "'Adhdhaba",
+    "meaning": "He punished / to punish",
+    "root": "ع ذ ب",
+    "partOfSpeech": "Fi'l Maadi (Form II)",
+    "frequency": 41
+  },
+  {
+    "rank": 263,
+    "arabic": "عَلَّمَ",
+    "transliteration": "'Allama",
+    "meaning": "He taught / to teach",
+    "root": "ع ل م",
+    "partOfSpeech": "Fi'l Maadi (Form II)",
+    "frequency": 41
+  },
+  {
+    "rank": 264,
+    "arabic": "شَرِيك",
+    "transliteration": "Shareek",
+    "meaning": "Partner",
+    "root": "ش ر ك",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 40
+  },
+  {
+    "rank": 265,
+    "arabic": "شَهِيد",
+    "transliteration": "Shaheed",
+    "meaning": "Witness",
+    "root": "ش ه د",
+    "partOfSpeech": "Ism (Sifah Mushabbiha)",
+    "frequency": 40
+  },
+  {
+    "rank": 266,
+    "arabic": "لَوْلَآ",
+    "transliteration": "Lawlaa",
+    "meaning": "Were it not for",
+    "root": "—",
+    "partOfSpeech": "Harf (Exhortation particle)",
+    "frequency": 40
+  },
+  {
+    "rank": 267,
+    "arabic": "وَيْل",
+    "transliteration": "Wayl",
+    "meaning": "Woe",
+    "root": "و ي ل",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 40
+  },
+  {
+    "rank": 268,
+    "arabic": "بِئْسَ",
+    "transliteration": "Bi'sa",
+    "meaning": "How evil is! / to be wretched",
+    "root": "ب ا س",
+    "partOfSpeech": "Fi'l Maadi (verb of dispraise)",
+    "frequency": 40
+  },
+  {
+    "rank": 269,
+    "arabic": "بَلَغَ",
+    "transliteration": "Balagha",
+    "meaning": "He reached / to reach",
+    "root": "ب ل غ",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 40
+  },
+  {
+    "rank": 270,
+    "arabic": "تَرَكَ",
+    "transliteration": "Taraka",
+    "meaning": "He left / to leave",
+    "root": "ت ر ك",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 40
+  },
+  {
+    "rank": 271,
+    "arabic": "خَشِىَ",
+    "transliteration": "Khashiya",
+    "meaning": "He feared / to fear",
+    "root": "خ ش ي",
+    "partOfSpeech": "Fi'l Maadi (Form I)",
+    "frequency": 40
+  },
+  {
+    "rank": 272,
+    "arabic": "أَرَيْ",
+    "transliteration": "Araa",
+    "meaning": "He showed / to show",
+    "root": "ر ا ي",
+    "partOfSpeech": "Fi'l Maadi (Form IV)",
+    "frequency": 40
+  },
+  {
+    "rank": 273,
+    "arabic": "ٱسْتَغْفَرَ",
+    "transliteration": "Istaghfara",
+    "meaning": "He asked forgiveness",
+    "root": "غ ف ر",
+    "partOfSpeech": "Fi'l Maadi (Form X)",
+    "frequency": 40
+  },
+  {
+    "rank": 274,
+    "arabic": "ٱسْتَكْبَرَ",
+    "transliteration": "Istakbara",
+    "meaning": "He was arrogant",
+    "root": "ك ب ر",
+    "partOfSpeech": "Fi'l Maadi (Form X)",
+    "frequency": 40
+  },
+  {
+    "rank": 275,
+    "arabic": "ٱهْتَدَىٰ",
+    "transliteration": "Ihtadaa",
+    "meaning": "He was guided / to be guided",
+    "root": "ه د ي",
+    "partOfSpeech": "Fi'l Maadi (Form VIII)",
+    "frequency": 40
+  },
+  {
+    "rank": 276,
+    "arabic": "تَوَكَّلْ",
+    "transliteration": "Tawakkala",
+    "meaning": "He put his trust",
+    "root": "و ك ل",
+    "partOfSpeech": "Fi'l Maadi (Form V)",
+    "frequency": 40
+  },
+  {
+    "rank": 277,
+    "arabic": "إِذْن",
+    "transliteration": "Idhn",
+    "meaning": "Permission",
+    "root": "أ ذ ن",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 39
+  },
+  {
+    "rank": 278,
+    "arabic": "ٱسْم",
+    "transliteration": "Ism",
+    "meaning": "Name",
+    "root": "س م و",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 39
+  },
+  {
+    "rank": 279,
+    "arabic": "أَلَآ",
+    "transliteration": "Alaa",
+    "meaning": "Verily / Behold",
+    "root": "—",
+    "partOfSpeech": "Harf (Inceptive particle)",
+    "frequency": 39
+  },
+  {
+    "rank": 280,
+    "arabic": "جَبَل",
+    "transliteration": "Jabal",
+    "meaning": "Mountain",
+    "root": "ج ب ل",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 39
+  },
+  {
+    "rank": 281,
+    "arabic": "سَمِيع",
+    "transliteration": "Samee'",
+    "meaning": "All-Hearing",
+    "root": "س م ع",
+    "partOfSpeech": "Ism (Sifah — intensive adjective)",
+    "frequency": 39
+  },
+  {
+    "rank": 282,
+    "arabic": "حَرَّمَ",
+    "transliteration": "Harrama",
+    "meaning": "He forbade / to forbid",
+    "root": "ح ر م",
+    "partOfSpeech": "Fi'l Maadi (Form II)",
+    "frequency": 39
+  },
+  {
+    "rank": 283,
+    "arabic": "حِسَاب",
+    "transliteration": "Hisaab",
+    "meaning": "Reckoning / Account",
+    "root": "ح س ب",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 38
+  },
+  {
+    "rank": 284,
+    "arabic": "ضَلَٰل",
+    "transliteration": "Dalaal",
+    "meaning": "Error / Misguidance",
+    "root": "ض ل ل",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 38
+  },
+  {
+    "rank": 285,
+    "arabic": "مُحْسِن",
+    "transliteration": "Muhsin",
+    "meaning": "Doer of good",
+    "root": "ح س ن",
+    "partOfSpeech": "Ism (Noun, active participle)",
+    "frequency": 38
+  },
+  {
+    "rank": 286,
+    "arabic": "بَشَر",
+    "transliteration": "Bashar",
+    "meaning": "Mankind / Human",
+    "root": "ب ش ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 37
+  },
+  {
+    "rank": 287,
+    "arabic": "ذَنب",
+    "transliteration": "Dhanb",
+    "meaning": "Sin",
+    "root": "ذ ن ب",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 37
+  },
+  {
+    "rank": 288,
+    "arabic": "سُلْطَٰن",
+    "transliteration": "Sultaan",
+    "meaning": "Authority / Power",
+    "root": "س ل ط",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 37
+  },
+  {
+    "rank": 289,
+    "arabic": "كُفْر",
+    "transliteration": "Kufr",
+    "meaning": "Disbelief",
+    "root": "ك ف ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 37
+  },
+  {
+    "rank": 290,
+    "arabic": "سَيِّـَٔات",
+    "transliteration": "Sayyi'aat",
+    "meaning": "Evil deeds",
+    "root": "س و أ",
+    "partOfSpeech": "Ism (Noun, plural)",
+    "frequency": 36
+  },
+  {
+    "rank": 291,
+    "arabic": "شَدِيد",
+    "transliteration": "Shadeed",
+    "meaning": "Severe",
+    "root": "ش د د",
+    "partOfSpeech": "Ism (Sifah Mushabbiha)",
+    "frequency": 36
+  },
+  {
+    "rank": 292,
+    "arabic": "إِثْم",
+    "transliteration": "Ithm",
+    "meaning": "Sin",
+    "root": "أ ث م",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 35
+  },
+  {
+    "rank": 293,
+    "arabic": "أَحْسَن",
+    "transliteration": "Ahsan",
+    "meaning": "Best / Better",
+    "root": "ح س ن",
+    "partOfSpeech": "Ism (Noun, comparative)",
+    "frequency": 35
+  },
+  {
+    "rank": 294,
+    "arabic": "أَىّ",
+    "transliteration": "Ayy",
+    "meaning": "Which / Whichever",
+    "root": "—",
+    "partOfSpeech": "Harf (Interrogative particle)",
+    "frequency": 35
+  },
+  {
+    "rank": 295,
+    "arabic": "مَتَٰع",
+    "transliteration": "Mataa'",
+    "meaning": "Provision / Enjoyment",
+    "root": "م ت ع",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 35
+  },
+  {
+    "rank": 296,
+    "arabic": "أُمّ",
+    "transliteration": "Umm",
+    "meaning": "Mother",
+    "root": "أ م م",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 34
+  },
+  {
+    "rank": 297,
+    "arabic": "فِتْنَة",
+    "transliteration": "Fitnah",
+    "meaning": "Trial / Tribulation",
+    "root": "ف ت ن",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 34
+  },
+  {
+    "rank": 298,
+    "arabic": "مُّرْسَل",
+    "transliteration": "Mursal",
+    "meaning": "Messenger / One sent",
+    "root": "ر س ل",
+    "partOfSpeech": "Ism (Noun, passive participle)",
+    "frequency": 34
+  },
+  {
+    "rank": 299,
+    "arabic": "مَرْيَم",
+    "transliteration": "Maryam",
+    "meaning": "Mary (mother of Jesus)",
+    "root": "—",
+    "partOfSpeech": "Ism 'Alam (Proper Noun)",
+    "frequency": 34
+  },
+  {
+    "rank": 300,
+    "arabic": "مَّعْرُوف",
+    "transliteration": "Ma'roof",
+    "meaning": "That which is right",
+    "root": "ع ر ف",
+    "partOfSpeech": "Ism (Noun, passive participle)",
+    "frequency": 34
+  },
+  {
+    "rank": 301,
+    "arabic": "مَّيِّت",
+    "transliteration": "Mayyit",
+    "meaning": "Dead",
+    "root": "م و ت",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 34
+  },
+  {
+    "rank": 302,
+    "arabic": "نَصِير",
+    "transliteration": "Naseer",
+    "meaning": "Helper",
+    "root": "ن ص ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 34
+  },
+  {
+    "rank": 303,
+    "arabic": "ءَالَآء",
+    "transliteration": "Aalaa'",
+    "meaning": "Favours / Blessings",
+    "root": "أ ل و",
+    "partOfSpeech": "Ism (Noun, plural)",
+    "frequency": 34
+  },
+  {
+    "rank": 304,
+    "arabic": "أَعْلَم",
+    "transliteration": "A'lam",
+    "meaning": "Most Knowing",
+    "root": "ع ل م",
+    "partOfSpeech": "Ism (Noun, superlative)",
+    "frequency": 33
+  },
+  {
+    "rank": 305,
+    "arabic": "شَمْس",
+    "transliteration": "Shams",
+    "meaning": "Sun",
+    "root": "ش م س",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 33
+  },
+  {
+    "rank": 306,
+    "arabic": "فَرِيق",
+    "transliteration": "Fareeq",
+    "meaning": "Group / Party",
+    "root": "ف ر ق",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 33
+  },
+  {
+    "rank": 307,
+    "arabic": "كَذِب",
+    "transliteration": "Kadhib",
+    "meaning": "Lie / Falsehood",
+    "root": "ك ذ ب",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 33
+  },
+  {
+    "rank": 308,
+    "arabic": "كَلَّا",
+    "transliteration": "Kallaa",
+    "meaning": "Nay! / No indeed",
+    "root": "—",
+    "partOfSpeech": "Harf (Aversion particle)",
+    "frequency": 33
+  },
+  {
+    "rank": 309,
+    "arabic": "نَّعَم",
+    "transliteration": "Na'am",
+    "meaning": "Yes",
+    "root": "ن ع م",
+    "partOfSpeech": "Ism/Harf (Noun/Particle)",
+    "frequency": 33
+  },
+  {
+    "rank": 310,
+    "arabic": "خَٰسِرِين",
+    "transliteration": "Khaasireen",
+    "meaning": "Losers",
+    "root": "خ س ر",
+    "partOfSpeech": "Ism (Noun, plural)",
+    "frequency": 32
+  },
+  {
+    "rank": 311,
+    "arabic": "زَكَوٰة",
+    "transliteration": "Zakaah",
+    "meaning": "Almsgiving / Purification",
+    "root": "ز ك و",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 32
+  },
+  {
+    "rank": 312,
+    "arabic": "عَٰقِبَة",
+    "transliteration": "'Aaqibah",
+    "meaning": "Consequence / End",
+    "root": "ع ق ب",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 32
+  },
+  {
+    "rank": 313,
+    "arabic": "كَبِير",
+    "transliteration": "Kabeer",
+    "meaning": "Great / Big",
+    "root": "ك ب ر",
+    "partOfSpeech": "Ism (Sifah Mushabbiha)",
+    "frequency": 32
+  },
+  {
+    "rank": 314,
+    "arabic": "بَصِير",
+    "transliteration": "Baseer",
+    "meaning": "All-Seeing",
+    "root": "ب ص ر",
+    "partOfSpeech": "Ism (Sifah — intensive adjective)",
+    "frequency": 31
+  },
+  {
+    "rank": 315,
+    "arabic": "حِين",
+    "transliteration": "Heen",
+    "meaning": "Time / Period",
+    "root": "ح ي ن",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 31
+  },
+  {
+    "rank": 316,
+    "arabic": "كَٰذِب",
+    "transliteration": "Kaadhib",
+    "meaning": "Liar",
+    "root": "ك ذ ب",
+    "partOfSpeech": "Ism (Noun, active participle)",
+    "frequency": 31
+  },
+  {
+    "rank": 317,
+    "arabic": "حُكْم",
+    "transliteration": "Hukm",
+    "meaning": "Judgment / Rule",
+    "root": "ح ك م",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 30
+  },
+  {
+    "rank": 318,
+    "arabic": "شَرّ",
+    "transliteration": "Sharr",
+    "meaning": "Evil",
+    "root": "ش ر ر",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 30
+  },
+  {
+    "rank": 319,
+    "arabic": "قُوَّة",
+    "transliteration": "Quwwah",
+    "meaning": "Strength / Power",
+    "root": "ق و ي",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 30
+  },
+  {
+    "rank": 320,
+    "arabic": "مَلَأ",
+    "transliteration": "Mala'",
+    "meaning": "Chiefs / Assembly",
+    "root": "م ل أ",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 30
+  },
+  {
+    "rank": 321,
+    "arabic": "جُند",
+    "transliteration": "Jund",
+    "meaning": "Army / Soldiers",
+    "root": "ج ن د",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 29
+  },
+  {
+    "rank": 322,
+    "arabic": "رَجُل",
+    "transliteration": "Rajul",
+    "meaning": "Man",
+    "root": "ر ج ل",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 29
+  },
+  {
+    "rank": 323,
+    "arabic": "رِيح",
+    "transliteration": "Reeh",
+    "meaning": "Wind",
+    "root": "ر و ح",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 29
+  },
+  {
+    "rank": 324,
+    "arabic": "عَرْش",
+    "transliteration": "'Arsh",
+    "meaning": "Throne",
+    "root": "ع ر ش",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 29
+  },
+  {
+    "rank": 325,
+    "arabic": "عَهْد",
+    "transliteration": "'Ahd",
+    "meaning": "Covenant",
+    "root": "ع ه د",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 29
+  },
+  {
+    "rank": 326,
+    "arabic": "كَأَنّ",
+    "transliteration": "Ka'anna",
+    "meaning": "As if",
+    "root": "—",
+    "partOfSpeech": "Harf (Accusative particle)",
+    "frequency": 29
+  },
+  {
+    "rank": 327,
+    "arabic": "نَبَأ",
+    "transliteration": "Naba'",
+    "meaning": "News / Tiding",
+    "root": "ن ب أ",
+    "partOfSpeech": "Ism (Noun)",
+    "frequency": 29
+  }
+]

@@ -122,7 +122,7 @@ class _FeelingDuasListScreenState extends State<FeelingDuasListScreen>
                   height: 180,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.white.withOpacity(0.4),
+                    color: Colors.white.withValues(alpha: 0.4),
                   ),
                 ),
               ),
@@ -134,7 +134,7 @@ class _FeelingDuasListScreenState extends State<FeelingDuasListScreen>
                   height: 120,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.white.withOpacity(0.3),
+                    color: Colors.white.withValues(alpha: 0.3),
                   ),
                 ),
               ),
@@ -217,7 +217,7 @@ class _FeelingDuasListScreenState extends State<FeelingDuasListScreen>
               '"And when My servants ask you concerning Me, indeed I am near." — Quran 2:186',
               style: TextStyle(
                 fontSize: 12,
-                color: const Color(0xFF1C1C1E).withOpacity(0.6),
+                color: const Color(0xFF1C1C1E).withValues(alpha: 0.6),
                 fontStyle: FontStyle.italic,
               ),
               textAlign: TextAlign.center,
@@ -331,7 +331,7 @@ class _CategoryCardState extends State<_CategoryCard>
           onTap: widget.onTap,
           child: LiquidGlassContainer(
             borderRadius: 24,
-            glassColor: bgColor.withOpacity(0.25),
+            glassColor: bgColor.withValues(alpha: 0.25),
             padding: const EdgeInsets.all(16),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -354,7 +354,7 @@ class _CategoryCardState extends State<_CategoryCard>
                   style: TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.w600,
-                    color: const Color(0xFF1C1C1E).withOpacity(0.6),
+                    color: const Color(0xFF1C1C1E).withValues(alpha: 0.6),
                   ),
                 ),
               ],

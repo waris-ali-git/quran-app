@@ -1,4 +1,3 @@
-import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -213,7 +212,7 @@ class _StreakWidgetState extends State<StreakWidget> with TickerProviderStateMix
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Streak Milestones',
-      barrierColor: Colors.black.withOpacity(0.7),
+      barrierColor: Colors.black.withValues(alpha: 0.7),
       transitionDuration: const Duration(milliseconds: 400),
       pageBuilder: (context, anim1, anim2) {
         return const SizedBox.shrink();
@@ -283,14 +282,14 @@ class _StreakWidgetState extends State<StreakWidget> with TickerProviderStateMix
           borderRadius: BorderRadius.circular(24),
           boxShadow: [
             BoxShadow(
-              color: tier.glowColor.withOpacity(0.2),
+              color: tier.glowColor.withValues(alpha: 0.2),
               blurRadius: 10,
               spreadRadius: 1,
               offset: const Offset(0, 3),
             ),
           ],
           border: Border.all(
-            color: tier.glowColor.withOpacity(0.3),
+            color: tier.glowColor.withValues(alpha: 0.3),
             width: 1.5,
           ),
         ),
@@ -384,7 +383,7 @@ class _MilestonesPopupState extends State<_MilestonesPopup> with TickerProviderS
           borderRadius: BorderRadius.circular(32),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.2),
+              color: Colors.black.withValues(alpha: 0.2),
               blurRadius: 20,
               offset: const Offset(0, 10),
             ),
@@ -426,7 +425,7 @@ class _MilestonesPopupState extends State<_MilestonesPopup> with TickerProviderS
                       shape: BoxShape.circle,
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.05),
+                          color: Colors.black.withValues(alpha: 0.05),
                           blurRadius: 4,
                         ),
                       ],
@@ -558,7 +557,7 @@ class _MilestonesPopupState extends State<_MilestonesPopup> with TickerProviderS
                               boxShadow: [
                                 BoxShadow(
                                   color: isUnlocked
-                                      ? tier.glowColor.withOpacity(0.15)
+                                      ? tier.glowColor.withValues(alpha: 0.15)
                                       : Colors.transparent,
                                   blurRadius: 8,
                                   spreadRadius: 1,
@@ -566,7 +565,7 @@ class _MilestonesPopupState extends State<_MilestonesPopup> with TickerProviderS
                               ],
                               border: Border.all(
                                 color: isUnlocked
-                                    ? tier.glowColor.withOpacity(0.3)
+                                    ? tier.glowColor.withValues(alpha: 0.3)
                                     : Colors.grey[200]!,
                                 width: 1.5,
                               ),
@@ -616,7 +615,7 @@ class _MilestonesPopupState extends State<_MilestonesPopup> with TickerProviderS
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(24),
                 border: Border.all(
-                  color: const Color(0xFF90BDE7).withOpacity(0.3),
+                  color: const Color(0xFF90BDE7).withValues(alpha: 0.3),
                   width: 1.5,
                 ),
               ),
@@ -643,7 +642,7 @@ class _MilestonesPopupState extends State<_MilestonesPopup> with TickerProviderS
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
                         decoration: BoxDecoration(
-                          color: const Color(0xFF90BDE7).withOpacity(0.15),
+                          color: const Color(0xFF90BDE7).withValues(alpha: 0.15),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Text(
@@ -663,7 +662,7 @@ class _MilestonesPopupState extends State<_MilestonesPopup> with TickerProviderS
                       activeTrackColor: const Color(0xFF90BDE7),
                       inactiveTrackColor: Colors.grey[200],
                       thumbColor: const Color(0xFF90BDE7),
-                      overlayColor: const Color(0xFF90BDE7).withOpacity(0.2),
+                      overlayColor: const Color(0xFF90BDE7).withValues(alpha: 0.2),
                       valueIndicatorColor: const Color(0xFF1A2E44),
                       valueIndicatorTextStyle: const TextStyle(color: Colors.white),
                     ),

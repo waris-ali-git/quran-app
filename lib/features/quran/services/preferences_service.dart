@@ -140,4 +140,26 @@ class PreferencesService {
   Future<void> setVbvPlayTafseer(bool value) async {
     await _prefs.setBool(_vbvPlayTafseer, value);
   }
+
+  // ─── Grammar Progress Settings ─────────────
+  static const String _masteredGrammarLessons = 'mastered_grammar_lessons';
+
+  Set<int> getMasteredGrammarLessons() {
+    final list = _prefs.getStringList(_masteredGrammarLessons) ?? [];
+    return list
+        .map((e) => int.tryParse(e) ?? -1)
+        .where((id) => id != -1)
+        .toSet();
+  }
+
+  Future<void> saveMasteredGrammarLessons(Set<int> masteredIds) async {
+    await _prefs.setStringList(
+      _masteredGrammarLessons,
+      masteredIds.map((id) => id.toString()).toList(),
+    );
+  }
+
+  Future<void> clearMasteredGrammarLessons() async {
+    await _prefs.remove(_masteredGrammarLessons);
+  }
 }

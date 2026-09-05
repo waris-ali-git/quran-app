@@ -41,12 +41,14 @@ class SurahLoaded extends QuranState {
   final ReadingPreferences preferences;
   final List<String> bookmarks;
   final bool isFullyLoaded;
+  final Ayah? bismillahAyah; // Surah 1 Ayah 1 — shown at top of every surah except 1 & 9
 
   const SurahLoaded({
     required this.surah,
     required this.preferences,
     required this.bookmarks,
     this.isFullyLoaded = true,
+    this.bismillahAyah,
   });
 
   SurahLoaded copyWith({
@@ -54,17 +56,19 @@ class SurahLoaded extends QuranState {
     ReadingPreferences? preferences,
     List<String>? bookmarks,
     bool? isFullyLoaded,
+    Ayah? bismillahAyah,
   }) {
     return SurahLoaded(
       surah: surah ?? this.surah,
       preferences: preferences ?? this.preferences,
       bookmarks: bookmarks ?? this.bookmarks,
       isFullyLoaded: isFullyLoaded ?? this.isFullyLoaded,
+      bismillahAyah: bismillahAyah ?? this.bismillahAyah,
     );
   }
 
   @override
-  List<Object?> get props => [surah, preferences, bookmarks, isFullyLoaded];
+  List<Object?> get props => [surah, preferences, bookmarks, isFullyLoaded, bismillahAyah];
 }
 
 // ─── Surah Streaming (Progressive load — skeleton fill) ─
@@ -74,6 +78,7 @@ class SurahStreaming extends QuranState {
   final int totalAyahs;          // Expected total (for skeleton count)
   final ReadingPreferences preferences;
   final List<String> bookmarks;
+  final Ayah? bismillahAyah; // Surah 1 Ayah 1 — shown at top of every surah except 1 & 9
 
   const SurahStreaming({
     required this.surahMeta,
@@ -81,6 +86,7 @@ class SurahStreaming extends QuranState {
     required this.totalAyahs,
     required this.preferences,
     required this.bookmarks,
+    this.bismillahAyah,
   });
 
   int get remainingAyahs => (totalAyahs - loadedAyahs.length).clamp(0, totalAyahs);
@@ -94,11 +100,12 @@ class SurahStreaming extends QuranState {
       totalAyahs: totalAyahs,
       preferences: preferences,
       bookmarks: bookmarks,
+      bismillahAyah: bismillahAyah,
     );
   }
 
   @override
-  List<Object?> get props => [surahMeta, loadedAyahs, totalAyahs, preferences, bookmarks];
+  List<Object?> get props => [surahMeta, loadedAyahs, totalAyahs, preferences, bookmarks, bismillahAyah];
 }
 
 // ─── Word-by-Word Mode ─────────────────────────
@@ -108,6 +115,7 @@ class SurahWordByWordLoaded extends QuranState {
   final ReadingPreferences preferences;
   final List<String> bookmarks;
   final bool isFullyLoaded;
+  final Ayah? bismillahAyah; // Surah 1 Ayah 1 — shown at top of every surah except 1 & 9
 
   const SurahWordByWordLoaded({
     required this.surahMeta,
@@ -115,12 +123,14 @@ class SurahWordByWordLoaded extends QuranState {
     required this.preferences,
     required this.bookmarks,
     this.isFullyLoaded = true,
+    this.bismillahAyah,
   });
 
   SurahWordByWordLoaded copyWith({
     ReadingPreferences? preferences,
     List<String>? bookmarks,
     bool? isFullyLoaded,
+    Ayah? bismillahAyah,
   }) {
     return SurahWordByWordLoaded(
       surahMeta: surahMeta,
@@ -128,11 +138,12 @@ class SurahWordByWordLoaded extends QuranState {
       preferences: preferences ?? this.preferences,
       bookmarks: bookmarks ?? this.bookmarks,
       isFullyLoaded: isFullyLoaded ?? this.isFullyLoaded,
+      bismillahAyah: bismillahAyah ?? this.bismillahAyah,
     );
   }
 
   @override
-  List<Object?> get props => [surahMeta, ayahs, preferences, bookmarks, isFullyLoaded];
+  List<Object?> get props => [surahMeta, ayahs, preferences, bookmarks, isFullyLoaded, bismillahAyah];
 }
 
 // ─── Search Results ────────────────────────────

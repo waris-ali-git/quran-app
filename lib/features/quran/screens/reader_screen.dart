@@ -2,11 +2,14 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
+import 'package:just_audio/just_audio.dart';
 import '../services/audio_service.dart';
 import '../services/preferences_service.dart';
 import '../services/word_timing_service.dart';
 import '../services/surah_recitation_controller.dart';
 import '../services/verse_by_verse_controller.dart';
+import '../services/ibn_kathir_audio_data.dart';
+import '../services/tajweed_service.dart';
 import '../state/quran_bloc.dart';
 import '../models/surah.dart';
 import '../models/ayah.dart';
@@ -61,7 +64,12 @@ class _ReaderScreenState extends State<ReaderScreen> {
   late SurahRecitationController _recitationController;
   bool _recitationLoaded = false;
 
-  // ─── Verse-by-Verse Sequential Playback ──────────
+  // Dedicated player for bismillah audio (played before chapter recitation)
+  // Initialized in initState to avoid platform-channel calls during widget construction.
+  AudioPlayer? _bismillahPlayer;
+  bool _bismillahPlaying = false;
+
+  // ─── Verse-by-Verse Sequential Playback ───────────
   late VerseByVerseController _vbvController;
   int _lastVbVAyah = -1;
   /// GlobalKeys per ayah index so we can scroll to the active card.
@@ -84,6 +92,10 @@ class _ReaderScreenState extends State<ReaderScreen> {
     );
     _recitationController.addListener(_onRecitationUpdate);
 
+    // Initialize bismillah player in initState (not at field level)
+    // to avoid MissingPluginException during widget construction.
+    _bismillahPlayer = AudioPlayer();
+
     // Initialize verse-by-verse controller with saved preferences
     final vbvPrefs = PreferencesService();
     final savedEditionId = vbvPrefs.getVbvTranslationEditionId();
@@ -91,26 +103,29 @@ class _ReaderScreenState extends State<ReaderScreen> {
         ?? TranslationAudioEdition.defaultEdition;
 
     _vbvController = VerseByVerseController();
-    
-    // Update config if needed
-    _vbvController.updateConfig(VerseByVerseConfig(
-      reciter: QuranAudioService().selectedReciter,
-      translationEdition: savedEdition,
-      playTranslation: vbvPrefs.getVbvPlayTranslation(),
-      playTafseer: vbvPrefs.getVbvPlayTafseer(),
-      tafseerAudioUrlResolver: (surahNumber) {
-        if (surahNumber == 1) {
-          return 'https://archive.org/download/Tafsir-ibne-kaseer-kathir-urdu-----audio-mp3-hq/'
-              '001%20-%20Al-Fatihah%20%28%20The%20Opening%20%29%20-%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D9%81%D8%A7%D8%AA%D8%AD%D8%A9.mp3';
-        }
-        return null;
-      },
-    ));
+
+    // Defer updateConfig to post-frame to avoid notifyListeners() during build,
+    // which causes "setState() called during build" assertion error.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      _vbvController.updateConfig(VerseByVerseConfig(
+        reciter: QuranAudioService().selectedReciter,
+        translationEdition: savedEdition,
+        playTranslation: vbvPrefs.getVbvPlayTranslation(),
+        playTafseer: vbvPrefs.getVbvPlayTafseer(),
+        tafseerAudioUrlResolver: (surahNumber) {
+          return ibneKathirTafseerAudioUrls[surahNumber];
+        },
+      ));
+    });
 
     _vbvController.addListener(_onVbVUpdate);
 
-    // Pre-load chapter audio + word segments so play is instant
-    _preloadRecitationData();
+    // Delay preload to post-frame so it doesn't trigger setState during initState
+    // (loadChapter calls notifyListeners synchronously on _isLoading = true)
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) _preloadRecitationData();
+    });
 
     _loadSurah();
     _scrollController.addListener(_onScroll);
@@ -160,58 +175,66 @@ class _ReaderScreenState extends State<ReaderScreen> {
   }
 
   void _onScroll() {
-    if (_scrollController.hasClients) {
-      final maxScroll = _scrollController.position.maxScrollExtent;
-      final currentScroll = _scrollController.position.pixels;
-      if (maxScroll > 0) {
-        _scrollProgress.value = (currentScroll / maxScroll).clamp(0.0, 1.0);
-        
-        // Approximate visible ayah based on scroll progress
-        final state = context.read<QuranBloc>().state;
-        List<Ayah>? ayahs;
-        if (state is SurahLoaded) ayahs = state.surah.ayahs;
-        if (state is SurahWordByWordLoaded) ayahs = state.ayahs;
-        
-        if (ayahs != null && ayahs.isNotEmpty) {
-          final approxIndex = (_scrollProgress.value * (ayahs.length - 1)).round();
-          if (approxIndex >= 0 && approxIndex < ayahs.length) {
-            final visibleAyah = ayahs[approxIndex];
-            if (visibleAyah.page != _currentPage || visibleAyah.juz != _currentJuz) {
-              setState(() {
-                _currentPage = visibleAyah.page;
-                _currentJuz = visibleAyah.juz;
-                _currentHizb = visibleAyah.hizbQuarter ~/ 4 == 0 ? 1 : visibleAyah.hizbQuarter ~/ 4;
-              });
-            }
+    if (!_scrollController.hasClients) return;
+
+    final maxScroll = _scrollController.position.maxScrollExtent;
+    final currentScroll = _scrollController.position.pixels;
+    if (maxScroll > 0) {
+      _scrollProgress.value = (currentScroll / maxScroll).clamp(0.0, 1.0);
+
+      // Update page/juz header — setState only when values actually change
+      final state = context.read<QuranBloc>().state;
+      List<Ayah>? ayahs;
+      if (state is SurahLoaded) ayahs = state.surah.ayahs;
+      if (state is SurahWordByWordLoaded) ayahs = state.ayahs;
+
+      if (ayahs != null && ayahs.isNotEmpty) {
+        final approxIndex = (_scrollProgress.value * (ayahs.length - 1)).round();
+        if (approxIndex >= 0 && approxIndex < ayahs.length) {
+          final visibleAyah = ayahs[approxIndex];
+          final newPage = visibleAyah.page;
+          final newJuz  = visibleAyah.juz;
+          final newHizb = visibleAyah.hizbQuarter ~/ 4 == 0 ? 1 : visibleAyah.hizbQuarter ~/ 4;
+
+          // Merge both setState calls into one to avoid double rebuild
+          final overlayWasShown = _showMarkAsReadOverlay;
+          final pageChanged = newPage != _currentPage || newJuz != _currentJuz;
+          if (pageChanged || overlayWasShown) {
+            setState(() {
+              if (pageChanged) {
+                _currentPage = newPage;
+                _currentJuz  = newJuz;
+                _currentHizb = newHizb;
+              }
+              if (overlayWasShown) _showMarkAsReadOverlay = false;
+            });
           }
         }
-      } else {
-        _scrollProgress.value = 0.0;
-      }
-
-      // Hide overlay as soon as user starts scrolling again
-      if (_showMarkAsReadOverlay) {
+      } else if (_showMarkAsReadOverlay) {
         setState(() => _showMarkAsReadOverlay = false);
       }
+    } else {
+      _scrollProgress.value = 0.0;
+    }
 
-      // Check for pause to show overlay
-      _scrollPauseTimer?.cancel();
-      if (_overlayTriggerCount < 3 && _scrollProgress.value > 0.5 && widget.initialMode == ReadingDisplayMode.arabicOnly) {
-        _scrollPauseTimer = Timer(const Duration(milliseconds: 1500), () {
-          if (mounted && _scrollProgress.value > 0.5) {
-            setState(() {
-              _showMarkAsReadOverlay = true;
-              _overlayTriggerCount++;
-            });
-            // Auto hide after 3 seconds
-            Timer(const Duration(seconds: 3), () {
-              if (mounted && _showMarkAsReadOverlay) {
-                setState(() => _showMarkAsReadOverlay = false);
-              }
-            });
-          }
-        });
-      }
+    // Check for pause to show overlay
+    _scrollPauseTimer?.cancel();
+    if (_overlayTriggerCount < 3 &&
+        _scrollProgress.value > 0.5 &&
+        widget.initialMode == ReadingDisplayMode.arabicOnly) {
+      _scrollPauseTimer = Timer(const Duration(milliseconds: 1500), () {
+        if (mounted && _scrollProgress.value > 0.5) {
+          setState(() {
+            _showMarkAsReadOverlay = true;
+            _overlayTriggerCount++;
+          });
+          Timer(const Duration(seconds: 3), () {
+            if (mounted && _showMarkAsReadOverlay) {
+              setState(() => _showMarkAsReadOverlay = false);
+            }
+          });
+        }
+      });
     }
   }
 
@@ -224,26 +247,49 @@ class _ReaderScreenState extends State<ReaderScreen> {
     }
   }
 
+  bool _lastRecitationPlaying = false;
+
   void _onRecitationUpdate() {
-    if (mounted) setState(() {});
+    if (!mounted) return;
+    // Only rebuild if playing state changed — the 50ms timer fires 20x/sec
+    // so we avoid full rebuilds unless the FAB icon actually needs to change.
+    final nowPlaying = _recitationController.state.isPlaying;
+    final isLoading = _recitationController.isLoading;
+    if (nowPlaying != _lastRecitationPlaying || isLoading) {
+      _lastRecitationPlaying = nowPlaying;
+      setState(() {});
+    }
   }
 
-  void _onVbVUpdate() {
-    if (mounted) {
-      setState(() {});
-      final vbvState = _vbvController.state;
-      if (vbvState.isActive && vbvState.surahNumber > 0 && vbvState.currentAyahInSurah > 0) {
-        context.read<QuranBloc>().add(SaveLastListenedVbvEvent(
-          surahNumber: vbvState.surahNumber,
-          ayahNumber: vbvState.currentAyahInSurah,
-        ));
+  int _lastVbVAyahForRebuild = -1;
+  bool _lastVbVPlaying = false;
 
-        // Trigger auto-scroll if the ayah changed
-        if (vbvState.surahNumber == widget.surah.number && _lastVbVAyah != vbvState.currentAyahInSurah) {
-          _lastVbVAyah = vbvState.currentAyahInSurah;
-          _onVbVAyahChanged(_lastVbVAyah);
-        }
+  void _onVbVUpdate() {
+    if (!mounted) return;
+    final vbvState = _vbvController.state;
+
+    // Persist last-listened position
+    if (vbvState.isActive && vbvState.surahNumber > 0 && vbvState.currentAyahInSurah > 0) {
+      context.read<QuranBloc>().add(SaveLastListenedVbvEvent(
+        surahNumber: vbvState.surahNumber,
+        ayahNumber: vbvState.currentAyahInSurah,
+      ));
+
+      // Auto-scroll when ayah advances
+      if (vbvState.surahNumber == widget.surah.number &&
+          _lastVbVAyah != vbvState.currentAyahInSurah) {
+        _lastVbVAyah = vbvState.currentAyahInSurah;
+        _onVbVAyahChanged(_lastVbVAyah);
       }
+    }
+
+    // Only rebuild if something visually meaningful changed
+    final ayahChanged = vbvState.currentAyahInSurah != _lastVbVAyahForRebuild;
+    final playingChanged = vbvState.isPlaying != _lastVbVPlaying;
+    if (ayahChanged || playingChanged || !vbvState.isActive) {
+      _lastVbVAyahForRebuild = vbvState.currentAyahInSurah;
+      _lastVbVPlaying = vbvState.isPlaying;
+      setState(() {});
     }
   }
 
@@ -320,6 +366,7 @@ class _ReaderScreenState extends State<ReaderScreen> {
   void dispose() {
     _recitationController.removeListener(_onRecitationUpdate);
     _recitationController.dispose();
+    _bismillahPlayer?.dispose();
     _vbvController.removeListener(_onVbVUpdate);
     _lastReadDebouncer?.cancel();
     _scrollPauseTimer?.cancel();
@@ -349,7 +396,7 @@ class _ReaderScreenState extends State<ReaderScreen> {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
                 content: Text(
-                  state.isBookmarked ? '✓ بک مارک ہو گیا' : 'بک مارک ہٹا دیا',
+                  state.isBookmarked ? '✔ بک مارک یو گئیا' : 'بک مارک ہٹا دیا',
                 ),
                 duration: const Duration(seconds: 1),
                 backgroundColor: const Color(0xFF90BDE7),
@@ -379,6 +426,7 @@ class _ReaderScreenState extends State<ReaderScreen> {
                   state.surah,
                   state.preferences,
                   state.bookmarks,
+                  state.bismillahAyah,
                 ),
                 if (_showMarkAsReadOverlay)
                   Positioned(
@@ -389,7 +437,7 @@ class _ReaderScreenState extends State<ReaderScreen> {
                       child: Container(
                         padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                         decoration: BoxDecoration(
-                          color: const Color(0xFF90BDE7).withOpacity(0.9),
+                          color: const Color(0xFF90BDE7).withValues(alpha: 0.9),
                           borderRadius: BorderRadius.circular(30),
                           boxShadow: const [
                             BoxShadow(color: Colors.black26, blurRadius: 10, offset: Offset(0, 4)),
@@ -420,6 +468,7 @@ class _ReaderScreenState extends State<ReaderScreen> {
               state.ayahs,
               state.preferences,
               state.bookmarks,
+              state.bismillahAyah,
             );
           }
 
@@ -460,14 +509,15 @@ class _ReaderScreenState extends State<ReaderScreen> {
     }
   }
 
-  // ─────────────────────────────────────────────
+  // ────────────────────────────────────────────────────────────────────────
   // BOTTOM BAR — shows VbV bar when active, else tafseer player
-  // ─────────────────────────────────────────────
+  // ────────────────────────────────────────────────────────────────────────
   Widget? _buildBottomBar() {
     final vbvActive = _vbvController.state.isActive;
     if (vbvActive) {
       return VersePlaybackBar(
         controller: _vbvController,
+        surahName: widget.surah.englishName,
         onSettingsTap: _showVersePlaybackSettings,
         onClose: () => setState(() {}),
         onBarTap: _scrollToActiveAyah,
@@ -476,9 +526,9 @@ class _ReaderScreenState extends State<ReaderScreen> {
     return null;
   }
 
-  // ─────────────────────────────────────────────
+  // ────────────────────────────────────────────────────────────────────────
   // APP BAR
-  // ─────────────────────────────────────────────
+  // ────────────────────────────────────────────────────────────────────────
   AppBar _buildAppBar(BuildContext context, ReadingPreferences preferences) {
     return AppBar(
       backgroundColor: Colors.white,
@@ -524,7 +574,6 @@ class _ReaderScreenState extends State<ReaderScreen> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  const Icon(Icons.keyboard_arrow_down, color: Colors.grey, size: 18),
                   const Spacer(),
                   // ─── Segmented Mode Toggle ───
                   _buildModeSelector(preferences),
@@ -558,9 +607,9 @@ class _ReaderScreenState extends State<ReaderScreen> {
     );
   }
 
-  // ─────────────────────────────────────────────
+  // ────────────────────────────────────────────────────────────────────────
   // SHOW TAFSEER
-  // ─────────────────────────────────────────────
+  // ────────────────────────────────────────────────────────────────────────
   void _showTafseer(BuildContext context, Ayah ayah) {
     showModalBottomSheet(
       context: context,
@@ -623,14 +672,15 @@ class _ReaderScreenState extends State<ReaderScreen> {
     );
   }
 
-  // ─────────────────────────────────────────────
+  // ────────────────────────────────────────────────────────────────────────
   // ARABIC + TRANSLATION  /  TAJWEED mode
-  // ─────────────────────────────────────────────
+  // ────────────────────────────────────────────────────────────────────────
   Widget _buildSurahContent(
       BuildContext context,
       Surah surah,
       ReadingPreferences prefs,
       List<String> bookmarks,
+      Ayah? bismillahAyah,
       ) {
     
     // Preview for Arabic Only mode using the Mushaf Layout
@@ -685,8 +735,15 @@ class _ReaderScreenState extends State<ReaderScreen> {
       controller: _scrollController,
       cacheExtent: 500, // Pre-render 500px above/below viewport
       slivers: [
-        // Bismillah header
-        SliverToBoxAdapter(child: _BismillahHeader()),
+        // Bismillah header / full card
+        SliverToBoxAdapter(
+          child: _buildTopBismillahHeader(
+            surahNumber: surah.number,
+            totalAyahs: surah.numberOfAyahs,
+            preferences: prefs,
+            bismillahAyah: bismillahAyah,
+          ),
+        ),
 
         // Ayahs
         SliverList(
@@ -812,31 +869,101 @@ class _ReaderScreenState extends State<ReaderScreen> {
     );
   }
 
-  // ─────────────────────────────────────────────
+  // ─── Bismillah URL builder ──────────────────────────────────────────────
+  // Returns the Surah 1 Ayah 1 audio URL for the selected reciter.
+  String _getBismillahUrl() {
+    final id = QuranAudioService().selectedReciter.id;
+    const cdnPaths = <String, String>{
+      'alafasy':         'ar.alafasy',
+      'mahermuaiqly':    'ar.mahermuaiqly',
+      'husary':          'ar.husary',
+      'husary_mujawwad': 'ar.husarymujawwad',
+      'hudhaify':        'ar.hudhaify',
+      'muhammadayyoub':  'ar.muhammadayyoub',
+      'muhammadjibreel': 'ar.muhammadjibreel',
+      'ahmedajamy':      'ar.ahmedajamy',
+      'shaatree':        'ar.shaatree',
+    };
+    const quranComPaths = <String, String>{
+      'abdulbasit_mujawwad': 'AbdulBaset/Mujawwad/mp3',
+      'abdulbasit_murattal': 'AbdulBaset/Murattal/mp3',
+      'sudais':              'Sudais/mp3',
+      'shuraim':             'Shuraym/mp3',
+      'hanirifai':           'Rifai/mp3',
+      'minshawi_mujawwad':   'Minshawi/Mujawwad/mp3',
+      'minshawi_murattal':   'Minshawi/Murattal/mp3',
+    };
+    if (cdnPaths.containsKey(id)) {
+      return 'https://cdn.islamic.network/quran/audio/128/${cdnPaths[id]}/1.mp3';
+    }
+    if (quranComPaths.containsKey(id)) {
+      return 'https://verses.quran.com/${quranComPaths[id]}/001001.mp3';
+    }
+    return 'https://cdn.islamic.network/quran/audio/128/ar.alafasy/1.mp3';
+  }
+
+  // ─── Play bismillah then start chapter recitation ───────────────────────
+  Future<void> _playBismillahThenRecite() async {
+    final surahNum = widget.surah.number;
+    final needsBismillah = surahNum != 1 && surahNum != 9;
+
+    if (needsBismillah && _bismillahPlayer != null) {
+      try {
+        _bismillahPlaying = true;
+        if (mounted) setState(() {});
+
+        await _bismillahPlayer!.setUrl(_getBismillahUrl());
+        await _bismillahPlayer!.play();
+
+        await _bismillahPlayer!.playerStateStream.firstWhere(
+          (s) => s.processingState == ProcessingState.completed || !s.playing,
+        );
+      } catch (e) {
+        debugPrint('⚠️ Bismillah playback failed: $e');
+      } finally {
+        _bismillahPlaying = false;
+        await _bismillahPlayer?.stop();
+        if (mounted) setState(() {});
+      }
+    }
+
+    if (mounted) _recitationController.play();
+  }
+
+  // ────────────────────────────────────────────────────────────────────────
   // GOLDEN PLAY FAB (Arabic Only Mode)
-  // ─────────────────────────────────────────────
+  // ────────────────────────────────────────────────────────────────────────
   Widget _buildRecitationFab() {
     final isPlaying = _recitationController.state.isPlaying;
     final isLoading = _recitationController.isLoading;
+    final isActive = isPlaying || _bismillahPlaying;
 
     return GestureDetector(
       onTap: () {
         if (isLoading) return;
-        if (!_recitationLoaded) {
-          // Still loading in background, ignore tap
-          return;
+        if (!_recitationLoaded) return;
+
+        if (isActive) {
+          // Stop everything — bismillah and chapter
+          _bismillahPlayer?.stop();
+          _bismillahPlaying = false;
+          _recitationController.pause();
+          setState(() {});
+        } else {
+          // Play bismillah first, then chapter
+          _playBismillahThenRecite();
         }
-        _recitationController.togglePlayPause();
       },
       onLongPress: () {
-        // Long press = stop & reset
+        _bismillahPlayer?.stop();
+        _bismillahPlaying = false;
         _recitationController.stop();
       },
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 300),
         curve: Curves.easeOut,
-        width: isPlaying ? 64 : 56,
-        height: isPlaying ? 64 : 56,
+        width: isActive ? 64 : 56,
+        height: isActive ? 64 : 56,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           gradient: const LinearGradient(
@@ -846,9 +973,9 @@ class _ReaderScreenState extends State<ReaderScreen> {
           ),
           boxShadow: [
             BoxShadow(
-              color: const Color(0xFF90BDE7).withValues(alpha: isPlaying ? 0.5 : 0.3),
-              blurRadius: isPlaying ? 20 : 12,
-              spreadRadius: isPlaying ? 2 : 0,
+              color: const Color(0xFF90BDE7).withValues(alpha: isActive ? 0.5 : 0.3),
+              blurRadius: isActive ? 20 : 12,
+              spreadRadius: isActive ? 2 : 0,
               offset: const Offset(0, 4),
             ),
           ],
@@ -866,8 +993,8 @@ class _ReaderScreenState extends State<ReaderScreen> {
               : AnimatedSwitcher(
                   duration: const Duration(milliseconds: 200),
                   child: Icon(
-                    isPlaying ? Icons.pause_rounded : Icons.play_arrow_rounded,
-                    key: ValueKey(isPlaying),
+                    isActive ? Icons.pause_rounded : Icons.play_arrow_rounded,
+                    key: ValueKey(isActive),
                     color: Colors.white,
                     size: 32,
                   ),
@@ -877,21 +1004,31 @@ class _ReaderScreenState extends State<ReaderScreen> {
     );
   }
 
-  // ─────────────────────────────────────────────
+
+  // Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
   // WORD-BY-WORD mode (exactly image jaisa)
-  // ─────────────────────────────────────────────
+  // Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
   Widget _buildWordByWordContent(
       BuildContext context,
       Surah surahMeta,
       List<Ayah> ayahs,
       ReadingPreferences prefs,
       List<String> bookmarks,
+      Ayah? bismillahAyah,
       ) {
+
     return CustomScrollView(
       controller: _scrollController,
       cacheExtent: 500, // Pre-render 500px above/below viewport
       slivers: [
-        SliverToBoxAdapter(child: _BismillahHeader()),
+        SliverToBoxAdapter(
+          child: _buildTopBismillahHeader(
+            surahNumber: surahMeta.number,
+            totalAyahs: surahMeta.numberOfAyahs,
+            preferences: prefs,
+            bismillahAyah: bismillahAyah,
+          ),
+        ),
 
         SliverList(
           delegate: SliverChildBuilderDelegate(
@@ -928,22 +1065,31 @@ class _ReaderScreenState extends State<ReaderScreen> {
     );
   }
 
-  // ─────────────────────────────────────────────
+  // Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
   // STREAMING STATE: Real ayahs + skeleton cards
-  // ─────────────────────────────────────────────
+  // Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
   Widget _buildStreamingContent(BuildContext context, SurahStreaming state) {
     final loadedAyahs = state.loadedAyahs;
     final remainingCount = state.remainingAyahs;
     final surah = state.surahMeta;
     final prefs = state.preferences;
     final bookmarks = state.bookmarks;
+    final bismillahAyah = state.bismillahAyah;
+
 
     return CustomScrollView(
       controller: _scrollController,
       cacheExtent: 500,
       slivers: [
-        // Bismillah is immediately available
-        SliverToBoxAdapter(child: _BismillahHeader()),
+        // Bismillah header / full card
+        SliverToBoxAdapter(
+          child: _buildTopBismillahHeader(
+            surahNumber: surah.number,
+            totalAyahs: surah.numberOfAyahs,
+            preferences: prefs,
+            bismillahAyah: bismillahAyah,
+          ),
+        ),
 
         // Already loaded ayahs — render normally
         if (loadedAyahs.isNotEmpty)
@@ -1012,14 +1158,14 @@ class _ReaderScreenState extends State<ReaderScreen> {
     );
   }
 
-  // ─────────────────────────────────────────────
+  // Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
   // FALLBACK LOADING SKELETONS (pure skeleton)
-  // ─────────────────────────────────────────────
+  // Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
   Widget _buildLoadingSkeletons() {
     return CustomScrollView(
       controller: _scrollController,
       slivers: [
-        SliverToBoxAdapter(child: _BismillahHeader()),
+        const SliverToBoxAdapter(child: BismillahSkeletonHeader()),
         SliverList(
           delegate: SliverChildBuilderDelegate(
             (context, index) => const SurahSkeletonCard(),
@@ -1029,6 +1175,34 @@ class _ReaderScreenState extends State<ReaderScreen> {
         const SliverPadding(padding: EdgeInsets.only(bottom: 40)),
       ],
     );
+  }
+
+  Widget _buildTopBismillahHeader({
+    required int surahNumber,
+    required int totalAyahs,
+    required ReadingPreferences preferences,
+    required Ayah? bismillahAyah,
+  }) {
+    if (surahNumber == 1 || surahNumber == 9) {
+      return const SizedBox.shrink();
+    }
+    if (bismillahAyah != null) {
+      return _BismillahAyahCard(
+        ayah: bismillahAyah,
+        surahNumber: surahNumber,
+        totalAyahs: totalAyahs,
+        preferences: preferences,
+        onTafseerTap: () => _showTafseer(context, bismillahAyah),
+        vbvController: _vbvController,
+        onReciterChanged: () {
+          _vbvController.updateConfig(
+            _vbvController.config.copyWith(reciter: QuranAudioService().selectedReciter),
+          );
+          if (mounted) setState(() {});
+        },
+      );
+    }
+    return const BismillahSkeletonHeader();
   }
 
   void _toggleBookmark(
@@ -1078,9 +1252,63 @@ class _ReaderScreenState extends State<ReaderScreen> {
   }
 }
 
-// ─────────────────────────────────────────────
+String cleanBismillahTranslation(String text) {
+  final patterns = [
+    RegExp(r'^In the name of Allah, the Entirely Merciful, the Especially Merciful[.:٫]?\s*', caseSensitive: false),
+    RegExp(r'^In the name of Allah, Most Gracious, Most Merciful[.:٫]?\s*', caseSensitive: false),
+    RegExp(r'^In the name of Allah, the Most Gracious, the Most Merciful[.:٫]?\s*', caseSensitive: false),
+    RegExp(r'^In the name of Allah, the Beneficent, the Merciful[.:٫]?\s*', caseSensitive: false),
+    RegExp(r'^In the name of Allah, the Compassionate, the Merciful[.:٫]?\s*', caseSensitive: false),
+    RegExp(r'^In the name of Allah, the Most Beneficent, the Most Merciful[.:٫]?\s*', caseSensitive: false),
+    RegExp(r'^In the Name of Allah, the Most Gracious, the Most Merciful[.:٫]?\s*', caseSensitive: false),
+    RegExp(r'^In the Name of Allah, the Most Beneficent, the Most Merciful[.:٫]?\s*', caseSensitive: false),
+    RegExp(r'^شروع اللہ کے نام سے جو بڑا مہربان نہایت رحم والا ہے[۔.\s]*'),
+    RegExp(r'^شروع اللہ کے نام سے جو بے حد مہربان نہایت رحم والا ہے[۔.\s]*'),
+    RegExp(r'^اللہ کے نام سے جو بڑا مہربان نہایت رحم والا ہے[۔.\s]*'),
+    RegExp(r'^اللہ کے نام سے جو بے حد مہربان نہایت رحم والا ہے[۔.\s]*'),
+    RegExp(r'^اللہ کے نام سے جو رحمن و رحیم ہے[۔.\s]*'),
+    RegExp(r'^اللہ کے نام سے جو کہ بڑا مہربان نہایت رحم والا ہے[۔.\s]*'),
+  ];
+
+  String cleaned = text;
+  for (final p in patterns) {
+    if (p.hasMatch(cleaned)) {
+      cleaned = cleaned.replaceFirst(p, '').trim();
+      break;
+    }
+  }
+  return cleaned;
+}
+
+String cleanBismillahArabic(String rawText) {
+  String text = rawText.cleanArabic;
+  const bismillahVariants = [
+    'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
+    'بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ',
+    'بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ',
+    'بِسۡمِ ٱللَّهِ ٱلرَّحۡمَـٰنِ ٱلرَّحِيمِ',
+    'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
+    'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ',
+    'بِسمِ اللَّهِ الرَّحمٰنِ الرَّحيمِ',
+    'بسم الله الرحمن الرحيم',
+    '﷽',
+  ];
+  for (final variant in bismillahVariants) {
+    final cleanB = variant.cleanArabic;
+    if (text.startsWith(cleanB)) {
+      text = text.substring(cleanB.length).trim();
+      break;
+    }
+  }
+  if (text.startsWith('۠') || text.startsWith('ۖ')) {
+    text = text.substring(1).trim();
+  }
+  return text;
+}
+
+// Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 // BISMILLAH HEADER
-// ─────────────────────────────────────────────
+// Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 class _BismillahHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -1088,7 +1316,7 @@ class _BismillahHeader extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(vertical: 24),
       child: const Text(
-        'بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ',
+        'Ã˜Â¨Ã™ÂÃ˜Â³Ã™â€™Ã™â€¦Ã™Â Ã™Â±Ã™â€žÃ™â€žÃ™â€˜Ã™Å½Ã™â€¡Ã™Â Ã™Â±Ã™â€žÃ˜Â±Ã™â€˜Ã™Å½Ã˜Â­Ã™â€™Ã™â€¦Ã™Å½Ã™Â°Ã™â€ Ã™Â Ã™Â±Ã™â€žÃ˜Â±Ã™â€˜Ã™Å½Ã˜Â­Ã™ÂÃ™Å Ã™â€¦Ã™Â',
         style: TextStyle(
           fontFamily: 'Thuluth',
           fontSize: 32,
@@ -1100,9 +1328,290 @@ class _BismillahHeader extends StatelessWidget {
   }
 }
 
-// ─────────────────────────────────────────────
+// Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
+// BISMILLAH FULL AYAH CARD
+// Shows Surah 1:1 with all features at top of each surah (except 1 & 9)
+// Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
+class _BismillahAyahCard extends StatelessWidget {
+  final Ayah ayah;
+  final int surahNumber;   // current surah being read
+  final int totalAyahs;    // total ayahs of the current surah
+  final ReadingPreferences preferences;
+  final VoidCallback onTafseerTap;
+  final VerseByVerseController vbvController;
+  final VoidCallback? onReciterChanged;
+
+  const _BismillahAyahCard({
+    required this.ayah,
+    required this.surahNumber,
+    required this.totalAyahs,
+    required this.preferences,
+    required this.onTafseerTap,
+    required this.vbvController,
+    this.onReciterChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final String ayahText = ayah.text.cleanArabic;
+    final String? translationText = ayah.translation;
+    final vbvState = vbvController.state;
+    // Active when the current surah is playing and we're on ayah 1
+    final isActiveVbV = vbvState.isActive &&
+        vbvState.surahNumber == surahNumber &&
+        vbvState.currentAyahInSurah == 1;
+
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 300),
+      padding: const EdgeInsets.symmetric(vertical: 16),
+      decoration: BoxDecoration(
+        color: isActiveVbV ? const Color(0xFFEBF4FD) : Colors.white,
+        border: Border(
+          bottom: const BorderSide(color: Color(0xFFEEEEEE)),
+          left: isActiveVbV
+              ? const BorderSide(color: Color(0xFF90BDE7), width: 4)
+              : BorderSide.none,
+        ),
+        boxShadow: isActiveVbV
+            ? [const BoxShadow(color: Color(0x2290BDE7), blurRadius: 8, offset: Offset(2, 0))]
+            : null,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          // Top toolbar Ã¢â‚¬â€ matches _StandardAyahCard exactly
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+            child: Row(
+              children: [
+                // Play / Pause button
+                GestureDetector(
+                  onTap: () {
+                    if (isActiveVbV && vbvState.isPlaying) {
+                      vbvController.pause();
+                    } else if (isActiveVbV && vbvState.isPaused) {
+                      vbvController.resume();
+                    } else {
+                      QuranAudioService().stopAyah();
+                      QuranAudioService().stopTafseer();
+                      // Start from ayah 1 of the CURRENT surah
+                      vbvController.start(
+                        surahNumber: surahNumber,
+                        startAyah: 1,
+                        totalAyahs: totalAyahs,
+                      );
+                    }
+                  },
+                  child: Icon(
+                    isActiveVbV && vbvState.isPlaying
+                        ? Icons.pause
+                        : Icons.play_arrow_outlined,
+                    color: isActiveVbV ? const Color(0xFF90BDE7) : Colors.grey,
+                    size: 24,
+                  ),
+                ),
+                const Spacer(),
+                // Reciter selection
+                GestureDetector(
+                  onTap: () async {
+                    await showReciterSelectionSheet(context);
+                    onReciterChanged?.call();
+                  },
+                  child: const Icon(Icomoon.reciter, color: Colors.grey, size: 20),
+                ),
+                const SizedBox(width: 16),
+                // Bookmark not needed for bismillah – just spacer to align
+              ],
+            ),
+          ),
+
+          // Arabic text (RTL) — Word-by-Word, Tajweed, or Standard
+          if (preferences.displayMode == ReadingDisplayMode.wordByWord)
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+              child: WordByWordGrid(
+                words: (ayah.ayahWords != null && ayah.ayahWords!.isNotEmpty)
+                    ? ayah.ayahWords!
+                    : getBismillahWords(preferences.wbwLanguage),
+                preferences: preferences,
+                wordColors: WordByWordAyahWidget.wordColors,
+              ),
+            )
+          else if (preferences.displayMode == ReadingDisplayMode.tajweed || preferences.showTajweed)
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  RichText(
+                    textAlign: TextAlign.right,
+                    textDirection: TextDirection.rtl,
+                    text: TextSpan(
+                      children: ayah.tajweedText != null
+                          ? TajweedService.parseTajweedTextToSpans(
+                              ayah.tajweedText!,
+                              preferences.arabicFontSize,
+                              'TajweedFont',
+                            )
+                          : _buildBismillahTajweedSegments(ayah).map((seg) {
+                              return TextSpan(
+                                text: seg.text,
+                                style: TextStyle(
+                                  color: TajweedService.getTajweedColor(seg.rule),
+                                  fontSize: preferences.arabicFontSize,
+                                  fontFamily: 'TajweedFont',
+                                  height: 2.0,
+                                ),
+                              );
+                            }).toList(),
+                    ),
+                  ),
+                ],
+              ),
+            )
+          else
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Text(
+                    ayahText,
+                    softWrap: true,
+                    style: TextStyle(
+                      fontFamily: 'UthmanicHafs',
+                      fontSize: preferences.arabicFontSize,
+                      height: 2.0,
+                      color: Colors.black87,
+                    ),
+                    textAlign: TextAlign.right,
+                    textDirection: TextDirection.rtl,
+                  ),
+                ],
+              ),
+            ),
+
+          // Transliteration
+          if (preferences.showTransliteration && ayah.transliteration != null)
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 4),
+              child: Text(
+                ayah.transliteration!,
+                style: TextStyle(
+                  fontSize: preferences.translationFontSize - 2,
+                  color: Colors.blueGrey,
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
+            ),
+
+          // Translation
+          if (preferences.displayMode != ReadingDisplayMode.arabicOnly &&
+              translationText != null &&
+              translationText.isNotEmpty)
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+              child: Text(
+                translationText,
+                textAlign: preferences.selectedTranslation.startsWith('ar') ||
+                        preferences.selectedTranslation.startsWith('ur')
+                    ? TextAlign.right
+                    : TextAlign.left,
+                textDirection: preferences.selectedTranslation.startsWith('ar') ||
+                        preferences.selectedTranslation.startsWith('ur')
+                    ? TextDirection.rtl
+                    : TextDirection.ltr,
+                style: TextStyle(
+                  fontFamily: preferences.selectedTranslation.startsWith('ur')
+                      ? 'Jameel Noori'
+                      : (preferences.selectedTranslation.startsWith('ar')
+                          ? 'DigitalKhatt'
+                          : null),
+                  fontSize: preferences.selectedTranslation.startsWith('ar')
+                      ? preferences.translationFontSize + 4
+                      : preferences.translationFontSize,
+                  height: preferences.selectedTranslation.startsWith('ar') ? 2.0 : 1.6,
+                  color: Colors.black87,
+                ),
+              ),
+            ),
+
+          // Bottom toolbar: Tafsirs & Translations
+          if (preferences.displayMode != ReadingDisplayMode.arabicOnly)
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+              child: Row(
+                children: [
+                  InkWell(
+                    onTap: () {
+                      showModalBottomSheet(
+                        context: context,
+                        backgroundColor: Colors.white,
+                        shape: const RoundedRectangleBorder(
+                            borderRadius:
+                                BorderRadius.vertical(top: Radius.circular(20))),
+                        builder: (_) => BlocProvider.value(
+                          value: context.read<QuranBloc>(),
+                          child: const TranslationSelectionScreen(),
+                        ),
+                      );
+                    },
+                    child: const Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Icon(CustomIconsV2.translation, color: Colors.grey, size: 18),
+                        SizedBox(width: 6),
+                        Text('Translations',
+                            style: TextStyle(color: Colors.grey, fontSize: 14)),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 24),
+                  InkWell(
+                    onTap: onTafseerTap,
+                    child: const Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Icon(Icomoon.tafseer, color: Colors.grey, size: 18),
+                        SizedBox(width: 6),
+                        Text('Tafsirs',
+                            style: TextStyle(color: Colors.grey, fontSize: 14)),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+
+  List<TajweedSegment> _buildBismillahTajweedSegments(Ayah ayah) {
+    final words = ayah.ayahWords;
+    if (words == null || words.isEmpty) {
+      return [TajweedSegment(text: ayah.text.cleanArabic, rule: TajweedRule.none)];
+    }
+
+    final segments = <TajweedSegment>[];
+    for (int i = 0; i < words.length; i++) {
+      final word = words[i];
+      if (word.tajweedSegments != null && word.tajweedSegments!.isNotEmpty) {
+        segments.addAll(word.tajweedSegments!);
+      } else {
+        segments.add(TajweedSegment(text: word.arabic.cleanArabic, rule: TajweedRule.none));
+      }
+      if (i < words.length - 1) {
+        segments.add(const TajweedSegment(text: ' ', rule: TajweedRule.none));
+      }
+    }
+    return segments;
+  }
+}
+
+// Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 // STANDARD AYAH CARD  (Arabic Only / Arabic+Translation)
-// ─────────────────────────────────────────────
+// Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 class _StandardAyahCard extends StatelessWidget {
   final Ayah ayah;
   final int surahNumber;
@@ -1134,21 +1643,13 @@ class _StandardAyahCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String ayahText = ayah.text.cleanArabic;
-    
+    String? translationText = ayah.translation;
+
     if (ayah.numberInSurah == 1 && surahNumber != 1 && surahNumber != 9) {
-      final bismillahVariations = [
-        'بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ',
-        'بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ',
-        'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
-        'بِسۡمِ اللّٰہِ الرَّحۡمٰنِ الرَّحِیۡمِ',
-      ];
-      for (var bismillah in bismillahVariations) {
-        if (ayahText.startsWith(bismillah)) {
-          ayahText = ayahText.substring(bismillah.length).trim();
-          break;
-        }
+      ayahText = cleanBismillahArabic(ayah.text);
+      if (translationText != null && translationText.isNotEmpty) {
+        translationText = cleanBismillahTranslation(translationText);
       }
-      if (ayahText.startsWith('ۨ')) ayahText = ayahText.substring(1).trim();
     }
 
     return AnimatedContainer(
@@ -1179,7 +1680,7 @@ class _StandardAyahCard extends StatelessWidget {
                   style: const TextStyle(color: Colors.grey, fontSize: 16),
                 ),
                 const SizedBox(width: 16),
-                // ── Verse-by-verse Play/Pause ──
+                // Ã¢â€â‚¬Ã¢â€â‚¬ Verse-by-verse Play/Pause Ã¢â€â‚¬Ã¢â€â‚¬
                 GestureDetector(
                   onTap: () {
                     if (isVbVActive && isVbVPlaying) {
@@ -1242,7 +1743,7 @@ class _StandardAyahCard extends StatelessWidget {
                       shape: BoxShape.circle,
                       color: preferences.displayMode == ReadingDisplayMode.tajweed 
                           ? const Color(0xFF90BDE7)
-                          : const Color(0xFF90BDE7).withOpacity(0.12),
+                          : const Color(0xFF90BDE7).withValues(alpha: 0.12),
                     ),
                     child: Icon(
                       Icons.palette,
@@ -1273,11 +1774,12 @@ class _StandardAyahCard extends StatelessWidget {
 
           // Translation
           if (preferences.displayMode != ReadingDisplayMode.arabicOnly &&
-              ayah.translation != null)
+              translationText != null &&
+              translationText.isNotEmpty)
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
               child: Text(
-                ayah.translation!,
+                translationText,
                 textAlign: preferences.selectedTranslation.startsWith('ar') || preferences.selectedTranslation.startsWith('ur') ? TextAlign.right : TextAlign.left,
                 textDirection: preferences.selectedTranslation.startsWith('ar') || preferences.selectedTranslation.startsWith('ur') ? TextDirection.rtl : TextDirection.ltr,
                 style: TextStyle(

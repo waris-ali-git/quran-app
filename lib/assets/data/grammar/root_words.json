@@ -1,0 +1,287 @@
+[
+  {
+    "root": "ك ت ب", "meaning": "to write, writing", "frequency": 86, "category": "Daily Life",
+    "derivatives": [
+      {"arabic":"كَتَبَ","transliteration":"Kataba","meaning":"He wrote"},
+      {"arabic":"كِتَاب","transliteration":"Kitaab","meaning":"Book"},
+      {"arabic":"كَاتِب","transliteration":"Kaatib","meaning":"Writer"},
+      {"arabic":"مَكْتُوب","transliteration":"Maktoob","meaning":"Written"},
+      {"arabic":"مَكْتَب","transliteration":"Maktab","meaning":"Office/desk"}],
+    "occurrences": [
+      {"surah":2,"ayah":2,"arabic":"ذَٰلِكَ الْكِتَابُ","context":"That is the Book"},
+      {"surah":2,"ayah":183,"arabic":"كُتِبَ عَلَيْكُمُ","context":"It is prescribed for you"}]
+  },
+  {
+    "root": "ع ل م", "meaning": "to know, knowledge, learning", "frequency": 854, "category": "Knowledge",
+    "derivatives": [
+      {"arabic":"عَلِمَ","transliteration":"Alima","meaning":"He knew"},
+      {"arabic":"عِلْم","transliteration":"Ilm","meaning":"Knowledge"},
+      {"arabic":"عَالِم","transliteration":"Aalim","meaning":"Scholar"},
+      {"arabic":"مُعَلِّم","transliteration":"Mua'llim","meaning":"Teacher"},
+      {"arabic":"عَلَّمَ","transliteration":"Allama","meaning":"He taught"}],
+    "occurrences": [
+      {"surah":2,"ayah":31,"arabic":"وَعَلَّمَ آدَمَ الْأَسْمَاءَ","context":"And He taught Adam the names"},
+      {"surah":96,"ayah":4,"arabic":"عَلَّمَ بِالْقَلَمِ","context":"Who taught by the pen"}]
+  },
+  {
+    "root": "ر ح م", "meaning": "to have mercy, compassion", "frequency": 341, "category": "Divine Attributes",
+    "derivatives": [
+      {"arabic":"رَحِمَ","transliteration":"Rahima","meaning":"He had mercy"},
+      {"arabic":"رَحْمَة","transliteration":"Rahma","meaning":"Mercy"},
+      {"arabic":"الرَّحْمَن","transliteration":"Ar-Rahman","meaning":"The Most Merciful"},
+      {"arabic":"الرَّحِيم","transliteration":"Ar-Raheem","meaning":"The Ever Merciful"},
+      {"arabic":"رَحِيم","transliteration":"Raheem","meaning":"Merciful"}],
+    "occurrences": [
+      {"surah":1,"ayah":1,"arabic":"بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ","context":"In the name of Allah, the Most Gracious, the Most Merciful"},
+      {"surah":1,"ayah":3,"arabic":"الرَّحْمَٰنِ الرَّحِيمِ","context":"The Most Gracious, the Most Merciful"}]
+  },
+  {
+    "root": "ق ر أ", "meaning": "to read, recite", "frequency": 88, "category": "Knowledge",
+    "derivatives": [
+      {"arabic":"قَرَأَ","transliteration":"Qara'a","meaning":"He read/recited"},
+      {"arabic":"قُرْآن","transliteration":"Qur'an","meaning":"The Recitation"},
+      {"arabic":"قِرَاءَة","transliteration":"Qiraa'a","meaning":"Reading"},
+      {"arabic":"قَارِئ","transliteration":"Qaari'","meaning":"Reader/Reciter"}],
+    "occurrences": [
+      {"surah":96,"ayah":1,"arabic":"اقْرَأْ بِاسْمِ رَبِّكَ","context":"Read/Recite in the name of your Lord"},
+      {"surah":17,"ayah":45,"arabic":"وَإِذَا قَرَأْتَ الْقُرْآنَ","context":"And when you recite the Quran"}]
+  },
+  {
+    "root": "ح م د", "meaning": "to praise, to thank", "frequency": 68, "category": "Worship",
+    "derivatives": [
+      {"arabic":"حَمِدَ","transliteration":"Hamida","meaning":"He praised"},
+      {"arabic":"حَمْد","transliteration":"Hamd","meaning":"Praise"},
+      {"arabic":"الْحَمْدُ لِلَّهِ","transliteration":"Alhamdulillah","meaning":"All praise is for Allah"},
+      {"arabic":"مُحَمَّد","transliteration":"Muhammad","meaning":"The praised one"},
+      {"arabic":"أَحْمَد","transliteration":"Ahmad","meaning":"More praiseworthy"}],
+    "occurrences": [
+      {"surah":1,"ayah":2,"arabic":"الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ","context":"All praise is due to Allah, Lord of all worlds"}]
+  },
+  {
+    "root": "س ل م", "meaning": "peace, safety, submission", "frequency": 169, "category": "Peace & Faith",
+    "derivatives": [
+      {"arabic":"سَلَّمَ","transliteration":"Sallama","meaning":"He greeted/surrendered"},
+      {"arabic":"سَلَام","transliteration":"Salaam","meaning":"Peace"},
+      {"arabic":"إِسْلَام","transliteration":"Islam","meaning":"Submission (to Allah)"},
+      {"arabic":"مُسْلِم","transliteration":"Muslim","meaning":"One who submits"},
+      {"arabic":"سَلِيم","transliteration":"Saleem","meaning":"Sound/safe heart"}],
+    "occurrences": [
+      {"surah":6,"ayah":127,"arabic":"لَهُمْ دَارُ السَّلَامِ","context":"For them is the Home of Peace"}]
+  },
+  {
+    "root": "ع ب د", "meaning": "to worship, to serve", "frequency": 283, "category": "Worship",
+    "derivatives": [
+      {"arabic":"عَبَدَ","transliteration":"Abada","meaning":"He worshipped"},
+      {"arabic":"عِبَادَة","transliteration":"Ibaadah","meaning":"Worship"},
+      {"arabic":"عَبْد","transliteration":"Abd","meaning":"Servant/slave (of Allah)"},
+      {"arabic":"عَبِيد","transliteration":"Abeed","meaning":"Servants (plural)"}],
+    "occurrences": [
+      {"surah":1,"ayah":5,"arabic":"إِيَّاكَ نَعْبُدُ","context":"You alone we worship"},
+      {"surah":51,"ayah":56,"arabic":"إِلَّا لِيَعْبُدُونِ","context":"Except to worship Me"}]
+  },
+  {
+    "root": "ص ل و", "meaning": "prayer, blessings", "frequency": 99, "category": "Worship",
+    "derivatives": [
+      {"arabic":"صَلَّى","transliteration":"Salla","meaning":"He prayed / sent blessings"},
+      {"arabic":"صَلَاة","transliteration":"Salaah","meaning":"Prayer"},
+      {"arabic":"مُصَلِّي","transliteration":"Musalli","meaning":"One who prays"},
+      {"arabic":"مُصَلَّى","transliteration":"Musalla","meaning":"Place of prayer"}],
+    "occurrences": [
+      {"surah":2,"ayah":45,"arabic":"وَاسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ","context":"And seek help through patience and prayer"}]
+  },
+  {
+    "root": "ذ ك ر", "meaning": "to remember, to mention", "frequency": 292, "category": "Worship",
+    "derivatives": [
+      {"arabic":"ذَكَرَ","transliteration":"Dhakara","meaning":"He remembered/mentioned"},
+      {"arabic":"ذِكْر","transliteration":"Dhikr","meaning":"Remembrance"},
+      {"arabic":"تَذَكَّرَ","transliteration":"Tadhakkara","meaning":"He reflected/remembered"},
+      {"arabic":"الذِّكْرَى","transliteration":"Adh-dhikraa","meaning":"The reminder"}],
+    "occurrences": [
+      {"surah":13,"ayah":28,"arabic":"أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ","context":"Verily, in the remembrance of Allah do hearts find rest"}]
+  },
+  {
+    "root": "ه د ي", "meaning": "to guide, guidance", "frequency": 316, "category": "Faith",
+    "derivatives": [
+      {"arabic":"هَدَى","transliteration":"Hadaa","meaning":"He guided"},
+      {"arabic":"هُدَى","transliteration":"Hudan","meaning":"Guidance"},
+      {"arabic":"هِدَايَة","transliteration":"Hidaayah","meaning":"Guidance (formal)"},
+      {"arabic":"هَادِي","transliteration":"Haadi","meaning":"Guide"},
+      {"arabic":"مُهْتَدِي","transliteration":"Muhtadi","meaning":"One who is guided"}],
+    "occurrences": [
+      {"surah":1,"ayah":6,"arabic":"اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ","context":"Guide us to the straight path"},
+      {"surah":2,"ayah":2,"arabic":"هُدًى لِّلْمُتَّقِينَ","context":"Guidance for the God-conscious"}]
+  },
+  {
+    "root": "ا م ن", "meaning": "to believe, faith, security", "frequency": 879, "category": "Faith",
+    "derivatives": [
+      {"arabic":"آمَنَ","transliteration":"Aamana","meaning":"He believed"},
+      {"arabic":"إِيمَان","transliteration":"Eemaan","meaning":"Faith"},
+      {"arabic":"مُؤْمِن","transliteration":"Mu'min","meaning":"Believer"},
+      {"arabic":"أَمَان","transliteration":"Amaan","meaning":"Safety/security"},
+      {"arabic":"أَمِين","transliteration":"Ameen","meaning":"Trustworthy"}],
+    "occurrences": [
+      {"surah":2,"ayah":3,"arabic":"الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ","context":"Those who believe in the unseen"}]
+  },
+  {
+    "root": "خ ل ق", "meaning": "to create, creation", "frequency": 261, "category": "Creation",
+    "derivatives": [
+      {"arabic":"خَلَقَ","transliteration":"Khalaqa","meaning":"He created"},
+      {"arabic":"خَلْق","transliteration":"Khalq","meaning":"Creation"},
+      {"arabic":"خَالِق","transliteration":"Khaaliq","meaning":"Creator"},
+      {"arabic":"مَخْلُوق","transliteration":"Makhluq","meaning":"Created being"}],
+    "occurrences": [
+      {"surah":96,"ayah":1,"arabic":"خَلَقَ الْإِنسَانَ","context":"He created man"},
+      {"surah":2,"ayah":21,"arabic":"الَّذِي خَلَقَكُمْ","context":"Who created you"}]
+  },
+  {
+    "root": "ر ب ب", "meaning": "Lord, Sustainer, Nurturer", "frequency": 978, "category": "Divine Attributes",
+    "derivatives": [
+      {"arabic":"رَبَّ","transliteration":"Rabba","meaning":"He nurtured/sustained"},
+      {"arabic":"رَبّ","transliteration":"Rabb","meaning":"Lord/Sustainer"},
+      {"arabic":"رَبَّانِيّ","transliteration":"Rabbaani","meaning":"Lordly/devoted scholar"}],
+    "occurrences": [
+      {"surah":1,"ayah":2,"arabic":"رَبِّ الْعَالَمِينَ","context":"Lord of all worlds"},
+      {"surah":1,"ayah":6,"arabic":"رَبِّ اهْدِنَا","context":"O Lord guide us"}]
+  },
+  {
+    "root": "ق و ل", "meaning": "to say, speech", "frequency": 1722, "category": "Speech",
+    "derivatives": [
+      {"arabic":"قَالَ","transliteration":"Qaala","meaning":"He said"},
+      {"arabic":"قَوْل","transliteration":"Qawl","meaning":"Speech/saying"},
+      {"arabic":"يَقُول","transliteration":"Yaqool","meaning":"He says"},
+      {"arabic":"قِيل","transliteration":"Qeela","meaning":"It was said"}],
+    "occurrences": [
+      {"surah":2,"ayah":11,"arabic":"وَإِذَا قِيلَ لَهُمْ","context":"And when it is said to them"}]
+  },
+  {
+    "root": "ج ع ل", "meaning": "to make, to place, to assign", "frequency": 346, "category": "Action",
+    "derivatives": [
+      {"arabic":"جَعَلَ","transliteration":"Ja'ala","meaning":"He made/placed"},
+      {"arabic":"يَجْعَل","transliteration":"Yaj'al","meaning":"He makes"}],
+    "occurrences": [
+      {"surah":2,"ayah":22,"arabic":"جَعَلَ لَكُمُ الْأَرْضَ فِرَاشًا","context":"Made for you the earth a bed"}]
+  },
+
+  {
+    "root": "ن ص ر", "meaning": "to help, victory", "frequency": 158, "category": "Victory & Struggle",
+    "derivatives": [
+      {"arabic":"نَصَرَ","transliteration":"Nasara","meaning":"He helped"},
+      {"arabic":"نَصْر","transliteration":"Nasr","meaning":"Help / victory"},
+      {"arabic":"نَاصِر","transliteration":"Naasir","meaning":"Helper"},
+      {"arabic":"نَصِير","transliteration":"Naseer","meaning":"Helper / Protector"},
+      {"arabic":"مَنْصُور","transliteration":"Mansoor","meaning":"Helped / victorious"}],
+    "occurrences": [
+      {"surah":110,"ayah":1,"arabic":"إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ","context":"When the help of Allah and victory comes"},
+      {"surah":3,"ayah":126,"arabic":"وَمَا النَّصْرُ إِلَّا مِنْ عِنْدِ اللَّهِ الْعَزِيزِ الْحَكِيمِ","context":"And victory is only from Allah, the Exalted in Might, the Wise"}]
+  },
+  {
+    "root": "ص ب ر", "meaning": "to be patient, patience", "frequency": 103, "category": "Character & Virtue",
+    "derivatives": [
+      {"arabic":"صَبَرَ","transliteration":"Sabara","meaning":"He was patient"},
+      {"arabic":"صَبْر","transliteration":"Sabr","meaning":"Patience"},
+      {"arabic":"صَابِر","transliteration":"Saabir","meaning":"Patient one"},
+      {"arabic":"صَبَّار","transliteration":"Sabbaar","meaning":"Most patient / steadfast"},
+      {"arabic":"اصْطَبِرْ","transliteration":"Istabir","meaning":"Be steadfast"}],
+    "occurrences": [
+      {"surah":2,"ayah":153,"arabic":"اسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ","context":"Seek help through patience and prayer"},
+      {"surah":3,"ayah":200,"arabic":"اصْبِرُوا وَصَابِرُوا وَرَابِطُوا وَاتَّقُوا اللَّهَ","context":"Be patient, and be steadfast, and remain stationed, and fear Allah"}]
+  },
+  {
+    "root": "ي و م", "meaning": "day", "frequency": 405, "category": "Time & Eschatology",
+    "derivatives": [
+      {"arabic":"يَوْم","transliteration":"Yawm","meaning":"Day"},
+      {"arabic":"يَوْمَ الْقِيَامَة","transliteration":"Yawm al-Qiyaamah","meaning":"The Day of Resurrection"},
+      {"arabic":"الْيَوْم","transliteration":"Al-Yawm","meaning":"Today / this Day"},
+      {"arabic":"يَوْمَئِذٍ","transliteration":"Yawma'idhin","meaning":"On that Day"},
+      {"arabic":"أَيَّام","transliteration":"Ayyaam","meaning":"Days"}],
+    "occurrences": [
+      {"surah":1,"ayah":4,"arabic":"مَالِكِ يَوْمِ الدِّينِ","context":"Master of the Day of Judgment"},
+      {"surah":3,"ayah":185,"arabic":"كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ وَإِنَّمَا تُوَفَّوْنَ أُجُورَكُمْ يَوْمَ الْقِيَامَةِ","context":"Every soul will taste death, and you will only be given your full compensation on the Day of Resurrection"}]
+  },
+  {
+    "root": "م و ت", "meaning": "death", "frequency": 165, "category": "Time & Eschatology",
+    "derivatives": [
+      {"arabic":"مَاتَ","transliteration":"Maata","meaning":"He died"},
+      {"arabic":"مَوْت","transliteration":"Mawt","meaning":"Death"},
+      {"arabic":"مَيِّت","transliteration":"Mayyit","meaning":"Dead"},
+      {"arabic":"يُمِيت","transliteration":"Yumeet","meaning":"He causes to die"},
+      {"arabic":"إِمَاتَة","transliteration":"Imaatah","meaning":"Causing death"}],
+    "occurrences": [
+      {"surah":3,"ayah":185,"arabic":"كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ","context":"Every soul will taste death"},
+      {"surah":21,"ayah":35,"arabic":"كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ وَنَبْلُوكُمْ بِالشَّرِّ وَالْخَيْرِ فِتْنَةً","context":"Every soul will taste death, and We test you with evil and with good as trial"}]
+  },
+  {
+    "root": "ق ل ب", "meaning": "heart, to turn/change", "frequency": 168, "category": "Human Nature",
+    "derivatives": [
+      {"arabic":"قَلْب","transliteration":"Qalb","meaning":"Heart"},
+      {"arabic":"قُلُوب","transliteration":"Quloob","meaning":"Hearts"},
+      {"arabic":"يُقَلِّب","transliteration":"Yuqallib","meaning":"He turns / changes"},
+      {"arabic":"مُنقَلِب","transliteration":"Munqalib","meaning":"Place of return"},
+      {"arabic":"قَلَبَ","transliteration":"Qalaba","meaning":"He turned / overturned"}],
+    "occurrences": [
+      {"surah":2,"ayah":7,"arabic":"خَتَمَ اللَّهُ عَلَىٰ قُلُوبِهِمْ وَعَلَىٰ سَمْعِهِمْ","context":"Allah has set a seal upon their hearts and upon their hearing"},
+      {"surah":13,"ayah":28,"arabic":"أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ","context":"Verily, in the remembrance of Allah do hearts find rest"}]
+  },
+  {
+    "root": "س م ع", "meaning": "to hear, hearing", "frequency": 185, "category": "Perception & Senses",
+    "derivatives": [
+      {"arabic":"سَمِعَ","transliteration":"Sami'a","meaning":"He heard"},
+      {"arabic":"سَمْع","transliteration":"Sam'","meaning":"Hearing"},
+      {"arabic":"سَمِيع","transliteration":"Samee'","meaning":"All-Hearing"},
+      {"arabic":"يَسْمَع","transliteration":"Yasma'","meaning":"He hears"},
+      {"arabic":"أَسْمَعَ","transliteration":"Asma'a","meaning":"He made hear / informed"}],
+    "occurrences": [
+      {"surah":17,"ayah":1,"arabic":"إِنَّهُ هُوَ السَّمِيعُ الْبَصِيرُ","context":"Indeed, He is the All-Hearing, the All-Seeing"},
+      {"surah":2,"ayah":7,"arabic":"وَعَلَىٰ سَمْعِهِمْ","context":"and upon their hearing"}]
+  },
+  {
+    "root": "ع م ل", "meaning": "to do, work, deed", "frequency": 360, "category": "Action",
+    "derivatives": [
+      {"arabic":"عَمِلَ","transliteration":"Amila","meaning":"He did / worked"},
+      {"arabic":"عَمَل","transliteration":"Amal","meaning":"Deed / work"},
+      {"arabic":"عَمِلُوا الصَّالِحَات","transliteration":"Amilu as-saalihaat","meaning":"They did righteous deeds"},
+      {"arabic":"عَامِل","transliteration":"Aamil","meaning":"Doer / worker"},
+      {"arabic":"أَعْمَال","transliteration":"A'maal","meaning":"Deeds"}],
+    "occurrences": [
+      {"surah":18,"ayah":110,"arabic":"فَمَنْ كَانَ يَرْجُو لِقَاءَ رَبِّهِ فَلْيَعْمَلْ عَمَلًا صَالِحًا","context":"So whoever hopes for the meeting with his Lord, let him do righteous work"},
+      {"surah":99,"ayah":7,"arabic":"فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُ","context":"So whoever does an atom's weight of good will see it"}]
+  },
+  {
+    "root": "غ ف ر", "meaning": "to forgive, forgiveness", "frequency": 234, "category": "Divine Attributes",
+    "derivatives": [
+      {"arabic":"غَفَرَ","transliteration":"Ghafara","meaning":"He forgave"},
+      {"arabic":"مَغْفِرَة","transliteration":"Maghfirah","meaning":"Forgiveness"},
+      {"arabic":"غَفُور","transliteration":"Ghafoor","meaning":"Ever-Forgiving"},
+      {"arabic":"غَافِر","transliteration":"Ghaafir","meaning":"Forgiver"},
+      {"arabic":"اسْتَغْفَرَ","transliteration":"Istaghfara","meaning":"He sought forgiveness"}],
+    "occurrences": [
+      {"surah":39,"ayah":53,"arabic":"لَا تَقْنَطُوا مِن رَّحْمَةِ اللَّهِ إِنَّ اللَّهَ يَغْفِرُ الذُّنُوبَ جَمِيعًا","context":"Do not despair of the mercy of Allah; indeed, Allah forgives all sins"},
+      {"surah":2,"ayah":173,"arabic":"إِنَّ اللَّهَ غَفُورٌ رَحِيمٌ","context":"Indeed, Allah is Forgiving and Merciful"}]
+  },
+  {
+    "root": "ر ز ق", "meaning": "to provide, provision", "frequency": 123, "category": "Sustenance & Provision",
+    "derivatives": [
+      {"arabic":"رَزَقَ","transliteration":"Razaqa","meaning":"He provided"},
+      {"arabic":"رِزْق","transliteration":"Rizq","meaning":"Provision / sustenance"},
+      {"arabic":"رَازِق","transliteration":"Raaziq","meaning":"Provider"},
+      {"arabic":"الرَّزَّاق","transliteration":"Ar-Razzaaq","meaning":"The Great Provider"},
+      {"arabic":"يَرْزُق","transliteration":"Yarzuq","meaning":"He provides"}],
+    "occurrences": [
+      {"surah":51,"ayah":22,"arabic":"وَفِي السَّمَاءِ رِزْقُكُمْ وَمَا تُوعَدُونَ","context":"And in the heaven is your provision and whatever you are promised"},
+      {"surah":29,"ayah":60,"arabic":"وَكَأَيِّن مِّن دَابَّةٍ لَّا تَحْمِلُ رِزْقَهَا اللَّهُ يَرْزُقُهَا وَإِيَّاكُمْ","context":"And how many a creature carries not its own provision; Allah provides for it and for you"}]
+  },
+  {
+    "root": "ك ف ر", "meaning": "to disbelieve, to cover/conceal (the truth)", "frequency": 525, "category": "Faith",
+    "derivatives": [
+      {"arabic":"كَفَرَ","transliteration":"Kafara","meaning":"He disbelieved"},
+      {"arabic":"كُفْر","transliteration":"Kufr","meaning":"Disbelief"},
+      {"arabic":"كَافِر","transliteration":"Kaafir","meaning":"Disbeliever"},
+      {"arabic":"كَافِرُون","transliteration":"Kaafiroon","meaning":"Disbelievers"},
+      {"arabic":"كَفَّارَة","transliteration":"Kaffaarah","meaning":"Atonement / expiation"}],
+    "occurrences": [
+      {"surah":2,"ayah":6,"arabic":"إِنَّ الَّذِينَ كَفَرُوا سَوَاءٌ عَلَيْهِمْ أَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ لَا يُؤْمِنُونَ","context":"Indeed, those who disbelieve - it is same for them whether you warn them or not - they will not believe"},
+      {"surah":109,"ayah":1,"arabic":"قُلْ يَا أَيُّهَا الْكَافِرُونَ","context":"Say: O disbelievers"}]
+  }
+]
+
+

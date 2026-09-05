@@ -14,7 +14,7 @@ class LanguageSelectorButton extends StatelessWidget {
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Language Selector',
-      barrierColor: Colors.black.withOpacity(0.05),
+      barrierColor: Colors.black.withValues(alpha: 0.05),
       transitionDuration: const Duration(milliseconds: 300),
       pageBuilder: (context, anim1, anim2) {
         return Align(
@@ -110,9 +110,9 @@ class _LanguageGlassPopupState extends State<_LanguageGlassPopup> {
               filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.3),
+                  color: Colors.white.withValues(alpha: 0.3),
                   borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: Colors.white.withOpacity(0.5)),
+                  border: Border.all(color: Colors.white.withValues(alpha: 0.5)),
                 ),
                 child: TextField(
                   controller: _searchCtrl,

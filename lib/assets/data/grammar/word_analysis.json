@@ -1,0 +1,356 @@
+[
+  {
+    "surah": 1,
+    "surah_name": "Al-Fatiha",
+    "ayahs": [
+      {
+        "ayah": 1,
+        "arabic_full": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+        "words": [
+          {
+            "arabic": "بِسْمِ",
+            "transliteration": "Bismi",
+            "meaning": "In the name of",
+            "root": "س م و",
+            "type": "Ism",
+            "irab": "Jarr",
+            "grammar_note": "Ism Majroor — pulled into Jarr case by the preposition بِ (bi). Mudaf."
+          },
+          {
+            "arabic": "اللَّهِ",
+            "transliteration": "Allahi",
+            "meaning": "Allah",
+            "root": "أ ل ه",
+            "type": "Ism",
+            "irab": "Jarr",
+            "grammar_note": "Mudaf ilayh — always Majroor. This is the proper name of God."
+          },
+          {
+            "arabic": "الرَّحْمَٰنِ",
+            "transliteration": "Ar-Rahmani",
+            "meaning": "The Most Gracious",
+            "root": "ر ح م",
+            "type": "Ism",
+            "irab": "Jarr",
+            "grammar_note": "Sifah (adjective) of Allahi — follows it in case (Jarr). Pattern: فَعْلَان."
+          },
+          {
+            "arabic": "الرَّحِيمِ",
+            "transliteration": "Ar-Raheemi",
+            "meaning": "The Ever Merciful",
+            "root": "ر ح م",
+            "type": "Ism",
+            "irab": "Jarr",
+            "grammar_note": "Second Sifah (adjective) of Allahi — Jarr. Pattern: فَعِيل (intensive)."
+          }
+        ]
+      },
+      {
+        "ayah": 2,
+        "arabic_full": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+        "words": [
+          {
+            "arabic": "الْحَمْدُ",
+            "transliteration": "Al-hamdu",
+            "meaning": "All praise",
+            "root": "ح م د",
+            "type": "Ism",
+            "irab": "Raf'",
+            "grammar_note": "Mubtada (subject of nominal sentence) — Marf'oo with Damma."
+          },
+          {
+            "arabic": "لِلَّهِ",
+            "transliteration": "Lillahi",
+            "meaning": "belongs to Allah",
+            "root": "أ ل ه",
+            "type": "Ism",
+            "irab": "Jarr",
+            "grammar_note": "Jar wa Majroor — preposition لِ + Ism. Together they form the Khabar (predicate)."
+          },
+          {
+            "arabic": "رَبِّ",
+            "transliteration": "Rabbi",
+            "meaning": "Lord of",
+            "root": "ر ب ب",
+            "type": "Ism",
+            "irab": "Jarr",
+            "grammar_note": "Badal (substitute/appositive) of Allahi — Majroor. Also Mudaf."
+          },
+          {
+            "arabic": "الْعَالَمِينَ",
+            "transliteration": "Al-'alameen",
+            "meaning": "all worlds",
+            "root": "ع ل م",
+            "type": "Ism",
+            "irab": "Jarr",
+            "grammar_note": "Mudaf ilayh — Majroor. Sound masculine plural: نَ in Jarr/Nasb."
+          }
+        ]
+      },
+      {
+        "ayah": 3,
+        "arabic_full": "الرَّحْمَٰنِ الرَّحِيمِ",
+        "words": [
+          {
+            "arabic": "الرَّحْمَٰنِ",
+            "transliteration": "Ar-Rahmani",
+            "meaning": "The Most Gracious",
+            "root": "ر ح م",
+            "type": "Ism",
+            "irab": "Jarr",
+            "grammar_note": "Badal (appositive) of Allahi from previous ayah — Majroor."
+          },
+          {
+            "arabic": "الرَّحِيمِ",
+            "transliteration": "Ar-Raheemi",
+            "meaning": "The Ever Merciful",
+            "root": "ر ح م",
+            "type": "Ism",
+            "irab": "Jarr",
+            "grammar_note": "Na't (adjective) — follows Ar-Rahman in case (Jarr)."
+          }
+        ]
+      },
+      {
+        "ayah": 4,
+        "arabic_full": "مَالِكِ يَوْمِ الدِّينِ",
+        "words": [
+          {
+            "arabic": "مَالِكِ",
+            "transliteration": "Maliki",
+            "meaning": "Master/Owner of",
+            "root": "م ل ك",
+            "type": "Ism",
+            "irab": "Jarr",
+            "grammar_note": "Badal (appositive) of Rabb — Majroor. Active participle (فَاعِل). Mudaf."
+          },
+          {
+            "arabic": "يَوْمِ",
+            "transliteration": "Yawmi",
+            "meaning": "the Day of",
+            "root": "ي و م",
+            "type": "Ism",
+            "irab": "Jarr",
+            "grammar_note": "Mudaf ilayh — Majroor. Also Mudaf to الدِّين."
+          },
+          {
+            "arabic": "الدِّينِ",
+            "transliteration": "Ad-deeni",
+            "meaning": "Judgment/Recompense",
+            "root": "د ي ن",
+            "type": "Ism",
+            "irab": "Jarr",
+            "grammar_note": "Mudaf ilayh — Majroor. Al-deen here means the Day of Reckoning."
+          }
+        ]
+      },
+      {
+        "ayah": 5,
+        "arabic_full": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+        "words": [
+          {
+            "arabic": "إِيَّاكَ",
+            "transliteration": "Iyyaaka",
+            "meaning": "You alone",
+            "root": "أ ي ي",
+            "type": "Damir (Pronoun)",
+            "irab": "Nasb",
+            "grammar_note": "Maf'ul bih muqaddam (fronted direct object) — Mansub. The fronting emphasises exclusivity ('You ALONE we worship')."
+          },
+          {
+            "arabic": "نَعْبُدُ",
+            "transliteration": "Na'budu",
+            "meaning": "we worship",
+            "root": "ع ب د",
+            "type": "Fi'l (Verb)",
+            "irab": "Raf'",
+            "grammar_note": "Mudhari' Fi'l — Marf'oo by default. 1st person plural (نَ prefix). Fa'il is the implied نَحْنُ."
+          },
+          {
+            "arabic": "وَإِيَّاكَ",
+            "transliteration": "Wa iyyaaka",
+            "meaning": "and You alone",
+            "root": "أ ي ي",
+            "type": "Damir (Pronoun)",
+            "irab": "Nasb",
+            "grammar_note": "Second fronted Maf'ul — Mansub. وَ is a conjunction."
+          },
+          {
+            "arabic": "نَسْتَعِينُ",
+            "transliteration": "Nasta'eenu",
+            "meaning": "we seek help",
+            "root": "ع و ن",
+            "type": "Fi'l (Verb)",
+            "irab": "Raf'",
+            "grammar_note": "Form X Mudhari' (استفعل pattern = seeking/requesting). Marf'oo."
+          }
+        ]
+      },
+      {
+        "ayah": 6,
+        "arabic_full": "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",
+        "words": [
+          {
+            "arabic": "اهْدِنَا",
+            "transliteration": "Ihdina",
+            "meaning": "Guide us",
+            "root": "ه د ي",
+            "type": "Fi'l (Verb)",
+            "irab": "Jazm",
+            "grammar_note": "Amr (command verb) — Majzoom (no visible marker as it ends in weak letter ي). نَا is the direct object pronoun."
+          },
+          {
+            "arabic": "الصِّرَاطَ",
+            "transliteration": "As-siraata",
+            "meaning": "the path",
+            "root": "ص ر ط",
+            "type": "Ism",
+            "irab": "Nasb",
+            "grammar_note": "Maf'ul bih (direct object) — Mansub with Fatha."
+          },
+          {
+            "arabic": "الْمُسْتَقِيمَ",
+            "transliteration": "Al-mustaqeema",
+            "meaning": "the straight",
+            "root": "ق و م",
+            "type": "Ism",
+            "irab": "Nasb",
+            "grammar_note": "Na't (adjective) of As-sirat — Mansub. Active participle Form X (مستفعل pattern)."
+          }
+        ]
+      },
+      {
+        "ayah": 7,
+        "arabic_full": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+        "words": [
+          {
+            "arabic": "صِرَاطَ",
+            "transliteration": "Siraata",
+            "meaning": "the path of",
+            "root": "ص ر ط",
+            "type": "Ism",
+            "irab": "Nasb",
+            "grammar_note": "Badal (substitute) of الصراط in the previous ayah — Mansub. Mudaf."
+          },
+          {
+            "arabic": "الَّذِينَ",
+            "transliteration": "Alladheena",
+            "meaning": "those who",
+            "root": "ل ذ ي",
+            "type": "Ism Mawsul (Relative Pronoun)",
+            "irab": "Jarr",
+            "grammar_note": "Mudaf ilayh — Majroor. الَّذِين is the relative pronoun for plural masculine."
+          },
+          {
+            "arabic": "أَنْعَمْتَ",
+            "transliteration": "An'amta",
+            "meaning": "You have bestowed favour",
+            "root": "ن ع م",
+            "type": "Fi'l (Verb)",
+            "irab": "Raf'",
+            "grammar_note": "Maadi Fi'l Form IV (أنعم) — 2nd person masculine singular. Sila (relative clause) of alladheena."
+          },
+          {
+            "arabic": "غَيْرِ",
+            "transliteration": "Ghayri",
+            "meaning": "not of",
+            "root": "غ ي ر",
+            "type": "Ism",
+            "irab": "Jarr",
+            "grammar_note": "Na't (adjective) of الَّذِين — Majroor. Means 'other than'. Mudaf."
+          },
+          {
+            "arabic": "الْمَغْضُوبِ",
+            "transliteration": "Al-maghdoobi",
+            "meaning": "those who incurred wrath",
+            "root": "غ ض ب",
+            "type": "Ism",
+            "irab": "Jarr",
+            "grammar_note": "Mudaf ilayh — Majroor. Passive participle مَفْعُول (the one who is angered upon)."
+          },
+          {
+            "arabic": "الضَّالِّينَ",
+            "transliteration": "Ad-daalleena",
+            "meaning": "the misguided",
+            "root": "ض ل ل",
+            "type": "Ism",
+            "irab": "Jarr",
+            "grammar_note": "Majroor — follows the structure of المغضوب. Active participle plural: فَاعِلِين."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "surah": 112,
+    "surah_name": "Al-Ikhlas",
+    "ayahs": [
+      {
+        "ayah": 1,
+        "arabic_full": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+        "words": [
+          {
+            "arabic": "قُلْ",
+            "transliteration": "Qul",
+            "meaning": "Say",
+            "root": "ق و ل",
+            "type": "Fi'l (Verb)",
+            "irab": "Jazm",
+            "grammar_note": "Amr (command) — Majzoom. Fa'il is the implied أنتَ (you)."
+          },
+          {
+            "arabic": "هُوَ",
+            "transliteration": "Huwa",
+            "meaning": "He",
+            "root": "ه و",
+            "type": "Damir (Pronoun)",
+            "irab": "Raf'",
+            "grammar_note": "Mubtada — Marf'oo. Pronoun of separation (ضمير الفصل/الشأن — pronoun of the matter)."
+          },
+          {
+            "arabic": "اللَّهُ",
+            "transliteration": "Allahu",
+            "meaning": "Allah",
+            "root": "أ ل ه",
+            "type": "Ism",
+            "irab": "Raf'",
+            "grammar_note": "Mubtada thani (second subject) or Khabar of Huwa — Marf'oo."
+          },
+          {
+            "arabic": "أَحَدٌ",
+            "transliteration": "Ahadun",
+            "meaning": "the One",
+            "root": "أ ح د",
+            "type": "Ism",
+            "irab": "Raf'",
+            "grammar_note": "Khabar (predicate) — Marf'oo with Tanwin Damm. Means 'uniquely one'."
+          }
+        ]
+      },
+      {
+        "ayah": 2,
+        "arabic_full": "اللَّهُ الصَّمَدُ",
+        "words": [
+          {
+            "arabic": "اللَّهُ",
+            "transliteration": "Allahu",
+            "meaning": "Allah",
+            "root": "أ ل ه",
+            "type": "Ism",
+            "irab": "Raf'",
+            "grammar_note": "Mubtada — Marf'oo."
+          },
+          {
+            "arabic": "الصَّمَدُ",
+            "transliteration": "As-samadu",
+            "meaning": "the Self-Sufficient Master",
+            "root": "ص م د",
+            "type": "Ism",
+            "irab": "Raf'",
+            "grammar_note": "Khabar — Marf'oo. As-Samad means the one upon whom all depend, who depends on none."
+          }
+        ]
+      }
+    ]
+  }
+]

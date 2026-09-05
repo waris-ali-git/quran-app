@@ -94,7 +94,7 @@ class _KalmaScreenState extends State<KalmaScreen> {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: _deepColor.withOpacity(0.12),
+            color: _deepColor.withValues(alpha: 0.12),
             blurRadius: 16,
             offset: const Offset(0, 4),
           ),
@@ -120,7 +120,7 @@ class _KalmaScreenState extends State<KalmaScreen> {
                     shape: BoxShape.circle,
                     boxShadow: [
                       BoxShadow(
-                        color: _deepColor.withOpacity(0.25),
+                        color: _deepColor.withValues(alpha: 0.25),
                         blurRadius: 6,
                         offset: const Offset(0, 2),
                       ),
@@ -150,7 +150,7 @@ class _KalmaScreenState extends State<KalmaScreen> {
                 ),
               ],
             ),
-            Divider(height: 32, color: _deepColor.withOpacity(0.15)),
+            Divider(height: 32, color: _deepColor.withValues(alpha: 0.15)),
 
             // Arabic Text
             Text(
@@ -170,10 +170,10 @@ class _KalmaScreenState extends State<KalmaScreen> {
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.6),
+                color: Colors.white.withValues(alpha: 0.6),
                 borderRadius: BorderRadius.circular(16),
                 border:
-                    Border.all(color: _deepColor.withOpacity(0.18), width: 1),
+                    Border.all(color: _deepColor.withValues(alpha: 0.18), width: 1),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -193,7 +193,7 @@ class _KalmaScreenState extends State<KalmaScreen> {
                     style: TextStyle(
                       fontSize: 14,
                       fontStyle: FontStyle.italic,
-                      color: const Color(0xFF1A3A38).withOpacity(0.75),
+                      color: const Color(0xFF1A3A38).withValues(alpha: 0.75),
                       height: 1.5,
                     ),
                   ),
@@ -219,7 +219,7 @@ class _KalmaScreenState extends State<KalmaScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(Icons.lightbulb_rounded,
-                    size: 20, color: _deepColor.withOpacity(0.8)),
+                    size: 20, color: _deepColor.withValues(alpha: 0.8)),
                 const SizedBox(width: 12),
                 Expanded(
                   child: TranslatedText(

@@ -110,7 +110,7 @@ class _ProphetsListScreenState extends State<ProphetsListScreen>
                   height: 180,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.white.withOpacity(0.4),
+                    color: Colors.white.withValues(alpha: 0.4),
                   ),
                 ),
               ),
@@ -122,7 +122,7 @@ class _ProphetsListScreenState extends State<ProphetsListScreen>
                   height: 120,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.white.withOpacity(0.3),
+                    color: Colors.white.withValues(alpha: 0.3),
                   ),
                 ),
               ),
@@ -205,7 +205,7 @@ class _ProphetsListScreenState extends State<ProphetsListScreen>
               '"We relate to you the best of stories"  —  Quran 12:3',
               style: TextStyle(
                 fontSize: 12,
-                color: const Color(0xFF1C1C1E).withOpacity(0.6),
+                color: const Color(0xFF1C1C1E).withValues(alpha: 0.6),
                 fontStyle: FontStyle.italic,
               ),
               textAlign: TextAlign.center,
@@ -320,7 +320,7 @@ class _ProphetCardState extends State<_ProphetCard>
           onTap: widget.onTap,
           child: LiquidGlassContainer(
             borderRadius: 24,
-            glassColor: lightColor.withOpacity(0.28),
+            glassColor: lightColor.withValues(alpha: 0.28),
             padding: const EdgeInsets.all(16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -331,7 +331,7 @@ class _ProphetCardState extends State<_ProphetCard>
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.3),
+                        color: Colors.white.withValues(alpha: 0.3),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Text(
@@ -375,7 +375,7 @@ class _ProphetCardState extends State<_ProphetCard>
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                   decoration: BoxDecoration(
-                    color: lightColor.withOpacity(0.4),
+                    color: lightColor.withValues(alpha: 0.4),
                     borderRadius: BorderRadius.circular(4),
                   ),
                   child: TranslatedText(

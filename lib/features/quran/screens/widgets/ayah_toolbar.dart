@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../../models/ayah.dart';
 import '../../services/audio_service.dart';
 import 'package:just_audio/just_audio.dart';
-import '../../../../shared/icons/icomoon.dart';
 import '../../../../shared/icons/custom_icons_v2.dart';
 
 class AyahToolbar extends StatelessWidget {

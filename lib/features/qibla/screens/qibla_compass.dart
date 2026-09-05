@@ -270,7 +270,7 @@ class _QiblaCompassScreenState extends State<QiblaCompassScreen>
         color: _iceWhite,
         boxShadow: [
           BoxShadow(
-            color: _carolinaBlue.withOpacity(0.12),
+            color: _carolinaBlue.withValues(alpha: 0.12),
             blurRadius: 16,
             offset: const Offset(0, 4),
           ),
@@ -315,9 +315,9 @@ class _QiblaCompassScreenState extends State<QiblaCompassScreen>
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    _carolinaBlue.withOpacity(0),
-                    _carolinaBlue.withOpacity(0.5),
-                    _carolinaBlue.withOpacity(0),
+                    _carolinaBlue.withValues(alpha: 0),
+                    _carolinaBlue.withValues(alpha: 0.5),
+                    _carolinaBlue.withValues(alpha: 0),
                   ],
                 ),
               ),
@@ -358,7 +358,7 @@ class _QiblaCompassScreenState extends State<QiblaCompassScreen>
       shape: BoxShape.circle,
       boxShadow: [
         BoxShadow(
-          color: _carolinaBlue.withOpacity(0.12 + 0.08 * _pulseCtrl.value),
+          color: _carolinaBlue.withValues(alpha: 0.12 + 0.08 * _pulseCtrl.value),
           blurRadius: 40,
           spreadRadius: 10,
         ),
@@ -433,7 +433,7 @@ class _QiblaCompassScreenState extends State<QiblaCompassScreen>
       ),
       boxShadow: [
         BoxShadow(
-          color: _carolinaBlue.withOpacity(_isAligned ? 0.5 : 0.2),
+          color: _carolinaBlue.withValues(alpha: _isAligned ? 0.5 : 0.2),
           blurRadius: _isAligned ? 12 : 4,
         ),
       ],
@@ -454,7 +454,7 @@ class _QiblaCompassScreenState extends State<QiblaCompassScreen>
     width: 300, height: 300,
     decoration: BoxDecoration(
       shape: BoxShape.circle,
-      color: _iceWhite.withOpacity(0.92),
+      color: _iceWhite.withValues(alpha: 0.92),
     ),
     child: Center(
       child: Column(
@@ -544,8 +544,8 @@ class _QiblaCompassScreenState extends State<QiblaCompassScreen>
           height: 1,
           decoration: BoxDecoration(
             gradient: LinearGradient(colors: [
-              _carolinaBlue.withOpacity(0),
-              _carolinaBlue.withOpacity(0.3),
+              _carolinaBlue.withValues(alpha: 0),
+              _carolinaBlue.withValues(alpha: 0.3),
             ]),
           ),
         ),
@@ -554,7 +554,7 @@ class _QiblaCompassScreenState extends State<QiblaCompassScreen>
         width: 5, height: 5,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: _babyBlue.withOpacity(0.6),
+          color: _babyBlue.withValues(alpha: 0.6),
         ),
       ),
       Expanded(
@@ -562,8 +562,8 @@ class _QiblaCompassScreenState extends State<QiblaCompassScreen>
           height: 1,
           decoration: BoxDecoration(
             gradient: LinearGradient(colors: [
-              _carolinaBlue.withOpacity(0.3),
-              _carolinaBlue.withOpacity(0),
+              _carolinaBlue.withValues(alpha: 0.3),
+              _carolinaBlue.withValues(alpha: 0),
             ]),
           ),
         ),
@@ -578,10 +578,10 @@ class _QiblaCompassScreenState extends State<QiblaCompassScreen>
       decoration: BoxDecoration(
         color: _iceWhite,
         borderRadius: BorderRadius.circular(28),
-        border: Border.all(color: _carolinaBlue.withOpacity(0.5), width: 1.2),
+        border: Border.all(color: _carolinaBlue.withValues(alpha: 0.5), width: 1.2),
         boxShadow: [
           BoxShadow(
-            color: _carolinaBlue.withOpacity(0.15 + 0.1 * _pulseCtrl.value),
+            color: _carolinaBlue.withValues(alpha: 0.15 + 0.1 * _pulseCtrl.value),
             blurRadius: 20,
             offset: const Offset(0, 4),
           ),
@@ -615,7 +615,7 @@ class _QiblaCompassScreenState extends State<QiblaCompassScreen>
       decoration: BoxDecoration(
         color: _iceWhite,
         borderRadius: BorderRadius.circular(28),
-        border: Border.all(color: _babyBlue.withOpacity(0.6), width: 1),
+        border: Border.all(color: _babyBlue.withValues(alpha: 0.6), width: 1),
         boxShadow: [
           BoxShadow(
             color: _shadowBlue,
@@ -665,7 +665,7 @@ class _QiblaCompassScreenState extends State<QiblaCompassScreen>
     decoration: BoxDecoration(
       color: _iceWhite,
       borderRadius: BorderRadius.circular(20),
-      border: Border.all(color: _babyBlue.withOpacity(0.5), width: 1),
+      border: Border.all(color: _babyBlue.withValues(alpha: 0.5), width: 1),
       boxShadow: [BoxShadow(color: _shadowBlue, blurRadius: 10, offset: const Offset(0, 3))],
     ),
     child: Row(
@@ -729,7 +729,7 @@ class _BlueDialPainter extends CustomPainter {
     // Background fill — soft gradient
     final bgPaint = Paint()
       ..shader = RadialGradient(
-        colors: [_whisperBlue, _iceWhite.withOpacity(0.85)],
+        colors: [_whisperBlue, _iceWhite.withValues(alpha: 0.85)],
         stops: const [0.3, 1.0],
       ).createShader(Rect.fromCircle(center: c, radius: r));
     canvas.drawCircle(c, r, bgPaint);
@@ -741,17 +741,17 @@ class _BlueDialPainter extends CustomPainter {
       ..shader = SweepGradient(
         transform: GradientRotation(shimmer * 2 * math.pi),
         colors: [
-          _steelBlue.withOpacity(0.3),
+          _steelBlue.withValues(alpha: 0.3),
           _carolinaBlue,
           _babyBlue,
           _carolinaBlue,
-          _steelBlue.withOpacity(0.3),
+          _steelBlue.withValues(alpha: 0.3),
         ],
       ).createShader(Rect.fromCircle(center: c, radius: r)));
 
     // Inner accent rings
-    canvas.drawCircle(c, r - 6,  Paint()..style=PaintingStyle.stroke..strokeWidth=0.5..color=_carolinaBlue.withOpacity(0.35));
-    canvas.drawCircle(c, r - 11, Paint()..style=PaintingStyle.stroke..strokeWidth=0.3..color=_babyBlue.withOpacity(0.2));
+    canvas.drawCircle(c, r - 6,  Paint()..style=PaintingStyle.stroke..strokeWidth=0.5..color=_carolinaBlue.withValues(alpha: 0.35));
+    canvas.drawCircle(c, r - 11, Paint()..style=PaintingStyle.stroke..strokeWidth=0.3..color=_babyBlue.withValues(alpha: 0.2));
 
     // Tick marks
     final tp = Paint()..style=PaintingStyle.stroke..strokeCap=StrokeCap.round;
@@ -762,9 +762,9 @@ class _BlueDialPainter extends CustomPainter {
       final isTen  = i % 10 == 0;
       double ir, or2;
       if (isMaj)    { ir = r-26; or2 = r-6; tp..color=_carolinaBlue..strokeWidth=2.0; }
-      else if (isMed){ ir = r-18; or2 = r-6; tp..color=_carolinaBlue.withOpacity(0.6)..strokeWidth=1.3; }
-      else if (isTen){ ir = r-12; or2 = r-6; tp..color=_babyBlue.withOpacity(0.5)..strokeWidth=0.8; }
-      else           { ir = r-8;  or2 = r-6; tp..color=_babyBlue.withOpacity(0.2)..strokeWidth=0.5; }
+      else if (isMed){ ir = r-18; or2 = r-6; tp..color=_carolinaBlue.withValues(alpha: 0.6)..strokeWidth=1.3; }
+      else if (isTen){ ir = r-12; or2 = r-6; tp..color=_babyBlue.withValues(alpha: 0.5)..strokeWidth=0.8; }
+      else           { ir = r-8;  or2 = r-6; tp..color=_babyBlue.withValues(alpha: 0.2)..strokeWidth=0.5; }
 
       canvas.drawLine(
         Offset(c.dx + ir  * math.sin(a), c.dy - ir  * math.cos(a)),
@@ -778,8 +778,8 @@ class _BlueDialPainter extends CustomPainter {
       ..shader = RadialGradient(
         colors: [_iceWhite, _whisperBlue],
       ).createShader(Rect.fromCircle(center: c, radius: 58)));
-    canvas.drawCircle(c, 58, Paint()..style=PaintingStyle.stroke..strokeWidth=0.8..color=_carolinaBlue.withOpacity(0.4));
-    canvas.drawCircle(c, 50, Paint()..style=PaintingStyle.stroke..strokeWidth=0.3..color=_babyBlue.withOpacity(0.25));
+    canvas.drawCircle(c, 58, Paint()..style=PaintingStyle.stroke..strokeWidth=0.8..color=_carolinaBlue.withValues(alpha: 0.4));
+    canvas.drawCircle(c, 50, Paint()..style=PaintingStyle.stroke..strokeWidth=0.3..color=_babyBlue.withValues(alpha: 0.25));
   }
 
   @override
@@ -802,7 +802,7 @@ class _BlueNeedlePainter extends CustomPainter {
         16,
         Paint()
           ..maskFilter = MaskFilter.blur(BlurStyle.normal, 10 + 8 * pulse)
-          ..color = _carolinaBlue.withOpacity(0.35 + 0.2 * pulse),
+          ..color = _carolinaBlue.withValues(alpha: 0.35 + 0.2 * pulse),
       );
     }
 
@@ -827,7 +827,7 @@ class _BlueNeedlePainter extends CustomPainter {
     canvas.drawPath(path, Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = 0.6
-      ..color = _blueDark.withOpacity(0.4));
+      ..color = _blueDark.withValues(alpha: 0.4));
 
     // Kaaba cube at needle tip
     final cubeRect = Rect.fromCenter(
@@ -860,7 +860,7 @@ class _BlueNeedlePainter extends CustomPainter {
     );
     canvas.drawRRect(
       RRect.fromRectAndRadius(door, const Radius.circular(0.5)),
-      Paint()..color=_carolinaBlue.withOpacity(0.85),
+      Paint()..color=_carolinaBlue.withValues(alpha: 0.85),
     );
 
     // Counter needle (back)
@@ -870,7 +870,7 @@ class _BlueNeedlePainter extends CustomPainter {
       ..lineTo(c.dx, c.dy + 10)
       ..lineTo(c.dx + 4.5, c.dy + 18)
       ..close();
-    canvas.drawPath(back, Paint()..color=_steelBlue.withOpacity(0.25));
+    canvas.drawPath(back, Paint()..color=_steelBlue.withValues(alpha: 0.25));
   }
 
   @override
@@ -918,7 +918,7 @@ class _KaabaIllustrationPainter extends CustomPainter {
     final bandTop = h * 0.28;
     canvas.drawRect(
       Rect.fromLTWH(w * 0.1, bandTop, w * 0.8, h * 0.14),
-      Paint()..color = _carolinaBlue.withOpacity(0.18),
+      Paint()..color = _carolinaBlue.withValues(alpha: 0.18),
     );
     canvas.drawLine(Offset(w * 0.1, bandTop), Offset(w * 0.9, bandTop),
         Paint()..color=_carolinaBlue..strokeWidth=1.0);
@@ -946,7 +946,7 @@ class _KaabaIllustrationPainter extends CustomPainter {
     );
     canvas.drawOval(
       Rect.fromCenter(center: Offset(w * 0.1, h * 0.18), width: 5, height: 4),
-      Paint()..color = _babyBlue.withOpacity(0.4),
+      Paint()..color = _babyBlue.withValues(alpha: 0.4),
     );
   }
 

@@ -88,7 +88,7 @@ class _ZakatScreenState extends State<ZakatScreen> {
                   fontSize: 16,
                   fontWeight: FontWeight.bold),
               filled: true,
-              fillColor: Colors.white.withOpacity(0.7),
+              fillColor: Colors.white.withValues(alpha: 0.7),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
                 borderSide: BorderSide(color: _lightColor, width: 1.5),
@@ -96,7 +96,7 @@ class _ZakatScreenState extends State<ZakatScreen> {
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
                 borderSide: BorderSide(
-                    color: _deepColor.withOpacity(0.2), width: 1.5),
+                    color: _deepColor.withValues(alpha: 0.2), width: 1.5),
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
@@ -171,7 +171,7 @@ class _ZakatScreenState extends State<ZakatScreen> {
         borderRadius: BorderRadius.circular(24),
         boxShadow: [
           BoxShadow(
-            color: _deepColor.withOpacity(0.1),
+            color: _deepColor.withValues(alpha: 0.1),
             blurRadius: 24,
             offset: const Offset(0, 8),
           )
@@ -216,7 +216,7 @@ class _ZakatScreenState extends State<ZakatScreen> {
         borderRadius: BorderRadius.circular(32),
         boxShadow: [
           BoxShadow(
-            color: _deepColor.withOpacity(0.2),
+            color: _deepColor.withValues(alpha: 0.2),
             blurRadius: 30,
             offset: const Offset(0, 15),
           )
@@ -229,11 +229,11 @@ class _ZakatScreenState extends State<ZakatScreen> {
           Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.5),
+              color: Colors.white.withValues(alpha: 0.5),
               borderRadius: BorderRadius.circular(20),
               boxShadow: [
                 BoxShadow(
-                  color: _deepColor.withOpacity(0.15),
+                  color: _deepColor.withValues(alpha: 0.15),
                   blurRadius: 8,
                   offset: const Offset(0, 3),
                 ),
@@ -289,8 +289,8 @@ class _ZakatScreenState extends State<ZakatScreen> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
               border: Border.all(
-                  color: _deepColor.withOpacity(0.3), width: 1.5),
-              color: Colors.white.withOpacity(0.4),
+                  color: _deepColor.withValues(alpha: 0.3), width: 1.5),
+              color: Colors.white.withValues(alpha: 0.4),
             ),
             child: const Text(
               "\"The example of those who spend their wealth in the way of Allah is like a seed of grain which grows seven spikes; in each spike is a hundred grains.\"",

@@ -6,6 +6,7 @@ import '../models/ayah.dart';
 import '../models/reading_mode.dart';
 import '../models/translation_edition.dart';
 import '../services/quran_service.dart';
+import '../screens/widgets/word_by_word_ayah.dart';
 
 part 'quran_event.dart';
 part 'quran_state.dart';
@@ -18,6 +19,7 @@ class QuranBloc extends Bloc<QuranEvent, QuranState> {
   List<String> _bookmarks = [];
   List<TranslationEdition> _availableTranslations = [];
   List<Surah> _cachedSurahs = []; // Surah meta cache to avoid re-fetching
+  Ayah? _bismillahAyah; // Surah 1 Ayah 1 — cached once for all surahs
 
   List<TranslationEdition> get availableTranslations => _availableTranslations;
 
@@ -79,6 +81,9 @@ class QuranBloc extends Bloc<QuranEvent, QuranState> {
       final edition = event.translationEdition ?? _preferences.selectedTranslation;
       _bookmarks = await _quranService.getBookmarks();
 
+      // Ensure we have the Bismillah ayah cached (fetch once from Surah 1)
+      await _ensureBismillahAyah(edition);
+
       // Cache-first: try to show cached data instantly (no loading spinner!)
       final cachedSurah = _quranService.getCachedSurah(event.surahNumber, edition);
       if (cachedSurah != null) {
@@ -87,6 +92,7 @@ class QuranBloc extends Bloc<QuranEvent, QuranState> {
           preferences: _preferences,
           bookmarks: _bookmarks,
           isFullyLoaded: true,
+          bismillahAyah: _bismillahAyah,
         ));
 
         // For Tajweed/Arabic: merge WBW data in background if not already present
@@ -105,6 +111,7 @@ class QuranBloc extends Bloc<QuranEvent, QuranState> {
                 preferences: _preferences,
                 bookmarks: _bookmarks,
                 isFullyLoaded: true,
+                bismillahAyah: _bismillahAyah,
               ));
             } catch (e) {
               debugPrint('Background WBW merge failed: $e');
@@ -114,14 +121,16 @@ class QuranBloc extends Bloc<QuranEvent, QuranState> {
         return;
       }
 
-      // ── No cache: stream ayahs progressively — skeleton fills as data arrives ──
+      // ── No cache: emit loading state first so UI shows skeletons (not stale QuranError) ──
+      emit(const QuranLoading());
+
       Surah? fullSurah;
 
       await emit.forEach<Surah>(
         _quranService.getSurahStream(event.surahNumber, edition),
         onData: (surah) {
           final ayahs = surah.ayahs ?? [];
-          final totalAyahs = surah.numberOfAyahs ?? ayahs.length;
+          final totalAyahs = surah.numberOfAyahs;
 
           // All ayahs received → emit final SurahLoaded
           if (ayahs.length >= totalAyahs && ayahs.isNotEmpty) {
@@ -131,6 +140,7 @@ class QuranBloc extends Bloc<QuranEvent, QuranState> {
               preferences: _preferences,
               bookmarks: _bookmarks,
               isFullyLoaded: true,
+              bismillahAyah: _bismillahAyah,
             );
           }
 
@@ -141,6 +151,7 @@ class QuranBloc extends Bloc<QuranEvent, QuranState> {
             totalAyahs: totalAyahs,
             preferences: _preferences,
             bookmarks: _bookmarks,
+            bismillahAyah: _bismillahAyah,
           );
         },
         onError: (e, st) {
@@ -204,14 +215,60 @@ class QuranBloc extends Bloc<QuranEvent, QuranState> {
       );
       _bookmarks = await _quranService.getBookmarks();
 
+      // Ensure bismillah ayah is cached
+      await _ensureBismillahAyah(_preferences.selectedTranslation);
+
       emit(SurahWordByWordLoaded(
         surahMeta: surahMeta,
         ayahs: ayahs,
         preferences: _preferences,
         bookmarks: _bookmarks,
+        bismillahAyah: _bismillahAyah,
       ));
     } catch (e) {
       emit(QuranError(message: e.toString(), previousEvent: event));
+    }
+  }
+
+  // ─────────────────────────────
+  // BISMILLAH AYAH — Fetch & cache Surah 1 Ayah 1 once
+  // ─────────────────────────────
+  Future<void> _ensureBismillahAyah(String edition) async {
+    // If we don't have bismillah ayah or it lacks word-by-word data, try fetching WBW version first
+    if (_bismillahAyah == null || _bismillahAyah!.ayahWords == null || _bismillahAyah!.ayahWords!.isEmpty) {
+      try {
+        final wbwAyahs = await _quranService.getSurahWithWordByWord(1, languageCode: _preferences.wbwLanguage);
+        if (wbwAyahs.isNotEmpty) {
+          _bismillahAyah = wbwAyahs.first;
+        }
+      } catch (e) {
+        debugPrint('Failed to fetch WBW bismillah: $e');
+      }
+    }
+
+    if (_bismillahAyah == null) {
+      try {
+        // Try to get Surah 1 from cache first
+        final cached = _quranService.getCachedSurah(1, edition);
+        if (cached != null && cached.ayahs != null && cached.ayahs!.isNotEmpty) {
+          _bismillahAyah = cached.ayahs!.first;
+        } else {
+          // Fetch Surah 1 fresh (it's only 7 ayahs, very fast)
+          final surah1 = await _quranService.getSurahWithTranslation(1, edition);
+          if (surah1.ayahs != null && surah1.ayahs!.isNotEmpty) {
+            _bismillahAyah = surah1.ayahs!.first;
+          }
+        }
+      } catch (e) {
+        debugPrint('Failed to fetch bismillah ayah: $e');
+      }
+    }
+
+    // Attach fallback Bismillah words if ayahWords is still null or empty
+    if (_bismillahAyah != null && (_bismillahAyah!.ayahWords == null || _bismillahAyah!.ayahWords!.isEmpty)) {
+      _bismillahAyah = _bismillahAyah!.copyWith(
+        words: getBismillahWords(_preferences.wbwLanguage),
+      );
     }
   }
 
@@ -233,6 +290,7 @@ class QuranBloc extends Bloc<QuranEvent, QuranState> {
       ) async {
     _preferences = _preferences.copyWith(wbwLanguage: event.languageCode);
     await _quranService.saveReadingPreferences(_preferences);
+    _bismillahAyah = null; // Reset so Bismillah words get re-fetched in new language
     _emitPreferencesUpdate(emit);
 
     // If currently showing WBW, reload it to reflect new language translations

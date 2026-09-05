@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import '../../services/verse_by_verse_controller.dart';
+import '../../services/audio_service.dart';
+import '../../services/ibn_kathir_audio_data.dart';
 
 /// Floating bottom bar shown during active verse-by-verse playback.
-/// Shows the current ayah, active step, and playback controls.
+/// Shows current ayah, active step, playback controls, and a theme-styled "Listen Tafseer" button.
 class VersePlaybackBar extends StatelessWidget {
   final VerseByVerseController controller;
+  final String? surahName;
   final VoidCallback onSettingsTap;
   final VoidCallback onClose;
   final VoidCallback? onBarTap;
@@ -12,6 +15,7 @@ class VersePlaybackBar extends StatelessWidget {
   const VersePlaybackBar({
     super.key,
     required this.controller,
+    this.surahName,
     required this.onSettingsTap,
     required this.onClose,
     this.onBarTap,
@@ -41,18 +45,73 @@ class VersePlaybackBar extends StatelessWidget {
               color: const Color(0xFF90BDE7).withValues(alpha: 0.2),
             ),
           ),
-            child: SafeArea(
-              top: false,
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+          child: SafeArea(
+            top: false,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // ─── Step indicator bar ─────────────────────
-                  GestureDetector(
-                    behavior: HitTestBehavior.opaque,
-                    onTap: onBarTap,
-                    child: _StepIndicator(step: state.step),
+                  // ─── Step Indicator (Responsive) & Listen Tafseer Button ───
+                  Row(
+                    children: [
+                      Expanded(
+                        child: GestureDetector(
+                          behavior: HitTestBehavior.opaque,
+                          onTap: onBarTap,
+                          child: _StepIndicator(step: state.step),
+                        ),
+                      ),
+                      const SizedBox(width: 10),
+                      // ─── Listen Tafseer Button (Blue BG, White Text) ───
+                      GestureDetector(
+                        onTap: () {
+                          final surahNum = state.surahNumber;
+                          final url = ibneKathirTafseerAudioUrls[surahNum];
+                          if (url != null) {
+                            QuranAudioService().playTafseer(
+                              url: url,
+                              surahName: surahName != null ? 'Surah $surahName' : 'Surah $surahNum',
+                              scholarName: 'Tafsir Ibn Kathir',
+                              surahNumber: surahNum,
+                            );
+                          } else {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(content: Text('Tafseer audio not available for this Surah.')),
+                            );
+                          }
+                        },
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF6FA8D8),
+                            borderRadius: BorderRadius.circular(16),
+                            boxShadow: [
+                              BoxShadow(
+                                color: const Color(0xFF6FA8D8).withValues(alpha: 0.3),
+                                blurRadius: 6,
+                                offset: const Offset(0, 2),
+                              ),
+                            ],
+                          ),
+                          child: const Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(Icons.headphones_rounded, color: Colors.white, size: 14),
+                              SizedBox(width: 4),
+                              Text(
+                                'Listen Tafseer',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                   const SizedBox(height: 8),
 
@@ -114,6 +173,7 @@ class VersePlaybackBar extends StatelessWidget {
                       const SizedBox(width: 8),
                       _ControlButton(
                         icon: Icons.skip_previous_rounded,
+                        tooltip: 'Previous Ayah',
                         onTap: () => controller.skipToPrev(),
                       ),
                       const SizedBox(width: 4),
@@ -124,16 +184,19 @@ class VersePlaybackBar extends StatelessWidget {
                       const SizedBox(width: 4),
                       _ControlButton(
                         icon: Icons.skip_next_rounded,
+                        tooltip: 'Next Ayah',
                         onTap: () => controller.skipToNext(),
                       ),
                       const SizedBox(width: 4),
                       _ControlButton(
                         icon: Icons.settings_rounded,
+                        tooltip: 'Settings',
                         onTap: onSettingsTap,
                       ),
                       const SizedBox(width: 4),
                       _ControlButton(
                         icon: Icons.close_rounded,
+                        tooltip: 'Close',
                         onTap: () {
                           controller.stop();
                           onClose();
@@ -183,27 +246,18 @@ class _StepIndicator extends StatelessWidget {
         _StepDot(
           label: 'Recitation',
           isActive: step == VersePlaybackStep.recitation,
-          isPast: _isPast(VersePlaybackStep.recitation),
+          isPast: step == VersePlaybackStep.translation,
         ),
-        _StepLine(active: _isPast(VersePlaybackStep.recitation) || step == VersePlaybackStep.translation || step == VersePlaybackStep.tafseer),
+        Expanded(
+          child: _StepLine(active: step == VersePlaybackStep.translation),
+        ),
         _StepDot(
           label: 'Translation',
           isActive: step == VersePlaybackStep.translation,
-          isPast: _isPast(VersePlaybackStep.translation),
-        ),
-        _StepLine(active: _isPast(VersePlaybackStep.translation) || step == VersePlaybackStep.tafseer),
-        _StepDot(
-          label: 'Tafseer',
-          isActive: step == VersePlaybackStep.tafseer,
           isPast: false,
         ),
       ],
     );
-  }
-
-  bool _isPast(VersePlaybackStep s) {
-    final order = [VersePlaybackStep.recitation, VersePlaybackStep.translation, VersePlaybackStep.tafseer];
-    return order.indexOf(step) > order.indexOf(s);
   }
 }
 
@@ -257,12 +311,10 @@ class _StepLine extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Container(
-        height: 2,
-        margin: const EdgeInsets.only(bottom: 14),
-        color: active ? const Color(0xFF90BDE7) : Colors.grey[200],
-      ),
+    return Container(
+      height: 2,
+      margin: const EdgeInsets.only(left: 8, right: 8, bottom: 14),
+      color: active ? const Color(0xFF90BDE7) : Colors.grey[200],
     );
   }
 }

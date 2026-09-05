@@ -56,12 +56,12 @@ class _NameDetailCardState extends State<NameDetailCard> {
               color: const Color(0xFFFAFDFF), // TasbeehColors.background
               borderRadius: BorderRadius.circular(32),
               elevation: 8,
-              shadowColor: const Color(0xFF90BDE7).withOpacity(0.15),
+              shadowColor: const Color(0xFF90BDE7).withValues(alpha: 0.15),
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(32),
                   border: Border.all(
-                    color: const Color(0xFF90BDE7).withOpacity(0.4),
+                    color: const Color(0xFF90BDE7).withValues(alpha: 0.4),
                     width: 2,
                   ),
                   image: const DecorationImage(
@@ -79,10 +79,10 @@ class _NameDetailCardState extends State<NameDetailCard> {
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
                         decoration: BoxDecoration(
-                          color: const Color(0xFF90BDE7).withOpacity(0.1),
+                          color: const Color(0xFF90BDE7).withValues(alpha: 0.1),
                           borderRadius: BorderRadius.circular(12),
                           border: Border.all(
-                            color: const Color(0xFF90BDE7).withOpacity(0.4),
+                            color: const Color(0xFF90BDE7).withValues(alpha: 0.4),
                           ),
                         ),
                         child: Text(
@@ -156,10 +156,10 @@ class _NameDetailCardState extends State<NameDetailCard> {
                       Container(
                         padding: const EdgeInsets.all(16),
                         decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.6),
+                          color: Colors.white.withValues(alpha: 0.6),
                           borderRadius: BorderRadius.circular(16),
                           border: Border.all(
-                            color: const Color(0xFF90BDE7).withOpacity(0.2),
+                            color: const Color(0xFF90BDE7).withValues(alpha: 0.2),
                           ),
                         ),
                         child: Text(
@@ -194,7 +194,7 @@ class _NameDetailCardState extends State<NameDetailCard> {
                   borderRadius: BorderRadius.circular(20),
                 ),
                 elevation: 4,
-                shadowColor: const Color(0xFF90BDE7).withOpacity(0.5),
+                shadowColor: const Color(0xFF90BDE7).withValues(alpha: 0.5),
               ),
             ),
         ],
@@ -211,7 +211,7 @@ class _NameDetailCardState extends State<NameDetailCard> {
           height: 1.5,
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [Colors.transparent, const Color(0xFF90BDE7).withOpacity(0.6)],
+              colors: [Colors.transparent, const Color(0xFF90BDE7).withValues(alpha: 0.6)],
             ),
           ),
         ),
@@ -220,7 +220,7 @@ class _NameDetailCardState extends State<NameDetailCard> {
           child: Icon(
             Icons.brightness_7, // Decorative star icon
             size: 14,
-            color: const Color(0xFF90BDE7).withOpacity(0.8),
+            color: const Color(0xFF90BDE7).withValues(alpha: 0.8),
           ),
         ),
         Container(
@@ -228,7 +228,7 @@ class _NameDetailCardState extends State<NameDetailCard> {
           height: 1.5,
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [const Color(0xFF90BDE7).withOpacity(0.6), Colors.transparent],
+              colors: [const Color(0xFF90BDE7).withValues(alpha: 0.6), Colors.transparent],
             ),
           ),
         ),

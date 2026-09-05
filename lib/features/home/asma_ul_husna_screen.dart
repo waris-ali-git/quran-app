@@ -730,7 +730,7 @@ class _AsmaUlHusnaScreenState extends State<AsmaUlHusnaScreen>
               decoration: BoxDecoration(
                 gradient: LinearGradient(colors: [
                   Colors.transparent,
-                  const Color(0xFF90BDE7).withOpacity(0.6),
+                  const Color(0xFF90BDE7).withValues(alpha: 0.6),
                   Colors.transparent,
                 ]),
               ),
@@ -779,16 +779,16 @@ class _NameCard extends StatelessWidget {
           boxShadow: [
             BoxShadow(
               color: isActive
-                  ? const Color(0xFF90BDE7).withOpacity(0.35)
-                  : const Color(0xFF90BDE7).withOpacity(0.1),
+                  ? const Color(0xFF90BDE7).withValues(alpha: 0.35)
+                  : const Color(0xFF90BDE7).withValues(alpha: 0.1),
               blurRadius: isActive ? 12 : 8,
               offset: const Offset(0, 4),
             ),
           ],
           border: Border.all(
             color: isActive
-                ? const Color(0xFF90BDE7).withOpacity(0.8)
-                : const Color(0xFF90BDE7).withOpacity(0.3),
+                ? const Color(0xFF90BDE7).withValues(alpha: 0.8)
+                : const Color(0xFF90BDE7).withValues(alpha: 0.3),
             width: isActive ? 1.5 : 1,
           ),
         ),
@@ -804,10 +804,10 @@ class _NameCard extends StatelessWidget {
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: isActive
-                      ? const Color(0xFF90BDE7).withOpacity(0.2)
-                      : const Color(0xFF90BDE7).withOpacity(0.12),
+                      ? const Color(0xFF90BDE7).withValues(alpha: 0.2)
+                      : const Color(0xFF90BDE7).withValues(alpha: 0.12),
                   border: Border.all(
-                    color: const Color(0xFF90BDE7).withOpacity(0.4),
+                    color: const Color(0xFF90BDE7).withValues(alpha: 0.4),
                   ),
                 ),
                 child: Center(
@@ -855,7 +855,7 @@ class _NameCard extends StatelessWidget {
                   Container(
                     height: 1,
                     margin: const EdgeInsets.symmetric(horizontal: 16),
-                    color: const Color(0xFF90BDE7).withOpacity(0.25),
+                    color: const Color(0xFF90BDE7).withValues(alpha: 0.25),
                   ),
                   const SizedBox(height: 4),
                   // Transliteration
@@ -884,7 +884,7 @@ class _NameCard extends StatelessWidget {
                             fontSize: 9,
                             height: 1.2,
                             color: isActive
-                                ? Colors.white.withOpacity(0.9)
+                                ? Colors.white.withValues(alpha: 0.9)
                                 : const Color(0xFF4A6B8A),
                           ),
                           textAlign: TextAlign.center,

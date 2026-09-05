@@ -118,7 +118,6 @@ class _TafseerBottomSheetState extends State<TafseerBottomSheet> {
       });
     }
     
-    final audioService = QuranAudioService();
     // Use per-ayah audio URL for the specific ayah
     final url = _tafseerService.getPerAyahAudioUrl(
       _selectedSource,

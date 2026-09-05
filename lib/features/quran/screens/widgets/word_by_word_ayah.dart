@@ -10,9 +10,38 @@ import '../../../../shared/icons/icomoon.dart';
 import '../../../../shared/icons/custom_icons_v2.dart';
 import '../widgets/reciter_selection_sheet.dart';
 import '../../../../shared/widgets/custom_button.dart';
-import '../translation_selection_screen.dart';
 import '../widgets/wbw_language_selector.dart';
-import '../widgets/tajweed_ayah.dart';
+
+/// Helper to construct standard 4 words of Bismillah if API word data is missing
+List<AyahWord> getBismillahWords(String wbwLanguage) {
+  final isUrdu = wbwLanguage.startsWith('ur');
+  return [
+    AyahWord(
+      position: 1,
+      arabic: 'بِسْمِ',
+      transliteration: 'Bism-i',
+      translation: isUrdu ? 'شروع' : 'In [the] name',
+    ),
+    AyahWord(
+      position: 2,
+      arabic: 'ٱللَّهِ',
+      transliteration: 'Allāhi',
+      translation: isUrdu ? 'اللہ کے' : '(of) Allah',
+    ),
+    AyahWord(
+      position: 3,
+      arabic: 'ٱلرَّحْمَٰنِ',
+      transliteration: 'Ar-Raḥmāni',
+      translation: isUrdu ? 'جو بے حد مہربان' : 'the Entirely Merciful',
+    ),
+    AyahWord(
+      position: 4,
+      arabic: 'ٱلرَّحِيمِ',
+      transliteration: 'Ar-Raḥīmi',
+      translation: isUrdu ? 'نہایت رحم والا ہے' : 'the Especially Merciful',
+    ),
+  ];
+}
 
 /// Word-by-Word Ayah Widget
 /// Bilkul waise jaisa image mein hai:
@@ -39,7 +68,7 @@ class WordByWordAyahWidget extends StatelessWidget {
   });
 
   // Har word ko ek rng — cycle karta rahe (elegant scheme)
-  static const List<Color> _wordColors = [
+  static const List<Color> wordColors = [
     Color(0xFFF06292), // Soft Neon Magenta
     Color(0xFF81C784), // Soft Neon Lime
     Color(0xFFBA68C8), // Soft Plasma Violet
@@ -50,7 +79,11 @@ class WordByWordAyahWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final words = ayah.ayahWords;
+    final words = (ayah.ayahWords != null && ayah.ayahWords!.isNotEmpty)
+        ? ayah.ayahWords
+        : (ayah.numberInSurah == 1 && surahNumber != 9
+            ? getBismillahWords(preferences.wbwLanguage)
+            : null);
     final audioService = QuranAudioService();
 
     return Container(
@@ -115,10 +148,10 @@ class WordByWordAyahWidget extends StatelessWidget {
           if (words != null && words.isNotEmpty)
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-              child: _WordByWordGrid(
+              child: WordByWordGrid(
                 words: words,
                 preferences: preferences,
-                wordColors: _wordColors,
+                wordColors: wordColors,
               ),
             )
           else
@@ -169,7 +202,7 @@ class WordByWordAyahWidget extends StatelessWidget {
                       context: context,
                       barrierDismissible: true,
                       barrierLabel: 'Wbw Language Selector',
-                      barrierColor: Colors.black.withOpacity(0.05),
+                      barrierColor: Colors.black.withValues(alpha: 0.05),
                       transitionDuration: const Duration(milliseconds: 300),
                       pageBuilder: (context, anim1, anim2) {
                         return Align(
@@ -225,12 +258,12 @@ class WordByWordAyahWidget extends StatelessWidget {
 }
 
 // ─── Word Grid — image jaise layout ─────────────────────────
-class _WordByWordGrid extends StatelessWidget {
+class WordByWordGrid extends StatelessWidget {
   final List<AyahWord> words;
   final ReadingPreferences preferences;
   final List<Color> wordColors;
 
-  const _WordByWordGrid({
+  const WordByWordGrid({
     required this.words,
     required this.preferences,
     required this.wordColors,
